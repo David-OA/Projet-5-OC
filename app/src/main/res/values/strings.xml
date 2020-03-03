@@ -1,3 +1,49 @@
 <resources>
     <string name="app_name">MyNews</string>
+
+    <!-- Toolbar -->
+    <string name="main_menu_notifications">Notifications</string>
+    <string name="main_menu_help">Help</string>
+    <string name="main_menu_about">About</string>
+    <string name="menu_main_activity_search">Search</string>
+    <string name="animation_main_to_search_zoom">AnimationMainToSearch</string>
+
+
+    <!-- HELP text -->
+    <string name="Help_1">"My News" uses the news published by the New York Times so you can be updated everyday
+        at every time about what is happening in the world.</string>
+    <string name="Help_2">You can move through the different sections using the different labels you can see under
+        the main bar. In each section you can see a short summary of the different articles (and
+        you can scroll down to see even more). If you click in any, the application will display
+        the full article.</string>
+    <string name="help_3">The app stores all the articles you have read. You will see that the summary of the article changes to bold style when the article has been read. You can always delete the history using the - Delete History - button that will be shown if you press the menu button (three dots) on the main bar.</string>
+    <string name="help_4">You can search specific articles according to different categories, search queries and dates. For that, press the - Search button - (the magnifying glass in the main bar)-</string>
+    <string name="help_5">You can keep updated every day with new articles using the notifications functionality. To use it, click the - Notifications - button (displayed after tapping the 3 dots button in the main bar), choose the categories, introduce a search query if you\'d like and switch the button on. The app will send you a notification every day with new articles.</string>
+
+
+    <!-- ABOUT text -->
+    <string name="library">Library</string>
+    <string name="api">API</string>
+    <string name="new_york_times_api">New York Times API</string>
+    <string name="architecture">Architecture</string>
+    <string name="mvp">MVP</string>
+    <string name="java">Java</string>
+    <string name="developed_by">Developed By</string>
+    <string name="oconte_david">OCONTE David</string>
+    <string name="copyright_2020_oconte_david">Copyright 2020 OCONTE David</string>
+    <string name="picasso">Picasso</string>
+    <string name="retrofit">Retrofit</string>
+    <string name="search_query_term">Search Query Term</string>
+    <string name="begin_date">Begin Date</string>
+    <string name="end_date">End Date</string>
+
+    <!-- SEARCH text -->
+    <string name="search_item_travel">Travel</string>
+    <string name="search_item_sports">Sports</string>
+    <string name="search_item_politics">Politics</string>
+    <string name="search_item_entrepreneurs">Entrepreneurs</string>
+    <string name="search_item_business">Business</string>
+    <string name="search_item_arts">Arts</string>
+    <string name="search_button">SEARCH</string>
+    <string name="animation_search_to_result_zoom">animation</string>
 </resources>
