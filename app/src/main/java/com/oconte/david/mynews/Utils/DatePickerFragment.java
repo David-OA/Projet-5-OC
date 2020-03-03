@@ -1,5 +1,6 @@
 package com.oconte.david.mynews.Utils;
 
+import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.os.Bundle;
@@ -11,6 +12,7 @@ import java.util.Objects;
 
 public class DatePickerFragment extends DialogFragment {
 
+    @SuppressLint("NewApi")
     @NonNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
