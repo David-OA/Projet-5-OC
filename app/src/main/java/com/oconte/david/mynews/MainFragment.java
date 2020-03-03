@@ -13,6 +13,9 @@ import android.view.ViewGroup;
 
 import com.oconte.david.mynews.Calls.NYTCalls;
 import com.oconte.david.mynews.Models.Result;
+import com.oconte.david.mynews.RecyclerView.NYTArticleAdapter;
+import com.oconte.david.mynews.WebView.ItemClickSupport;
+import com.oconte.david.mynews.WebView.WebViewActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
