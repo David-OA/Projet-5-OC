@@ -9,6 +9,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.oconte.david.mynews.OptionMenu.AboutActivity;
+import com.oconte.david.mynews.OptionMenu.HelpActivity;
+import com.oconte.david.mynews.OptionMenu.NotificationsActivity;
+import com.oconte.david.mynews.OptionMenu.SearchViewActivity;
+
 import java.util.Objects;
 
 import butterknife.BindView;
