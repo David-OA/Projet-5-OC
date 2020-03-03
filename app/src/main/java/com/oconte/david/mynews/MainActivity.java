@@ -3,6 +3,7 @@ package com.oconte.david.mynews;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -13,24 +14,37 @@ import com.oconte.david.mynews.OptionMenu.AboutActivity;
 import com.oconte.david.mynews.OptionMenu.HelpActivity;
 import com.oconte.david.mynews.OptionMenu.NotificationsActivity;
 import com.oconte.david.mynews.OptionMenu.SearchViewActivity;
+import com.oconte.david.mynews.ViewPager.ViewPagerAdapter;
 
 import java.util.Objects;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
+    private MainFragment mainFragment;
     @BindView(R.id.toolbar) Toolbar toolbar;
     @BindView(R.id.tabLayout) TabLayout tabLayout;
+    @BindView(R.id.pager) ViewPager viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
 
         this.configureToolbar();
 
         this.configureTabLayout();
+
+        this.configureAndShowMainFragmentWithViewPager();
+
+    }
+
+    private void configureAndShowMainFragmentWithViewPager() {
+        viewPager.setAdapter(new ViewPagerAdapter(getSupportFragmentManager()));
+        tabLayout.setupWithViewPager(viewPager);
     }
 
     /**
