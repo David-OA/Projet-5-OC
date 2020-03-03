@@ -2,6 +2,8 @@ package com.oconte.david.mynews.Calls;
 
 import android.support.annotation.Nullable;
 
+import com.oconte.david.mynews.Models.Result;
+
 import java.lang.ref.WeakReference;
 
 import retrofit2.Call;
