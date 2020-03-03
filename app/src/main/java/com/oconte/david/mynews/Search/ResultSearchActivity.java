@@ -1,5 +1,6 @@
-package com.oconte.david.mynews.OptionMenu;
+package com.oconte.david.mynews.Search;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -12,7 +13,8 @@ import com.oconte.david.mynews.R;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-class ResultSearchActivity extends AppCompatActivity {
+@SuppressLint("Registered")
+public class ResultSearchActivity extends AppCompatActivity {
 
     @BindView(R.id.toolbar) Toolbar toolbar;
     @BindView(R.id.test_view_search) TextView textView;

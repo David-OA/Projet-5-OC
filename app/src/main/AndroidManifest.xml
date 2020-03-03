@@ -14,7 +14,7 @@
         <activity android:name=".WebView.WebViewActivity"
             android:parentActivityName=".MainActivity"/>
         <activity android:name=".Search.ResultSearchActivity"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".OptionMenu.SearchViewActivity"/>
         <activity android:name=".OptionMenu.SearchViewActivity"
             android:parentActivityName=".MainActivity"/>
         <activity android:name=".OptionMenu.AboutActivity"

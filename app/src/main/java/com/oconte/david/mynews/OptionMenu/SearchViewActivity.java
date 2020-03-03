@@ -13,6 +13,7 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 
 import com.oconte.david.mynews.R;
+import com.oconte.david.mynews.Search.ResultSearchActivity;
 import com.oconte.david.mynews.Utils.DatePickerFragment;
 
 import java.text.DateFormat;
