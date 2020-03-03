@@ -16,7 +16,11 @@
 
     <style name="ToolBarTheme.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
         <item name="android:textColor">@color/textPrimaryColor</item>
+    </style>
 
+    <style name="MenuToolBarTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:colorBackground">@color/textPrimaryColor</item>
+        <item name="android:textColor">@color/textTitleColor</item>
     </style>
 
 </resources>
