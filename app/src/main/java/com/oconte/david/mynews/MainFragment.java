@@ -11,6 +11,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.oconte.david.mynews.Calls.NYTCalls;
+import com.oconte.david.mynews.Models.Result;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 

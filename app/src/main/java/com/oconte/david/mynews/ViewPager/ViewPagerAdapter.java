@@ -5,6 +5,10 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import com.oconte.david.mynews.MainFragment;
+import com.oconte.david.mynews.MainFragment2;
+import com.oconte.david.mynews.MainFragment3;
+
 public class ViewPagerAdapter extends FragmentPagerAdapter {
 
     public ViewPagerAdapter(FragmentManager fm) {

@@ -8,6 +8,7 @@ import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 
 import com.oconte.david.mynews.MainActivity;
+import com.oconte.david.mynews.MainFragment;
 import com.oconte.david.mynews.R;
 
 public class ViewPagerActivity extends MainActivity {

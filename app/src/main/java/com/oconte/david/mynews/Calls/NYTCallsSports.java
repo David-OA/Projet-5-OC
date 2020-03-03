@@ -3,6 +3,7 @@ package com.oconte.david.mynews.Calls;
 import android.support.annotation.Nullable;
 
 import com.oconte.david.mynews.Models.Result;
+import com.oconte.david.mynews.NYTService;
 
 import java.lang.ref.WeakReference;
 
