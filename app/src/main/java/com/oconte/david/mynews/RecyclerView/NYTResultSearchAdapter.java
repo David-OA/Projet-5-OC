@@ -7,14 +7,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.oconte.david.mynews.Models.Result;
+import com.oconte.david.mynews.Models.ResponseSearch;
+import com.oconte.david.mynews.Models.SearchResult;
 import com.oconte.david.mynews.R;
 
-public class NYTArticleAdapter extends RecyclerView.Adapter<NYTArticleViewHolder> {
+public class NYTResultSearchAdapter extends RecyclerView.Adapter<NYTArticleViewHolder> {
 
-    private Result results = new Result();
+    private SearchResult results = new SearchResult();
 
-    public NYTArticleAdapter() {
+    public NYTResultSearchAdapter() {
     }
 
     @NonNull
@@ -31,17 +32,24 @@ public class NYTArticleAdapter extends RecyclerView.Adapter<NYTArticleViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull NYTArticleViewHolder viewHolder, int position) {
-        viewHolder.updateWithNYTArticle(this.results.articles.get(position));
+        viewHolder.updateWithNYTArticle(this.results.getResponse().getDocs().get(position));
 
     }
 
     @Override
     public int getItemCount() {
-        return this.results.articles.size();
+        ResponseSearch response = this.results.getResponse();
+        if (response == null) {
+            return 0;
+        }
+        return response.getDocs().size();
     }
 
-    public void updateCallRetrofitNews(Result results) {
+    public void updateCallRetrofitNews(SearchResult results) {
         this.results = results;
         this.notifyDataSetChanged();
     }
+
+
+
 }

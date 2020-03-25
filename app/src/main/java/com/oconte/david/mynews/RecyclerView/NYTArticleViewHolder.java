@@ -1,5 +1,6 @@
 package com.oconte.david.mynews.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
@@ -21,24 +22,30 @@ public class NYTArticleViewHolder extends RecyclerView.ViewHolder {
     @BindView(R.id.fragment_main_date) TextView date;
 
     // ImageView
-    @BindView(R.id.fragment_main_image)
-    ImageView imageView;
+    @BindView(R.id.fragment_main_image) ImageView imageView;
 
     public NYTArticleViewHolder(View itemView) {
         super(itemView);
         ButterKnife.bind(this, itemView);
     }
 
+    @SuppressLint("SetTextI18n")
     public void updateWithNYTArticle (Article article) {
         this.textView.setText(article.getTitle());
         this.date.setText(ConfigureDate.convertDateFromAPIToDisplay(article.getPublishedDate()));
         String section = article.getSection();
         String subsection = article.getSubsection();
-        if (subsection.length() <= 0) {
-            this.textView1.setText(section);
+        String sectionName = article.getSectionName();
+        if (section == null) {
+            this.textView1.setText(sectionName);
         } else {
-            this.textView1.setText(section + " > " + subsection);
+            if (subsection.length() <= 0) {
+                this.textView1.setText(section);
+            } else {
+                this.textView1.setText(section + " > " + subsection);
+            }
         }
+
         Picasso.get()
                 .load(getFirstUrl(article))
                 .resize(60, 60)
@@ -54,10 +61,10 @@ public class NYTArticleViewHolder extends RecyclerView.ViewHolder {
         if (article.getMultimedia() != null && article.getMultimedia().size() > 0) {
             String url = article.getMultimedia().get(0).getUrl();
             return url;
-        } /*else if (article.getMedium() != null && article.getMedium().size() > 0) {
-            String url = article.getMedium().get(0).getUrl();
+        } else if (article.getMedium() != null && article.getMedium().size() > 0) {
+            String url = article.getMedium().get(0).getMediaMetadata().get(0).getUrl();
             return url;
-        }*/
+        }
         return null;
     }
 }
