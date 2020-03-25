@@ -20,7 +20,7 @@ import com.oconte.david.mynews.WebView.WebViewActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class MainFragment extends Fragment implements NYTCallsTopStories.Callbacks {
+public class FragmentTopStories extends Fragment implements NYTCallsTopStories.Callbacks {
 
     // FOR DESIGN
     @BindView(R.id.fragment_main_recycler_view) RecyclerView recyclerView;
@@ -36,8 +36,8 @@ public class MainFragment extends Fragment implements NYTCallsTopStories.Callbac
 
     Result result;
 
-    public static MainFragment newInstance(int position) {
-        MainFragment frag = new MainFragment();
+    public static FragmentTopStories newInstance(int position) {
+        FragmentTopStories frag = new FragmentTopStories();
         Bundle args = new Bundle();
         args.putInt(KEY_POSITION, position);
         frag.setArguments(args);
@@ -46,7 +46,7 @@ public class MainFragment extends Fragment implements NYTCallsTopStories.Callbac
     }
 
 
-    public MainFragment() { }
+    public FragmentTopStories() { }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

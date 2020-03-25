@@ -22,7 +22,7 @@ import com.oconte.david.mynews.WebView.WebViewActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class MainFragment3 extends Fragment implements NYTCallsTopStories.Callbacks {
+public class FragmentSports extends Fragment implements NYTCallsTopStories.Callbacks {
 
     // FOR DESIGN
     @BindView(R.id.fragment_main_recycler_view) RecyclerView recyclerView;
@@ -31,14 +31,11 @@ public class MainFragment3 extends Fragment implements NYTCallsTopStories.Callba
     // FOR DATA
     private NYTArticleAdapter adapter;
 
-
     Context context;
 
     Result result;
 
-
-
-    public MainFragment3() { }
+    public FragmentSports() { }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -46,15 +43,9 @@ public class MainFragment3 extends Fragment implements NYTCallsTopStories.Callba
         ButterKnife.bind(this, view);
         this.configureRecyclerView();
 
-        //this.executeHttpRequestWithRetrofit();
         this.executeHttpRequestWithRetrofitSports();
-        //this.executeHttpRequestWithRetrofitMostPopular();
-
-        //this.executeHttpRequestByTablayout();
 
         this.configureOnClickRecyclerView();
-
-
 
         return view;
     }
@@ -92,6 +83,8 @@ public class MainFragment3 extends Fragment implements NYTCallsTopStories.Callba
                     public void onItemClicked(RecyclerView recyclerView, int position, View v) {
                         result.articles.get(position);
 
+
+
                         Intent intent = new Intent(getContext(),WebViewActivity.class);
                         intent.putExtra("url", result.articles.get(position).getUrl());
 
@@ -99,8 +92,6 @@ public class MainFragment3 extends Fragment implements NYTCallsTopStories.Callba
                     }
                 });
     }
-
-
         /*private void configureSwipeRefreshLayout(){
             swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
                 @Override
@@ -113,19 +104,10 @@ public class MainFragment3 extends Fragment implements NYTCallsTopStories.Callba
     // -----------------
     // HTTP REQUEST Retrofit
     // -----------------
-    private void executeHttpRequestWithRetrofit() {
-        //this.updateUIWhenStartingHTTPRequest();
-        NYTCallsTopStories.getTopStories(this, "movies");
-    }
 
     private void executeHttpRequestWithRetrofitSports() {
         NYTCallsSports.getSports(this, "sports");
     }
-
-    private void executeHttpRequestWithRetrofitMostPopular() {
-        NYTCallsMostPopular.getMostPopular(this, "viewed");
-    }
-
 
     @Override
     public void onResponse(@Nullable Result results) {

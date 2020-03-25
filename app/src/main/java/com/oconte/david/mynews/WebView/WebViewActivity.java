@@ -15,12 +15,8 @@ import butterknife.ButterKnife;
 
 public class WebViewActivity extends AppCompatActivity {
 
-    @BindView(R.id.toolbar)
-    Toolbar toolbar;
-    @BindView(R.id.web_view_all_new)
-    WebView webView;
-
-
+    @BindView(R.id.toolbar) Toolbar toolbar;
+    @BindView(R.id.web_view_all_new) WebView webView;
 
     @SuppressLint("SetJavaScriptEnabled")
     @Override

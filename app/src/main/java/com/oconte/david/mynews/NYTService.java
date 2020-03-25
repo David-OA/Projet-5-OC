@@ -26,13 +26,7 @@ public interface NYTService {
             @Query("Begin Date") String beginDate,
             @Query("End Date") String endDate,
             @Query("fq") String querySection,
-            @Query("q") String queryTerm
-            //@Query("page") int pageNumber,
+            @Query("q") String queryTerm,
+            @Query("page") int pageNumber
     );
-
-    public static final Retrofit retrofit = new Retrofit.Builder()
-            .baseUrl("https://api.nytimes.com")
-            .addConverterFactory(GsonConverterFactory.create())
-            .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
-            .build();
 }

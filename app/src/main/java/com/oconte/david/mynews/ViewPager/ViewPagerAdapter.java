@@ -5,9 +5,9 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.oconte.david.mynews.MainFragment;
-import com.oconte.david.mynews.MainFragment2;
-import com.oconte.david.mynews.MainFragment3;
+import com.oconte.david.mynews.FragmentMostPopular;
+import com.oconte.david.mynews.FragmentSports;
+import com.oconte.david.mynews.FragmentTopStories;
 
 public class ViewPagerAdapter extends FragmentPagerAdapter {
 
@@ -20,13 +20,13 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
         switch (position) {
             case 0:
 
-                return new MainFragment();
+                return new FragmentTopStories();
             case 1:
 
-                return new MainFragment2();
+                return new FragmentMostPopular();
             case 2:
 
-                return new MainFragment3();
+                return new FragmentSports();
         }
         return null;
     }

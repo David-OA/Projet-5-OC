@@ -8,7 +8,7 @@ import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 
 import com.oconte.david.mynews.MainActivity;
-import com.oconte.david.mynews.MainFragment;
+import com.oconte.david.mynews.FragmentTopStories;
 import com.oconte.david.mynews.R;
 
 public class ViewPagerActivity extends MainActivity {
@@ -63,7 +63,7 @@ public class ViewPagerActivity extends MainActivity {
 
         @Override
         public Fragment getItem(int position) {
-            return new MainFragment();
+            return new FragmentTopStories();
         }
 
         @Override

@@ -1,10 +1,11 @@
 package com.oconte.david.mynews.Utils;
 
-import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.annotation.RequiresApi;
 import android.support.v4.app.DialogFragment;
 
 import java.util.Calendar;
@@ -12,7 +13,7 @@ import java.util.Objects;
 
 public class DatePickerFragment extends DialogFragment {
 
-    @SuppressLint("NewApi")
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @NonNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
@@ -24,4 +25,5 @@ public class DatePickerFragment extends DialogFragment {
 
         return new DatePickerDialog(Objects.requireNonNull(getActivity()), (DatePickerDialog.OnDateSetListener)getActivity(), year, month, day);
     }
+
 }

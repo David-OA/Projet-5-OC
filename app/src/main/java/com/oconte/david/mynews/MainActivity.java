@@ -23,7 +23,7 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
-    private MainFragment mainFragment;
+    private FragmentTopStories mainFragment;
     @BindView(R.id.toolbar) Toolbar toolbar;
     @BindView(R.id.tabLayout) TabLayout tabLayout;
     @BindView(R.id.pager) ViewPager viewPager;
