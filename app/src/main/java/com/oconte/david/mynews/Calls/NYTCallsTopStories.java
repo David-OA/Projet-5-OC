@@ -11,7 +11,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class NYTCalls {
+public class NYTCallsTopStories {
 
     // Creating a callback
     public interface Callbacks {

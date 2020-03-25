@@ -11,7 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.oconte.david.mynews.Calls.NYTCalls;
+import com.oconte.david.mynews.Calls.NYTCallsTopStories;
 import com.oconte.david.mynews.Calls.NYTCallsMostPopular;
 import com.oconte.david.mynews.Calls.NYTCallsSports;
 import com.oconte.david.mynews.Models.Result;
@@ -22,7 +22,7 @@ import com.oconte.david.mynews.WebView.WebViewActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class MainFragment3 extends Fragment implements NYTCalls.Callbacks {
+public class MainFragment3 extends Fragment implements NYTCallsTopStories.Callbacks {
 
     // FOR DESIGN
     @BindView(R.id.fragment_main_recycler_view) RecyclerView recyclerView;
@@ -115,7 +115,7 @@ public class MainFragment3 extends Fragment implements NYTCalls.Callbacks {
     // -----------------
     private void executeHttpRequestWithRetrofit() {
         //this.updateUIWhenStartingHTTPRequest();
-        NYTCalls.getTopStories(this, "movies");
+        NYTCallsTopStories.getTopStories(this, "movies");
     }
 
     private void executeHttpRequestWithRetrofitSports() {

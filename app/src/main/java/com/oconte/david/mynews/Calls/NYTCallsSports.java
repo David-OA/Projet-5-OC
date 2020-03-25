@@ -3,6 +3,7 @@ package com.oconte.david.mynews.Calls;
 import android.support.annotation.Nullable;
 
 import com.oconte.david.mynews.Models.Result;
+import com.oconte.david.mynews.NYTFactory;
 import com.oconte.david.mynews.NYTService;
 
 import java.lang.ref.WeakReference;
@@ -20,13 +21,13 @@ public class NYTCallsSports {
     }
 
     // Public methode to start fetching
-    public static void getSports(NYTCalls.Callbacks callbacks, String section) {
+    public static void getSports(NYTCallsTopStories.Callbacks callbacks, String section) {
 
         // weak reference to callback (avoid memory leaks)
-        final WeakReference<NYTCalls.Callbacks> callbacksWeakReference = new WeakReference<NYTCalls.Callbacks>(callbacks);
+        final WeakReference<NYTCallsTopStories.Callbacks> callbacksWeakReference = new WeakReference<NYTCallsTopStories.Callbacks>(callbacks);
 
         // Get Retrofit instance and the related endpoints
-        NYTService nytService = NYTService.retrofit.create(NYTService.class);
+        NYTService nytService = NYTFactory.getRetrofit().create(NYTService.class);
 
         // The call on NYT API
         Call<Result> call = nytService.getSports(section);
