@@ -45,12 +45,12 @@ public class SearchViewActivity extends AppCompatActivity implements DatePickerD
         setContentView(R.layout.activity_search_view);
         ButterKnife.bind(this);
 
-
         this.configureToolbar();
 
         this.searchButton();
 
     }
+
 
     @Override
     public void onDestroy() {
@@ -63,7 +63,6 @@ public class SearchViewActivity extends AppCompatActivity implements DatePickerD
     protected void configureToolbar() {
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Search Articles");
-
 
         //afficher le bouton retour
         getSupportActionBar().setHomeButtonEnabled(true);
@@ -115,16 +114,6 @@ public class SearchViewActivity extends AppCompatActivity implements DatePickerD
             travel = mTravel.getText().toString();
         }
 
-        /*Log.d("searchActivity", "queryterm " + query);
-        Log.d("searchActivity", "beginDate " + beginDate);
-        Log.d("searchActivity", "endDate " + endDate);
-        Log.d("searchActivity", "art " + art);
-        Log.d("searchActivity", "business " + business);
-        Log.d("searchActivity", "entrepreneurs " + entrepreneurs);
-        Log.d("searchActivity", "politics " + politics);
-        Log.d("searchActivity", "sports " + sports);
-        Log.d("searchActivity", "travel " + travel);*/
-
         Intent intent = new Intent(this, ResultSearchActivity.class);
         Bundle searchString = new Bundle();
         searchString.putString("extra_query", query);
@@ -139,51 +128,36 @@ public class SearchViewActivity extends AppCompatActivity implements DatePickerD
         intent.putExtras(searchString);
         startActivity(intent);
 
-
         //Toast.makeText(this, "queryterm " + query + " beginDate " + beginDate + " enddate " + endDate + " art " + art, Toast.LENGTH_LONG).show();
 
-        /*Intent intent = new Intent(this, ResultSearchActivity.class);
-        mCategorieResult = CategoriesCheck.getQueryCategories(mCheckList);
-        Bundle searchString = new Bundle();
-        searchString.putString("query", mSearchResult);
-        searchString.putString("q", mCategorieResult);
-        //mResultSearchViewActivity = new ResultSearchActivity();
-        mResultSearchFragment = new ResultSearchFragment();
-        mResultSearchFragment.setArguments(searchString);
-        getSupportFragmentManager().beginTransaction()
-                .replace(R.id.fragment_search_main_recycler_view, mResultSearchFragment)
-                .addToBackStack(SearchViewActivity.class.getSimpleName())
-                .commit();*/
+    }
+
+    ///////////////////////////////////////////////
+    // DATE PICKER
+    ///////////////////////////////////////////////
+
+    private static final int START_SELECTED = 0;
+    private static final int END_SELECTED = 1;
+
+    private int selectedDate;
+
+    /**
+     *  Gere l'apparition du date picker pour un seul
+     * @param v
+     */
+    public void showStartDatePickerDialog(View v) {
+        selectedDate = START_SELECTED;
+        DialogFragment newFragment = new DatePickerFragment();
+        newFragment.show(getSupportFragmentManager(), "datePicker");
 
     }
 
-    private void onHitEnter() { //  Handle the enter key
-
-        /*mQueryTerm.setOnKeyListener(new View.OnKeyListener() {
-            public boolean onKey(View v, int keyCode, KeyEvent event) {
-                if ((event.getAction() == KeyEvent.ACTION_DOWN) &&
-                        (keyCode == KeyEvent.KEYCODE_ENTER) && checkBoxState()) {
-                    InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-                    imm.hideSoftInputFromWindow(mQueryTerm.getWindowToken(), 0);
-                    startResultSearchActivity();
-                    return true;
-                }
-                if ((event.getAction() == KeyEvent.ACTION_DOWN) &&
-                        (keyCode == KeyEvent.KEYCODE_ENTER) && !checkBoxState()) {
-                    Toast toast =
-                            Toast.makeText(getApplicationContext(), "You must check at least one category!", Toast.LENGTH_SHORT);
-                    toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
-                    toast.show();
-                }
-                return false;
-            }
-        });*/
-    }
-
-    public void showDatePickerDialog(View v) {
+    public void showEndDatePickerDialog(View v) {
+        selectedDate = END_SELECTED;
         DialogFragment newFragment = new DatePickerFragment();
         newFragment.show(getSupportFragmentManager(), "datePicker");
     }
+
 
     @Override
     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
@@ -191,14 +165,13 @@ public class SearchViewActivity extends AppCompatActivity implements DatePickerD
         c.set(Calendar.YEAR, year);
         c.set(Calendar.MONTH, month);
         c.set(Calendar.DAY_OF_MONTH, dayOfMonth);
-
-        Calendar calendar = Calendar.getInstance();
-        String dateBeginString = DateFormat.getDateInstance(DateFormat.SHORT).format(calendar.getTime());
-
-        String dateEndString = DateFormat.getDateInstance(DateFormat.SHORT).format(c.getTime());
-
-        mBeginDate.setText(dateBeginString);
-        mEndDate.setText(dateEndString);
+        if (selectedDate == START_SELECTED) {
+            String dateBeginString = DateFormat.getDateInstance(DateFormat.SHORT).format(c.getTime());
+            mBeginDate.setText(dateBeginString);
+        } else if (selectedDate == END_SELECTED) {
+            String dateEndString = DateFormat.getDateInstance(DateFormat.SHORT).format(c.getTime());
+            mEndDate.setText(dateEndString);
+        }
 
     }
 

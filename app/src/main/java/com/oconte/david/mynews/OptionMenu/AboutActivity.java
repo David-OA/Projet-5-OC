@@ -63,5 +63,10 @@ public class AboutActivity extends AppCompatActivity {
                 "```sh\n" +
                 "          Copyright 2020 OCONTE David\n" +
                 "```");
+
+        //InputStream inputStream = this.getResources().openRawResource(R.raw.about);
+        //InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
+
+
     }
 }
