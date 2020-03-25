@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Article implements Serializable {
 
-    @SerializedName("section")
+    @SerializedName("section") // faire un tableau pour rajouter differentes valeures
     @Expose
     private String section;
     @SerializedName("subsection")
@@ -23,9 +23,6 @@ public class Article implements Serializable {
     @SerializedName("url")
     @Expose
     private String url;
-    @SerializedName("byline")
-    @Expose
-    private String byline;
     @SerializedName("item_type")
     @Expose
     private String itemType;
@@ -44,18 +41,6 @@ public class Article implements Serializable {
     @SerializedName("kicker")
     @Expose
     private String kicker;
-    /*@SerializedName("des_facet")
-    @Expose
-    private List<String> desFacet = null;
-    @SerializedName("org_facet")
-    @Expose
-    private List<String> orgFacet = null;
-    @SerializedName("per_facet")
-    @Expose
-    private List<String> perFacet = null;
-    @SerializedName("geo_facet")
-    @Expose
-    private List<Object> geoFacet = null;*/
     @SerializedName("multimedia")
     @Expose
     private List<Multimedium> multimedia = null;
@@ -101,14 +86,6 @@ public class Article implements Serializable {
 
     public void setUrl(String url) {
         this.url = url;
-    }
-
-    public String getByline() {
-        return byline;
-    }
-
-    public void setByline(String byline) {
-        this.byline = byline;
     }
 
     public String getItemType() {
@@ -159,38 +136,6 @@ public class Article implements Serializable {
         this.kicker = kicker;
     }
 
-    /*public List<String> getDesFacet() {
-        return desFacet;
-    }
-
-    public void setDesFacet(List<String> desFacet) {
-        this.desFacet = desFacet;
-    }
-
-    public List<String> getOrgFacet() {
-        return orgFacet;
-    }
-
-    public void setOrgFacet(List<String> orgFacet) {
-        this.orgFacet = orgFacet;
-    }
-
-    public List<String> getPerFacet() {
-        return perFacet;
-    }
-
-    public void setPerFacet(List<String> perFacet) {
-        this.perFacet = perFacet;
-    }
-
-    public List<Object> getGeoFacet() {
-        return geoFacet;
-    }
-
-    public void setGeoFacet(List<Object> geoFacet) {
-        this.geoFacet = geoFacet;
-    }*/
-
     public List<Multimedium> getMultimedia() {
         return multimedia;
     }
@@ -207,10 +152,27 @@ public class Article implements Serializable {
         this.shortUrl = shortUrl;
     }
 
+    ////////////////////////////////////////////////////
+    // FOR TOPSTORIES
+    ////////////////////////////////////////////////////
+
+    @SerializedName("media")
+    @Expose
+    private List<Medium> medium = null;
+
+    public List<Medium> getMedium() {
+        return medium;
+
+    }
+
+    public void setMedia(List<Medium> media) {
+        this.medium = medium;
+
+    }
+
     ///////////////////////////////////////////////////
     // FOR SEARCH
     ///////////////////////////////////
-
 
     @SerializedName("web_url")
     @Expose
@@ -263,6 +225,26 @@ public class Article implements Serializable {
     @SerializedName("uri")
     @Expose
     private String uri;
+
+    @SerializedName("status")
+    @Expose
+    private String status;
+    @SerializedName("copyright")
+    @Expose
+    private String copyright;
+    @SerializedName("response")
+    @Expose
+    private ResponseSearch response;
+
+
+
+    public ResponseSearch getResponse() {
+        return response;
+    }
+
+    public void setResponse(ResponseSearch response) {
+        this.response = response;
+    }
 
     public String getWebUrl() {
         return webUrl;
