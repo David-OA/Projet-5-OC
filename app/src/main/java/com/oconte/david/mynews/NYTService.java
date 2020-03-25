@@ -14,7 +14,7 @@ import retrofit2.http.Query;
 public interface NYTService {
 
     @GET("/svc/topstories/v2/{section}.json?api-key=l0bvAgiwuO57HwCfWGjBaEMWqjUdAMoG")
-    Call<Result> getFollowing(@Path("section") String section);
+    Call<Result> getTopStories(@Path("section") String section);
 
     @GET("/svc/mostpopular/v2/{section}/1.json?api-key=l0bvAgiwuO57HwCfWGjBaEMWqjUdAMoG")
     Call<Result> getMostPopular(@Path("section") String section);
