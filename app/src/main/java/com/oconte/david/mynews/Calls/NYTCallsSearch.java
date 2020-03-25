@@ -17,7 +17,7 @@ public class NYTCallsSearch {
 
     // Creating a callback
     public interface Callbacks {
-        void onResponse(@Nullable Result results);
+        void onResponse(@Nullable SearchResult response);
         void onFailure();
     }
 

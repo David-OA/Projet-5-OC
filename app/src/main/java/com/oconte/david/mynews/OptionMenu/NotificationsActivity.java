@@ -16,18 +16,17 @@ import com.oconte.david.mynews.R;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+import static com.oconte.david.mynews.Utils.App.CHANNEL_ID;
+
 public class NotificationsActivity extends AppCompatActivity {
 
     @BindView(R.id.toolbar) Toolbar toolbar;
 
-    @BindView(R.id.notification_query_term)
-    EditText notificationQueryTerm;
-    @BindView(R.id.notification_switch)
-    SwitchCompat switchNotification;
+    @BindView(R.id.notification_query_term) EditText notificationQueryTerm;
+    @BindView(R.id.notification_switch) SwitchCompat switchNotification;
 
     // CheckBox
-    @BindView(R.id.notification_item_art)
-    CheckBox mNotiArt;
+    @BindView(R.id.notification_item_art) CheckBox mNotiArt;
     @BindView(R.id.notification_item_business) CheckBox mNotiBusiness;
     @BindView(R.id.notification_item_entrepreneurs) CheckBox mNotiEntrepreneurs;
     @BindView(R.id.notification_item_politics) CheckBox mNotiPolitics;
