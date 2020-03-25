@@ -22,28 +22,28 @@ public class NYTCallsMostPopular {
     }
 
     // Public methode to start fetching
-    public static void getSearchSection(NYTCallsSearch.Callbacks callbacks, String beginDate, String endDate, String querySection, String queryTerm, int pageNumber) {
+    public static void getMostPopular(NYTCallsMostPopular.Callbacks callbacks, String section) {
 
         // weak reference to callback (avoid memory leaks)
-        final WeakReference<NYTCallsSearch.Callbacks> callbacksWeakReference = new WeakReference<NYTCallsSearch.Callbacks>(callbacks);
+        final WeakReference<NYTCallsMostPopular.Callbacks> callbacksWeakReference = new WeakReference<NYTCallsMostPopular.Callbacks>(callbacks);
 
         // Get Retrofit instance and the related endpoints
         NYTService nytService = NYTFactory.getRetrofit().create(NYTService.class);
 
         // The call on NYT API
-        Call<SearchResult> call = nytService.getSearchSection(beginDate,endDate,querySection, queryTerm, pageNumber);
+        Call<Result> call = nytService.getMostPopular(section);
 
         // Start the Call
-        call.enqueue(new Callback<SearchResult>() {
+        call.enqueue(new Callback<Result>() {
             @Override
-            public void onResponse(Call<SearchResult> call, Response<SearchResult> response) {
+            public void onResponse(Call<Result> call, Response<Result> response) {
 
                 // Call the proper callback used in controller mainfragment
                 if (callbacksWeakReference.get() != null) callbacksWeakReference.get().onResponse(response.body());
             }
 
             @Override
-            public void onFailure(Call<SearchResult> call, Throwable t) {
+            public void onFailure(Call<Result> call, Throwable t) {
 
                 // Call the proper callback used in controller mainfragment
                 if (callbacksWeakReference.get() != null) callbacksWeakReference.get().onFailure();
