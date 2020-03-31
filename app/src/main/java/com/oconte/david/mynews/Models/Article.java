@@ -8,42 +8,54 @@ import java.util.List;
 
 public class Article implements Serializable {
 
-    @SerializedName("section") // faire un tableau pour rajouter differentes valeures
+    @SerializedName(value = "section", alternate = "section_name") // faire un tableau pour rajouter differentes valeures
     @Expose
     private String section;
-    @SerializedName("subsection")
+
+    @SerializedName(value = "subsection", alternate = "subsection_name")
     @Expose
     private String subsection;
+
     @SerializedName("title")
     @Expose
     private String title;
+
     @SerializedName("abstract")
     @Expose
     private String _abstract;
-    @SerializedName("url")
+
+    @SerializedName(value = "url", alternate = "web_url")
     @Expose
     private String url;
+
     @SerializedName("item_type")
     @Expose
     private String itemType;
+
     @SerializedName("updated_date")
     @Expose
     private String updatedDate;
+
     @SerializedName("created_date")
     @Expose
     private String createdDate;
-    @SerializedName("published_date")
+
+    @SerializedName(value = "published_date", alternate = "pub_date")
     @Expose
     private String publishedDate;
+
     @SerializedName("material_type_facet")
     @Expose
     private String materialTypeFacet;
+
     @SerializedName("kicker")
     @Expose
     private String kicker;
+
     @SerializedName("multimedia")
     @Expose
-    private List<Multimedium> multimedia = null;
+    private List<Multimedia> multimedia = null;
+
     @SerializedName("short_url")
     @Expose
     private String shortUrl;
@@ -136,11 +148,11 @@ public class Article implements Serializable {
         this.kicker = kicker;
     }
 
-    public List<Multimedium> getMultimedia() {
+    public List<Multimedia> getMultimedia() {
         return multimedia;
     }
 
-    public void setMultimedia(List<Multimedium> multimedia) {
+    public void setMultimedia(List<Multimedia> multimedia) {
         this.multimedia = multimedia;
     }
 
@@ -174,9 +186,6 @@ public class Article implements Serializable {
     // FOR SEARCH
     ///////////////////////////////////
 
-    @SerializedName("web_url")
-    @Expose
-    private String webUrl;
     @SerializedName("snippet")
     @Expose
     private String snippet;
@@ -195,21 +204,16 @@ public class Article implements Serializable {
     @SerializedName("keywords")
     @Expose
     private List<Object> keywords = null;
-    @SerializedName("pub_date")
-    @Expose
-    private String pubDate;
+
+
     @SerializedName("document_type")
     @Expose
     private String documentType;
     @SerializedName("news_desk")
     @Expose
     private String newsDesk;
-    @SerializedName("section_name")
-    @Expose
-    private String sectionName;
-    @SerializedName("subsectoinName")
-    @Expose
-    private String subsectoinName;
+
+
     @SerializedName("type_of_material")
     @Expose
     private String typeOfMaterial;
@@ -246,14 +250,6 @@ public class Article implements Serializable {
         this.response = response;
     }
 
-    public String getWebUrl() {
-        return webUrl;
-    }
-
-    public void setWebUrl(String webUrl) {
-        this.webUrl = webUrl;
-    }
-
     public HeadlineSearch getHeadline() {
         return headline;
     }
@@ -262,29 +258,4 @@ public class Article implements Serializable {
         this.headline = headline;
     }
 
-
-    public String getPubDate() {
-        return pubDate;
-    }
-
-    public void setPubDate(String pubDate) {
-        this.pubDate = pubDate;
-    }
-
-
-    public String getSectionName() {
-        return sectionName;
-    }
-
-    public void setSectionName(String sectionName) {
-        this.sectionName = sectionName;
-    }
-
-    public String getSubsectoinName() {
-        return subsectoinName;
-    }
-
-    public void setSubsectoinName(String subsectoinName) {
-        this.subsectoinName = subsectoinName;
-    }
 }

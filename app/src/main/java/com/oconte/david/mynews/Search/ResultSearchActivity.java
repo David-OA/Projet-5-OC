@@ -193,7 +193,7 @@ public class ResultSearchActivity extends AppCompatActivity implements NYTCallsS
     }
 
     private void executeHttpRequestWithRetrofit() {
-        NYTCallsSearch.getSearchSection(this, "20200301", "20200314", "Sports", "soccer", 10);
+        NYTCallsSearch.getSearchSection(this, "20200301", "20200314", "politics", "trump", 10);
 
     }
 

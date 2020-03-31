@@ -35,7 +35,7 @@ public class NYTArticleViewHolder extends RecyclerView.ViewHolder {
         this.date.setText(ConfigureDate.convertDateFromAPIToDisplay(article.getPublishedDate()));
         String section = article.getSection();
         String subsection = article.getSubsection();
-        String sectionName = article.getSectionName();
+        String sectionName = article.getSection();
         if (section == null) {
             this.textView1.setText(sectionName);
         } else {
