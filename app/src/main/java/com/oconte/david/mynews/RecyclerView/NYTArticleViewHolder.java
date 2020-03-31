@@ -31,8 +31,15 @@ public class NYTArticleViewHolder extends RecyclerView.ViewHolder {
 
     @SuppressLint("SetTextI18n")
     public void updateWithNYTArticle (Article article) {
-        this.textView.setText(article.getTitle());
+        String title = article.getTitle();
+        if (title == null) {
+            this.textView.setText(article.getHeadline().getMain());
+        } else {
+            this.textView.setText(title);
+        }
+
         this.date.setText(ConfigureDate.convertDateFromAPIToDisplay(article.getPublishedDate()));
+
         String section = article.getSection();
         String subsection = article.getSubsection();
         String sectionName = article.getSection();
