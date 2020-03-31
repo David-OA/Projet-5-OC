@@ -189,18 +189,23 @@ public class Article implements Serializable {
     @SerializedName("snippet")
     @Expose
     private String snippet;
+
     @SerializedName("lead_paragraph")
     @Expose
     private String leadParagraph;
+
     @SerializedName("blog")
     @Expose
     private Object blog;
+
     @SerializedName("source")
     @Expose
     private String source;
+
     @SerializedName("headline")
     @Expose
     private HeadlineSearch headline;
+
     @SerializedName("keywords")
     @Expose
     private List<Object> keywords = null;
@@ -217,15 +222,19 @@ public class Article implements Serializable {
     @SerializedName("type_of_material")
     @Expose
     private String typeOfMaterial;
+
     @SerializedName("_id")
     @Expose
     private String id;
+
     @SerializedName("word_count")
     @Expose
     private Integer wordCount;
+
     @SerializedName("score")
     @Expose
     private Integer score;
+
     @SerializedName("uri")
     @Expose
     private String uri;
@@ -233,9 +242,11 @@ public class Article implements Serializable {
     @SerializedName("status")
     @Expose
     private String status;
+
     @SerializedName("copyright")
     @Expose
     private String copyright;
+
     @SerializedName("response")
     @Expose
     private ResponseSearch response;

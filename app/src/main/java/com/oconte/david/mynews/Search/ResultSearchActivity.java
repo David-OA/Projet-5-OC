@@ -193,7 +193,9 @@ public class ResultSearchActivity extends AppCompatActivity implements NYTCallsS
     }
 
     private void executeHttpRequestWithRetrofit() {
-        NYTCallsSearch.getSearchSection(this, "20200301", "20200314", "politics", "trump", 10);
+        //NYTCallsSearch.getSearchSection(this, "20200301", "20200314", "politics", "trump", 10); // cette ligne marche
+        //NYTCallsSearch.getSearchSection(this, "20200101", "20200314", "sports", "kobe", 10); // cette ligne ne marche pas probleme qd subsection est null
+        NYTCallsSearch.getSearchSection(this, "20200301", "20200314", "technology", "3D", 10); // probleme qd subsection est null
 
     }
 

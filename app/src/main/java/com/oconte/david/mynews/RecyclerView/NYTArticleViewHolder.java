@@ -39,7 +39,7 @@ public class NYTArticleViewHolder extends RecyclerView.ViewHolder {
         if (section == null) {
             this.textView1.setText(sectionName);
         } else {
-            if (subsection.length() <= 0) {
+            if (subsection == null) {
                 this.textView1.setText(section);
             } else {
                 this.textView1.setText(section + " > " + subsection);
