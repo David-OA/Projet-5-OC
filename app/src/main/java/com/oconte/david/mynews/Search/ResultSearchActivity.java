@@ -27,10 +27,8 @@ import butterknife.ButterKnife;
 @SuppressLint("Registered")
 public class ResultSearchActivity extends AppCompatActivity implements NYTCallsSearch.Callbacks {
 
-    @BindView(R.id.toolbar)
-    Toolbar toolbar;
-    @BindView(R.id.test_view_search)
-    TextView textView;
+    @BindView(R.id.toolbar) Toolbar toolbar;
+    @BindView(R.id.test_view_search) TextView textView;
 
     // FOR DESIGN
     @BindView(R.id.result_search_view) RecyclerView recyclerView;
@@ -60,7 +58,6 @@ public class ResultSearchActivity extends AppCompatActivity implements NYTCallsS
         this.configureToolbar();
 
         this.getSearchQuery();
-
     }
 
     @Override
@@ -109,13 +106,11 @@ public class ResultSearchActivity extends AppCompatActivity implements NYTCallsS
         if (query != null) {
             Log.d("searchString", "extra_query" + query);
             Toast.makeText(this, query, Toast.LENGTH_LONG).show();
-
         }
 
         if (beginDate != null) {
             Log.d("searchString", "extra_beginDate " + beginDate);
             Toast.makeText(this, beginDate, Toast.LENGTH_LONG).show();
-
         }
 
         if (endDate != null) {
@@ -155,9 +150,6 @@ public class ResultSearchActivity extends AppCompatActivity implements NYTCallsS
         }
 
         textView.setText(query + " - " + beginDate + " - " + endDate + " - " + art + " - " + business + " - " + entrepreneurs + " - " + politics + " - " + sports + " - " + travel);
-
-        //intent.putExtras(searchString);
-
     }
 
     // Configure RecyclerView, Adapter, LayoutManager
