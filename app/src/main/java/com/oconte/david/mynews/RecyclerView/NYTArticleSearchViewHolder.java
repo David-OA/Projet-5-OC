@@ -57,6 +57,7 @@ public class NYTArticleSearchViewHolder extends RecyclerView.ViewHolder {
         if (firstUrl != null) {
             Picasso.get()
                     .load(firstUrl)
+                    .placeholder(R.drawable.info)
                     .resize(60, 60)
                     .into(this.imageView);
         }
