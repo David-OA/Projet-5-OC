@@ -186,72 +186,13 @@ public class Article implements Serializable {
     // FOR SEARCH
     ///////////////////////////////////
 
-    @SerializedName("snippet")
-    @Expose
-    private String snippet;
-
-    @SerializedName("lead_paragraph")
-    @Expose
-    private String leadParagraph;
-
-    @SerializedName("blog")
-    @Expose
-    private Object blog;
-
-    @SerializedName("source")
-    @Expose
-    private String source;
-
     @SerializedName("headline")
     @Expose
     private HeadlineSearch headline;
 
-    @SerializedName("keywords")
-    @Expose
-    private List<Object> keywords = null;
-
-
-    @SerializedName("document_type")
-    @Expose
-    private String documentType;
-    @SerializedName("news_desk")
-    @Expose
-    private String newsDesk;
-
-
-    @SerializedName("type_of_material")
-    @Expose
-    private String typeOfMaterial;
-
-    @SerializedName("_id")
-    @Expose
-    private String id;
-
-    @SerializedName("word_count")
-    @Expose
-    private Integer wordCount;
-
-    @SerializedName("score")
-    @Expose
-    private Integer score;
-
-    @SerializedName("uri")
-    @Expose
-    private String uri;
-
-    @SerializedName("status")
-    @Expose
-    private String status;
-
-    @SerializedName("copyright")
-    @Expose
-    private String copyright;
-
     @SerializedName("response")
     @Expose
     private ResponseSearch response;
-
-
 
     public ResponseSearch getResponse() {
         return response;
