@@ -60,6 +60,11 @@ public class NYTArticleSearchViewHolder extends RecyclerView.ViewHolder {
                     .placeholder(R.drawable.info)
                     .resize(60, 60)
                     .into(this.imageView);
+        } else {
+            Picasso.get()
+                    .load(R.drawable.info)
+                    .resize(60, 60)
+                    .into(this.imageView);
         }
 
     }
