@@ -14,7 +14,7 @@ import com.squareup.picasso.Picasso;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class NYTArticleViewHolder extends RecyclerView.ViewHolder {
+public class NYTArticleSearchViewHolder extends RecyclerView.ViewHolder {
 
     // TextView
     @BindView(R.id.fragment_main_title) TextView textView;
@@ -24,7 +24,7 @@ public class NYTArticleViewHolder extends RecyclerView.ViewHolder {
     // ImageView
     @BindView(R.id.fragment_main_image) ImageView imageView;
 
-    public NYTArticleViewHolder(View itemView) {
+    public NYTArticleSearchViewHolder(View itemView) {
         super(itemView);
         ButterKnife.bind(this, itemView);
     }
@@ -53,10 +53,14 @@ public class NYTArticleViewHolder extends RecyclerView.ViewHolder {
             }
         }
 
-        Picasso.get()
-                .load(getFirstUrl(article))
-                .resize(60, 60)
-                .into(this.imageView);
+        String firstUrl = getFirstUrl(article);
+        if (firstUrl != null) {
+            Picasso.get()
+                    .load(firstUrl)
+                    .resize(60, 60)
+                    .into(this.imageView);
+        }
+
     }
 
     /**
@@ -67,14 +71,10 @@ public class NYTArticleViewHolder extends RecyclerView.ViewHolder {
     public String getFirstUrl(Article article) {
         if (article.getMultimedia() != null && article.getMultimedia().size() > 0) {
             String url = article.getMultimedia().get(0).getUrl();
-            return url;
-        } else if (article.getMedium() != null && article.getMedium().size() > 0) {
-            String url = article.getMedium().get(0).getMediaMetadata().get(0).getUrl();
-            return url;
-        } else if (article.getMultimedia() != null && article.getMultimedia().size() > 0) {
-            String url = article.getResponse().getDocs().get(0).getMultimedia().get(0).getUrl();
-            return "https://static01.nyt.com" + url;
+            return "https://static01.nyt.com/" + url;
+        } else {
+            return null;
         }
-        return null;
+
     }
 }

@@ -103,53 +103,6 @@ public class ResultSearchActivity extends AppCompatActivity implements NYTCallsS
         sports = searchString.getString("extra_sports");
         travel = searchString.getString("extra_travel");
 
-        if (query != null) {
-            Log.d("searchString", "extra_query" + query);
-            Toast.makeText(this, query, Toast.LENGTH_LONG).show();
-        }
-
-        if (beginDate != null) {
-            Log.d("searchString", "extra_beginDate " + beginDate);
-            Toast.makeText(this, beginDate, Toast.LENGTH_LONG).show();
-        }
-
-        if (endDate != null) {
-            Log.d("searchActivity", "endDate " + endDate);
-            Toast.makeText(this, endDate, Toast.LENGTH_LONG).show();
-        }
-
-
-        if (art != null) {
-            Log.d("searchActivity", "art " + art);
-            Toast.makeText(this, art, Toast.LENGTH_LONG).show();
-        }
-
-        if (business != null) {
-            Log.d("searchActivity", "business " + business);
-            Toast.makeText(this, business, Toast.LENGTH_LONG).show();
-        }
-
-        if (entrepreneurs != null) {
-            Log.d("searchActivity", "entrepreneurs " + entrepreneurs);
-            Toast.makeText(this, entrepreneurs, Toast.LENGTH_LONG).show();
-        }
-
-        if (politics != null) {
-            Log.d("searchActivity", "politics " + politics);
-            Toast.makeText(this, politics, Toast.LENGTH_LONG).show();
-        }
-
-        if (sports != null) {
-            Log.d("searchActivity", "sports " + sports);
-            Toast.makeText(this, sports, Toast.LENGTH_LONG).show();
-        }
-
-        if (travel != null) {
-            Log.d("searchActivity", "travel " + travel);
-            Toast.makeText(this, travel, Toast.LENGTH_LONG).show();
-        }
-
-        textView.setText(query + " - " + beginDate + " - " + endDate + " - " + art + " - " + business + " - " + entrepreneurs + " - " + politics + " - " + sports + " - " + travel);
     }
 
     // Configure RecyclerView, Adapter, LayoutManager

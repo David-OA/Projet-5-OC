@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Article implements Serializable {
 
-    @SerializedName(value = "section", alternate = "section_name") // faire un tableau pour rajouter differentes valeures
+    @SerializedName(value = "section", alternate = "section_name")
     @Expose
     private String section;
 

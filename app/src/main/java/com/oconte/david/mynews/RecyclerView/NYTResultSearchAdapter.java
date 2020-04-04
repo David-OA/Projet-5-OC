@@ -11,7 +11,7 @@ import com.oconte.david.mynews.Models.ResponseSearch;
 import com.oconte.david.mynews.Models.SearchResult;
 import com.oconte.david.mynews.R;
 
-public class NYTResultSearchAdapter extends RecyclerView.Adapter<NYTArticleViewHolder> {
+public class NYTResultSearchAdapter extends RecyclerView.Adapter<NYTArticleSearchViewHolder> {
 
     private SearchResult results = new SearchResult();
 
@@ -20,18 +20,18 @@ public class NYTResultSearchAdapter extends RecyclerView.Adapter<NYTArticleViewH
 
     @NonNull
     @Override
-    public NYTArticleViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public NYTArticleSearchViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
         Context context = parent.getContext();
         LayoutInflater inflater = LayoutInflater.from(context);
         View view = inflater.inflate(R.layout.fragment_main_item, parent, false );
 
-        return new NYTArticleViewHolder(view);
+        return new NYTArticleSearchViewHolder(view);
     }
 
 
     @Override
-    public void onBindViewHolder(@NonNull NYTArticleViewHolder viewHolder, int position) {
+    public void onBindViewHolder(@NonNull NYTArticleSearchViewHolder viewHolder, int position) {
         viewHolder.updateWithNYTArticle(this.results.getResponse().getDocs().get(position));
 
     }
