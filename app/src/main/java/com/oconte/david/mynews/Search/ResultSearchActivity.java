@@ -28,7 +28,6 @@ import butterknife.ButterKnife;
 public class ResultSearchActivity extends AppCompatActivity implements NYTCallsSearch.Callbacks {
 
     @BindView(R.id.toolbar) Toolbar toolbar;
-    @BindView(R.id.test_view_search) TextView textView;
 
     // FOR DESIGN
     @BindView(R.id.result_search_view) RecyclerView recyclerView;
