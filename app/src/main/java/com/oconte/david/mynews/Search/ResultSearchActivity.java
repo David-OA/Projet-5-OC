@@ -87,6 +87,8 @@ public class ResultSearchActivity extends AppCompatActivity implements NYTCallsS
     String sports;
     String travel;
 
+    String sectionTerm;
+
     private void getSearchQuery() {
 
         Bundle searchString = getIntent().getExtras();
@@ -95,12 +97,36 @@ public class ResultSearchActivity extends AppCompatActivity implements NYTCallsS
         query = searchString.getString("extra_query");
         beginDate = searchString.getString("extra_beginDate");
         endDate = searchString.getString("extra_endDate");
+
         art = searchString.getString("extra_art");
+        if (art != null) {
+            sectionTerm = art;
+        }
+
         business = searchString.getString("extra_business");
+        if (business != null) {
+            sectionTerm = business;
+        }
+
         entrepreneurs = searchString.getString("extra_entrepreneurs");
+        if (entrepreneurs != null) {
+            sectionTerm = entrepreneurs;
+        }
+
         politics = searchString.getString("extra_politics");
+        if (politics != null) {
+            sectionTerm = politics;
+        }
+
         sports = searchString.getString("extra_sports");
+        if (sports != null) {
+            sectionTerm = sports;
+        }
+
         travel = searchString.getString("extra_travel");
+        if (travel != null) {
+            sectionTerm = travel;
+        }
 
     }
 
@@ -137,7 +163,9 @@ public class ResultSearchActivity extends AppCompatActivity implements NYTCallsS
     }
 
     private void executeHttpRequestWithRetrofit() {
-        NYTCallsSearch.getSearchSection(this, "20200101", "20200314", "sports", "kobe", 10);
+        getSearchQuery();
+
+        NYTCallsSearch.getSearchSection(this, "20200101", "20200314", sectionTerm, query, 10);
     }
 
     @Override
