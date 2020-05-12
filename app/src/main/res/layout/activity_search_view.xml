@@ -62,7 +62,7 @@
                     android:inputType="date"
                     android:hint="@string/begin_date"
                     android:textSize="@dimen/text_date_size"
-                    android:onClick="showDatePickerDialog"
+                    android:onClick="showStartDatePickerDialog"
                     android:focusable="false"/>
             </android.support.design.widget.TextInputLayout>
 
@@ -83,7 +83,7 @@
                     android:inputType="date"
                     android:hint="@string/end_date"
                     android:textSize="@dimen/text_date_size"
-                    android:onClick="showDatePickerDialog"
+                    android:onClick="showEndDatePickerDialog"
                     android:focusable="false"/>
             </android.support.design.widget.TextInputLayout>
 

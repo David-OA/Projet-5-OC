@@ -1,6 +1,8 @@
 package com.oconte.david.mynews.OptionMenu;
 
+import android.app.AlertDialog;
 import android.app.DatePickerDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
@@ -14,6 +16,7 @@ import android.widget.EditText;
 
 import com.oconte.david.mynews.R;
 import com.oconte.david.mynews.Search.ResultSearchActivity;
+import com.oconte.david.mynews.Utils.ConfigureDate;
 import com.oconte.david.mynews.Utils.DatePickerFragment;
 
 import java.text.DateFormat;
@@ -76,9 +79,67 @@ public class SearchViewActivity extends AppCompatActivity implements DatePickerD
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startResultSearchActivity();
+                if (mQueryTerm.length() <= 0) {
+                    errorQueryTerm();
+
+                } else if (!mArt.isChecked() && !mBusiness.isChecked() && !mEntrepreneurs.isChecked() && !mPolitics.isChecked() && !mSport.isChecked() && !mTravel.isChecked()) {
+                    forgetCheckBox();
+                } else if (ConfigureDate.compareDate(mBeginDate.getText().toString(), mEndDate.getText().toString())){
+                    incorrectDate();
+                } else {
+                    startResultSearchActivity();
+                }
             }
         });
+    }
+
+    ////////////////////////////////////////
+    // Error messages
+    ////////////////////////////////////////
+
+    public void errorQueryTerm() {
+        AlertDialog.Builder myAlertDialogue = new AlertDialog.Builder(this);
+        myAlertDialogue.setTitle("Alert !");
+        myAlertDialogue.setMessage("You forget something");
+
+        myAlertDialogue.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+
+        myAlertDialogue.show();
+    }
+
+    public void forgetCheckBox() {
+        AlertDialog.Builder myAlertDialogue = new AlertDialog.Builder(this);
+        myAlertDialogue.setTitle("Alert !");
+        myAlertDialogue.setMessage("You need to choice one ore more categories");
+
+        myAlertDialogue.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+
+        myAlertDialogue.show();
+    }
+
+    public void incorrectDate() {
+        AlertDialog.Builder myAlertDialogue = new AlertDialog.Builder(this);
+        myAlertDialogue.setTitle("Alert !");
+        myAlertDialogue.setMessage("You are in the future");
+
+        myAlertDialogue.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+
+        myAlertDialogue.show();
     }
 
     /**
@@ -127,8 +188,6 @@ public class SearchViewActivity extends AppCompatActivity implements DatePickerD
         searchString.putString("extra_travel", travel);
         intent.putExtras(searchString);
         startActivity(intent);
-
-        //Toast.makeText(this, "queryterm " + query + " beginDate " + beginDate + " enddate " + endDate + " art " + art, Toast.LENGTH_LONG).show();
 
     }
 

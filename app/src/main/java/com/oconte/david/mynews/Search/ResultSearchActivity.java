@@ -1,7 +1,9 @@
 package com.oconte.david.mynews.Search;
 
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -18,6 +20,7 @@ import com.oconte.david.mynews.Calls.NYTCallsSearch;
 import com.oconte.david.mynews.Models.SearchResult;
 import com.oconte.david.mynews.R;
 import com.oconte.david.mynews.RecyclerView.NYTResultSearchAdapter;
+import com.oconte.david.mynews.Utils.ConfigureDate;
 import com.oconte.david.mynews.WebView.ItemClickSupport;
 import com.oconte.david.mynews.WebView.WebViewActivity;
 
@@ -89,6 +92,10 @@ public class ResultSearchActivity extends AppCompatActivity implements NYTCallsS
 
     String sectionTerm;
 
+    String correctBeginDate;
+
+    String correctendDate;
+
     private void getSearchQuery() {
 
         Bundle searchString = getIntent().getExtras();
@@ -96,36 +103,43 @@ public class ResultSearchActivity extends AppCompatActivity implements NYTCallsS
 
         query = searchString.getString("extra_query");
         beginDate = searchString.getString("extra_beginDate");
+        if (beginDate != null){
+            correctBeginDate = ConfigureDate.convertDateForAPI(beginDate);
+        }
+
         endDate = searchString.getString("extra_endDate");
+        if (endDate != null){
+            correctendDate = ConfigureDate.convertDateForAPI(endDate);
+        }
 
         art = searchString.getString("extra_art");
         if (art != null) {
-            sectionTerm = art;
+            sectionTerm = sectionTerm + "," + art;
         }
 
         business = searchString.getString("extra_business");
         if (business != null) {
-            sectionTerm = business;
+            sectionTerm = sectionTerm + "," + business;
         }
 
         entrepreneurs = searchString.getString("extra_entrepreneurs");
         if (entrepreneurs != null) {
-            sectionTerm = entrepreneurs;
+            sectionTerm = sectionTerm + "," + entrepreneurs;
         }
 
         politics = searchString.getString("extra_politics");
         if (politics != null) {
-            sectionTerm = politics;
+            sectionTerm = sectionTerm + "," + politics;
         }
 
         sports = searchString.getString("extra_sports");
         if (sports != null) {
-            sectionTerm = sports;
+            sectionTerm = sectionTerm + "," + sports;
         }
 
         travel = searchString.getString("extra_travel");
         if (travel != null) {
-            sectionTerm = travel;
+            sectionTerm = sectionTerm + "," + travel;
         }
 
     }
@@ -165,13 +179,17 @@ public class ResultSearchActivity extends AppCompatActivity implements NYTCallsS
     private void executeHttpRequestWithRetrofit() {
         getSearchQuery();
 
-        NYTCallsSearch.getSearchSection(this, "20200101", "20200314", sectionTerm, query, 10);
+        NYTCallsSearch.getSearchSection(this, correctBeginDate, correctendDate, sectionTerm, query, 10);
     }
 
     @Override
     public void onResponse(@Nullable SearchResult response) {
-        this.result = response;
-        this.adapter.updateCallRetrofitNews(response);
+        if (response == null || response.getResponse().getDocs().size() == 0){
+            noMoreNew();
+        } else {
+            this.result = response;
+            this.adapter.updateCallRetrofitNews(response);
+        }
     }
 
     @Override
@@ -183,5 +201,24 @@ public class ResultSearchActivity extends AppCompatActivity implements NYTCallsS
     @Override
     public void onPointerCaptureChanged(boolean hasCapture) {
 
+    }
+
+    ////////////////////////////////////////
+    // Error Message
+    ////////////////////////////////////////
+
+    public void noMoreNew() {
+        AlertDialog.Builder myAlertDialogue = new AlertDialog.Builder(this);
+        myAlertDialogue.setTitle("Alert ! ");
+        myAlertDialogue.setMessage("No more News");
+
+        myAlertDialogue.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+
+        myAlertDialogue.show();
     }
 }
