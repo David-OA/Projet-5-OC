@@ -14,6 +14,8 @@ import com.squareup.picasso.Picasso;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+import static com.oconte.david.mynews.Utils.ConfigureText.convertSectionNameForDisplay;
+
 public class NYTArticleSearchViewHolder extends RecyclerView.ViewHolder {
 
     // TextView
@@ -40,13 +42,13 @@ public class NYTArticleSearchViewHolder extends RecyclerView.ViewHolder {
 
         this.date.setText(ConfigureDate.convertDateFromAPIToDisplay(article.getPublishedDate()));
 
-        String section = article.getSection();
-        String subsection = article.getSubsection();
-        String sectionName = article.getSection();
-        if (section == null) {
+        String section = convertSectionNameForDisplay(article.getSection());
+        String subsection = convertSectionNameForDisplay(article.getSubsection());
+        String sectionName = convertSectionNameForDisplay(article.getSection());
+        if (section.length() <= 0) {
             this.textView1.setText(sectionName);
         } else {
-            if (subsection == null) {
+            if (subsection.length() <= 0) {
                 this.textView1.setText(section);
             } else {
                 this.textView1.setText(section + " > " + subsection);
