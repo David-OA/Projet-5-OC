@@ -1,5 +1,7 @@
 package com.oconte.david.mynews.Utils;
 
+import android.text.TextUtils;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -17,10 +19,11 @@ public class ConfigureDate {
 
     /**
      * Convert the date from API to use this in the format for recyclerview
+     *
      * @param dateString
      * @return
      */
-    public static String convertDateFromAPIToDisplay(String dateString){
+    public static String convertDateFromAPIToDisplay(String dateString) {
         String[] arrayDate = dateString.split("T");
         Date date = new Date();
         try {
@@ -34,7 +37,6 @@ public class ConfigureDate {
     }
 
     /**
-     *
      * @param time
      * @return
      */
@@ -54,6 +56,7 @@ public class ConfigureDate {
 
     /**
      * It's for control date
+     *
      * @param beginDate
      * @param endDate
      * @return
@@ -65,29 +68,59 @@ public class ConfigureDate {
         try {
             beginCal.setTime(sdf.parse(beginDate));
         } catch (ParseException e) {
-            return false;
+            if (!"".equals(beginDate)) {
+                return false;
+            }
+
         }
 
         try {
             endCal.setTime(sdf.parse(endDate));
         } catch (ParseException e) {
-            return false;
+            if (!"".equals(endDate)) {
+                return false;
+            }
         }
-
 
 
         Calendar dateToDay = Calendar.getInstance();
-        if (beginDate != null || endDate != null || dateToDay != null) {
 
-            if (!beginCal.before(endCal)) {
-                return false;
-            }
-
+        if ("".equals(beginDate) && "".equals(endDate)) {
             return true;
-
-        } else {
-            return false;
         }
 
+        if (!"".equals(beginDate) && !"".equals(endDate) && isSameDay(beginCal,endCal )) {
+
+            return true;
+        }
+
+        if (!"".equals(endDate) && isSameDay(dateToDay,endCal )) {
+
+            return true;
+        }
+
+        if (!"".equals(beginDate) && isSameDay(dateToDay,beginCal )) {
+
+            return true;
+        }
+
+        return false;
+
     }
+
+    private static boolean isSameDay(Calendar cal1, Calendar cal2){
+        boolean sameDay = cal1.get(Calendar.DAY_OF_YEAR) == cal2.get(Calendar.DAY_OF_YEAR) &&
+                cal1.get(Calendar.YEAR) == cal2.get(Calendar.YEAR);
+        return sameDay;
+    }
+
+    /*private static boolean isDayBefore(){
+        return ;
+    }
+
+    private static boolean isDayAfter(){
+        return ;
+    }*/
+
+
 }

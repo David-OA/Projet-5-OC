@@ -1,5 +1,7 @@
 package com.oconte.david.mynews;
 
+import com.oconte.david.mynews.Utils.ConfigureDate;
+
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -11,7 +13,9 @@ import static org.junit.Assert.*;
  */
 public class ExampleUnitTest {
     @Test
-    public void addition_isCorrect() {
-        assertEquals(4, 2 + 2);
+    public void testCompareDate() {
+        assertTrue(ConfigureDate.compareDate("01/05/2020", "16/05/2020"));
+        assertTrue(ConfigureDate.compareDate("", "16/05/2020"));
+        //assertFalse(ConfigureDate.compareDate("19/05/2020", "16/05/2020"));
     }
 }
