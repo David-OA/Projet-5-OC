@@ -1,6 +1,7 @@
 package com.oconte.david.mynews.OptionMenu;
 
 import android.app.Notification;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.NotificationManagerCompat;
@@ -12,7 +13,11 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 
 import com.oconte.david.mynews.R;
+import com.oconte.david.mynews.Utils.App;
 
+import androidx.work.Data;
+import androidx.work.OneTimeWorkRequest;
+import androidx.work.WorkManager;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -33,7 +38,14 @@ public class NotificationsActivity extends AppCompatActivity {
     @BindView(R.id.notification_item_sport) CheckBox mNotiSport;
     @BindView(R.id.notification_item_travel) CheckBox mNotiTravel;
 
-    private NotificationManagerCompat notificationManager;
+    private SharedPreferences preferences;
+    private static final String EXTRA_NOTI_QUERY = "extra_noti_query";
+    private static final String EXTRA_NOTI_ART = "extra_noti_art";
+    private static final String EXTRA_NOTI_BUSINESS = "extra_noti_business";
+    private static final String EXTRA_NOTI_ENTREPRENEURS = "extra_noti_entrepreneurs";
+    private static final String EXTRA_NOTI_POLITICS = "extra_noti_politics";
+    private static final String EXTRA_NOTI_SPORTS = "extra_noti_sports";
+    private static final String EXTRA_NOTI_TRAVEL = "extra_noti_travel";
 
 
 
@@ -43,13 +55,12 @@ public class NotificationsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_notifications);
         ButterKnife.bind(this);
 
-        notificationManager = NotificationManagerCompat.from(this);
-
         switchNotification.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked){
-                    sendOnChannel();
+                    getPreferencesNotificationsAndSave();
+                    getWorkManager();
                 }
             }
         });
@@ -73,18 +84,78 @@ public class NotificationsActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
-    public void  sendOnChannel() {
-        String title = notificationQueryTerm.getText().toString();
-        String checkbox = mNotiArt.getText().toString();
-
-        Notification notification = new NotificationCompat.Builder(this, CHANNEL_ID)
-                .setSmallIcon(R.drawable.new_york_time_icon)
-                .setContentTitle(title)
-                .setContentText(checkbox)
-                .setPriority(NotificationCompat.PRIORITY_HIGH)
-                .setCategory(NotificationCompat.CATEGORY_MESSAGE)
+    private void getWorkManager(){
+        getPreferencesNotificationsFromSave();
+        Data data = new Data.Builder()
+                .putString(App.CHANNEL_ID, "The task data passed from NotificationActivity")
                 .build();
 
-        notificationManager.notify(1, notification);
+        //This is the subclass of our WorkRequest
+        final OneTimeWorkRequest workRequest = new OneTimeWorkRequest.Builder(App.class)
+                .setInputData(data)
+                .build();
+
+        WorkManager.getInstance().enqueue(workRequest);
+    }
+
+    private void getPreferencesNotificationsAndSave() {
+
+        String query = notificationQueryTerm.getText().toString();
+
+        String art = null;
+        if (mNotiArt.isChecked()) {
+            art = mNotiArt.getText().toString();
+        }
+
+        String business = null;
+        if (mNotiBusiness.isChecked()) {
+            business = mNotiBusiness.getText().toString();
+        }
+
+        String entrepreneurs = null;
+        if (mNotiEntrepreneurs.isChecked()) {
+            entrepreneurs = mNotiEntrepreneurs.getText().toString();
+        }
+
+        String politics = null;
+        if (mNotiPolitics.isChecked()) {
+            politics = mNotiPolitics.getText().toString();
+        }
+
+        String sports = null;
+        if (mNotiSport.isChecked()) {
+            sports = mNotiSport.getText().toString();
+        }
+
+        String travel = null;
+        if (mNotiTravel.isChecked()) {
+            travel = mNotiTravel.getText().toString();
+        }
+
+        SharedPreferences preferences = getSharedPreferences("EXTRA_NOTI_", MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString(EXTRA_NOTI_QUERY, query);
+        editor.putString(EXTRA_NOTI_ART, art);
+        editor.putString(EXTRA_NOTI_BUSINESS, business);
+        editor.putString(EXTRA_NOTI_ENTREPRENEURS, entrepreneurs);
+        editor.putString(EXTRA_NOTI_POLITICS, politics);
+        editor.putString(EXTRA_NOTI_SPORTS, sports);
+        editor.putString(EXTRA_NOTI_TRAVEL, travel);
+        editor.apply();
+
+
+
+    }
+
+    private void getPreferencesNotificationsFromSave() {
+        preferences = getBaseContext().getSharedPreferences("EXTRA_NOTI_", MODE_PRIVATE);
+        preferences.getString(EXTRA_NOTI_QUERY, null);
+        preferences.getString(EXTRA_NOTI_ART, null);
+        preferences.getString(EXTRA_NOTI_BUSINESS, null);
+        preferences.getString(EXTRA_NOTI_ENTREPRENEURS, null);
+        preferences.getString(EXTRA_NOTI_POLITICS, null);
+        preferences.getString(EXTRA_NOTI_SPORTS, null);
+        preferences.getString(EXTRA_NOTI_TRAVEL, null);
+
     }
 }

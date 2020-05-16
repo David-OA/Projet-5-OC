@@ -84,7 +84,7 @@ public class SearchViewActivity extends AppCompatActivity implements DatePickerD
 
                 } else if (!mArt.isChecked() && !mBusiness.isChecked() && !mEntrepreneurs.isChecked() && !mPolitics.isChecked() && !mSport.isChecked() && !mTravel.isChecked()) {
                     forgetCheckBox();
-                } else if (ConfigureDate.compareDate(mBeginDate.getText().toString(), mEndDate.getText().toString())){
+                } else if (!ConfigureDate.compareDate(mBeginDate.getText().toString(), mEndDate.getText().toString())){
                     incorrectDate();
                 } else {
                     startResultSearchActivity();
