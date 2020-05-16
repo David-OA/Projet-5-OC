@@ -119,10 +119,12 @@ public class ConfigureDate {
                 cal1.get(Calendar.YEAR) < cal2.get(Calendar.YEAR);
         return dayBefore ;
     }
-/*
-    private static boolean isDayAfter(){
-        return ;
-    }*/
+
+    private static boolean isDayAfter(Calendar cal1, Calendar cal2){
+        boolean dayAfter = cal1.get(Calendar.DAY_OF_YEAR) > cal2.get(Calendar.DAY_OF_YEAR) &&
+                cal1.get(Calendar.YEAR) > cal2.get(Calendar.YEAR);
+        return dayAfter ;
+    }
 
 
 }
