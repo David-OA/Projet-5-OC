@@ -114,10 +114,12 @@ public class ConfigureDate {
         return sameDay;
     }
 
-    /*private static boolean isDayBefore(){
-        return ;
+    private static boolean isDayBefore(Calendar cal1, Calendar cal2){
+        boolean dayBefore = cal1.get(Calendar.DAY_OF_YEAR) < cal2.get(Calendar.DAY_OF_YEAR) &&
+                cal1.get(Calendar.YEAR) < cal2.get(Calendar.YEAR);
+        return dayBefore ;
     }
-
+/*
     private static boolean isDayAfter(){
         return ;
     }*/
