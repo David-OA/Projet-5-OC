@@ -94,12 +94,12 @@ public class ConfigureDate {
             return true;
         }
 
-        if (!"".equals(endDate) && isSameDay(dateToDay,endCal )) {
+        if (!"".equals(endDate) && isSameDay(dateToDay,endCal) || isDayBefore(dateToDay, endCal)) {
 
             return true;
         }
 
-        if (!"".equals(beginDate) && isSameDay(dateToDay,beginCal )) {
+        if (!"".equals(beginDate) && (isSameDay(dateToDay,beginCal) || isDayAfter(dateToDay, beginCal) || isDayBefore(beginCal, beginCal))) {
 
             return true;
         }
