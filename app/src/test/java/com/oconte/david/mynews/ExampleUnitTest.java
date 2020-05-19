@@ -16,6 +16,5 @@ public class ExampleUnitTest {
     public void testCompareDate() {
         assertTrue(ConfigureDate.compareDate("01/05/2020", "16/05/2020"));
         assertTrue(ConfigureDate.compareDate("", "16/05/2020"));
-        //assertFalse(ConfigureDate.compareDate("19/05/2020", "16/05/2020"));
     }
 }

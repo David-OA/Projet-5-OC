@@ -9,6 +9,10 @@ import java.util.Date;
 import java.util.Locale;
 
 public class ConfigureDate {
+    /**
+     * This Class is for used to manage the different date formats
+     * and check the right situations for the search part.
+     */
 
     private static final SimpleDateFormat DATE_FORMAT_API =
             new SimpleDateFormat("yyyyMMdd", Locale.FRENCH);
@@ -18,8 +22,7 @@ public class ConfigureDate {
             new SimpleDateFormat("yyyy-MM-dd", Locale.FRENCH);
 
     /**
-     * Convert the date from API to use this in the format for recyclerview
-     *
+     * Convert the date from API to use this in the good format for recyclerview
      * @param dateString
      * @return
      */
@@ -37,6 +40,7 @@ public class ConfigureDate {
     }
 
     /**
+     * It's for convert the Date in the good format for the API.
      * @param time
      * @return
      */
@@ -55,8 +59,7 @@ public class ConfigureDate {
 
 
     /**
-     * It's for control date
-     *
+     * It's for compare date on the search Activity.
      * @param beginDate
      * @param endDate
      * @return
@@ -81,7 +84,6 @@ public class ConfigureDate {
                 return false;
             }
         }
-
 
         Calendar dateToDay = Calendar.getInstance();
 
