@@ -99,7 +99,7 @@ public class ConfigureDate {
             return true;
         }
 
-        if (!"".equals(beginDate) && (isSameDay(dateToDay,beginCal) || isDayAfter(dateToDay, beginCal) || isDayBefore(beginCal, beginCal))) {
+        if (!"".equals(beginDate) || isSameDay(dateToDay,beginCal) || isDayAfter(dateToDay, beginCal) || isDayBefore(beginCal, dateToDay)) {
 
             return true;
         }
