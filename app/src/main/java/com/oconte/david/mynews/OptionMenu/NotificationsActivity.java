@@ -147,7 +147,7 @@ public class NotificationsActivity extends AppCompatActivity {
 
     }
 
-    private void getPreferencesNotificationsFromSave() {
+    public void getPreferencesNotificationsFromSave() {
         preferences = getBaseContext().getSharedPreferences("EXTRA_NOTI_", MODE_PRIVATE);
         preferences.getString(EXTRA_NOTI_QUERY, null);
         preferences.getString(EXTRA_NOTI_ART, null);

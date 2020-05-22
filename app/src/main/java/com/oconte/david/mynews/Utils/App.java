@@ -56,7 +56,7 @@ public class App extends Worker {
     }
 
     private void executeHttpRequestWithRetrofit() {
-        //getSearchQuery();
+        //getPreferencesNotificationsFromSave();
 
         //NYTCallsSearch.getSearchSection(this, correctBeginDate, correctendDate, sectionTerm, query, 10);
     }
