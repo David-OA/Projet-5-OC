@@ -203,9 +203,9 @@ public class ResultSearchActivity extends AppCompatActivity implements NYTCallsS
 
     }
 
-    ////////////////////////////////////////
-    // Error Message
-    ////////////////////////////////////////
+    /**
+     * ERROR MESSAGE
+     */
 
     public void noMoreNew() {
         AlertDialog.Builder myAlertDialogue = new AlertDialog.Builder(this);

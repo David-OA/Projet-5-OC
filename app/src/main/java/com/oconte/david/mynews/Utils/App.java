@@ -32,7 +32,7 @@ public class App extends Worker {
 
         //setting output data
         /*Data data = new Data.Builder()
-                .putString(CHANNEL_ID, "The conclusion of the task")
+                .putString(CHANNEL_ID, "number of page for search")
                 .build();*/
 
 
