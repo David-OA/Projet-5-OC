@@ -12,6 +12,7 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 
+import com.oconte.david.mynews.Calls.NYTCallsSearch;
 import com.oconte.david.mynews.R;
 import com.oconte.david.mynews.Utils.App;
 
@@ -74,6 +75,9 @@ public class NotificationsActivity extends AppCompatActivity {
         super.onDestroy();
     }
 
+    /**
+     * This for the ToolBar
+     */
     protected void configureToolbar() {
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("My News");
@@ -84,10 +88,10 @@ public class NotificationsActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
+
     private void getWorkManager(){
-        getPreferencesNotificationsFromSave();
         Data data = new Data.Builder()
-                .putString(App.CHANNEL_ID, "The task data passed from NotificationActivity")
+                .putString(App.CHANNEL_ID, "There are number of page for the result searchNotification.")
                 .build();
 
         //This is the subclass of our WorkRequest
@@ -158,4 +162,5 @@ public class NotificationsActivity extends AppCompatActivity {
         preferences.getString(EXTRA_NOTI_TRAVEL, null);
 
     }
+
 }
