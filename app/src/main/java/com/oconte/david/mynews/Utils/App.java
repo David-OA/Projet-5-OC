@@ -1,9 +1,11 @@
 package com.oconte.david.mynews.Utils;
 
+import android.app.AlertDialog;
 import android.app.Application;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.support.annotation.NonNull;
@@ -11,6 +13,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.NotificationCompat;
 
 import com.oconte.david.mynews.Calls.NYTCallsSearch;
+import com.oconte.david.mynews.Models.Result;
 import com.oconte.david.mynews.Models.SearchResult;
 import com.oconte.david.mynews.R;
 
@@ -35,6 +38,7 @@ public class App extends Worker implements NYTCallsSearch.Callbacks {
     private static final String EXTRA_NOTI_TRAVEL = "extra_noti_travel";
 
     public static final String CHANNEL_ID = "channel";
+    private Result result;
 
     public App(@NonNull Context context, @NonNull WorkerParameters workerParams) {
         super(context, workerParams);
@@ -86,19 +90,31 @@ public class App extends Worker implements NYTCallsSearch.Callbacks {
     public void onResponse(@Nullable SearchResult response) {
         if (response == null || response.getResponse().getDocs().size() == 0){
             //noMoreNew();
-        } else {
+        } else if (response.getResponse().getDocs().size() != 0){
             //this.result = response;
-            //this.adapter.updateCallRetrofitNews(response);
+            String taskDesc = getInputData().getString(CHANNEL_ID);
+            displayNotification("My News", taskDesc + "Pages Founds");
         }
-
-        String taskDesc = getInputData().getString(CHANNEL_ID);
-        displayNotification("My News", taskDesc);
-
-
     }
 
     @Override
     public void onFailure() {
 
     }
+
+    /*public void noMoreNew() {
+        AlertDialog.Builder myAlertDialogue = new AlertDialog.Builder(this);
+        myAlertDialogue.setTitle("Alert ! ");
+        myAlertDialogue.setMessage("No more News");
+
+        myAlertDialogue.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+
+        myAlertDialogue.show();
+    }*/
+
 }
