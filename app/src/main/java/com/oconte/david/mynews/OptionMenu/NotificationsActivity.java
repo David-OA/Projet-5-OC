@@ -1,6 +1,8 @@
 package com.oconte.david.mynews.OptionMenu;
 
+import android.app.AlertDialog;
 import android.app.Notification;
+import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
@@ -60,8 +62,14 @@ public class NotificationsActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked){
-                    getPreferencesNotificationsAndSave();
-                    getWorkManager();
+                    if (!mNotiArt.isChecked() && !mNotiBusiness.isChecked() && !mNotiEntrepreneurs.isChecked() && !mNotiPolitics.isChecked() && !mNotiSport.isChecked() && !mNotiTravel.isChecked()) {
+                        forgetCheckBox();
+                    } else if (notificationQueryTerm.length() <= 0) {
+                        errorQueryTerm();
+                    } else {
+                        getPreferencesNotificationsAndSave();
+                        getWorkManager();
+                    }
                 }
             }
         });
@@ -161,6 +169,36 @@ public class NotificationsActivity extends AppCompatActivity {
         preferences.getString(EXTRA_NOTI_SPORTS, null);
         preferences.getString(EXTRA_NOTI_TRAVEL, null);
 
+    }
+
+    public void errorQueryTerm() {
+        AlertDialog.Builder myAlertDialogue = new AlertDialog.Builder(this);
+        myAlertDialogue.setTitle("Alert !");
+        myAlertDialogue.setMessage("You forget something");
+
+        myAlertDialogue.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+
+        myAlertDialogue.show();
+    }
+
+    public void forgetCheckBox() {
+        AlertDialog.Builder myAlertDialogue = new AlertDialog.Builder(this);
+        myAlertDialogue.setTitle("Alert !");
+        myAlertDialogue.setMessage("You need to choice one ore more categories");
+
+        myAlertDialogue.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+
+        myAlertDialogue.show();
     }
 
 }

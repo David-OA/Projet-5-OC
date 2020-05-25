@@ -44,9 +44,6 @@ public class App extends Worker implements NYTCallsSearch.Callbacks {
     @Override
     public Result doWork() {
 
-        //getting the input data
-
-
         executeHttpRequestWithRetrofit();
 
         return Result.success();
