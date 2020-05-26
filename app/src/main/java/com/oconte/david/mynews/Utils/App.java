@@ -102,8 +102,8 @@ public class App extends Worker implements NYTCallsSearch.Callbacks {
 
     }
 
-    /*public void noMoreNew() {
-        AlertDialog.Builder myAlertDialogue = new AlertDialog.Builder(this);
+    public void noMoreNew() {
+        AlertDialog.Builder myAlertDialogue = new AlertDialog.Builder(context);
         myAlertDialogue.setTitle("Alert ! ");
         myAlertDialogue.setMessage("No more News");
 
@@ -115,6 +115,6 @@ public class App extends Worker implements NYTCallsSearch.Callbacks {
         });
 
         myAlertDialogue.show();
-    }*/
+    }
 
 }
