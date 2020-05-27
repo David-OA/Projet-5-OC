@@ -29,6 +29,7 @@ public class App extends Worker implements NYTCallsSearch.Callbacks {
     private String querySection;
     private Context context;
 
+
     private static final String EXTRA_NOTI_QUERY = "extra_noti_query";
     private static final String EXTRA_NOTI_ART = "extra_noti_art";
     private static final String EXTRA_NOTI_BUSINESS = "extra_noti_business";
@@ -53,6 +54,11 @@ public class App extends Worker implements NYTCallsSearch.Callbacks {
         return Result.success();
     }
 
+    /**
+     * It's the notification with different elements:
+     * @param title The title of notification here My News.
+     * @param query The response of search Notification.
+     */
     private void displayNotification(String title, String query) {
         NotificationManager notificationManager = (NotificationManager) getApplicationContext().getSystemService(Context.NOTIFICATION_SERVICE);
 
@@ -69,6 +75,9 @@ public class App extends Worker implements NYTCallsSearch.Callbacks {
         notificationManager.notify(1, notification.build());
     }
 
+    /**
+     * It's parameters for search Notification save in the SharedPreferences.
+     */
     private void getDataFromPreferences(){
         preferences = context.getSharedPreferences("EXTRA_NOTI_", MODE_PRIVATE);
         queryTerm = preferences.getString(EXTRA_NOTI_QUERY, null);
@@ -80,20 +89,27 @@ public class App extends Worker implements NYTCallsSearch.Callbacks {
         querySection = preferences.getString(EXTRA_NOTI_TRAVEL, null);
     }
 
+    /**
+     * It's the Http request for notification.
+     */
     private void executeHttpRequestWithRetrofit() {
         getDataFromPreferences();
 
         NYTCallsSearch.getSearchSection(this, null, null, queryTerm, querySection, 0);
     }
 
+    /**
+     * It's the response of search for the notification.
+     * @param response
+     */
     @Override
     public void onResponse(@Nullable SearchResult response) {
         if (response == null || response.getResponse().getDocs().size() == 0){
-            //noMoreNew();
+            noMoreNew();
         } else if (response.getResponse().getDocs().size() != 0){
-            //this.result = response;
-            String taskDesc = getInputData().getString(CHANNEL_ID);
-            displayNotification("My News", taskDesc + "Pages Founds");
+           // this.result = response;
+            String size = getInputData().getString(CHANNEL_ID);
+            displayNotification("My News", size + "Pages Founds");
         }
     }
 
@@ -102,7 +118,10 @@ public class App extends Worker implements NYTCallsSearch.Callbacks {
 
     }
 
-    public void noMoreNew() {
+    /**
+     * Error Message.
+     */
+    private void noMoreNew() {
         AlertDialog.Builder myAlertDialogue = new AlertDialog.Builder(context);
         myAlertDialogue.setTitle("Alert ! ");
         myAlertDialogue.setMessage("No more News");
