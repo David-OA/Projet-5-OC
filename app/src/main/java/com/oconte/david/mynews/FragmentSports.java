@@ -83,23 +83,15 @@ public class FragmentSports extends Fragment implements NYTCallsTopStories.Callb
                     public void onItemClicked(RecyclerView recyclerView, int position, View v) {
                         result.articles.get(position);
 
-
-
                         Intent intent = new Intent(getContext(),WebViewActivity.class);
                         intent.putExtra("url", result.articles.get(position).getUrl());
 
                         startActivity(intent);
                     }
                 });
+
+
     }
-        /*private void configureSwipeRefreshLayout(){
-            swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-                @Override
-                public void onRefresh() {
-                    executeHttpRequestWithRetrofit();
-                }
-            });
-        }*/
 
     // -----------------
     // HTTP REQUEST Retrofit
