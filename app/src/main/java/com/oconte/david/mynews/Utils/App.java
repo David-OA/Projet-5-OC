@@ -111,7 +111,7 @@ public class App extends Worker implements NYTCallsSearch.Callbacks {
         } else if (response.getResponse().getDocs().size() != 0){
             this.result = response; // i change the field type.
             int size = response.getResponse().getDocs().size();
-            displayNotification("My News", size + "Pages Founds");
+            displayNotification("My News", size + " Articles were found");
         }
     }
 
