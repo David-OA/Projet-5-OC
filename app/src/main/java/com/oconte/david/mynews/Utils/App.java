@@ -27,6 +27,7 @@ public class App extends Worker implements NYTCallsSearch.Callbacks {
     private SharedPreferences preferences;
     private String queryTerm;
     private String querySection;
+
     private Context context;
 
 
@@ -39,10 +40,11 @@ public class App extends Worker implements NYTCallsSearch.Callbacks {
     private static final String EXTRA_NOTI_TRAVEL = "extra_noti_travel";
 
     public static final String CHANNEL_ID = "channel";
-    private Result result;
+    private SearchResult result;
 
     public App(@NonNull Context context, @NonNull WorkerParameters workerParams) {
         super(context, workerParams);
+        this.context = context;
     }
 
     @NonNull
@@ -57,9 +59,9 @@ public class App extends Worker implements NYTCallsSearch.Callbacks {
     /**
      * It's the notification with different elements:
      * @param title The title of notification here My News.
-     * @param query The response of search Notification.
+     * @param size The response of search Notification.
      */
-    private void displayNotification(String title, String query) {
+    private void displayNotification(String title, String size) {
         NotificationManager notificationManager = (NotificationManager) getApplicationContext().getSystemService(Context.NOTIFICATION_SERVICE);
 
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
@@ -69,7 +71,7 @@ public class App extends Worker implements NYTCallsSearch.Callbacks {
 
         NotificationCompat.Builder notification = new NotificationCompat.Builder(getApplicationContext(), "simplifiedcoding")
                 .setContentTitle(title)
-                .setContentText(query)
+                .setContentText(size)
                 .setSmallIcon(R.drawable.new_york_time_icon);
 
         notificationManager.notify(1, notification.build());
@@ -107,8 +109,8 @@ public class App extends Worker implements NYTCallsSearch.Callbacks {
         if (response == null || response.getResponse().getDocs().size() == 0){
             noMoreNew();
         } else if (response.getResponse().getDocs().size() != 0){
-           // this.result = response;
-            String size = getInputData().getString(CHANNEL_ID);
+            this.result = response; // i change the field type.
+            int size = response.getResponse().getDocs().size();
             displayNotification("My News", size + "Pages Founds");
         }
     }
