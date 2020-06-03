@@ -1,8 +1,13 @@
 package com.oconte.david.mynews.OptionMenu;
 
+import android.annotation.SuppressLint;
+import android.app.AlarmManager;
 import android.app.AlertDialog;
 import android.app.Notification;
+import android.app.PendingIntent;
+import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
@@ -18,8 +23,12 @@ import com.oconte.david.mynews.Calls.NYTCallsSearch;
 import com.oconte.david.mynews.R;
 import com.oconte.david.mynews.Utils.App;
 
+import java.util.Calendar;
+import java.util.concurrent.TimeUnit;
+
 import androidx.work.Data;
 import androidx.work.OneTimeWorkRequest;
+import androidx.work.PeriodicWorkRequest;
 import androidx.work.WorkManager;
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -103,11 +112,21 @@ public class NotificationsActivity extends AppCompatActivity {
                 .build();
 
         //This is the subclass of our WorkRequest
-        final OneTimeWorkRequest workRequest = new OneTimeWorkRequest.Builder(App.class)
+        final PeriodicWorkRequest periodicWorkRequest = new PeriodicWorkRequest.Builder(App.class,12, TimeUnit.HOURS)
                 .setInputData(data)
                 .build();
 
-        WorkManager.getInstance().enqueue(workRequest);
+        WorkManager.getInstance().enqueue(periodicWorkRequest);
+    }
+
+    @SuppressLint("NewApi")
+    private void startAlarmForWorkManager(Calendar calendar) {
+        AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+        Intent intent = new Intent(this, App.class);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 1, intent, 0);
+
+        alarmManager.setExact(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
+
     }
 
     private void getPreferencesNotificationsAndSave() {
