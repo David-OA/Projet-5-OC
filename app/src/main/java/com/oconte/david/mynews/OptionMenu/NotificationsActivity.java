@@ -106,6 +106,9 @@ public class NotificationsActivity extends AppCompatActivity {
     }
 
 
+    /**
+     * This is for start the workManager Request.
+     */
     private void getWorkManager(){
         Data data = new Data.Builder()
                 .putString(App.CHANNEL_ID, "There are number of page for the result searchNotification.")
@@ -119,6 +122,9 @@ public class NotificationsActivity extends AppCompatActivity {
         WorkManager.getInstance().enqueue(periodicWorkRequest);
     }
 
+    /**
+     * This is for said at WorkManager you start at 12 h and for all Day you work at this time.
+     */
     @SuppressLint("NewApi")
     private void startAlarmForWorkManager() {
         getWorkManager();
@@ -139,6 +145,9 @@ public class NotificationsActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * This is for save data in the sharedPreferences.
+     */
     private void getPreferencesNotificationsAndSave() {
 
         String query = notificationQueryTerm.getText().toString();
@@ -183,9 +192,7 @@ public class NotificationsActivity extends AppCompatActivity {
         editor.putString(EXTRA_NOTI_SPORTS, sports);
         editor.putString(EXTRA_NOTI_TRAVEL, travel);
         editor.apply();
-
-
-
+        
     }
 
     public void getPreferencesNotificationsFromSave() {
