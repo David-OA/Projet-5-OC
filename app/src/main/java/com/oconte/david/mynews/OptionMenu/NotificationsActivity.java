@@ -192,7 +192,7 @@ public class NotificationsActivity extends AppCompatActivity {
         editor.putString(EXTRA_NOTI_SPORTS, sports);
         editor.putString(EXTRA_NOTI_TRAVEL, travel);
         editor.apply();
-        
+
     }
 
     public void getPreferencesNotificationsFromSave() {
