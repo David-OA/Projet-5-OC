@@ -59,7 +59,7 @@ public class NotificationsActivity extends AppCompatActivity {
     private static final String EXTRA_NOTI_SPORTS = "extra_noti_sports";
     private static final String EXTRA_NOTI_TRAVEL = "extra_noti_travel";
 
-
+    Calendar calendar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,7 +77,7 @@ public class NotificationsActivity extends AppCompatActivity {
                         errorQueryTerm();
                     } else {
                         getPreferencesNotificationsAndSave();
-                        getWorkManager();
+                        startAlarmForWorkManager();
                     }
                 }
             }
@@ -120,12 +120,22 @@ public class NotificationsActivity extends AppCompatActivity {
     }
 
     @SuppressLint("NewApi")
-    private void startAlarmForWorkManager(Calendar calendar) {
+    private void startAlarmForWorkManager() {
+        getWorkManager();
         AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTimeInMillis(System.currentTimeMillis());
+        calendar.set(Calendar.HOUR_OF_DAY, 12);
+        calendar.set(Calendar.MINUTE, 0);
+        calendar.set(Calendar.SECOND, 0);
+
         Intent intent = new Intent(this, App.class);
+
+
         PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 1, intent, 0);
 
-        alarmManager.setExact(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
+        alarmManager.setExact(AlarmManager.RTC, calendar.getTimeInMillis(), pendingIntent); //utiliser RTC_WAKEUP  pour le final.
 
     }
 
