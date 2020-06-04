@@ -59,7 +59,7 @@ public class NotificationsActivity extends AppCompatActivity {
     private static final String EXTRA_NOTI_SPORTS = "extra_noti_sports";
     private static final String EXTRA_NOTI_TRAVEL = "extra_noti_travel";
 
-    Calendar calendar;
+    public Calendar calendar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -99,8 +99,6 @@ public class NotificationsActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("My News");
 
-        //afficher le bouton retour
-
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
@@ -114,7 +112,7 @@ public class NotificationsActivity extends AppCompatActivity {
                 .putString(App.CHANNEL_ID, "There are number of page for the result searchNotification.")
                 .build();
 
-        //This is the subclass of our WorkRequest
+        //This is the subclass of periodicWorkRequest
         final PeriodicWorkRequest periodicWorkRequest = new PeriodicWorkRequest.Builder(App.class,12, TimeUnit.HOURS)
                 .setInputData(data)
                 .build();
@@ -128,6 +126,7 @@ public class NotificationsActivity extends AppCompatActivity {
     @SuppressLint("NewApi")
     private void startAlarmForWorkManager() {
         getWorkManager();
+
         AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
 
         Calendar calendar = Calendar.getInstance();
@@ -137,7 +136,6 @@ public class NotificationsActivity extends AppCompatActivity {
         calendar.set(Calendar.SECOND, 0);
 
         Intent intent = new Intent(this, App.class);
-
 
         PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 1, intent, 0);
 
