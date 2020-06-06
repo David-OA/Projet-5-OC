@@ -6,7 +6,7 @@ public class ConfigureText {
         if (name != null){
             return name.replaceAll(";", " >");
         } else {
-            return "No section";
+            return "";
         }
     }
 }
