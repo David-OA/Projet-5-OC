@@ -26,8 +26,6 @@ public class NYTArticleAdapter extends RecyclerView.Adapter<NYTArticleViewHolder
 
     Context context;
 
-    int row_index = -1;
-
     private SharedPreferences preferencesUrl;
     private String url = "extra_url";
 
@@ -58,7 +56,6 @@ public class NYTArticleAdapter extends RecyclerView.Adapter<NYTArticleViewHolder
         viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                row_index = position;
                 notifyDataSetChanged();
             }
 
@@ -73,7 +70,7 @@ public class NYTArticleAdapter extends RecyclerView.Adapter<NYTArticleViewHolder
         if (urls.contains(url)) {
             viewHolder.textView.setTextColor(Color.parseColor("#96ff01"));
             viewHolder.textView1.setTextColor(Color.parseColor("#96ff01"));
-            viewHolder.date.setTextColor(Color.parseColor("#000000"));
+            viewHolder.date.setTextColor(Color.parseColor("#96ff01"));
         } else {
             viewHolder.textView.setTextColor(Color.parseColor("#000000"));
             viewHolder.textView1.setTextColor(Color.parseColor("#000000"));
