@@ -1,6 +1,7 @@
 package com.oconte.david.mynews.WebView;
 
 import android.annotation.SuppressLint;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -56,10 +57,19 @@ public class WebViewActivity extends AppCompatActivity {
                 findViewById(R.id.web_view_all_new).setVisibility(View.VISIBLE);
             }
         });
-        mWebView.loadUrl(getUrlTest());
+        mWebView.loadUrl(getUrl());
+
+        SharedPreferences preferencesUrl = getSharedPreferences("UrlPrefs", MODE_PRIVATE);
+        String urls = preferencesUrl.getString("EXTRA_URL", "");
+
+            preferencesUrl
+                    .edit()
+                    .putString("EXTRA_URL", urls + "," + getUrl())
+                    .apply();
+
     }
 
-    public String getUrlTest() {
+    public String getUrl() {
         return getIntent().getStringExtra("url");
     }
 }

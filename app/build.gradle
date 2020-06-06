@@ -63,6 +63,6 @@ dependencies {
     //WorkManager
     implementation 'android.arch.work:work-runtime:1.0.1'
 
-    //Pour comparer date
+    //For COMPARE DATE
     implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.10'
 }
