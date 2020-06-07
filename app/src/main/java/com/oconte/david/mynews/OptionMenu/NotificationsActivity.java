@@ -139,7 +139,7 @@ public class NotificationsActivity extends AppCompatActivity {
 
         PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 1, intent, 0);
 
-        alarmManager.setExact(AlarmManager.RTC, calendar.getTimeInMillis(), pendingIntent); //utiliser RTC_WAKEUP  pour le final.
+        alarmManager.setExact(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
 
     }
 
