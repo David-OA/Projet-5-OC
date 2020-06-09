@@ -15,6 +15,10 @@ import retrofit2.Response;
 
 public class NYTCallsMostPopular {
 
+    /**
+     * It's the Call to API New York Time for see the Most popular categories.
+     */
+
     // Creating a callback
     public interface Callbacks {
         void onResponse(@Nullable Result results);

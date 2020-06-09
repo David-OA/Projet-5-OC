@@ -14,6 +14,10 @@ import retrofit2.Response;
 
 public class NYTCallsTopStories {
 
+    /**
+     * It's the Call to API New York Time for see the Top Stories categories.
+     */
+
     // Creating a callback
     public interface Callbacks {
         void onResponse(@Nullable Result results);

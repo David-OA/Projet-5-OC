@@ -14,6 +14,10 @@ import retrofit2.Response;
 
 public class NYTCallsSports {
 
+    /**
+     * It's the Call to API New York Time for see the Sports categories.
+     */
+
     // Creating a callback
     public interface Callbacks {
         void onResponse(@Nullable Result results);
