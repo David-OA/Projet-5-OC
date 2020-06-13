@@ -8,6 +8,7 @@ import com.oconte.david.mynews.NYTFactory;
 import com.oconte.david.mynews.NYTService;
 
 import java.lang.ref.WeakReference;
+import java.util.concurrent.Executors;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -26,19 +27,38 @@ public class NYTCallsMostPopular {
     }
 
     // Public methode to start fetching
-    public static void getMostPopular(NYTCallsMostPopular.Callbacks callbacks, String section) {
+    public static void getMostPopular(NYTService nytService,NYTCallsMostPopular.Callbacks callbacks, String section) {
 
         // weak reference to callback (avoid memory leaks)
         final WeakReference<NYTCallsMostPopular.Callbacks> callbacksWeakReference = new WeakReference<NYTCallsMostPopular.Callbacks>(callbacks);
 
+        Executors.newCachedThreadPool().execute(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Response<Result> response = nytService.getMostPopular(section);
+                    if (response.isSuccessful()) {
+                        // Call the proper callback used in controller mainfragment
+                        if (callbacksWeakReference.get() != null) callbacksWeakReference.get().onResponse(response.body());
+                    } else {
+                        // Call the proper callback used in controller mainfragment
+                        if (callbacksWeakReference.get() != null) callbacksWeakReference.get().onFailure();
+                    }
+                } catch (Exception e) {
+                    // Call the proper callback used in controller mainfragment
+                    if (callbacksWeakReference.get() != null) callbacksWeakReference.get().onFailure();
+                }
+
+            }
+        });
         // Get Retrofit instance and the related endpoints
-        NYTService nytService = NYTFactory.getRetrofit().create(NYTService.class);
+        //NYTService nytService = NYTFactory.getRetrofit().create(NYTService.class);
 
         // The call on NYT API
-        Call<Result> call = nytService.getMostPopular(section);
+        //Call<Result> call = nytService.getMostPopular(section);
 
         // Start the Call
-        call.enqueue(new Callback<Result>() {
+        /*call.enqueue(new Callback<Result>() {
             @Override
             public void onResponse(Call<Result> call, Response<Result> response) {
 
@@ -52,6 +72,6 @@ public class NYTCallsMostPopular {
                 // Call the proper callback used in controller mainfragment
                 if (callbacksWeakReference.get() != null) callbacksWeakReference.get().onFailure();
             }
-        });
+        });*/
     }
 }

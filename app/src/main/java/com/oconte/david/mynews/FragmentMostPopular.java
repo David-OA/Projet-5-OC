@@ -106,7 +106,7 @@ public class FragmentMostPopular extends Fragment implements NYTCallsMostPopular
     // -----------------
 
     private void executeHttpRequestWithRetrofitMostPopular() {
-        NYTCallsMostPopular.getMostPopular(this, "viewed");
+        NYTCallsMostPopular.getMostPopular(NYTFactory.getRetrofit().create(NYTService.class),this, "viewed");
     }
 
 

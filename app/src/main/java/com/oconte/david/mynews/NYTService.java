@@ -18,7 +18,7 @@ public interface NYTService {
     Call<Result> getTopStories(@Path("section") String section);
 
     @GET("/svc/mostpopular/v2/{section}/1.json?api-key=l0bvAgiwuO57HwCfWGjBaEMWqjUdAMoG")
-    Call<Result> getMostPopular(@Path("section") String section);
+    Response<Result> getMostPopular(@Path("section") String section);
 
     @GET("/svc/topstories/v2/{section}.json?api-key=l0bvAgiwuO57HwCfWGjBaEMWqjUdAMoG")
     Call<Result> getSports(@Path("section") String section);
