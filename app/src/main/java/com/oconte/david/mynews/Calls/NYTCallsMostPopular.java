@@ -51,27 +51,6 @@ public class NYTCallsMostPopular {
 
             }
         });
-        // Get Retrofit instance and the related endpoints
-        //NYTService nytService = NYTFactory.getRetrofit().create(NYTService.class);
 
-        // The call on NYT API
-        //Call<Result> call = nytService.getMostPopular(section);
-
-        // Start the Call
-        /*call.enqueue(new Callback<Result>() {
-            @Override
-            public void onResponse(Call<Result> call, Response<Result> response) {
-
-                // Call the proper callback used in controller mainfragment
-                if (callbacksWeakReference.get() != null) callbacksWeakReference.get().onResponse(response.body());
-            }
-
-            @Override
-            public void onFailure(Call<Result> call, Throwable t) {
-
-                // Call the proper callback used in controller mainfragment
-                if (callbacksWeakReference.get() != null) callbacksWeakReference.get().onFailure();
-            }
-        });*/
     }
 }
