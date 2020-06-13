@@ -4,6 +4,7 @@ import com.oconte.david.mynews.Models.Result;
 import com.oconte.david.mynews.Models.SearchResult;
 
 import retrofit2.Call;
+import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -23,7 +24,7 @@ public interface NYTService {
     Call<Result> getSports(@Path("section") String section);
 
     @GET("/svc/search/v2/articlesearch.json?api-key=l0bvAgiwuO57HwCfWGjBaEMWqjUdAMoG")
-    Call<SearchResult> getSearchSection(
+    Response<SearchResult> getSearchSection(
             @Query("Begin Date") String beginDate,
             @Query("End Date") String endDate,
             @Query("fq") String querySection,

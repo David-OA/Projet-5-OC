@@ -15,6 +15,8 @@ import android.support.v4.app.NotificationCompat;
 import com.oconte.david.mynews.Calls.NYTCallsSearch;
 import com.oconte.david.mynews.Models.Result;
 import com.oconte.david.mynews.Models.SearchResult;
+import com.oconte.david.mynews.NYTFactory;
+import com.oconte.david.mynews.NYTService;
 import com.oconte.david.mynews.R;
 
 import androidx.work.Worker;
@@ -97,7 +99,7 @@ public class App extends Worker implements NYTCallsSearch.Callbacks {
     private void executeHttpRequestWithRetrofit() {
         getDataFromPreferences();
 
-        NYTCallsSearch.getSearchSection(this, null, null, queryTerm, querySection, 0);
+        NYTCallsSearch.getSearchSection(NYTFactory.getRetrofit().create(NYTService.class),this, null, null, queryTerm, querySection, 0);
     }
 
     /**

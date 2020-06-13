@@ -18,6 +18,7 @@ import android.support.v7.widget.Toolbar;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.oconte.david.mynews.Calls.NYTCallsSearch;
 import com.oconte.david.mynews.R;
@@ -78,6 +79,8 @@ public class NotificationsActivity extends AppCompatActivity {
                     } else {
                         getPreferencesNotificationsAndSave();
                         startAlarmForWorkManager();
+                        Toast.makeText(getBaseContext(), "The notification is ready", Toast.LENGTH_LONG).show();
+                        // ajouter un retour à la home page
                     }
                 }
             }
@@ -131,7 +134,7 @@ public class NotificationsActivity extends AppCompatActivity {
 
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(System.currentTimeMillis());
-        calendar.set(Calendar.HOUR_OF_DAY, 15);
+        calendar.set(Calendar.HOUR_OF_DAY, 12);
         calendar.set(Calendar.MINUTE, 0);
         calendar.set(Calendar.SECOND, 0);
 

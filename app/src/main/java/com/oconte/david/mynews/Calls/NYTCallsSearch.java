@@ -8,6 +8,7 @@ import com.oconte.david.mynews.NYTFactory;
 import com.oconte.david.mynews.NYTService;
 
 import java.lang.ref.WeakReference;
+import java.util.concurrent.Executors;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -26,32 +27,30 @@ public class NYTCallsSearch {
     }
 
     // Public methode to start fetching
-    public static void getSearchSection(NYTCallsSearch.Callbacks callbacks, String beginDate, String endDate, String querySection, String queryTerm, int pageNumber) {
+    public static void getSearchSection(NYTService nytService, NYTCallsSearch.Callbacks callbacks, String beginDate, String endDate, String querySection, String queryTerm, int pageNumber) {
 
         // weak reference to callback (avoid memory leaks)
         final WeakReference<NYTCallsSearch.Callbacks> callbacksWeakReference = new WeakReference<NYTCallsSearch.Callbacks>(callbacks);
 
-        // Get Retrofit instance and the related endpoints
-        NYTService nytService = NYTFactory.getRetrofit().create(NYTService.class);
-
-        // The call on NYT API
-        Call<SearchResult> call = nytService.getSearchSection(beginDate,endDate,querySection, queryTerm, pageNumber);
-
-        // Start the Call
-        call.enqueue(new Callback<SearchResult>() {
+        Executors.newCachedThreadPool().execute(new Runnable() {
             @Override
-            public void onResponse(Call<SearchResult> call, Response<SearchResult> response) {
+            public void run() {
+                try {
+                    Response<SearchResult> response = nytService.getSearchSection(beginDate,endDate,querySection, queryTerm, pageNumber);
+                    if (response.isSuccessful()) {
+                        // Call the proper callback used in controller mainfragment
+                        if (callbacksWeakReference.get() != null) callbacksWeakReference.get().onResponse(response.body());
+                    } else {
+                        // Call the proper callback used in controller mainfragment
+                        if (callbacksWeakReference.get() != null) callbacksWeakReference.get().onFailure();
+                    }
+                } catch (Exception e) {
+                    // Call the proper callback used in controller mainfragment
+                    if (callbacksWeakReference.get() != null) callbacksWeakReference.get().onFailure();
+                }
 
-                // Call the proper callback used in controller mainfragment
-                if (callbacksWeakReference.get() != null) callbacksWeakReference.get().onResponse(response.body());
-            }
-
-            @Override
-            public void onFailure(Call<SearchResult> call, Throwable t) {
-
-                // Call the proper callback used in controller mainfragment
-                if (callbacksWeakReference.get() != null) callbacksWeakReference.get().onFailure();
             }
         });
+
     }
 }

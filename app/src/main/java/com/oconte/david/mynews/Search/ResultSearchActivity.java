@@ -18,6 +18,8 @@ import android.widget.Toast;
 
 import com.oconte.david.mynews.Calls.NYTCallsSearch;
 import com.oconte.david.mynews.Models.SearchResult;
+import com.oconte.david.mynews.NYTFactory;
+import com.oconte.david.mynews.NYTService;
 import com.oconte.david.mynews.R;
 import com.oconte.david.mynews.RecyclerView.NYTResultSearchAdapter;
 import com.oconte.david.mynews.Utils.ConfigureDate;
@@ -179,7 +181,7 @@ public class ResultSearchActivity extends AppCompatActivity implements NYTCallsS
     private void executeHttpRequestWithRetrofit() {
         getSearchQuery();
 
-        NYTCallsSearch.getSearchSection(this, correctBeginDate, correctendDate, sectionTerm, query, 10);
+        NYTCallsSearch.getSearchSection(NYTFactory.getRetrofit().create(NYTService.class),this, correctBeginDate, correctendDate, sectionTerm, query, 10);
     }
 
     @Override

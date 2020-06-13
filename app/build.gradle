@@ -65,4 +65,7 @@ dependencies {
 
     //For COMPARE DATE
     implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.10'
+
+    //MOCKITO
+    testImplementation("org.mockito:mockito-core:3.2.0")
 }
