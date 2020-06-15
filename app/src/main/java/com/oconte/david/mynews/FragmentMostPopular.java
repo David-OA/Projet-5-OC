@@ -11,9 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.oconte.david.mynews.Calls.NYTCallsTopStories;
 import com.oconte.david.mynews.Calls.NYTCallsMostPopular;
-import com.oconte.david.mynews.Calls.NYTCallsSports;
 import com.oconte.david.mynews.Models.Result;
 import com.oconte.david.mynews.RecyclerView.NYTArticleAdapter;
 import com.oconte.david.mynews.WebView.ItemClickSupport;

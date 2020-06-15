@@ -2,7 +2,6 @@ package com.oconte.david.mynews;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -11,11 +10,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.oconte.david.mynews.Calls.NYTCallsTopStories;
-import com.oconte.david.mynews.Calls.NYTCallsMostPopular;
-import com.oconte.david.mynews.Calls.NYTCallsSports;
 import com.oconte.david.mynews.Models.Result;
 import com.oconte.david.mynews.RecyclerView.NYTArticleAdapter;
 import com.oconte.david.mynews.WebView.ItemClickSupport;
@@ -99,7 +95,8 @@ public class FragmentSports extends Fragment implements NYTCallsTopStories.Callb
     // -----------------
 
     private void executeHttpRequestWithRetrofitSports() {
-        NYTCallsSports.getSports(this, "sports");
+        NYTCallsTopStories.getTopStories(NYTFactory.getRetrofit().create(NYTService.class),this, "sports");
+        //NYTCallsTopStories.getTopStories(NYTFactory.getRetrofit().create(NYTService.class),this, "automobiles");
     }
 
     @Override

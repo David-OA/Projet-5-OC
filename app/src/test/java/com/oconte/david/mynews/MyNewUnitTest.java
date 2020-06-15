@@ -1,16 +1,7 @@
 package com.oconte.david.mynews;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.support.annotation.Nullable;
-
-import com.oconte.david.mynews.Calls.NYTCallsMostPopular;
 import com.oconte.david.mynews.Calls.NYTCallsSearch;
-import com.oconte.david.mynews.Calls.NYTCallsSports;
-import com.oconte.david.mynews.Calls.NYTCallsTopStories;
-import com.oconte.david.mynews.Models.Result;
 import com.oconte.david.mynews.Models.SearchResult;
-import com.oconte.david.mynews.Search.ResultSearchActivity;
 import com.oconte.david.mynews.Utils.ConfigureDate;
 
 import org.junit.Test;
@@ -18,14 +9,10 @@ import org.mockito.Mockito;
 
 import java.io.IOException;
 
-import okhttp3.MediaType;
-import okhttp3.Request;
-import okhttp3.ResponseBody;
 import retrofit2.Call;
-import retrofit2.Callback;
 import retrofit2.Response;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
