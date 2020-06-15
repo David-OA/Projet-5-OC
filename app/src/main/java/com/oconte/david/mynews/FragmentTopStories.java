@@ -116,7 +116,7 @@ public class FragmentTopStories extends Fragment implements NYTCallsTopStories.C
     // -----------------
     private void executeHttpRequestWithRetrofit() {
         //this.updateUIWhenStartingHTTPRequest();
-        NYTCallsTopStories.getTopStories(this, "movies");
+        NYTCallsTopStories.getTopStories(NYTFactory.getRetrofit().create(NYTService.class),this, "movies");
     }
 
 
