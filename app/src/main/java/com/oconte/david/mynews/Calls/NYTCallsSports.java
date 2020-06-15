@@ -26,10 +26,10 @@ public class NYTCallsSports {
     }
 
     // Public methode to start fetching
-    public static void getSports(NYTService nytService,NYTCallsTopStories.Callbacks callbacks, String section) {
+    public static void getSports(NYTService nytService,NYTCallsSports.Callbacks callbacks, String section) {
 
         // weak reference to callback (avoid memory leaks)
-        final WeakReference<NYTCallsTopStories.Callbacks> callbacksWeakReference = new WeakReference<NYTCallsTopStories.Callbacks>(callbacks);
+        final WeakReference<NYTCallsSports.Callbacks> callbacksWeakReference = new WeakReference<NYTCallsSports.Callbacks>(callbacks);
 
         Executors.newCachedThreadPool().execute(new Runnable() {
             @Override

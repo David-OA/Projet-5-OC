@@ -1,17 +1,13 @@
 package com.oconte.david.mynews.Calls;
 
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
 import com.oconte.david.mynews.Models.Result;
-import com.oconte.david.mynews.NYTFactory;
 import com.oconte.david.mynews.NYTService;
 
 import java.lang.ref.WeakReference;
 import java.util.concurrent.Executors;
 
-import retrofit2.Call;
-import retrofit2.Callback;
 import retrofit2.Response;
 
 public class NYTCallsTopStories {

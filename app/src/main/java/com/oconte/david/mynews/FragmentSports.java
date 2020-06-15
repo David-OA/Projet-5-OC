@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.oconte.david.mynews.Calls.NYTCallsSports;
 import com.oconte.david.mynews.Calls.NYTCallsTopStories;
 import com.oconte.david.mynews.Models.Result;
 import com.oconte.david.mynews.RecyclerView.NYTArticleAdapter;
@@ -20,7 +21,7 @@ import com.oconte.david.mynews.WebView.WebViewActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class FragmentSports extends Fragment implements NYTCallsTopStories.Callbacks {
+public class FragmentSports extends Fragment implements NYTCallsSports.Callbacks {
 
     // FOR DESIGN
     @BindView(R.id.fragment_main_recycler_view) RecyclerView recyclerView;
@@ -95,7 +96,8 @@ public class FragmentSports extends Fragment implements NYTCallsTopStories.Callb
     // -----------------
 
     private void executeHttpRequestWithRetrofitSports() {
-        NYTCallsTopStories.getTopStories(NYTFactory.getRetrofit().create(NYTService.class),this, "sports");
+        //NYTCallsTopStories.getTopStories(NYTFactory.getRetrofit().create(NYTService.class),this, "sports");
+        NYTCallsSports.getSports(NYTFactory.getRetrofit().create(NYTService.class),this, "sports");
         //NYTCallsTopStories.getTopStories(NYTFactory.getRetrofit().create(NYTService.class),this, "automobiles");
     }
 
