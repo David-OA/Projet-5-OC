@@ -36,7 +36,7 @@ public class NYTCallsMostPopular {
             @Override
             public void run() {
                 try {
-                    Response<Result> response = nytService.getMostPopular(section);
+                    Response<Result> response = nytService.getMostPopular(section).execute();
                     if (response.isSuccessful()) {
                         // Call the proper callback used in controller mainfragment
                         if (callbacksWeakReference.get() != null) callbacksWeakReference.get().onResponse(response.body());
