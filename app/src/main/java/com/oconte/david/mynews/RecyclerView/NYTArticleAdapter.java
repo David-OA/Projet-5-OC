@@ -26,13 +26,7 @@ public class NYTArticleAdapter extends RecyclerView.Adapter<NYTArticleViewHolder
 
     Context context;
 
-    private SharedPreferences preferencesUrl;
     private String url = "extra_url";
-
-    /*public NYTArticleAdapter(Result results, Context context) {
-        this.results = results;
-        this.context = context;
-    }*/
 
     public NYTArticleAdapter() {
     }

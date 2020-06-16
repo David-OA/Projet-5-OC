@@ -97,6 +97,8 @@ public class FragmentSports extends Fragment implements NYTCallsSports.Callbacks
 
     private void executeHttpRequestWithRetrofitSports() {
         NYTCallsSports.getSports(NYTFactory.getRetrofit().create(NYTService.class), this, "sports");
+        //NYTCallsTopStories.getTopStories(NYTFactory.getRetrofit().create(NYTService.class),this, "sports");
+        //NYTCallsTopStories.getTopStories(NYTFactory.getRetrofit().create(NYTService.class),this, "science");
     }
 
     @Override

@@ -56,7 +56,7 @@ public class ViewPagerActivity extends MainActivity {
      * A simple pager adapter that represents 3 PageFragment objects, in
      * sequence.
      */
-    private class ViewPagerAdapter extends FragmentStatePagerAdapter {
+    private static class ViewPagerAdapter extends FragmentStatePagerAdapter {
         public ViewPagerAdapter(FragmentManager fm) {
             super(fm);
         }

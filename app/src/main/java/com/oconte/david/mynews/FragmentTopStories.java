@@ -24,7 +24,6 @@ public class FragmentTopStories extends Fragment implements NYTCallsTopStories.C
 
     // FOR DESIGN
     @BindView(R.id.fragment_main_recycler_view) RecyclerView recyclerView;
-    //@BindView(R.id.fragment_main_swipe_container) SwipeRefreshLayout swipeRefreshLayout;
 
     // FOR DATA
     private NYTArticleAdapter adapter;
@@ -41,7 +40,7 @@ public class FragmentTopStories extends Fragment implements NYTCallsTopStories.C
         ButterKnife.bind(this, view);
         this.configureRecyclerView();
 
-        this.executeHttpRequestWithRetrofit();
+        this.executeHttpRequestWithRetrofitTopStories();
 
         this.configureOnClickRecyclerView();
 
@@ -95,10 +94,9 @@ public class FragmentTopStories extends Fragment implements NYTCallsTopStories.C
     // -----------------
     // HTTP REQUEST Retrofit
     // -----------------
-    private void executeHttpRequestWithRetrofit() {
-        //this.updateUIWhenStartingHTTPRequest();
-        //NYTCallsTopStories.getTopStories(NYTFactory.getRetrofit().create(NYTService.class),this, "home");
+    private void executeHttpRequestWithRetrofitTopStories() {
         NYTCallsTopStories.getTopStories(NYTFactory.getRetrofit().create(NYTService.class),this, "home");
+        //NYTCallsTopStories.getTopStories(NYTFactory.getRetrofit().create(NYTService.class),this, "arts");
     }
 
 
