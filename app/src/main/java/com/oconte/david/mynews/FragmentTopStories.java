@@ -29,22 +29,9 @@ public class FragmentTopStories extends Fragment implements NYTCallsTopStories.C
     // FOR DATA
     private NYTArticleAdapter adapter;
 
-    private static final String KEY_POSITION = "position";
-    private int position;
-
     Context context;
 
     Result result;
-
-    public static FragmentTopStories newInstance(int position) {
-        FragmentTopStories frag = new FragmentTopStories();
-        Bundle args = new Bundle();
-        args.putInt(KEY_POSITION, position);
-        frag.setArguments(args);
-
-        return (frag);
-    }
-
 
     public FragmentTopStories() { }
 
@@ -54,15 +41,9 @@ public class FragmentTopStories extends Fragment implements NYTCallsTopStories.C
         ButterKnife.bind(this, view);
         this.configureRecyclerView();
 
-        if (getArguments() != null) {
-            position = getArguments().getInt(KEY_POSITION);
-        }
-
         this.executeHttpRequestWithRetrofit();
 
         this.configureOnClickRecyclerView();
-
-
 
         return view;
     }
@@ -116,6 +97,7 @@ public class FragmentTopStories extends Fragment implements NYTCallsTopStories.C
     // -----------------
     private void executeHttpRequestWithRetrofit() {
         //this.updateUIWhenStartingHTTPRequest();
+        //NYTCallsTopStories.getTopStories(NYTFactory.getRetrofit().create(NYTService.class),this, "home");
         NYTCallsTopStories.getTopStories(NYTFactory.getRetrofit().create(NYTService.class),this, "home");
     }
 

@@ -27,7 +27,7 @@ public class NYTCallsMostPopular {
     }
 
     // Public methode to start fetching
-    public static void getMostPopular(NYTService nytService,NYTCallsMostPopular.Callbacks callbacks, String section) {
+    public static void getMostPopular(NYTService nytService, NYTCallsMostPopular.Callbacks callbacks, String section) {
 
         // weak reference to callback (avoid memory leaks)
         final WeakReference<NYTCallsMostPopular.Callbacks> callbacksWeakReference = new WeakReference<NYTCallsMostPopular.Callbacks>(callbacks);
