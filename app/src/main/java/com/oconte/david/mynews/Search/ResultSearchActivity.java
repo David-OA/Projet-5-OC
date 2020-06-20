@@ -181,7 +181,7 @@ public class ResultSearchActivity extends AppCompatActivity implements NYTCallsS
     private void executeHttpRequestWithRetrofit() {
         getSearchQuery();
 
-        NYTCallsSearch.getSearchSection(NYTFactory.getRetrofit().create(NYTService.class),this, correctBeginDate, correctendDate, sectionTerm, query, 10);
+        NYTCallsSearch.getSearchSection(this, correctBeginDate, correctendDate, sectionTerm, query, 10);
     }
 
     @Override

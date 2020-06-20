@@ -99,7 +99,7 @@ public class App extends Worker implements NYTCallsSearch.Callbacks {
     private void executeHttpRequestWithRetrofit() {
         getDataFromPreferences();
 
-        NYTCallsSearch.getSearchSection(NYTFactory.getRetrofit().create(NYTService.class),this, null, null, queryTerm, querySection, 0);
+        NYTCallsSearch.getSearchSection(this, null, null, queryTerm, querySection, 0);
     }
 
     /**

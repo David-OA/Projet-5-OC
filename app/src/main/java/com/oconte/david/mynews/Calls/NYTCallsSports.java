@@ -26,12 +26,35 @@ public class NYTCallsSports {
     }
 
     // Public methode to start fetching
-    public static void getSports(NYTService nytService,NYTCallsSports.Callbacks callbacks, String section) {
+    public static void getSports(NYTCallsSports.Callbacks callbacks, String section) {
 
         // weak reference to callback (avoid memory leaks)
         final WeakReference<NYTCallsSports.Callbacks> callbacksWeakReference = new WeakReference<NYTCallsSports.Callbacks>(callbacks);
 
-        Executors.newCachedThreadPool().execute(new Runnable() {
+        // Get Retrofit instance and the related endpoints
+        NYTService nytService = NYTFactory.getRetrofit().create(NYTService.class);
+
+        // The call on NYT API
+        Call<Result> call = nytService.getSports(section);
+
+        // Start the Call
+        call.enqueue(new Callback<Result>() {
+            @Override
+            public void onResponse(Call<Result> call, Response<Result> response) {
+
+                // Call the proper callback used in controller mainfragment
+                if (callbacksWeakReference.get() != null) callbacksWeakReference.get().onResponse(response.body());
+            }
+
+            @Override
+            public void onFailure(Call<Result> call, Throwable t) {
+
+                // Call the proper callback used in controller mainfragment
+                if (callbacksWeakReference.get() != null) callbacksWeakReference.get().onFailure();
+            }
+        });
+
+        /*Executors.newCachedThreadPool().execute(new Runnable() {
             @Override
             public void run() {
                 try {
@@ -49,7 +72,7 @@ public class NYTCallsSports {
                 }
 
             }
-        });
+        });*/
 
     }
 }

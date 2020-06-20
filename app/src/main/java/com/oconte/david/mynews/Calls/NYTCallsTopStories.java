@@ -26,13 +26,13 @@ public class NYTCallsTopStories {
     }
 
     // Public methode to start fetching
-    public static void getTopStories(NYTService nytService,NYTCallsTopStories.Callbacks callbacks, String section) {
+    public static void getTopStories(NYTCallsTopStories.Callbacks callbacks, String section) {
 
         // weak reference to callback (avoid memory leaks)
         final WeakReference<NYTCallsTopStories.Callbacks> callbacksWeakReference = new WeakReference<NYTCallsTopStories.Callbacks>(callbacks);
 
         // Get Retrofit instance and the related endpoints
-       /* NYTService nytService = NYTFactory.getRetrofit().create(NYTService.class);
+        NYTService nytService = NYTFactory.getRetrofit().create(NYTService.class);
 
         // The call on NYT API
         Call<Result> call = nytService.getTopStories(section);
@@ -52,9 +52,9 @@ public class NYTCallsTopStories {
                 // Call the proper callback used in controller mainfragment
                 if (callbacksWeakReference.get() != null) callbacksWeakReference.get().onFailure();
             }
-        });*/
+        });
 
-        Executors.newCachedThreadPool().execute(new Runnable() {
+      /*  Executors.newCachedThreadPool().execute(new Runnable() {
             @Override
             public void run() {
                 try {
@@ -72,7 +72,7 @@ public class NYTCallsTopStories {
                 }
 
             }
-        });
+        });*/
 
     }
 }

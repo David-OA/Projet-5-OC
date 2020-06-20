@@ -2,23 +2,18 @@ package com.oconte.david.mynews;
 
 import com.oconte.david.mynews.Calls.NYTCallsMostPopular;
 import com.oconte.david.mynews.Calls.NYTCallsSearch;
-import com.oconte.david.mynews.Calls.NYTCallsSports;
 import com.oconte.david.mynews.Calls.NYTCallsTopStories;
 import com.oconte.david.mynews.Models.Result;
 import com.oconte.david.mynews.Models.SearchResult;
-import com.oconte.david.mynews.Utils.ConfigureDate;
 
 import org.junit.Test;
 import org.mockito.Mockito;
 
 import java.io.IOException;
 
-import okhttp3.MediaType;
-import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Response;
 
-import static org.junit.Assert.assertTrue;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
@@ -32,6 +27,7 @@ public class MyNewUnitTest  {
 
     @Test
     public void testCallsForSearch() throws IOException {
+        //simuler serveur avec mockwebserver
         NYTService service = Mockito.mock(NYTService.class);
 
         Call<SearchResult> call = Mockito.mock(Call.class);
@@ -42,13 +38,13 @@ public class MyNewUnitTest  {
 
         when(service.getSearchSection("01/02/2020", "16/05/2020", "sports", "kobe", 10)).thenReturn(call);
 
-        NYTCallsSearch.getSearchSection(service,callbacks, "01/02/2020", "16/05/2020", "sports", "kobe", 10);
+        //NYTCallsSearch.getSearchSection(service,callbacks, "01/02/2020", "16/05/2020", "sports", "kobe", 10);
 
         verify(callbacks).onResponse(any());
 
     }
 
-    @Test
+    /*@Test
     public void testCallsTopStories() throws IOException {
         NYTService service = Mockito.mock(NYTService.class);
 
@@ -82,7 +78,7 @@ public class MyNewUnitTest  {
 
         verify(callbacks).onResponse(any());
 
-    }*/
+    }
 
     @Test
     public void testCallsTMostPopular() throws IOException {
@@ -100,7 +96,7 @@ public class MyNewUnitTest  {
 
         verify(callbacks).onResponse(any());
 
-    }
+    }*/
 
     /*@Test
     public void testFailureCalls() throws IOException {

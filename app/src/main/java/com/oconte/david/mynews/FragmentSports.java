@@ -3,6 +3,7 @@ package com.oconte.david.mynews;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -41,9 +42,7 @@ public class FragmentSports extends Fragment implements NYTCallsSports.Callbacks
         ButterKnife.bind(this, view);
         this.configureRecyclerView();
 
-        this.executeHttpRequestWithRetrofitSports();
 
-        this.configureOnClickRecyclerView();
 
         return view;
     }
@@ -51,6 +50,16 @@ public class FragmentSports extends Fragment implements NYTCallsSports.Callbacks
     @Override
     public void onDestroy() {
         super.onDestroy();
+    }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+
+        this.executeHttpRequestWithRetrofitSports();
+
+        this.configureOnClickRecyclerView();
+
     }
 
     // -----------------
@@ -88,7 +97,6 @@ public class FragmentSports extends Fragment implements NYTCallsSports.Callbacks
                     }
                 });
 
-
     }
 
     // -----------------
@@ -96,7 +104,7 @@ public class FragmentSports extends Fragment implements NYTCallsSports.Callbacks
     // -----------------
 
     private void executeHttpRequestWithRetrofitSports() {
-        NYTCallsSports.getSports(NYTFactory.getRetrofit().create(NYTService.class), this, "sports");
+        NYTCallsSports.getSports(this, "sports");
         //NYTCallsTopStories.getTopStories(NYTFactory.getRetrofit().create(NYTService.class),this, "sports");
         //NYTCallsTopStories.getTopStories(NYTFactory.getRetrofit().create(NYTService.class),this, "science");
     }

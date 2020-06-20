@@ -24,7 +24,6 @@ public class FragmentMostPopular extends Fragment implements NYTCallsMostPopular
 
     // FOR DESIGN
     @BindView(R.id.fragment_main_recycler_view) RecyclerView recyclerView;
-    //@BindView(R.id.fragment_main_swipe_container) SwipeRefreshLayout swipeRefreshLayout;
 
     // FOR DATA
     private NYTArticleAdapter adapter;
@@ -89,22 +88,12 @@ public class FragmentMostPopular extends Fragment implements NYTCallsMostPopular
                 });
     }
 
-
-    /*private void configureSwipeRefreshLayout(){
-        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-            @Override
-            public void onRefresh() {
-                executeHttpRequestWithRetrofit();
-            }
-        });
-    }*/
-
     // -----------------
     // HTTP REQUEST Retrofit
     // -----------------
 
     private void executeHttpRequestWithRetrofitMostPopular() {
-        NYTCallsMostPopular.getMostPopular(NYTFactory.getRetrofit().create(NYTService.class),this, "viewed");
+        NYTCallsMostPopular.getMostPopular(this, "viewed");
     }
 
 
