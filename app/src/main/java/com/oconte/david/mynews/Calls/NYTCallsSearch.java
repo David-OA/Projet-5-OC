@@ -54,26 +54,6 @@ public class NYTCallsSearch {
                 if (callbacksWeakReference.get() != null) callbacksWeakReference.get().onFailure();
             }
         });
-        /*
-        Executors.newCachedThreadPool().execute(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    Response<SearchResult> response = nytService.getSearchSection(beginDate,endDate,querySection, queryTerm, pageNumber).execute();
-                    if (response.isSuccessful()) {
-                        // Call the proper callback used in controller mainfragment
-                        if (callbacksWeakReference.get() != null) callbacksWeakReference.get().onResponse(response.body());
-                    } else {
-                        // Call the proper callback used in controller mainfragment
-                        if (callbacksWeakReference.get() != null) callbacksWeakReference.get().onFailure();
-                    }
-                } catch (Exception e) {
-                    // Call the proper callback used in controller mainfragment
-                    if (callbacksWeakReference.get() != null) callbacksWeakReference.get().onFailure();
-                }
-
-            }
-        });*/
 
     }
 }

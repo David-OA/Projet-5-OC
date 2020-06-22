@@ -54,25 +54,5 @@ public class NYTCallsSports {
             }
         });
 
-        /*Executors.newCachedThreadPool().execute(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    Response<Result> response = nytService.getSports(section).execute();
-                    if (response.isSuccessful()) {
-                        // Call the proper callback used in controller mainfragment
-                        if (callbacksWeakReference.get() != null) callbacksWeakReference.get().onResponse(response.body());
-                    } else {
-                        // Call the proper callback used in controller mainfragment
-                        if (callbacksWeakReference.get() != null) callbacksWeakReference.get().onFailure();
-                    }
-                } catch (Exception e) {
-                    // Call the proper callback used in controller mainfragment
-                    if (callbacksWeakReference.get() != null) callbacksWeakReference.get().onFailure();
-                }
-
-            }
-        });*/
-
     }
 }

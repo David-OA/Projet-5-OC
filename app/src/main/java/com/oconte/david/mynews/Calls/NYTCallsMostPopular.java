@@ -32,26 +32,6 @@ public class NYTCallsMostPopular {
         // weak reference to callback (avoid memory leaks)
         final WeakReference<NYTCallsMostPopular.Callbacks> callbacksWeakReference = new WeakReference<NYTCallsMostPopular.Callbacks>(callbacks);
 
-        /*Executors.newCachedThreadPool().execute(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    Response<Result> response = nytService.getMostPopular(section).execute();
-                    if (response.isSuccessful()) {
-                        // Call the proper callback used in controller mainfragment
-                        if (callbacksWeakReference.get() != null) callbacksWeakReference.get().onResponse(response.body());
-                    } else {
-                        // Call the proper callback used in controller mainfragment
-                        if (callbacksWeakReference.get() != null) callbacksWeakReference.get().onFailure();
-                    }
-                } catch (Exception e) {
-                    // Call the proper callback used in controller mainfragment
-                    if (callbacksWeakReference.get() != null) callbacksWeakReference.get().onFailure();
-                }
-
-            }
-        });*/
-
         // Get Retrofit instance and the related endpoints
         NYTService nytService = NYTFactory.getRetrofit().create(NYTService.class);
 
