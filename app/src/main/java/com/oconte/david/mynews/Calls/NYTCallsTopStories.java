@@ -53,6 +53,6 @@ public class NYTCallsTopStories {
                 if (callbacksWeakReference.get() != null) callbacksWeakReference.get().onFailure();
             }
         });
-        
+
     }
 }
