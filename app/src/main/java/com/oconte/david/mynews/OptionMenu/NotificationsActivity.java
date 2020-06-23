@@ -3,15 +3,12 @@ package com.oconte.david.mynews.OptionMenu;
 import android.annotation.SuppressLint;
 import android.app.AlarmManager;
 import android.app.AlertDialog;
-import android.app.Notification;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.v4.app.NotificationCompat;
-import android.support.v4.app.NotificationManagerCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SwitchCompat;
 import android.support.v7.widget.Toolbar;
@@ -20,7 +17,6 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.oconte.david.mynews.Calls.NYTCallsSearch;
 import com.oconte.david.mynews.R;
 import com.oconte.david.mynews.Utils.App;
 
@@ -28,13 +24,10 @@ import java.util.Calendar;
 import java.util.concurrent.TimeUnit;
 
 import androidx.work.Data;
-import androidx.work.OneTimeWorkRequest;
 import androidx.work.PeriodicWorkRequest;
 import androidx.work.WorkManager;
 import butterknife.BindView;
 import butterknife.ButterKnife;
-
-import static com.oconte.david.mynews.Utils.App.CHANNEL_ID;
 
 public class NotificationsActivity extends AppCompatActivity {
 
