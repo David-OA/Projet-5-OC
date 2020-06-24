@@ -8,15 +8,19 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SwitchCompat;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.oconte.david.mynews.MainActivity;
 import com.oconte.david.mynews.R;
 import com.oconte.david.mynews.Utils.App;
 
@@ -72,8 +76,9 @@ public class NotificationsActivity extends AppCompatActivity {
                     } else {
                         getPreferencesNotificationsAndSave();
                         startAlarmForWorkManager();
-                        Toast.makeText(getBaseContext(), "The notification is ready", Toast.LENGTH_LONG).show();
-                        // ajouter un retour à la home page
+                        //Toast.makeText(getBaseContext(), "The notification is ready", Toast.LENGTH_LONG).show();
+                        toast();
+                        becomeHomePage();
                     }
                 }
             }
@@ -81,6 +86,25 @@ public class NotificationsActivity extends AppCompatActivity {
 
         this.configureToolbar();
 
+    }
+
+    private void toast() {
+        Toast toast = Toast.makeText(getBaseContext(), "The notification is ready", Toast.LENGTH_LONG);
+        View view = toast.getView();
+
+        //To change the Background of Toast
+        view.setBackgroundColor(Color.BLUE);
+        //TextView text = (TextView) view.findViewById(Android.R.id.message);
+
+        //Shadow of the Of the Text Color
+        //text.setShadowLayer(0, 0, 0, Color.TRANSPARENT);
+        //text.setTextColor(Color.BLACK);
+        toast.show();
+    }
+
+    private void becomeHomePage() {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 
     @Override
