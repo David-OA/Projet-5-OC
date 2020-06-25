@@ -10,6 +10,7 @@ import org.junit.Test;
 import org.mockito.Mockito;
 
 import java.io.IOException;
+import java.net.HttpURLConnection;
 
 import okhttp3.HttpUrl;
 import okhttp3.mockwebserver.MockResponse;
@@ -50,7 +51,7 @@ public class MyNewUnitTest  {
 
     }
 
-    /*public void testCallsFOrSearchAndMockServeur() throws Exception {
+    public void testCallsFOrSearchAndMockServeur() throws Exception {
         // Create a MockWebServer. These are lean enough that you can create a new
         // instance for every unit test.
         MockWebServer server = new MockWebServer();
@@ -93,7 +94,7 @@ public class MyNewUnitTest  {
 
         // Shut down the server. Instances cannot be reused.
         server.shutdown();
-    }*/
+    }
 
     /*@Test
     public void testCallsTopStories() throws IOException {

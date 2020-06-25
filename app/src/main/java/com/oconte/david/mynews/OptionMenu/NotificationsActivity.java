@@ -89,6 +89,9 @@ public class NotificationsActivity extends AppCompatActivity {
     }
 
     private void toast() {
+
+        //ajouter le fichier XML
+
         Toast toast = Toast.makeText(getBaseContext(), "The notification is ready", Toast.LENGTH_LONG);
         View view = toast.getView();
 
