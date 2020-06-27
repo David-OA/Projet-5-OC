@@ -27,16 +27,16 @@ public class NYTCallsSearch {
     }
 
     // Public methode to start fetching
-    public static void getSearchSection(NYTCallsSearch.Callbacks callbacks, String beginDate, String endDate, String querySection, String queryTerm, int pageNumber) {
+    public static void getSearchSection(NYTService service, NYTCallsSearch.Callbacks callbacks, String beginDate, String endDate, String querySection, String queryTerm, int pageNumber) {
 
         // weak reference to callback (avoid memory leaks)
-        final WeakReference<NYTCallsSearch.Callbacks> callbacksWeakReference = new WeakReference<NYTCallsSearch.Callbacks>(callbacks);
+        //final WeakReference<NYTCallsSearch.Callbacks> callbacksWeakReference = new WeakReference<NYTCallsSearch.Callbacks>(callbacks);
 
         // Get Retrofit instance and the related endpoints
-        NYTService nytService = NYTFactory.getRetrofit().create(NYTService.class);
+        //NYTService nytService = NYTFactory.getRetrofit().create(NYTService.class);
 
         // The call on NYT API
-        Call<SearchResult> call = nytService.getSearchSection(beginDate, endDate, querySection, queryTerm, pageNumber);
+        Call<SearchResult> call = service.getSearchSection(beginDate, endDate, querySection, queryTerm, pageNumber);
 
         // Start the Call
         call.enqueue(new Callback<SearchResult>() {
@@ -44,14 +44,17 @@ public class NYTCallsSearch {
             public void onResponse(Call<SearchResult> call, Response<SearchResult> response) {
 
                 // Call the proper callback used in controller mainfragment
-                if (callbacksWeakReference.get() != null) callbacksWeakReference.get().onResponse(response.body());
+                //if (callbacksWeakReference.get() != null) callbacksWeakReference.get().onResponse(response.body());
+                callbacks.onResponse(response.body());
+
             }
 
             @Override
             public void onFailure(Call<SearchResult> call, Throwable t) {
 
                 // Call the proper callback used in controller mainfragment
-                if (callbacksWeakReference.get() != null) callbacksWeakReference.get().onFailure();
+                //if (callbacksWeakReference.get() != null) callbacksWeakReference.get().onFailure();
+                callbacks.onFailure();
             }
         });
 
