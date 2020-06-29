@@ -60,9 +60,8 @@ public class ConfigureDate {
 
     /**
      * It's for compare date on the search Activity.
-     * @param beginDate
-     * @param endDate
-     * @return
+     * @param beginDate the first date to start search.
+     * @param endDate the date for and search.
      */
     public static boolean compareDate(String beginDate, String endDate) {
         Calendar beginCal = Calendar.getInstance();
@@ -110,6 +109,10 @@ public class ConfigureDate {
 
     }
 
+    /**
+     * 3 method to compare dateToday, beginDate and endDate in some situation
+     * for the previously method : compareDate.
+     */
     private static boolean isSameDay(Calendar cal1, Calendar cal2){
         boolean sameDay = cal1.get(Calendar.DAY_OF_YEAR) == cal2.get(Calendar.DAY_OF_YEAR) &&
                 cal1.get(Calendar.YEAR) == cal2.get(Calendar.YEAR);

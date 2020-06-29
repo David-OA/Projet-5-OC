@@ -24,11 +24,7 @@ import retrofit2.Retrofit;
 
 import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertNotNull;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.verify;
 import static retrofit2.converter.gson.GsonConverterFactory.create;
 
 /**
@@ -110,7 +106,7 @@ public class MyNewUnitTest  {
         assertTrue (ConfigureDate.compareDate("", "09/05/2020"));
         assertTrue (ConfigureDate.compareDate("06/05/2020", ""));
         assertTrue (ConfigureDate.compareDate("06/05/2020", "06/05/2020"));
-        
+
     }
 
     @Test
@@ -132,79 +128,5 @@ public class MyNewUnitTest  {
         assertEquals(expected, ConfigureText.convertSectionNameForDisplay(section));
 
     }
-
-
-
-    /*@Test
-    public void testCallsTopStories() throws IOException {
-        NYTService service = Mockito.mock(NYTService.class);
-
-        Call<Result> call = Mockito.mock(Call.class);
-
-        when(call.execute()).thenReturn(Response.success(null));
-
-        NYTCallsTopStories.Callbacks callbacks = Mockito.mock(NYTCallsTopStories.Callbacks.class);
-
-        when(service.getTopStories( "home")).thenReturn(call);
-
-        NYTCallsTopStories.getTopStories(service,callbacks, "home");
-
-        verify(callbacks).onResponse(any());
-
-    }
-
-    /*@Test
-    public void testCallsSports() throws IOException {
-        NYTService service = Mockito.mock(NYTService.class);
-
-        Call<Result> call = Mockito.mock(Call.class);
-
-        when(call.execute()).thenReturn(Response.success(null));
-
-        NYTCallsSports.Callbacks callbacks = Mockito.mock(NYTCallsSports.Callbacks.class);
-
-        when(service.getSports( "sports")).thenReturn(call);
-
-        NYTCallsSports.getSports(service,callbacks, "sports");
-
-        verify(callbacks).onResponse(any());
-
-    }
-
-    @Test
-    public void testCallsTMostPopular() throws IOException {
-        NYTService service = Mockito.mock(NYTService.class);
-
-        Call<Result> call = Mockito.mock(Call.class);
-
-        when(call.execute()).thenReturn(Response.success(null));
-
-        NYTCallsMostPopular.Callbacks callbacks = Mockito.mock(NYTCallsMostPopular.Callbacks.class);
-
-        when(service.getMostPopular( "home")).thenReturn(call);
-
-        NYTCallsMostPopular.getMostPopular(service,callbacks, "home");
-
-        verify(callbacks).onResponse(any());
-
-    }*/
-
-    /*@Test
-    public void testFailureCalls() throws IOException {
-        NYTService service = Mockito.mock(NYTService.class);
-
-        Call<SearchResult> call = Mockito.mock(Call.class);
-
-        when(call.execute()).thenReturn(Response.error(400, ResponseBody.create(MediaType.get("application/json"), "()")));
-
-        NYTCallsSearch.Callbacks callbacks = Mockito.mock(NYTCallsSearch.Callbacks.class);
-
-        when(service.getSearchSection("01/02/2020", "16/05/2020", "sports", "kobe", 10)).thenReturn(call);
-
-        NYTCallsSearch.getSearchSection(service,callbacks, "01/02/2020", "16/05/2020", "sports", "kobe", 10);
-
-        verify(callbacks).onFailure();
-
-    }*/
 
 }
