@@ -2,38 +2,33 @@ package com.oconte.david.mynews;
 
 import android.support.annotation.Nullable;
 
-import com.oconte.david.mynews.Calls.NYTCallsMostPopular;
 import com.oconte.david.mynews.Calls.NYTCallsSearch;
-import com.oconte.david.mynews.Calls.NYTCallsTopStories;
-import com.oconte.david.mynews.Models.Result;
 import com.oconte.david.mynews.Models.SearchResult;
+import com.oconte.david.mynews.Utils.ConfigureDate;
+import com.oconte.david.mynews.Utils.ConfigureText;
 
 import org.jetbrains.annotations.NotNull;
 import org.junit.Test;
-import org.mockito.Mockito;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
+import java.util.concurrent.CountDownLatch;
 
-import okhttp3.HttpUrl;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import okhttp3.mockwebserver.Dispatcher;
 import okhttp3.mockwebserver.MockResponse;
 import okhttp3.mockwebserver.MockWebServer;
 import okhttp3.mockwebserver.RecordedRequest;
-import retrofit2.Call;
-import retrofit2.Response;
 import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertNotNull;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
 import static retrofit2.converter.gson.GsonConverterFactory.create;
 
 /**
@@ -44,20 +39,28 @@ import static retrofit2.converter.gson.GsonConverterFactory.create;
 public class MyNewUnitTest  {
 
 
-    @Test
-    public void testCallsForSearch() throws IOException {
+    private SearchResult result;
+    private String baseUrl = "http://127.0.0.1:9900";
 
+    // ue metheode permettant dexternaliser la creation de lobjet mockwebserver en lui passant le bon code http(200, 400 ou autre) et la bonne reponse json
+    private MockWebServer setupServer(int code, String response) {
         MockWebServer server = new MockWebServer();
-
         server.setDispatcher(new Dispatcher() {
             @NotNull
             @Override
             public MockResponse dispatch(@NotNull RecordedRequest recordedRequest) throws InterruptedException {
-                System.out.println(recordedRequest.getPath());
-                return new MockResponse().setResponseCode(HttpURLConnection.HTTP_OK).setBody(Const.SEARCH_RESPONSE);
+                return new MockResponse().setResponseCode(code).setBody(response);
             }
         });
+        return server;
+    }
 
+    @Test
+    public void testCallsForSearch() throws IOException, InterruptedException {
+
+        MockWebServer server = setupServer(HttpURLConnection.HTTP_OK, Const.SEARCH_RESPONSE);
+
+        final CountDownLatch latch = new CountDownLatch(1);
         //server.enqueue(new MockResponse().setResponseCode(HttpURLConnection.HTTP_OK).setBody(Const.SEARCH_RESPONSE));
 
         HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
@@ -67,23 +70,69 @@ public class MyNewUnitTest  {
                 .build();
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://127.0.0.1:9000")
+                .baseUrl(baseUrl)
                 .client(client)
                 .addConverterFactory(create())
                 .build();
 
 
         // Start the server.
-        server.start(9000);
+        server.start(9900);
 
         //simuler serveur avec mockwebserver
         NYTService service = retrofit.create(NYTService.class);
 
-        NYTCallsSearch.Callbacks callbacks = Mockito.mock(NYTCallsSearch.Callbacks.class);
+        NYTCallsSearch.Callbacks callbacks = new NYTCallsSearch.Callbacks() {
+            @Override
+            public void onResponse(@Nullable SearchResult response) {
+                result = response;
+                latch.countDown();
+            }
 
-        NYTCallsSearch.getSearchSection(service,callbacks, "01/02/2020", "16/05/2020", "sports", "kobe", 10);
+            @Override
+            public void onFailure() {
+                result = null;
+                latch.countDown();
+            }
+        };
+        NYTCallsSearch.getSearchSection(service, callbacks, "01/02/2020", "16/05/2020", "sports", "kobe", 10);
 
-        verify(callbacks).onResponse(any());
+        latch.await();
+
+        assertNotNull(result);
+
+    }
+
+    @Test
+    public void testCompareDate() {
+
+        assertTrue (ConfigureDate.compareDate("06/05/2020", "09/05/2020"));
+        assertTrue (ConfigureDate.compareDate("", "09/05/2020"));
+        assertTrue (ConfigureDate.compareDate("06/05/2020", ""));
+        assertTrue (ConfigureDate.compareDate("06/05/2020", "06/05/2020"));
+
+        assertFalse (ConfigureDate.compareDate("06/05/2020", "05/02/2020"));
+
+
+    }
+
+    @Test
+    public void testConfigureText() {
+
+        String expected = "section >subsection";
+        String section = "section;subsection";
+
+        assertEquals(expected, ConfigureText.convertSectionNameForDisplay(section));
+
+    }
+
+    @Test
+    public void testConfigureTextForNoSubsection() {
+
+        String expected = "";
+        String section = null;
+
+        assertEquals(expected, ConfigureText.convertSectionNameForDisplay(section));
 
     }
 
