@@ -110,10 +110,7 @@ public class MyNewUnitTest  {
         assertTrue (ConfigureDate.compareDate("", "09/05/2020"));
         assertTrue (ConfigureDate.compareDate("06/05/2020", ""));
         assertTrue (ConfigureDate.compareDate("06/05/2020", "06/05/2020"));
-
-        assertFalse (ConfigureDate.compareDate("06/05/2020", "05/02/2020"));
-
-
+        
     }
 
     @Test
