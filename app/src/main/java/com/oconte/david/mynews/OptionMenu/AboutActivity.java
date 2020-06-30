@@ -45,8 +45,15 @@ public class AboutActivity extends AppCompatActivity {
     public void markDownView(){
         markdownView.loadFromText("### Library\n" +
                 "\n" +
-                "* [Retrofit](https://square.github.io/retrofit/) - Retrofit\n" +
-                "* [Picasso](https://square.github.io/picasso/) - Picasso\n" +
+                "* [Android Support Library](https://developer.android.com/topic/libraries/support-library) \n" +
+                "* [Gson](https://github.com/google/gson) \n" +
+                "* [ButterKnife](https://github.com/JakeWharton/butterknife) \n" +
+                "* [Espresso](https://developer.android.com/training/testing/espresso) \n" +
+                "* [Mockito](https://site.mockito.org/) \n" +
+                "* [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) \n" +
+                "* [WorkManager](https://developer.android.com/jetpack/androidx/releases/work) \n" +
+                "* [Retrofit](https://square.github.io/retrofit/) \n" +
+                "* [Picasso](https://square.github.io/picasso/) \n" +
                 " \n" +
                 "### API\n" +
                 "* [New York Times API](https://developer.nytimes.com/) - New York Times API\n" +
