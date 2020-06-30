@@ -13,7 +13,6 @@ import es.dmoral.markdownview.MarkdownView;
 public class AboutActivity extends AppCompatActivity {
 
     @BindView(R.id.toolbar) Toolbar toolbar;
-
     @BindView(R.id.markdown_view) MarkdownView markdownView;
 
     @Override
