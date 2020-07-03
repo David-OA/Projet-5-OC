@@ -12,6 +12,7 @@ import es.dmoral.markdownview.MarkdownView;
 
 public class AboutActivity extends AppCompatActivity {
 
+    // For Design
     @BindView(R.id.toolbar) Toolbar toolbar;
     @BindView(R.id.markdown_view) MarkdownView markdownView;
 
@@ -36,11 +37,13 @@ public class AboutActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("My News");
 
-        //afficher le bouton retour
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
+    /**
+     * it's the markdown view.
+     */
     public void markDownView(){
         markdownView.loadFromText("### Library\n" +
                 "\n" +
@@ -69,10 +72,6 @@ public class AboutActivity extends AppCompatActivity {
                 "```sh\n" +
                 "          Copyright 2020 OCONTE David\n" +
                 "```");
-
-        //InputStream inputStream = this.getResources().openRawResource(R.raw.about);
-        //InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
-
 
     }
 }

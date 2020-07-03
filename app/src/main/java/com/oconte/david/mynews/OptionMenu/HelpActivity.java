@@ -11,6 +11,7 @@ import butterknife.ButterKnife;
 
 public class HelpActivity extends AppCompatActivity {
 
+    // For Design
     @BindView(R.id.toolbar) Toolbar toolbar;
 
     @Override
@@ -31,8 +32,6 @@ public class HelpActivity extends AppCompatActivity {
     protected void configureToolbar() {
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("My News");
-
-        //afficher le bouton retour
 
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
