@@ -136,7 +136,7 @@ public class NotificationsActivity extends AppCompatActivity {
                 .build();
 
         //This is the subclass of periodicWorkRequest
-        final PeriodicWorkRequest periodicWorkRequest = new PeriodicWorkRequest.Builder(App.class,12, TimeUnit.HOURS)
+        final PeriodicWorkRequest periodicWorkRequest = new PeriodicWorkRequest.Builder(App.class,1, TimeUnit.HOURS)
                 .setInputData(data)
                 .build();
 
@@ -153,14 +153,14 @@ public class NotificationsActivity extends AppCompatActivity {
         AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
 
         Calendar calendar = Calendar.getInstance();
-        calendar.setTimeInMillis(System.currentTimeMillis());
+        //calendar.setTimeInMillis(System.currentTimeMillis());
         calendar.set(Calendar.HOUR_OF_DAY, 12);
         calendar.set(Calendar.MINUTE, 0);
         calendar.set(Calendar.SECOND, 0);
 
         Intent intent = new Intent(this, App.class);
 
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 1, intent, 0);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 1, intent, 0);// faire que a cette heure si on execute le code de work manager.
 
         alarmManager.setExact(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
 

@@ -54,6 +54,7 @@ public class MainActivityInstrumentedTest {
 
         onView(withText("Notifications")).perform(click());
 
+        onView(withId(R.id.notification_query_term)).check(matches(isDisplayed()));
     }
 
     @Test
@@ -64,6 +65,8 @@ public class MainActivityInstrumentedTest {
         openActionBarOverflowOrOptionsMenu(InstrumentationRegistry.getTargetContext());
 
         onView(withText("Help")).perform(click());
+
+
 
     }
 
@@ -86,6 +89,5 @@ public class MainActivityInstrumentedTest {
         onView(withId(R.id.menu_main_activity_search)).perform(click());
 
     }
-
 
 }
