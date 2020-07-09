@@ -148,7 +148,7 @@ public class NotificationsActivity extends AppCompatActivity {
      */
     @SuppressLint("NewApi")
     private void startAlarmForWorkManager() {
-        getWorkManager();
+        //getWorkManager();
 
         AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
 
@@ -160,7 +160,8 @@ public class NotificationsActivity extends AppCompatActivity {
 
         Intent intent = new Intent(this, App.class);
 
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 1, intent, 0);// faire que a cette heure si on execute le code de work manager.
+        //PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 1, intent, 0);// faire que a cette heure si on execute le code de work manager.
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 1, intent, 0);//.send(this, 1, intent.fillIn(getWorkManager(),2));// faire que a cette heure si on execute le code de work manager.
 
         alarmManager.setExact(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
 
