@@ -21,7 +21,7 @@ import androidx.work.WorkerParameters;
 
 import static android.content.Context.MODE_PRIVATE;
 
-public class App extends Worker implements NYTCallsSearch.Callbacks {
+public class AlarmWorker extends Worker implements NYTCallsSearch.Callbacks {
 
     private SharedPreferences preferences;
     private String queryTerm;
@@ -41,7 +41,7 @@ public class App extends Worker implements NYTCallsSearch.Callbacks {
     public static final String CHANNEL_ID = "channel";
     private SearchResult result;
 
-    public App(@NonNull Context context, @NonNull WorkerParameters workerParams) {
+    public AlarmWorker(@NonNull Context context, @NonNull WorkerParameters workerParams) {
         super(context, workerParams);
         this.context = context;
     }

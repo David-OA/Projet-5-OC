@@ -17,12 +17,11 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.oconte.david.mynews.MainActivity;
 import com.oconte.david.mynews.R;
-import com.oconte.david.mynews.Utils.App;
+import com.oconte.david.mynews.Utils.AlarmWorker;
 
 import java.util.Calendar;
 import java.util.concurrent.TimeUnit;
@@ -128,22 +127,6 @@ public class NotificationsActivity extends AppCompatActivity {
 
 
     /**
-     * This is for start the workManager Request.
-     */
-    private void getWorkManager(){
-        Data data = new Data.Builder()
-                .putString(App.CHANNEL_ID, "There are number of page for the result searchNotification.")
-                .build();
-
-        //This is the subclass of periodicWorkRequest
-        final PeriodicWorkRequest periodicWorkRequest = new PeriodicWorkRequest.Builder(App.class,1, TimeUnit.HOURS)
-                .setInputData(data)
-                .build();
-
-        WorkManager.getInstance().enqueue(periodicWorkRequest);
-    }
-
-    /**
      * This is for said at WorkManager you start at 12 h and for all Day you work at this time.
      */
     @SuppressLint("NewApi")
@@ -158,10 +141,12 @@ public class NotificationsActivity extends AppCompatActivity {
         calendar.set(Calendar.MINUTE, 0);
         calendar.set(Calendar.SECOND, 0);
 
-        Intent intent = new Intent(this, App.class);
+        Intent intent = new Intent(this, AlarmReceiver.class);
+
+
 
         //PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 1, intent, 0);// faire que a cette heure si on execute le code de work manager.
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 1, intent, 0);//.send(this, 1, intent.fillIn(getWorkManager(),2));// faire que a cette heure si on execute le code de work manager.
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 1, intent, 0);// faire que a cette heure si on execute le code de work manager.
 
         alarmManager.setExact(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
 
