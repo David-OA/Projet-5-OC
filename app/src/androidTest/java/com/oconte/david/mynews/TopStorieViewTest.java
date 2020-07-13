@@ -74,7 +74,7 @@ public class TopStorieViewTest {//extends ActivityInstrumentationTestCase2<MainA
      * alike one would pass command-line arguments to regular run configurations.
      *
      */
-    @Rule
+    /*@Rule
     public ActivityTestRule<MainActivity> mActivityRule = new ActivityTestRule<MainActivity>(MainActivity.class,false, false) {
 
         @Override
@@ -89,13 +89,13 @@ public class TopStorieViewTest {//extends ActivityInstrumentationTestCase2<MainA
     @Before
     public void setUpTest() {
 
-        /*obtaining the Activity from the ActivityTestRule*/
+        /*obtaining the Activity from the ActivityTestRule
         this.mActivity = this.mActivityRule.getActivity();
 
-        /* obtaining handles to the Ui of the Activity*/
+        /* obtaining handles to the Ui of the Activity
         this.mRecyclerView = this.mActivity.findViewById(this.resId);
         this.itemCount = this.mRecyclerView.getAdapter().getItemCount();
-    }
+    }*/
 
     @Test
     public void TopStorieViewTest() {
