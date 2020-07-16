@@ -17,6 +17,7 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.oconte.david.mynews.MainActivity;
@@ -75,7 +76,6 @@ public class NotificationsActivity extends AppCompatActivity {
                     } else {
                         getPreferencesNotificationsAndSave();
                         startAlarmForWorkManager();
-                        //Toast.makeText(getBaseContext(), "The notification is ready", Toast.LENGTH_LONG).show();
                         toast();
                         becomeHomePage();
                     }
@@ -87,20 +87,20 @@ public class NotificationsActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * It's for custom Toast.
+     */
     private void toast() {
-
-        //ajouter le fichier XML
 
         Toast toast = Toast.makeText(getBaseContext(), "The notification is ready", Toast.LENGTH_LONG);
         View view = toast.getView();
 
+        TextView text = (TextView) view.findViewById(android.R.id.message);
+        text.setTextSize(16);
+
         //To change the Background of Toast
         view.setBackgroundColor(Color.BLUE);
-        //TextView text = (TextView) view.findViewById(Android.R.id.message);
 
-        //Shadow of the Of the Text Color
-        //text.setShadowLayer(0, 0, 0, Color.TRANSPARENT);
-        //text.setTextColor(Color.BLACK);
         toast.show();
     }
 
@@ -143,10 +143,7 @@ public class NotificationsActivity extends AppCompatActivity {
 
         Intent intent = new Intent(this, AlarmReceiver.class);
 
-
-
-        //PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 1, intent, 0);// faire que a cette heure si on execute le code de work manager.
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 1, intent, 0);// faire que a cette heure si on execute le code de work manager.
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 1, intent, 0);
 
         alarmManager.setExact(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
 

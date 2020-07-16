@@ -5,18 +5,31 @@ import android.os.Bundle;
 import android.support.test.rule.ActivityTestRule;
 import android.support.v7.widget.RecyclerView;
 
+import com.oconte.david.mynews.Models.Result;
+
+import org.jetbrains.annotations.NotNull;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
+
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.util.concurrent.CountDownLatch;
+
+import okhttp3.Dispatcher;
+import okhttp3.OkHttpClient;
+import okhttp3.logging.HttpLoggingInterceptor;
+import retrofit2.Retrofit;
 
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
+import static retrofit2.converter.gson.GsonConverterFactory.create;
 
-public class TopStorieViewTest {//extends ActivityInstrumentationTestCase2<MainActivity> {
+public class TopStorieViewTest {
 
-    /*private SearchResult result;
+    /*private Result result;
     private String baseUrl = "http://127.0.0.1:9900";
 
     // une methode permettant dexternaliser la creation de lobjet mockwebserver en lui passant le bon code http(200, 400 ou autre) et la bonne reponse json
@@ -38,7 +51,6 @@ public class TopStorieViewTest {//extends ActivityInstrumentationTestCase2<MainA
         MockWebServer server = setupServer(HttpURLConnection.HTTP_OK, ConstRecyclerView.FRAGTOPSTORIE_RESPONSE);
 
         final CountDownLatch latch = new CountDownLatch(1);
-        //server.enqueue(new MockResponse().setResponseCode(HttpURLConnection.HTTP_OK).setBody(Const.SEARCH_RESPONSE));
 
         HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
         logging.setLevel(HttpLoggingInterceptor.Level.BODY);
@@ -55,7 +67,10 @@ public class TopStorieViewTest {//extends ActivityInstrumentationTestCase2<MainA
 
         // Start the server.
         server.start(9900);
-    }
+
+
+    }*/
+
 
     /* the Activity of the Target application*/
     private MainActivity mActivity;
@@ -74,7 +89,7 @@ public class TopStorieViewTest {//extends ActivityInstrumentationTestCase2<MainA
      * alike one would pass command-line arguments to regular run configurations.
      *
      */
-    /*@Rule
+    @Rule
     public ActivityTestRule<MainActivity> mActivityRule = new ActivityTestRule<MainActivity>(MainActivity.class,false, false) {
 
         @Override
@@ -89,13 +104,13 @@ public class TopStorieViewTest {//extends ActivityInstrumentationTestCase2<MainA
     @Before
     public void setUpTest() {
 
-        /*obtaining the Activity from the ActivityTestRule
+        /*obtaining the Activity from the ActivityTestRule*/
         this.mActivity = this.mActivityRule.getActivity();
 
-        /* obtaining handles to the Ui of the Activity
+        /* obtaining handles to the Ui of the Activity*/
         this.mRecyclerView = this.mActivity.findViewById(this.resId);
         this.itemCount = this.mRecyclerView.getAdapter().getItemCount();
-    }*/
+    }
 
     @Test
     public void TopStorieViewTest() {
