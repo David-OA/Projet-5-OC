@@ -16,7 +16,7 @@ public class NYTFactory {
                 .build();
 
         final Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://api.nytimes.com")
+                .baseUrl(BuildConfig.API_SERVER)
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .client(client)

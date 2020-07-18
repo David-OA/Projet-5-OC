@@ -14,7 +14,24 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField("String", "API_SERVER", "\"https://api.nytimes.com\"")
         }
+
+        debug {
+            debuggable true
+            minifyEnabled false
+            shrinkResources false
+
+            buildConfigField("String", "API_SERVER", "\"https://api.nytimes.com\"") // for test utiliser http://127.0.0.1:9900
+        }
+
+        /*espresso{
+            debuggable true
+            minifyEnabled false
+            shrinkResources false
+
+            buildConfigField("String", "API_SERVER", "\"http://127.0.0.1:9900\"")
+        }*/
     }
 
     compileOptions {
@@ -69,6 +86,10 @@ dependencies {
     //MOCKITO
     testImplementation("org.mockito:mockito-core:3.2.0")
     testImplementation("com.squareup.okhttp3:mockwebserver:4.7.2")
+    androidTestImplementation ("org.mockito:mockito-core:3.2.0")
+    androidTestImplementation ("com.squareup.okhttp3:mockwebserver:4.7.2")
+
+
 
     //ESPRESSO
     implementation 'com.android.support.test.espresso:espresso-idling-resource:3.0.2'

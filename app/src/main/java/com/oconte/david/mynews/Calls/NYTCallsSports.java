@@ -7,7 +7,6 @@ import com.oconte.david.mynews.NYTFactory;
 import com.oconte.david.mynews.NYTService;
 
 import java.lang.ref.WeakReference;
-import java.util.concurrent.Executors;
 
 import retrofit2.Call;
 import retrofit2.Callback;
