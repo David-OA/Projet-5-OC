@@ -14,6 +14,10 @@ import androidx.work.WorkManager;
 
 public class AlarmReceiver extends BroadcastReceiver {
 
+    /**
+     * It's what doing the AlarmManager
+     */
+
     @Override
     public void onReceive(Context context, Intent intent) {
         getWorkManager();

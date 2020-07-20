@@ -35,8 +35,8 @@ import butterknife.ButterKnife;
 
 public class NotificationsActivity extends AppCompatActivity {
 
+    // For Design
     @BindView(R.id.toolbar) Toolbar toolbar;
-
     @BindView(R.id.notification_query_term) EditText notificationQueryTerm;
     @BindView(R.id.notification_switch) SwitchCompat switchNotification;
 
@@ -87,28 +87,6 @@ public class NotificationsActivity extends AppCompatActivity {
 
     }
 
-    /**
-     * It's for custom Toast.
-     */
-    private void toast() {
-
-        Toast toast = Toast.makeText(getBaseContext(), "The notification is ready", Toast.LENGTH_LONG);
-        View view = toast.getView();
-
-        TextView text = (TextView) view.findViewById(android.R.id.message);
-        text.setTextSize(16);
-
-        //To change the Background of Toast
-        view.setBackgroundColor(Color.BLUE);
-
-        toast.show();
-    }
-
-    private void becomeHomePage() {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-    }
-
     @Override
     public void onDestroy() {
         super.onDestroy();
@@ -125,18 +103,15 @@ public class NotificationsActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
-
     /**
      * This is for said at WorkManager you start at 12 h and for all Day you work at this time.
      */
     @SuppressLint("NewApi")
     private void startAlarmForWorkManager() {
-        //getWorkManager();
 
         AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
 
         Calendar calendar = Calendar.getInstance();
-        //calendar.setTimeInMillis(System.currentTimeMillis());
         calendar.set(Calendar.HOUR_OF_DAY, 12);
         calendar.set(Calendar.MINUTE, 0);
         calendar.set(Calendar.SECOND, 0);
@@ -211,6 +186,30 @@ public class NotificationsActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * It's for custom Toast.
+     */
+    private void toast() {
+
+        Toast toast = Toast.makeText(getBaseContext(), "The notification is ready", Toast.LENGTH_LONG);
+        View view = toast.getView();
+        TextView text = (TextView) view.findViewById(android.R.id.message);
+        text.setTextSize(16);
+        view.setBackgroundColor(Color.BLUE);
+        toast.show();
+    }
+
+    /**
+     * When you do a Notification after you return at home page.
+     */
+    private void becomeHomePage() {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * This is for error when you forget or use wrong argument.
+     */
     public void errorQueryTerm() {
         AlertDialog.Builder myAlertDialogue = new AlertDialog.Builder(this);
         myAlertDialogue.setTitle("Alert !");

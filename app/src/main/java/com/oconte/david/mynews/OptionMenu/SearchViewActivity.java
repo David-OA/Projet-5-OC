@@ -27,9 +27,11 @@ import butterknife.ButterKnife;
 
 public class SearchViewActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
 
+    //For Design
     @BindView(R.id.toolbar) Toolbar toolbar;
     @BindView(R.id.search_button) Button button;
 
+    // EditText
     @BindView(R.id.query_term) EditText mQueryTerm;
     @BindView(R.id.search_fragment_start_begin_date) EditText mBeginDate;
     @BindView(R.id.search_fragment_search_end_date) EditText mEndDate;
@@ -42,6 +44,11 @@ public class SearchViewActivity extends AppCompatActivity implements DatePickerD
     @BindView(R.id.search_item_sport) CheckBox mSport;
     @BindView(R.id.search_item_travel) CheckBox mTravel;
 
+    // For DatePicker
+    private static final int START_SELECTED = 0;
+    private static final int END_SELECTED = 1;
+    private int selectedDate;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,7 +60,6 @@ public class SearchViewActivity extends AppCompatActivity implements DatePickerD
         this.searchButton();
 
     }
-
 
     @Override
     public void onDestroy() {
@@ -73,7 +79,7 @@ public class SearchViewActivity extends AppCompatActivity implements DatePickerD
     }
 
     /**
-     * this for start the search
+     * This is for start the search
      */
     private void searchButton() {
         button.setOnClickListener(new View.OnClickListener() {
@@ -91,55 +97,6 @@ public class SearchViewActivity extends AppCompatActivity implements DatePickerD
                 }
             }
         });
-    }
-
-    ////////////////////////////////////////
-    // Error messages
-    ////////////////////////////////////////
-
-    public void errorQueryTerm() {
-        AlertDialog.Builder myAlertDialogue = new AlertDialog.Builder(this);
-        myAlertDialogue.setTitle("Alert !");
-        myAlertDialogue.setMessage("You forget something");
-
-        myAlertDialogue.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.dismiss();
-            }
-        });
-
-        myAlertDialogue.show();
-    }
-
-    public void forgetCheckBox() {
-        AlertDialog.Builder myAlertDialogue = new AlertDialog.Builder(this);
-        myAlertDialogue.setTitle("Alert !");
-        myAlertDialogue.setMessage("You need to choice one ore more categories");
-
-        myAlertDialogue.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.dismiss();
-            }
-        });
-
-        myAlertDialogue.show();
-    }
-
-    public void incorrectDate() {
-        AlertDialog.Builder myAlertDialogue = new AlertDialog.Builder(this);
-        myAlertDialogue.setTitle("Alert !");
-        myAlertDialogue.setMessage("You are in the future");
-
-        myAlertDialogue.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.dismiss();
-            }
-        });
-
-        myAlertDialogue.show();
     }
 
     /**
@@ -191,18 +148,8 @@ public class SearchViewActivity extends AppCompatActivity implements DatePickerD
 
     }
 
-    ///////////////////////////////////////////////
-    // DATE PICKER
-    ///////////////////////////////////////////////
-
-    private static final int START_SELECTED = 0;
-    private static final int END_SELECTED = 1;
-
-    private int selectedDate;
-
     /**
-     *  Gere l'apparition du date picker pour un seul
-     * @param v
+     * It's for the two DatePickers
      */
     public void showStartDatePickerDialog(View v) {
         selectedDate = START_SELECTED;
@@ -218,6 +165,9 @@ public class SearchViewActivity extends AppCompatActivity implements DatePickerD
     }
 
 
+    /**
+     * It's for the Calendar use with DatePicker
+     */
     @Override
     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
         Calendar c = Calendar.getInstance();
@@ -232,6 +182,55 @@ public class SearchViewActivity extends AppCompatActivity implements DatePickerD
             mEndDate.setText(dateEndString);
         }
 
+    }
+
+    /**
+     * This is for error when you forget or use wrong argument.
+     */
+
+    public void errorQueryTerm() {
+        AlertDialog.Builder myAlertDialogue = new AlertDialog.Builder(this);
+        myAlertDialogue.setTitle("Alert !");
+        myAlertDialogue.setMessage("You forget something");
+
+        myAlertDialogue.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+
+        myAlertDialogue.show();
+    }
+
+    public void forgetCheckBox() {
+        AlertDialog.Builder myAlertDialogue = new AlertDialog.Builder(this);
+        myAlertDialogue.setTitle("Alert !");
+        myAlertDialogue.setMessage("You need to choice one ore more categories");
+
+        myAlertDialogue.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+
+        myAlertDialogue.show();
+    }
+
+    public void incorrectDate() {
+        AlertDialog.Builder myAlertDialogue = new AlertDialog.Builder(this);
+        myAlertDialogue.setTitle("Alert !");
+        myAlertDialogue.setMessage("You are in the future");
+
+        myAlertDialogue.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+
+        myAlertDialogue.show();
     }
 
 }
