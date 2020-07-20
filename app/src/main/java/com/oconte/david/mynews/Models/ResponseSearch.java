@@ -18,15 +18,4 @@ public class ResponseSearch {
         return docs;
     }
 
-    public void setDocs(List<Article> docs) {
-        this.docs = docs;
-    }
-
-    public MetaSearch getMeta() {
-        return meta;
-    }
-
-    public void setMeta(MetaSearch meta) {
-        this.meta = meta;
-    }
 }

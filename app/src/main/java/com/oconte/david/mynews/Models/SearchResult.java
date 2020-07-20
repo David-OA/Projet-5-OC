@@ -7,7 +7,6 @@ public class SearchResult {
     public SearchResult() {
     }
 
-
     public ResponseSearch getResponse() {
         return response;
     }

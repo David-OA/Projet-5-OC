@@ -5,10 +5,6 @@ import com.google.gson.annotations.SerializedName;
 
 public class SectionSearch {
 
-    /**
-     * A enlever car pas utilisé
-     */
-
     @SerializedName("status")
     @Expose
     private String status;

@@ -64,33 +64,14 @@ public class Article implements Serializable {
         return section;
     }
 
-    public void setSection(String section) {
-        this.section = section;
-    }
-
     public String getSubsection() {
         return subsection;
-    }
-
-    public void setSubsection(String subsection) {
-        this.subsection = subsection;
     }
 
     public String getTitle() {
         return title;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getAbstract() {
-        return _abstract;
-    }
-
-    public void setAbstract(String _abstract) {
-        this._abstract = _abstract;
-    }
 
     public String getUrl() {
         return url;
@@ -100,68 +81,12 @@ public class Article implements Serializable {
         this.url = url;
     }
 
-    public String getItemType() {
-        return itemType;
-    }
-
-    public void setItemType(String itemType) {
-        this.itemType = itemType;
-    }
-
-    public String getUpdatedDate() {
-        return updatedDate;
-    }
-
-    public void setUpdatedDate(String updatedDate) {
-        this.updatedDate = updatedDate;
-    }
-
-    public String getCreatedDate() {
-        return createdDate;
-    }
-
-    public void setCreatedDate(String createdDate) {
-        this.createdDate = createdDate;
-    }
-
     public String getPublishedDate() {
         return publishedDate;
     }
 
-    public void setPublishedDate(String publishedDate) {
-        this.publishedDate = publishedDate;
-    }
-
-    public String getMaterialTypeFacet() {
-        return materialTypeFacet;
-    }
-
-    public void setMaterialTypeFacet(String materialTypeFacet) {
-        this.materialTypeFacet = materialTypeFacet;
-    }
-
-    public String getKicker() {
-        return kicker;
-    }
-
-    public void setKicker(String kicker) {
-        this.kicker = kicker;
-    }
-
     public List<Multimedia> getMultimedia() {
         return multimedia;
-    }
-
-    public void setMultimedia(List<Multimedia> multimedia) {
-        this.multimedia = multimedia;
-    }
-
-    public String getShortUrl() {
-        return shortUrl;
-    }
-
-    public void setShortUrl(String shortUrl) {
-        this.shortUrl = shortUrl;
     }
 
     ////////////////////////////////////////////////////
@@ -174,11 +99,6 @@ public class Article implements Serializable {
 
     public List<Medium> getMedium() {
         return medium;
-
-    }
-
-    public void setMedia(List<Medium> media) {
-        this.medium = medium;
 
     }
 
@@ -204,10 +124,6 @@ public class Article implements Serializable {
 
     public HeadlineSearch getHeadline() {
         return headline;
-    }
-
-    public void setHeadline(HeadlineSearch headline) {
-        this.headline = headline;
     }
 
 }

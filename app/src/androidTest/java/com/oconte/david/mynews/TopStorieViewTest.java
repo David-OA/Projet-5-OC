@@ -39,9 +39,6 @@ public class TopStorieViewTest {
     private Result results;
     private String baseUrl = "http://127.0.0.1:9900";
 
-
-
-
     // une methode permettant dexternaliser la creation de lobjet mockwebserver en lui passant le bon code http(200, 400 ou autre) et la bonne reponse json
     private MockWebServer setupServer(int code, String response) {
         MockWebServer server = new MockWebServer();
