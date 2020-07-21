@@ -23,9 +23,6 @@ import static android.content.Context.MODE_PRIVATE;
 public class NYTArticleAdapter extends RecyclerView.Adapter<NYTArticleViewHolder> {
 
     private Result results = new Result();
-
-    Context context;
-
     private String url = "extra_url";
 
     public NYTArticleAdapter() {
@@ -59,6 +56,7 @@ public class NYTArticleAdapter extends RecyclerView.Adapter<NYTArticleViewHolder
 
         url = article.getUrl();
 
+        // The parts for change the color when the articles is read.
         SharedPreferences preferencesUrl = viewHolder.itemView.getContext().getSharedPreferences("UrlPrefs", MODE_PRIVATE);
         String urls = preferencesUrl.getString("EXTRA_URL", "");
         if (urls.contains(url)) {

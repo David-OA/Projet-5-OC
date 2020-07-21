@@ -19,8 +19,6 @@ import static android.content.Context.MODE_PRIVATE;
 public class NYTResultSearchAdapter extends RecyclerView.Adapter<NYTArticleSearchViewHolder> {
 
     private SearchResult results = new SearchResult();
-
-    private SharedPreferences preferencesUrl;
     private String url = "extra_url";
 
     public NYTResultSearchAdapter() {
@@ -73,7 +71,5 @@ public class NYTResultSearchAdapter extends RecyclerView.Adapter<NYTArticleSearc
         this.results = results;
         this.notifyDataSetChanged();
     }
-
-
 
 }
