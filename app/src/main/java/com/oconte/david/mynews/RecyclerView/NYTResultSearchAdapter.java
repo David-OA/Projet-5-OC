@@ -44,6 +44,7 @@ public class NYTResultSearchAdapter extends RecyclerView.Adapter<NYTArticleSearc
 
         url = article.getUrl();
 
+        // The parts for change the color when the articles is read and save it.
         SharedPreferences preferencesUrl = viewHolder.itemView.getContext().getSharedPreferences("UrlPrefs", MODE_PRIVATE);
         String urls = preferencesUrl.getString("EXTRA_URL", "");
         if (urls.contains(url)) {

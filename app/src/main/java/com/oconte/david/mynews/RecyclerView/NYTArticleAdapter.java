@@ -31,7 +31,6 @@ public class NYTArticleAdapter extends RecyclerView.Adapter<NYTArticleViewHolder
     @NonNull
     @Override
     public NYTArticleViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-
         Context context = parent.getContext();
         LayoutInflater inflater = LayoutInflater.from(context);
         View view = inflater.inflate(R.layout.fragment_main_item, parent, false );
@@ -56,7 +55,7 @@ public class NYTArticleAdapter extends RecyclerView.Adapter<NYTArticleViewHolder
 
         url = article.getUrl();
 
-        // The parts for change the color when the articles is read.
+        // The parts for change the color when the articles is read and save it.
         SharedPreferences preferencesUrl = viewHolder.itemView.getContext().getSharedPreferences("UrlPrefs", MODE_PRIVATE);
         String urls = preferencesUrl.getString("EXTRA_URL", "");
         if (urls.contains(url)) {
