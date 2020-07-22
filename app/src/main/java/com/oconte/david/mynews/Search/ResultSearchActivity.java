@@ -30,52 +30,13 @@ import butterknife.ButterKnife;
 @SuppressLint("Registered")
 public class ResultSearchActivity extends AppCompatActivity implements NYTCallsSearch.Callbacks {
 
-    @BindView(R.id.toolbar) Toolbar toolbar;
-
     // FOR DESIGN
     @BindView(R.id.result_search_view) RecyclerView recyclerView;
+    @BindView(R.id.toolbar) Toolbar toolbar;
 
     // FOR DATA
     private NYTResultSearchAdapter adapter;
-
-    private static final String KEY_POSITION = "position";
-    private int position;
-
-    Context context;
-
-    SearchResult result;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_search_result);
-        ButterKnife.bind(this);
-
-        this.configureRecyclerView();
-
-        this.executeHttpRequestWithRetrofit();
-
-        this.configureOnClickRecyclerView();
-
-        this.configureToolbar();
-
-        this.getSearchQuery();
-    }
-
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
-    }
-
-    protected void configureToolbar() {
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("My News");
-
-
-        //afficher le bouton retour
-        getSupportActionBar().setHomeButtonEnabled(true);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-    }
+    private SearchResult result;
 
     // -----------------
     // GET DATA FROM INTENT
@@ -89,15 +50,38 @@ public class ResultSearchActivity extends AppCompatActivity implements NYTCallsS
     String politics;
     String sports;
     String travel;
-
     String sectionTerm;
-
     String correctBeginDate;
-
     String correctendDate;
 
-    private void getSearchQuery() {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_search_result);
+        ButterKnife.bind(this);
 
+        this.configureRecyclerView();
+        this.executeHttpRequestWithRetrofit();
+        this.configureOnClickRecyclerView();
+        this.configureToolbar();
+        this.getSearchQuery();
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+    }
+
+    protected void configureToolbar() {
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("My News");
+
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
+
+
+    private void getSearchQuery() {
         Bundle searchString = getIntent().getExtras();
         assert searchString != null;
 
@@ -157,10 +141,6 @@ public class ResultSearchActivity extends AppCompatActivity implements NYTCallsS
         this.recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 
-    // -----------------
-    // ACTION
-    // -----------------
-
     private void configureOnClickRecyclerView() {
         ItemClickSupport.addTo(recyclerView, R.layout.activity_web_view)
                 .setOnItemClickListener(new ItemClickSupport.OnItemClickListener() {
@@ -178,7 +158,6 @@ public class ResultSearchActivity extends AppCompatActivity implements NYTCallsS
 
     private void executeHttpRequestWithRetrofit() {
         getSearchQuery();
-
         NYTCallsSearch.getSearchSection(NYTFactory.getRetrofit().create(NYTService.class),this, correctBeginDate, correctendDate, sectionTerm, query, 10);
     }
 
@@ -203,10 +182,10 @@ public class ResultSearchActivity extends AppCompatActivity implements NYTCallsS
 
     }
 
-    /**
-     * ERROR MESSAGE
-     */
 
+    /**
+     * It's for ERROR MESSAGE
+     */
     public void noMoreNew() {
         AlertDialog.Builder myAlertDialogue = new AlertDialog.Builder(this);
         myAlertDialogue.setTitle("Alert ! ");
