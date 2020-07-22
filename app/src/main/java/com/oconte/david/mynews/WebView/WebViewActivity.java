@@ -16,6 +16,7 @@ import butterknife.ButterKnife;
 
 public class WebViewActivity extends AppCompatActivity {
 
+    // For Design
     @BindView(R.id.toolbar) Toolbar toolbar;
     @BindView(R.id.web_view_all_new) WebView webView;
 
@@ -26,13 +27,10 @@ public class WebViewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_web_view);
         ButterKnife.bind(this);
 
-
         this.configureToolbar();
-
         this.configureWebView();
 
     }
-
 
     @Override
     public void onDestroy() {
@@ -43,8 +41,6 @@ public class WebViewActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("My News");
 
-
-        //afficher le bouton retour
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }

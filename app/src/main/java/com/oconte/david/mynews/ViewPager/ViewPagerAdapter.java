@@ -19,17 +19,13 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-
                 return new FragmentTopStories();
             case 1:
-
                 return new FragmentMostPopular();
             case 2:
-
                 return new FragmentSports();
         }
         return null;
-        //return new FragmentSports();
     }
 
     @Nullable
