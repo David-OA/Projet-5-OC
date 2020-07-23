@@ -23,9 +23,11 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
-
+    // For Design
     @BindView(R.id.toolbar) Toolbar toolbar;
     @BindView(R.id.tabLayout) TabLayout tabLayout;
+
+    // For Data
     @BindView(R.id.pager) ViewPager viewPager;
 
     @Override
@@ -35,13 +37,13 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         this.configureToolbar();
-
         this.configureTabLayout();
-
         this.configureAndShowMainFragmentWithViewPager();
-
     }
 
+    /**
+     * To manage the View Pager.
+     */
     private void configureAndShowMainFragmentWithViewPager() {
         viewPager.setAdapter(new ViewPagerAdapter(getSupportFragmentManager()));
         tabLayout.setupWithViewPager(viewPager);
@@ -54,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
     protected void configureToolbar() {
         setSupportActionBar(toolbar);
         Objects.requireNonNull(getSupportActionBar()).setTitle("My News");
-
     }
 
     /**
@@ -73,13 +74,10 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.addTab(tabLayout.newTab().setText("TOP STORIES"));
         tabLayout.addTab(tabLayout.newTab().setText("MOST POPULAR"));
         tabLayout.addTab(tabLayout.newTab().setText("SPORTS"));
-
     }
 
     /**
      * For the right menu
-     * @param menu
-     * @return
      */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -87,10 +85,12 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+    /**
+     * To manage menu clicks.
+     */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        //View view = toolbar.findViewById(id);
         switch (id) {
             case R.id.menu_main_activity_search:
                 this.startSearchActivity();
@@ -104,13 +104,14 @@ public class MainActivity extends AppCompatActivity {
             case R.id.menu_main_activity_about:
                 this.startAboutActivity();
                 return true;
-
             default:
                 return super.onOptionsItemSelected(item);
         }
-
     }
 
+    /**
+     * For start the different activity by the right menu.
+     */
     private void startSearchActivity() {
         Intent intent = new Intent(this, SearchViewActivity.class);
         startActivity(intent);
@@ -119,7 +120,6 @@ public class MainActivity extends AppCompatActivity {
     private void startNotificationsActivity(){
         Intent intent = new Intent(this, NotificationsActivity.class);
         startActivity(intent);
-
     }
 
     private void startHelpActivity(){
