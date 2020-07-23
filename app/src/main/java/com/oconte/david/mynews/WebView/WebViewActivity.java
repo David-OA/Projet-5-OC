@@ -29,7 +29,6 @@ public class WebViewActivity extends AppCompatActivity {
 
         this.configureToolbar();
         this.configureWebView();
-
     }
 
     @Override
@@ -45,6 +44,11 @@ public class WebViewActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
+
+    /**
+     * It's for manage the webView after click on one article for see the details
+     * and save that it has been read.
+     */
     protected void configureWebView() {
         WebView mWebView = (WebView) findViewById(R.id.web_view_all_new);
         mWebView.setWebViewClient(new WebViewClient() {

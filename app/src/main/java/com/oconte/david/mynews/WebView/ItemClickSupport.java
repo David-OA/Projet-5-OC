@@ -5,9 +5,14 @@ import android.view.View;
 
 public class ItemClickSupport {
 
+    /**
+     * It's for manage the click on a item of the recyclerview.
+     */
+
     private final RecyclerView mRecyclerView;
     private OnItemClickListener mOnItemClickListener;
     private int mItemID;
+
     private View.OnClickListener mOnClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -55,7 +60,6 @@ public class ItemClickSupport {
     }
 
     public interface OnItemClickListener {
-
         void onItemClicked(RecyclerView recyclerView, int position, View v);
     }
 }
