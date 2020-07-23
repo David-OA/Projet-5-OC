@@ -29,7 +29,7 @@ public class AlarmWorker extends Worker implements NYTCallsSearch.Callbacks {
 
     private Context context;
 
-
+    // For Data
     private static final String EXTRA_NOTI_QUERY = "extra_noti_query";
     private static final String EXTRA_NOTI_ART = "extra_noti_art";
     private static final String EXTRA_NOTI_BUSINESS = "extra_noti_business";
@@ -46,6 +46,10 @@ public class AlarmWorker extends Worker implements NYTCallsSearch.Callbacks {
         this.context = context;
     }
 
+    /**
+     * It's the action do by the Worker when notification is check.
+     * @return Result.
+     */
     @NonNull
     @Override
     public Result doWork() {
@@ -95,13 +99,11 @@ public class AlarmWorker extends Worker implements NYTCallsSearch.Callbacks {
      */
     private void executeHttpRequestWithRetrofit() {
         getDataFromPreferences();
-
         NYTCallsSearch.getSearchSection(NYTFactory.getRetrofit().create(NYTService.class),this, null, null, queryTerm, querySection, 0);
     }
 
     /**
      * It's the response of search for the notification.
-     * @param response
      */
     @Override
     public void onResponse(@Nullable SearchResult response) {
@@ -116,11 +118,10 @@ public class AlarmWorker extends Worker implements NYTCallsSearch.Callbacks {
 
     @Override
     public void onFailure() {
-
     }
 
     /**
-     * Error Message.
+     * It's for Error Message.
      */
     private void noMoreNew() {
         AlertDialog.Builder myAlertDialogue = new AlertDialog.Builder(context);

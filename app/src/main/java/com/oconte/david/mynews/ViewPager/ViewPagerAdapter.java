@@ -15,6 +15,9 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
         super(fm);
     }
 
+    /**
+     * The Fragment for itch positions
+     */
     @Override
     public Fragment getItem(int position) {
         switch (position) {
@@ -28,6 +31,9 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
         return null;
     }
 
+    /**
+     * The title for ich label of this TabLayout.
+     */
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
@@ -43,6 +49,9 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
         }
     }
 
+    /**
+     * Number of label.
+     */
     @Override
     public int getCount() {
         return 3;
