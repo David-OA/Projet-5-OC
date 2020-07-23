@@ -1,12 +1,8 @@
 package com.oconte.david.mynews;
 
-import android.app.ActionBar;
-import android.app.Application;
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
-import android.support.test.espresso.assertion.ViewAssertions;
 import android.support.test.espresso.matcher.ViewMatchers;
-import android.support.test.filters.LargeTest;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 
@@ -15,16 +11,13 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import static android.support.test.InstrumentationRegistry.getInstrumentation;
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.Espresso.openActionBarOverflowOrOptionsMenu;
 import static android.support.test.espresso.action.ViewActions.click;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
-import static android.support.test.espresso.matcher.ViewMatchers.isClickable;
 import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
-import static org.junit.Assert.*;
 
 /**
  * Instrumented test, which will execute on an Android device.
@@ -43,7 +36,6 @@ public class MainActivityInstrumentedTest {
     public void setup() {
         this.context = InstrumentationRegistry.getTargetContext();
     }
-
 
     @Test
     public void checkMenuToolBar_onClickItem_Noti() {
@@ -65,9 +57,6 @@ public class MainActivityInstrumentedTest {
         openActionBarOverflowOrOptionsMenu(InstrumentationRegistry.getTargetContext());
 
         onView(withText("Help")).perform(click());
-
-
-
     }
 
     @Test
@@ -78,7 +67,6 @@ public class MainActivityInstrumentedTest {
         openActionBarOverflowOrOptionsMenu(InstrumentationRegistry.getTargetContext());
 
         onView(withText("About")).perform(click());
-
     }
 
     @Test
@@ -87,7 +75,6 @@ public class MainActivityInstrumentedTest {
         onView(ViewMatchers.withId(R.id.toolbar)).perform(click());
 
         onView(withId(R.id.menu_main_activity_search)).perform(click());
-
     }
 
 }
