@@ -7,6 +7,7 @@ import android.support.test.runner.AndroidJUnit4;
 import android.support.v7.widget.RecyclerView;
 
 import com.oconte.david.mynews.Models.Result;
+import com.oconte.david.mynews.OptionMenu.NotificationsActivity;
 
 import org.jetbrains.annotations.NotNull;
 import org.junit.Before;
@@ -30,6 +31,7 @@ import retrofit2.Retrofit;
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
+import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
 import static retrofit2.converter.gson.GsonConverterFactory.create;
 
@@ -63,9 +65,22 @@ public class TopStorieViewTest {
         server.start(9900);
 
         // lancer activity sur le bon fragment
-        
-    }
+        mActivityRule.getActivity().runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                MainActivity activity = (MainActivity) mActivityRule.getActivity();
+                //FragmentTopStories fragmentTopStories = activity.getSupportFragmentManager().getFragments().add(0,FragmentTopStories);
+                //TopStoriesFragments topStoriesFragment = new FragmentTopStories();
+                //return topStoriesFragment;
+            }
+        });
 
+        onView(withId(R.id.fragment_main_date)).check(matches(isDisplayed()));
+        onView(withId(R.id.fragment_main_image)).check(matches(isDisplayed()));
+        onView(withId(R.id.fragment_main_section)).check(matches(isDisplayed()));
+        onView(withId(R.id.fragment_main_title)).check(matches(isDisplayed()));
+
+    }
 
 
     /* the Activity of the Target application*/
