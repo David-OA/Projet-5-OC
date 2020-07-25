@@ -2,12 +2,12 @@ package com.oconte.david.mynews;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.test.InstrumentationRegistry;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 import android.support.v7.widget.RecyclerView;
 
 import com.oconte.david.mynews.Models.Result;
-import com.oconte.david.mynews.OptionMenu.NotificationsActivity;
 
 import org.jetbrains.annotations.NotNull;
 import org.junit.Before;
@@ -19,21 +19,16 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.util.concurrent.CountDownLatch;
 
-
-import okhttp3.OkHttpClient;
-import okhttp3.logging.HttpLoggingInterceptor;
 import okhttp3.mockwebserver.Dispatcher;
 import okhttp3.mockwebserver.MockResponse;
 import okhttp3.mockwebserver.MockWebServer;
 import okhttp3.mockwebserver.RecordedRequest;
-import retrofit2.Retrofit;
 
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
-import static retrofit2.converter.gson.GsonConverterFactory.create;
 
 @RunWith(AndroidJUnit4.class)
 public class TopStorieViewTest {
@@ -57,28 +52,36 @@ public class TopStorieViewTest {
     @Test
     public void testCallsTopStorie() throws IOException, InterruptedException {
 
-        MockWebServer server = setupServer(HttpURLConnection.HTTP_OK, ConstRecyclerView.FRAGTOPSTORIE_RESPONSE);
+        MockWebServer server = setupServer(HttpURLConnection.HTTP_OK, AssetReader.getAsset(InstrumentationRegistry.getInstrumentation().getContext(), "topstories_response.json"));
 
         final CountDownLatch latch = new CountDownLatch(1);
 
         // Start the server.
         server.start(9900);
 
+
+        mActivityRule.getActivity().getFragmentManager().beginTransaction();
+        FragmentTopStories fragmentTopStories = new FragmentTopStories();
         // lancer activity sur le bon fragment
-        mActivityRule.getActivity().runOnUiThread(new Runnable() {
+        /*mActivityRule.getActivity().runOnUiThread(new Runnable() {
             @Override
             public void run() {
                 MainActivity activity = (MainActivity) mActivityRule.getActivity();
-                //FragmentTopStories fragmentTopStories = activity.getSupportFragmentManager().getFragments().add(0,FragmentTopStories);
-                //TopStoriesFragments topStoriesFragment = new FragmentTopStories();
-                //return topStoriesFragment;
+                FragmentTopStories fragmentTopStories = activity.getSupportFragmentManager().getFragments().add(0,FragmentTopStories);
+                TopStoriesFragments topStoriesFragment = new FragmentTopStories();
+                return topStoriesFragment;
             }
-        });
+        });mActivityruleLunch
 
         onView(withId(R.id.fragment_main_date)).check(matches(isDisplayed()));
         onView(withId(R.id.fragment_main_image)).check(matches(isDisplayed()));
         onView(withId(R.id.fragment_main_section)).check(matches(isDisplayed()));
-        onView(withId(R.id.fragment_main_title)).check(matches(isDisplayed()));
+        onView(withId(R.id.fragment_main_title)).check(matches(isDisplayed()));*/
+
+    }
+
+    @Before
+    public void setUpFragment(){
 
     }
 
