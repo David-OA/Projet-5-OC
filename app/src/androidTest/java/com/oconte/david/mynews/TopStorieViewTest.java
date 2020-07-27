@@ -3,11 +3,13 @@ package com.oconte.david.mynews;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.test.InstrumentationRegistry;
+import android.support.test.espresso.intent.rule.IntentsTestRule;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 import android.support.v7.widget.RecyclerView;
 
 import com.oconte.david.mynews.Models.Result;
+import com.oconte.david.mynews.OptionMenu.NotificationsActivity;
 
 import org.jetbrains.annotations.NotNull;
 import org.junit.Before;
@@ -36,6 +38,28 @@ public class TopStorieViewTest {
     private Result results;
     private String baseUrl = "http://127.0.0.1:9900";
 
+    /* the Activity of the Target application*/
+    private MainActivity mActivity;
+
+    /**
+     * the {@link RecyclerView}
+     */
+    private RecyclerView mRecyclerView;
+
+    /**
+     * and it's item count
+     */
+    private int itemCount = 0;
+
+    /**
+     * such a {@link ActivityTestRule} can be used eg. for Intent.putExtra(),
+     * alike one would pass command-line arguments to regular run configurations.
+     */
+    @Rule
+    public ActivityTestRule<MainActivity> mActivityRule = new ActivityTestRule<MainActivity>(MainActivity.class, false, false);
+
+    private int resId = R.id.fragment_main_recycler_view;
+
     // une methode permettant dexternaliser la creation de lobjet mockwebserver en lui passant le bon code http(200, 400 ou autre) et la bonne reponse json
     private MockWebServer setupServer(int code, String response) {
         MockWebServer server = new MockWebServer();
@@ -59,88 +83,48 @@ public class TopStorieViewTest {
         // Start the server.
         server.start(9900);
 
+        //Start the MainActivity
+        mActivityRule.launchActivity(null);
 
-        mActivityRule.getActivity().getFragmentManager().beginTransaction();
-        FragmentTopStories fragmentTopStories = new FragmentTopStories();
-        // lancer activity sur le bon fragment
-        /*mActivityRule.getActivity().runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                MainActivity activity = (MainActivity) mActivityRule.getActivity();
-                FragmentTopStories fragmentTopStories = activity.getSupportFragmentManager().getFragments().add(0,FragmentTopStories);
-                TopStoriesFragments topStoriesFragment = new FragmentTopStories();
-                return topStoriesFragment;
-            }
-        });mActivityruleLunch
+        //Test recyclerview
 
-        onView(withId(R.id.fragment_main_date)).check(matches(isDisplayed()));
-        onView(withId(R.id.fragment_main_image)).check(matches(isDisplayed()));
+        //onView(withId(R.id.fragment_main_recycler_view).matches(isDisplayed()));//.check(matches(isDisplayed()));
         onView(withId(R.id.fragment_main_section)).check(matches(isDisplayed()));
-        onView(withId(R.id.fragment_main_title)).check(matches(isDisplayed()));*/
 
     }
 
     @Before
-    public void setUpFragment(){
+    public void setUpFragment() {
 
     }
 
-
-    /* the Activity of the Target application*/
-    private MainActivity mActivity;
-
-    /** the {@link RecyclerView}'s resource id*/
-    private int resId = R.id.fragment_main_recycler_view;
-
-    /** the {@link RecyclerView}*/
-    private RecyclerView mRecyclerView;
-
-    /** and it's item count*/
-    private int itemCount = 0;
-
-    /**
-     * such a {@link ActivityTestRule} can be used eg. for Intent.putExtra(),
-     * alike one would pass command-line arguments to regular run configurations.
-     *
-     */
-    @Rule
-    public ActivityTestRule<MainActivity> mActivityRule = new ActivityTestRule<MainActivity>(MainActivity.class,false, false) {
-
-        @Override
-        protected Intent getActivityIntent() {
-            Intent intent = new Intent();
-            Bundle extras = new Bundle();
-            intent.putExtras(extras);
-            return intent;
-        }
-    };
 
     @Before
     public void setUpTest() {
 
         /*obtaining the Activity from the ActivityTestRule*/
-        this.mActivity = this.mActivityRule.getActivity();
+        //this.mActivity = this.mActivityRule.getActivity();
 
         /* obtaining handles to the Ui of the Activity*/
-        this.mRecyclerView = this.mActivity.findViewById(this.resId);
-        this.itemCount = this.mRecyclerView.getAdapter().getItemCount();
+        //this.mRecyclerView = this.mActivity.findViewById(this.resId);
+        //this.itemCount = this.mRecyclerView.getAdapter().getItemCount();
     }
 
     @Test
     public void TopStorieViewTest() {
-        if(this.itemCount > 0) {
+        /*if(this.itemCount > 0) {
             for(int i=0; i < this.itemCount; i++) {
 
                 /* clicking the item*/
-                //onView(withId(this.resId))
-                        //.perform(RecyclerViewActions.actionOnItemAtPosition(i, click()));
+        //onView(withId(this.resId))
+        //.perform(RecyclerViewActions.actionOnItemAtPosition(i, click()));
 
-                /* check if the ViewHolder is being displayed*/
+                /* check if the ViewHolder is being displayed
                 onView(new RecyclerViewMatcher(this.resId)
                         .atPositionOnView(i, R.id.fragment_main_recycler_view))
                         .check(matches(isDisplayed()));
 
-                /* checking for the text of the first one item*/
+                /* checking for the text of the first one item
                 if(i == 0) {
                     onView(new RecyclerViewMatcher(this.resId)
                             .atPositionOnView(i, R.id.fragment_main_section))
@@ -155,5 +139,6 @@ public class TopStorieViewTest {
 
             }
         }
+    }}*/
     }
 }
