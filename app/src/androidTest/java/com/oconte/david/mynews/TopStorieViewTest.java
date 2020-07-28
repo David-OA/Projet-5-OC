@@ -31,8 +31,11 @@ import okhttp3.mockwebserver.RecordedRequest;
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
+import static android.support.test.espresso.matcher.ViewMatchers.withEffectiveVisibility;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
+import static android.view.View.VISIBLE;
+import static org.hamcrest.core.AllOf.allOf;
 
 @RunWith(AndroidJUnit4.class)
 public class TopStorieViewTest {
@@ -91,8 +94,8 @@ public class TopStorieViewTest {
         mActivityRule.launchActivity(null);
 
         //Test recyclerview
-        onView(withId(R.id.fragment_main_recycler_view)).check(matches(isDisplayed()));
-
+        //onView(withId(R.id.fragment_main_recycler_view)).check(matches(isDisplayed()));
+        onView(allOf(withId(R.id.fragment_main_recycler_view), isDisplayed()));
 
 
     }
