@@ -1,6 +1,6 @@
 # My News
 
-![Capture d'écran](./res/drawable/myNews.jpg)
+<img src="./res/drawable/myNews.jpg" width="30%" height="30%">
 
 ### Library
 - Android Support Library
