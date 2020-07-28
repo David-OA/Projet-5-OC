@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.espresso.intent.rule.IntentsTestRule;
+import android.support.test.espresso.matcher.ViewMatchers;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 import android.support.v7.widget.RecyclerView;
@@ -38,6 +39,8 @@ public class TopStorieViewTest {
     private Result results;
     private String baseUrl = "http://127.0.0.1:9900";
 
+    private int resId = R.id.fragment_main_recycler_view;
+
     /* the Activity of the Target application*/
     private MainActivity mActivity;
 
@@ -58,7 +61,7 @@ public class TopStorieViewTest {
     @Rule
     public ActivityTestRule<MainActivity> mActivityRule = new ActivityTestRule<MainActivity>(MainActivity.class, false, false);
 
-    private int resId = R.id.fragment_main_recycler_view;
+
 
     // une methode permettant dexternaliser la creation de lobjet mockwebserver en lui passant le bon code http(200, 400 ou autre) et la bonne reponse json
     private MockWebServer setupServer(int code, String response) {
@@ -88,57 +91,26 @@ public class TopStorieViewTest {
 
         //Test recyclerview
 
-        //onView(withId(R.id.fragment_main_recycler_view).matches(isDisplayed()));//.check(matches(isDisplayed()));
-        onView(withId(R.id.fragment_main_section)).check(matches(isDisplayed()));
+        if(this.itemCount > 0) {
+            for (int i = 0; i < this.itemCount; i++) {
 
-    }
-
-    @Before
-    public void setUpFragment() {
-
-    }
-
-
-    @Before
-    public void setUpTest() {
-
-        /*obtaining the Activity from the ActivityTestRule*/
-        //this.mActivity = this.mActivityRule.getActivity();
-
-        /* obtaining handles to the Ui of the Activity*/
-        //this.mRecyclerView = this.mActivity.findViewById(this.resId);
-        //this.itemCount = this.mRecyclerView.getAdapter().getItemCount();
-    }
-
-    @Test
-    public void TopStorieViewTest() {
-        /*if(this.itemCount > 0) {
-            for(int i=0; i < this.itemCount; i++) {
-
-                /* clicking the item*/
-        //onView(withId(this.resId))
-        //.perform(RecyclerViewActions.actionOnItemAtPosition(i, click()));
-
-                /* check if the ViewHolder is being displayed
+                //check if the ViewHolder is being displayed
                 onView(new RecyclerViewMatcher(this.resId)
                         .atPositionOnView(i, R.id.fragment_main_recycler_view))
                         .check(matches(isDisplayed()));
 
-                /* checking for the text of the first one item
-                if(i == 0) {
+                /* checking for the text of the first one item*/
+                if (i == 0) {
                     onView(new RecyclerViewMatcher(this.resId)
                             .atPositionOnView(i, R.id.fragment_main_section))
-                            .check(matches(withText("Farbstoffe")));
+                            .check(matches(isDisplayed()));
                 }
-
-                if(i == 0) {
-                    onView(new RecyclerViewMatcher(this.resId)
-                            .atPositionOnView(i, R.id.fragment_main_title))
-                            .check(matches(withText("Farbstoffe")));
-                }
-
             }
         }
-    }}*/
+        //onView(ViewMatchers).perform().withId(R.id.fragment_main_recycler_view).matches(isDisplayed());
+        //onView(withId(R.id.fragment_main_recycler_view).matches(isDisplayed()));//.check(matches(isDisplayed()));
+        //onView(withId(R.id.fragment_main_section)).check(matches(isDisplayed()));
+
     }
+
 }
