@@ -3,6 +3,7 @@ package com.oconte.david.mynews;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.test.InstrumentationRegistry;
+import android.support.test.espresso.ViewAssertion;
 import android.support.test.espresso.intent.rule.IntentsTestRule;
 import android.support.test.espresso.matcher.ViewMatchers;
 import android.support.test.rule.ActivityTestRule;
@@ -90,27 +91,9 @@ public class TopStorieViewTest {
         mActivityRule.launchActivity(null);
 
         //Test recyclerview
+        onView(withId(R.id.fragment_main_recycler_view)).check(matches(isDisplayed()));
 
-        if(this.itemCount > 0) {
-            for (int i = 0; i < this.itemCount; i++) {
 
-                //check if the ViewHolder is being displayed
-                onView(new RecyclerViewMatcher(this.resId)
-                        .atPositionOnView(i, R.id.fragment_main_recycler_view))
-                        .check(matches(isDisplayed()));
-
-                /* checking for the text of the first one item*/
-                if (i == 0) {
-                    onView(new RecyclerViewMatcher(this.resId)
-                            .atPositionOnView(i, R.id.fragment_main_section))
-                            .check(matches(isDisplayed()));
-                }
-            }
-        }
-        //onView(ViewMatchers).perform().withId(R.id.fragment_main_recycler_view).matches(isDisplayed());
-        //onView(withId(R.id.fragment_main_recycler_view).matches(isDisplayed()));//.check(matches(isDisplayed()));
-        //onView(withId(R.id.fragment_main_section)).check(matches(isDisplayed()));
 
     }
-
 }
