@@ -1,6 +1,6 @@
 # My News
 
-![Capture d'écran](/res/drawable/myNews.jpg)
+![Capture d'écran](./res/drawable/myNews.jpg)
 
 ### Library
 - Android Support Library
