@@ -1,6 +1,6 @@
 # My News
 
-<img src="./res/drawable/myNews.jpg" width="30%" height="30%">
+<img src="./res/drawable/myNews.png" width="30%" height="30%">
 
 ### Library
 - Android Support Library
