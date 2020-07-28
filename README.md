@@ -1,4 +1,8 @@
 # My News
+It's a Android Application for get the latest news from The New York Times. You can choice between 3 categories :
+- TopStories
+- MostPopular
+- Sports
 
 <img src="./res/drawable/myNews.png" width="30%" height="30%">
 
