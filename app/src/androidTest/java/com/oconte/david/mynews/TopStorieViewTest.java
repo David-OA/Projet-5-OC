@@ -95,7 +95,7 @@ public class TopStorieViewTest {
 
         //Test recyclerview
         onView(withId(R.id.fragment_main_recycler_view)).check(matches(isDisplayed()));
-        
+
 
     }
 }
