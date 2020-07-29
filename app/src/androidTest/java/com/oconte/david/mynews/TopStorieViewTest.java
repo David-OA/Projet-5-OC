@@ -94,9 +94,8 @@ public class TopStorieViewTest {
         mActivityRule.launchActivity(null);
 
         //Test recyclerview
-        //onView(withId(R.id.fragment_main_recycler_view)).check(matches(isDisplayed()));
-        onView(allOf(withId(R.id.fragment_main_recycler_view), isDisplayed()));
-
+        onView(withId(R.id.fragment_main_recycler_view)).check(matches(isDisplayed()));
+        
 
     }
 }

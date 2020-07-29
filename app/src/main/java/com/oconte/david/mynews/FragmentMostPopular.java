@@ -23,7 +23,7 @@ import butterknife.ButterKnife;
 public class FragmentMostPopular extends Fragment implements NYTCallsMostPopular.Callbacks{
 
     // FOR DESIGN
-    @BindView(R.id.fragment_main_recycler_view) RecyclerView recyclerView;
+    @BindView(R.id.fragment_main_mostpopular_recycler_view) RecyclerView recyclerView;
 
     // FOR DATA
     private NYTArticleAdapter adapter;

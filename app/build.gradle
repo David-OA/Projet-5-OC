@@ -22,7 +22,7 @@ android {
             minifyEnabled false
             shrinkResources false
 
-            buildConfigField("String", "API_SERVER", "\"http://127.0.0.1:9900\"") // for test utiliser  https://api.nytimes.com
+            buildConfigField("String", "API_SERVER", "\"http://127.0.0.1:9900\"") // for test utiliser https://api.nytimes.com
         }
 
         /*espresso{

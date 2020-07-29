@@ -25,7 +25,7 @@ import butterknife.ButterKnife;
 public class FragmentSports extends Fragment implements NYTCallsSports.Callbacks {
 
     // FOR DESIGN
-    @BindView(R.id.fragment_main_recycler_view) RecyclerView recyclerView;
+    @BindView(R.id.fragment_main_sports_recycler_view) RecyclerView recyclerView;
 
     // FOR DATA
     private NYTArticleAdapter adapter;
