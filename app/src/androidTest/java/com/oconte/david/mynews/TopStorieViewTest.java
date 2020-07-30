@@ -94,10 +94,11 @@ public class TopStorieViewTest {
         //Start the MainActivity
         mActivityRule.launchActivity(null);
 
-        //Test recyclerview
+        //Test recyclerview is good.
         onView(withId(R.id.fragment_main_recycler_view)).check(matches(isDisplayed()));
 
-
+        //Test all elements are good in the recyclerview.
+        onView(withId(R.id.fragment_main_date)).check(matches(isDisplayed()));
 
     }
 }
