@@ -36,7 +36,7 @@ public class FragmentMostPopular extends Fragment implements NYTCallsMostPopular
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_main, container, false);
+        View view = inflater.inflate(R.layout.fragment_main_mostpopular, container, false);
         ButterKnife.bind(this, view);
         this.configureRecyclerView();
 

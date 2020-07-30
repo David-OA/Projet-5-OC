@@ -3,6 +3,7 @@ package com.oconte.david.mynews;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.test.InstrumentationRegistry;
+import android.support.test.espresso.ViewAction;
 import android.support.test.espresso.ViewAssertion;
 import android.support.test.espresso.intent.rule.IntentsTestRule;
 import android.support.test.espresso.matcher.ViewMatchers;
@@ -95,6 +96,7 @@ public class TopStorieViewTest {
 
         //Test recyclerview
         onView(withId(R.id.fragment_main_recycler_view)).check(matches(isDisplayed()));
+
 
 
     }

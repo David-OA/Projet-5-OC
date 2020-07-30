@@ -38,7 +38,7 @@ public class FragmentSports extends Fragment implements NYTCallsSports.Callbacks
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_main, container, false);
+        View view = inflater.inflate(R.layout.fragment_main_sports, container, false);
         ButterKnife.bind(this, view);
         this.configureRecyclerView();
 
