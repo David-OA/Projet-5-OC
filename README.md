@@ -5,7 +5,7 @@ It's a Android Application for get the latest news from The New York Times. You 
 - Sports
 
 <img src="./res/drawable/myNews.png?raw=true" width="30%" height="30%">
-![test](./res/drawable/myNews.png)
+![test](./res/drawable/myNews.png?raw=true)
 
 ### Library
 - Android Support Library
