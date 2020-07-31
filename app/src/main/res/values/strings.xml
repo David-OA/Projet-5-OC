@@ -24,7 +24,9 @@
     <string name="help_5">You can keep updated every day with new articles using the notifications functionality.
         To use it, click the - Notifications - button (displayed after tapping the 3 dots button in the main bar),
         choose the categories, introduce a search query if you\'d like and switch the button on. The app will send
-        you a notification every day with new articles.</string>
+        you a notification every day at 12 h with new articles.</string>
+    <string name="help_6">You can see the different Library, Architecture and Developer of this application.
+        To use it, click the - About - button (displayed after tapping the 3 dots button in the main bar),</string>
 
 
     <!-- ABOUT text -->

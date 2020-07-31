@@ -41,10 +41,16 @@
         android:paddingLeft="5dip"
         android:text="@string/help_4"/>
 
-    <!--<TextView
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="5dip"
-        android:text="@string/help_5"/>-->
+        android:text="@string/help_5"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:text="@string/help_6"/>
 
 </LinearLayout>
