@@ -25,6 +25,7 @@ import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
+import static android.support.test.espresso.matcher.ViewMatchers.withText;
 
 @RunWith(AndroidJUnit4.class)
 public class TopStorieViewTest {
@@ -54,9 +55,7 @@ public class TopStorieViewTest {
     @Rule
     public ActivityTestRule<MainActivity> mActivityRule = new ActivityTestRule<MainActivity>(MainActivity.class, false, false);
 
-
-
-    // une methode permettant dexternaliser la creation de lobjet mockwebserver en lui passant le bon code http(200, 400 ou autre) et la bonne reponse json
+    // Method allowing to outsource the creation of the mockwebserver object by passing the correct http code (200, 400 or other) and the correct json response.
     private MockWebServer setupServer(int code, String response) {
         MockWebServer server = new MockWebServer();
         server.setDispatcher(new Dispatcher() {
@@ -86,6 +85,7 @@ public class TopStorieViewTest {
         onView(withId(R.id.fragment_main_recycler_view)).check(matches(isDisplayed()));
 
         //Test all elements are good in the recyclerview.
+        //onView(withId(R.id.fragment_main_date)).check(matches(withText("published_date")));
         onView(withId(R.id.fragment_main_date)).check(matches(isDisplayed()));
 
     }
