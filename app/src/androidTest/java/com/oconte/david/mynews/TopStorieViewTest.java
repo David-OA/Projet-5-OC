@@ -21,8 +21,11 @@ import okhttp3.mockwebserver.MockResponse;
 import okhttp3.mockwebserver.MockWebServer;
 import okhttp3.mockwebserver.RecordedRequest;
 
+import static android.support.test.espresso.Espresso.onData;
 import static android.support.test.espresso.Espresso.onView;
+import static android.support.test.espresso.action.ViewActions.typeText;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
+import static android.support.test.espresso.matcher.ViewMatchers.isClickable;
 import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
@@ -30,23 +33,7 @@ import static android.support.test.espresso.matcher.ViewMatchers.withText;
 @RunWith(AndroidJUnit4.class)
 public class TopStorieViewTest {
 
-    private Result results;
-    private String baseUrl = "http://127.0.0.1:9900";
 
-    private int resId = R.id.fragment_main_recycler_view;
-
-    /* the Activity of the Target application*/
-    private MainActivity mActivity;
-
-    /**
-     * the {@link RecyclerView}
-     */
-    private RecyclerView mRecyclerView;
-
-    /**
-     * and it's item count
-     */
-    private int itemCount = 0;
 
     /**
      * such a {@link ActivityTestRule} can be used eg. for Intent.putExtra(),
@@ -73,7 +60,7 @@ public class TopStorieViewTest {
 
         MockWebServer server = setupServer(HttpURLConnection.HTTP_OK, AssetReader.getAsset(InstrumentationRegistry.getInstrumentation().getContext(), "topstories_response.json"));
 
-        final CountDownLatch latch = new CountDownLatch(1);
+
 
         // Start the server.
         server.start(9900);
@@ -85,8 +72,10 @@ public class TopStorieViewTest {
         onView(withId(R.id.fragment_main_recycler_view)).check(matches(isDisplayed()));
 
         //Test all elements are good in the recyclerview.
-        //onView(withId(R.id.fragment_main_date)).check(matches(withText("published_date")));
-        onView(withId(R.id.fragment_main_date)).check(matches(isDisplayed()));
+
+        Thread.sleep(2000);
+
+        //onData()
 
     }
 }
