@@ -4,6 +4,7 @@ import android.support.test.InstrumentationRegistry;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 
+import org.hamcrest.Matcher;
 import org.jetbrains.annotations.NotNull;
 import org.junit.Rule;
 import org.junit.Test;
@@ -11,16 +12,26 @@ import org.junit.runner.RunWith;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
+import java.util.Map;
 
 import okhttp3.mockwebserver.Dispatcher;
 import okhttp3.mockwebserver.MockResponse;
 import okhttp3.mockwebserver.MockWebServer;
 import okhttp3.mockwebserver.RecordedRequest;
 
+import static android.support.test.espresso.Espresso.onData;
 import static android.support.test.espresso.Espresso.onView;
+import static android.support.test.espresso.action.ViewActions.click;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
+import static android.support.test.espresso.core.internal.deps.guava.base.Preconditions.checkNotNull;
+import static android.support.test.espresso.intent.matcher.BundleMatchers.hasEntry;
 import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
+
+import static org.hamcrest.Matchers.allOf;
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.instanceOf;
+import static org.hamcrest.Matchers.is;
 
 @RunWith(AndroidJUnit4.class)
 public class TopStorieViewTest {
@@ -45,12 +56,16 @@ public class TopStorieViewTest {
         return server;
     }
 
+    public static Matcher<Object> withItemContent(String expectedText) {
+        checkNotNull(expectedText);
+        return withItemContent(equalTo(expectedText));
+    }
+
+
     @Test
     public void testCallsTopStorie() throws IOException, InterruptedException {
 
         MockWebServer server = setupServer(HttpURLConnection.HTTP_OK, AssetReader.getAsset(InstrumentationRegistry.getInstrumentation().getContext(), "topstories_response.json"));
-
-
 
         // Start the server.
         server.start(9900);
@@ -65,7 +80,26 @@ public class TopStorieViewTest {
 
         Thread.sleep(2000);
 
-        //onData()
+        onData(allOf(is(instanceOf(Map.class)), hasEntry(equalTo("STR"), is("item: 5"))))
+                .perform(click());
 
+        onData(withIte)
     }
+
+    public void backgroundWorkDone()  {
+        // Background work finished.
+        //Start the MainActivity
+        mActivityRule.launchActivity(null);
+
+        //Test recyclerview is good.
+        onView(withId(R.id.fragment_main_recycler_view)).check(matches(isDisplayed()));
+
+        onData(allOf(is(instanceOf(Map.class)), hasEntry(equalTo("STR"), is("item: 50"))))
+                .perform(click());
+
+        //callback.onTransitionToIdle(); // Good. Tells Espresso that the app is idle.
+        // Don't do any post-processing work beyond this point. Espresso now
+        // considers your app to be idle and moves on to the next test action.
+    }
+
 }
