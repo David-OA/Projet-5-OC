@@ -58,7 +58,7 @@ public class TopStorieViewTest {
 
     public static Matcher<Object> withItemContent(String expectedText) {
         checkNotNull(expectedText);
-        return withItemContent(equalTo(expectedText));
+        return withItemContent(equalTo(expectedText).toString());
     }
 
 
@@ -80,26 +80,8 @@ public class TopStorieViewTest {
 
         Thread.sleep(2000);
 
-        onData(allOf(is(instanceOf(Map.class)), hasEntry(equalTo("STR"), is("item: 5"))))
-                .perform(click());
-
-        onData(withIte)
-    }
-
-    public void backgroundWorkDone()  {
-        // Background work finished.
-        //Start the MainActivity
-        mActivityRule.launchActivity(null);
-
-        //Test recyclerview is good.
-        onView(withId(R.id.fragment_main_recycler_view)).check(matches(isDisplayed()));
-
-        onData(allOf(is(instanceOf(Map.class)), hasEntry(equalTo("STR"), is("item: 50"))))
-                .perform(click());
-
-        //callback.onTransitionToIdle(); // Good. Tells Espresso that the app is idle.
-        // Don't do any post-processing work beyond this point. Espresso now
-        // considers your app to be idle and moves on to the next test action.
+        //onData(withItemContent("title")).onChildView(withId(R.id.fragment_main_title)).check(matches(isDisplayed()));
+        onData(withItemContent("published_date")).onChildView(withId(R.id.fragment_main_date)).check(matches(isDisplayed()));
     }
 
 }
