@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
@@ -13,7 +13,7 @@
         android:minHeight="?attr/actionBarSize"
         android:theme="@style/ToolBarTheme"
         app:popupTheme="@style/MenuToolBarTheme">
-    </android.support.v7.widget.Toolbar>
+    </androidx.appcompat.widget.Toolbar>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -46,7 +46,7 @@
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@id/query_layout">
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/begin_date_input_layout"
                 android:layout_height="wrap_content"
                 android:layout_width="0dp"
@@ -64,10 +64,10 @@
                     android:textSize="@dimen/text_date_size"
                     android:onClick="showStartDatePickerDialog"
                     android:focusable="false"/>
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/end_date_input_layout"
                 android:layout_height="wrap_content"
                 android:layout_width="0dp"
@@ -85,7 +85,7 @@
                     android:textSize="@dimen/text_date_size"
                     android:onClick="showEndDatePickerDialog"
                     android:focusable="false"/>
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
         </LinearLayout>
 

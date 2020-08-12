@@ -1,6 +1,6 @@
 package com.oconte.david.mynews;
 
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 import com.oconte.david.mynews.Calls.NYTCallsSearch;
 import com.oconte.david.mynews.Models.SearchResult;
