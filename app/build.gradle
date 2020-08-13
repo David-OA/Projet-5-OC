@@ -23,7 +23,7 @@ android {
             minifyEnabled false
             shrinkResources false
 
-            buildConfigField("String", "API_SERVER", "\"https://api.nytimes.com\"") // for test utiliserhttp://127.0.0.1:9900
+            buildConfigField("String", "API_SERVER", "\"http://127.0.0.1:9900\"") // for test utiliser https://api.nytimes.com
         }
 
         /*espresso{
@@ -95,6 +95,9 @@ dependencies {
     androidTestImplementation 'junit:junit:4.13'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.2.0'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test:rules:1.2.0'
 
     //MULTIDEX
     //def multidex_version = "2.0.1"

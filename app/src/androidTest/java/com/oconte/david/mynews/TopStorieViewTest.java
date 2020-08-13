@@ -1,8 +1,9 @@
 package com.oconte.david.mynews;
 
+import androidx.test.espresso.contrib.RecyclerViewActions;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.rule.ActivityTestRule;
-import androidx.test.ext.junit.runners.AndroidJUnit4;
 
 import org.jetbrains.annotations.NotNull;
 import org.junit.Rule;
@@ -17,11 +18,9 @@ import okhttp3.mockwebserver.MockResponse;
 import okhttp3.mockwebserver.MockWebServer;
 import okhttp3.mockwebserver.RecordedRequest;
 
-import static androidx.test.espresso.Espresso.onData;
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
-import static androidx.test.espresso.core.internal.deps.guava.base.Preconditions.checkNotNull;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 
@@ -72,6 +71,7 @@ public class TopStorieViewTest {
 
         Thread.sleep(2000);
 
+        onView(withId(R.id.fragment_main_recycler_view)).perform(RecyclerViewActions.actionOnItemAtPosition(2, click()));//.actionOnItemAtPosition<DataAdapter.ViewHolder>("<Position dans la list>", click()));
         //onView(withId(R.id.fragment_main_recycler_view)).perform(RecyclerViewActions.actionOnItemAtPosition<DataAdapter.ViewHolder>("<Position dans la list>", click()));
         //onData(withItemContent("title")).onChildView(withId(R.id.fragment_main_title)).check(matches(isDisplayed()));
         //onData(withItemContent("published_date")).onChildView(withId(R.id.fragment_main_date)).check(matches(isDisplayed()));
