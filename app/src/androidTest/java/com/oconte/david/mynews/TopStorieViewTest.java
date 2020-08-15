@@ -47,12 +47,6 @@ public class TopStorieViewTest {
         return server;
     }
 
-    /*public static Matcher<Object> withItemContent(String expectedText) {
-        checkNotNull(expectedText);
-        return withItemContent(equalTo(expectedText).toString());
-    }*/
-
-
     @Test
     public void testCallsTopStorie() throws IOException, InterruptedException {
 
@@ -67,14 +61,29 @@ public class TopStorieViewTest {
         //Test recyclerview is good.
         onView(withId(R.id.fragment_main_recycler_view)).check(matches(isDisplayed()));
 
-        //Test all elements are good in the recyclerview.
+        onView(withId(R.id.fragment_main_recycler_view)).check(matches(isDisplayed()));
 
-        Thread.sleep(2000);
-
-        onView(withId(R.id.fragment_main_recycler_view)).perform(RecyclerViewActions.actionOnItemAtPosition(2, click()));//.actionOnItemAtPosition<DataAdapter.ViewHolder>("<Position dans la list>", click()));
-        //onView(withId(R.id.fragment_main_recycler_view)).perform(RecyclerViewActions.actionOnItemAtPosition<DataAdapter.ViewHolder>("<Position dans la list>", click()));
-        //onData(withItemContent("title")).onChildView(withId(R.id.fragment_main_title)).check(matches(isDisplayed()));
-        //onData(withItemContent("published_date")).onChildView(withId(R.id.fragment_main_date)).check(matches(isDisplayed()));
     }
+
+    @Test
+    public void testItemsTopStorie() throws IOException, InterruptedException {
+
+        MockWebServer server = setupServer(HttpURLConnection.HTTP_OK, AssetReader.getAsset(InstrumentationRegistry.getInstrumentation().getContext(), "topstories_response.json"));
+
+        // Start the server.
+        server.start(9900);
+
+        //Start the MainActivity
+        mActivityRule.launchActivity(null);
+
+        //Test recyclerview is good.
+        onView(withId(R.id.fragment_main_recycler_view)).check(matches(isDisplayed()));
+
+        onView(withId(R.id.fragment_main_recycler_view)).perform(RecyclerViewActions.actionOnItemAtPosition(2, click()));
+        onView(withId(R.id.web_view_all_new)).check(matches(isDisplayed()));
+    }
+
+    //A test car peut marcher maintenant
+    //Le recyclerviewmatcher
 
 }
