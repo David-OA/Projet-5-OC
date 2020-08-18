@@ -65,10 +65,22 @@ public class TopStorieViewTest {
 
     }
 
+    private MockWebServer setupServerBis(int code, String response) {
+        MockWebServer server = new MockWebServer();
+        server.setDispatcher(new Dispatcher() {
+            @NotNull
+            @Override
+            public MockResponse dispatch(@NotNull RecordedRequest recordedRequest) throws InterruptedException {
+                return new MockResponse().setResponseCode(code).setBody(response);
+            }
+        });
+        return server;
+    }
+
     @Test
     public void testItemsTopStorie() throws IOException, InterruptedException {
 
-        MockWebServer server = setupServer(HttpURLConnection.HTTP_OK, AssetReader.getAsset(InstrumentationRegistry.getInstrumentation().getContext(), "topstories_response.json"));
+        MockWebServer server = setupServerBis(HttpURLConnection.HTTP_OK, AssetReader.getAsset(InstrumentationRegistry.getInstrumentation().getContext(), "topstories_response.json"));
 
         // Start the server.
         server.start(9900);
