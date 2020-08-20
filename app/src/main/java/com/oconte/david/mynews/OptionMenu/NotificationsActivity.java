@@ -169,7 +169,7 @@ public class NotificationsActivity extends AppCompatActivity {
 
     }
 
-    public void getPreferencesNotificationsFromSave() {
+    /*public void getPreferencesNotificationsFromSave() {
         preferences = getBaseContext().getSharedPreferences("EXTRA_NOTI_", MODE_PRIVATE);
         preferences.getString(EXTRA_NOTI_QUERY, null);
         preferences.getString(EXTRA_NOTI_ART, null);
@@ -179,7 +179,7 @@ public class NotificationsActivity extends AppCompatActivity {
         preferences.getString(EXTRA_NOTI_SPORTS, null);
         preferences.getString(EXTRA_NOTI_TRAVEL, null);
 
-    }
+    }*/
 
     /**
      * It's for custom Toast.

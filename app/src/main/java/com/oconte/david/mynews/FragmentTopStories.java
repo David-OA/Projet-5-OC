@@ -107,7 +107,5 @@ public class FragmentTopStories extends Fragment implements NYTCallsTopStories.C
 
     @Override
     public void onFailure() {
-        // When getting error, we update UI
-        //this.updateUIWhenStopingHTTPRequest("An error happened !");
     }
 }

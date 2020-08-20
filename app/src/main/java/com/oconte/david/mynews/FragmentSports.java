@@ -104,8 +104,6 @@ public class FragmentSports extends Fragment implements NYTCallsSports.Callbacks
 
     private void executeHttpRequestWithRetrofitSports() {
         NYTCallsSports.getSports(this, "sports");
-        //NYTCallsTopStories.getTopStories(NYTFactory.getRetrofit().create(NYTService.class),this, "sports");
-        //NYTCallsTopStories.getTopStories(NYTFactory.getRetrofit().create(NYTService.class),this, "science");
     }
 
     @Override
@@ -116,7 +114,5 @@ public class FragmentSports extends Fragment implements NYTCallsSports.Callbacks
 
     @Override
     public void onFailure() {
-        // When getting error, we update UI
-        //this.updateUIWhenStopingHTTPRequest("An error happened !");
     }
 }
