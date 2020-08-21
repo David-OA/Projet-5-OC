@@ -43,19 +43,19 @@ public class TopStorieViewTest {
             @Override
             public MockResponse dispatch(@NotNull RecordedRequest recordedRequest) throws InterruptedException {
                 return new MockResponse().setResponseCode(code).setBody(response);
+               /* switch (recordedRequest.getPath()) {
+                    case "/":
+                        return new MockResponse().setResponseCode(200).setBody(response);
+
+                    case "":
+                        return new MockResponse().setResponseCode(200).setBody(response);
+                }*/
             }
+
         });
         return server;
 
-        /*MockWebServer server1 = new MockWebServer();
-        server1.setDispatcher(new Dispatcher() {
-            @NotNull
-            @Override
-            public MockResponse dispatch(@NotNull RecordedRequest recordedRequest) throws InterruptedException {
-                return new MockResponse().setResponseCode(code).setBody(response);
-            }
-        });
-        return server1;*/
+
 
     }
 

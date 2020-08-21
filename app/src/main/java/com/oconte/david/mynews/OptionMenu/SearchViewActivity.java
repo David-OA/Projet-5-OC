@@ -27,7 +27,7 @@ import butterknife.ButterKnife;
 
 public class SearchViewActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
 
-    //For Design
+    //FOR DESIGN
     @BindView(R.id.toolbar) Toolbar toolbar;
     @BindView(R.id.search_button) Button button;
 

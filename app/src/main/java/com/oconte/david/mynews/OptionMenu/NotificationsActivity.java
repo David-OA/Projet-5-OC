@@ -30,7 +30,7 @@ import butterknife.ButterKnife;
 
 public class NotificationsActivity extends AppCompatActivity {
 
-    // For Design
+    // FOR DESIGN
     @BindView(R.id.toolbar) Toolbar toolbar;
     @BindView(R.id.notification_query_term) EditText notificationQueryTerm;
     @BindView(R.id.notification_switch) SwitchCompat switchNotification;
@@ -168,18 +168,6 @@ public class NotificationsActivity extends AppCompatActivity {
         editor.apply();
 
     }
-
-    /*public void getPreferencesNotificationsFromSave() {
-        preferences = getBaseContext().getSharedPreferences("EXTRA_NOTI_", MODE_PRIVATE);
-        preferences.getString(EXTRA_NOTI_QUERY, null);
-        preferences.getString(EXTRA_NOTI_ART, null);
-        preferences.getString(EXTRA_NOTI_BUSINESS, null);
-        preferences.getString(EXTRA_NOTI_ENTREPRENEURS, null);
-        preferences.getString(EXTRA_NOTI_POLITICS, null);
-        preferences.getString(EXTRA_NOTI_SPORTS, null);
-        preferences.getString(EXTRA_NOTI_TRAVEL, null);
-
-    }*/
 
     /**
      * It's for custom Toast.

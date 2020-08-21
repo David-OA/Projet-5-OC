@@ -37,9 +37,7 @@ public class ResultSearchActivity extends AppCompatActivity implements NYTCallsS
     private NYTResultSearchAdapter adapter;
     private SearchResult result;
 
-    // -----------------
     // GET DATA FROM INTENT
-    // -----------------
     String query = "";
     String beginDate = "";
     String endDate = "";

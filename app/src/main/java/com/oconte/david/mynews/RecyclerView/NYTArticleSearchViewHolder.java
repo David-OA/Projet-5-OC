@@ -18,12 +18,10 @@ import static com.oconte.david.mynews.Utils.ConfigureText.convertSectionNameForD
 
 public class NYTArticleSearchViewHolder extends RecyclerView.ViewHolder {
 
-    // TextView
+    // FOR DESIGN
     @BindView(R.id.fragment_main_title) TextView textView;
     @BindView(R.id.fragment_main_section) TextView textView1;
     @BindView(R.id.fragment_main_date) TextView date;
-
-    // ImageView
     @BindView(R.id.fragment_main_image) ImageView imageView;
 
     public NYTArticleSearchViewHolder(View itemView) {

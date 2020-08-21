@@ -11,7 +11,7 @@ import butterknife.ButterKnife;
 
 public class HelpActivity extends AppCompatActivity {
 
-    // For Design
+    // FOR DESIGN
     @BindView(R.id.toolbar) Toolbar toolbar;
 
     @Override
