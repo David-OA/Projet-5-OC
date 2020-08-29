@@ -11,11 +11,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.oconte.david.mynews.Calls.NYTCallsTopStories;
-import com.oconte.david.mynews.Models.Result;
-import com.oconte.david.mynews.RecyclerView.NYTArticleAdapter;
-import com.oconte.david.mynews.WebView.ItemClickSupport;
-import com.oconte.david.mynews.WebView.WebViewActivity;
+import com.oconte.david.mynews.calls.NYTCallsTopStories;
+import com.oconte.david.mynews.models.Result;
+import com.oconte.david.mynews.recyclerView.NYTArticleAdapter;
+import com.oconte.david.mynews.webView.ItemClickSupport;
+import com.oconte.david.mynews.webView.WebViewActivity;
 import com.oconte.david.mynews.di.Injection;
 
 import butterknife.BindView;

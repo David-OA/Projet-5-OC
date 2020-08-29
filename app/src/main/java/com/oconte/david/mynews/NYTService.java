@@ -1,7 +1,7 @@
 package com.oconte.david.mynews;
 
-import com.oconte.david.mynews.Models.Result;
-import com.oconte.david.mynews.Models.SearchResult;
+import com.oconte.david.mynews.models.Result;
+import com.oconte.david.mynews.models.SearchResult;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

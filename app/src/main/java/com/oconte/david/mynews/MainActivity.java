@@ -10,11 +10,11 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.oconte.david.mynews.OptionMenu.AboutActivity;
-import com.oconte.david.mynews.OptionMenu.HelpActivity;
-import com.oconte.david.mynews.OptionMenu.NotificationsActivity;
-import com.oconte.david.mynews.OptionMenu.SearchViewActivity;
-import com.oconte.david.mynews.ViewPager.ViewPagerAdapter;
+import com.oconte.david.mynews.optionMenu.AboutActivity;
+import com.oconte.david.mynews.optionMenu.HelpActivity;
+import com.oconte.david.mynews.optionMenu.NotificationsActivity;
+import com.oconte.david.mynews.optionMenu.SearchViewActivity;
+import com.oconte.david.mynews.viewPager.ViewPagerAdapter;
 
 import java.util.Objects;
 

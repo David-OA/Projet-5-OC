@@ -2,10 +2,10 @@ package com.oconte.david.mynews;
 
 import androidx.annotation.Nullable;
 
-import com.oconte.david.mynews.Calls.NYTCallsSearch;
-import com.oconte.david.mynews.Models.SearchResult;
-import com.oconte.david.mynews.Utils.ConfigureDate;
-import com.oconte.david.mynews.Utils.ConfigureText;
+import com.oconte.david.mynews.calls.NYTCallsSearch;
+import com.oconte.david.mynews.models.SearchResult;
+import com.oconte.david.mynews.utils.ConfigureDate;
+import com.oconte.david.mynews.utils.ConfigureText;
 
 import org.jetbrains.annotations.NotNull;
 import org.junit.Test;

@@ -2,10 +2,10 @@ package com.oconte.david.mynews.di;
 
 import androidx.test.espresso.idling.CountingIdlingResource;
 
-import com.oconte.david.mynews.Calls.NYTCallsMostPopular;
-import com.oconte.david.mynews.Calls.NYTCallsSearch;
-import com.oconte.david.mynews.Calls.NYTCallsSports;
-import com.oconte.david.mynews.Calls.NYTCallsTopStories;
+import com.oconte.david.mynews.calls.NYTCallsMostPopular;
+import com.oconte.david.mynews.calls.NYTCallsSearch;
+import com.oconte.david.mynews.calls.NYTCallsSports;
+import com.oconte.david.mynews.calls.NYTCallsTopStories;
 import com.oconte.david.mynews.NYTFactory;
 import com.oconte.david.mynews.NYTService;
 

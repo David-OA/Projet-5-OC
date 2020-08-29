@@ -13,23 +13,23 @@
         android:usesCleartextTraffic="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".WebView.WebViewActivity"
+            android:name=".webView.WebViewActivity"
             android:parentActivityName=".MainActivity" />
 
         <activity
-            android:name=".Search.ResultSearchActivity"
-            android:parentActivityName=".OptionMenu.SearchViewActivity" />
+            android:name=".search.ResultSearchActivity"
+            android:parentActivityName=".optionMenu.SearchViewActivity" />
         <activity
-            android:name=".OptionMenu.SearchViewActivity"
+            android:name=".optionMenu.SearchViewActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".OptionMenu.AboutActivity"
+            android:name=".optionMenu.AboutActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".OptionMenu.HelpActivity"
+            android:name=".optionMenu.HelpActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".OptionMenu.NotificationsActivity"
+            android:name=".optionMenu.NotificationsActivity"
             android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -38,9 +38,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ViewPager.ViewPagerActivity" />
+        <activity android:name=".viewPager.ViewPagerActivity" />
         <receiver
-            android:name=".OptionMenu.AlarmReceiver"
+            android:name=".optionMenu.AlarmReceiver"
             android:enabled="true"
             android:exported="true"></receiver>
     </application>
