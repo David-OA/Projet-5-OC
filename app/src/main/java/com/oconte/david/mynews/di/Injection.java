@@ -3,6 +3,7 @@ package com.oconte.david.mynews.di;
 import androidx.test.espresso.idling.CountingIdlingResource;
 
 import com.oconte.david.mynews.Calls.NYTCallsMostPopular;
+import com.oconte.david.mynews.Calls.NYTCallsSearch;
 import com.oconte.david.mynews.Calls.NYTCallsSports;
 import com.oconte.david.mynews.Calls.NYTCallsTopStories;
 import com.oconte.david.mynews.NYTFactory;
@@ -45,6 +46,19 @@ public class Injection {
     }
 
     public  static  CountingIdlingResource getCountingMostPopular() {
+        return new CountingIdlingResource("MostPopularIdling");
+    }
+
+    // Pour le Calls Search
+    public static NYTCallsSearch getSearch(NYTService service, CountingIdlingResource resource) {
+        return new NYTCallsSearch(service, resource);
+    }
+
+    public static  NYTService getServiceSearch(){
+        return NYTFactory.getRetrofit().create(NYTService.class);
+    }
+
+    public  static  CountingIdlingResource getCountingSearch() {
         return new CountingIdlingResource("MostPopularIdling");
     }
 }

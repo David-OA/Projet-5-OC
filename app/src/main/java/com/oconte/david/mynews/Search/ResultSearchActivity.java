@@ -22,6 +22,7 @@ import com.oconte.david.mynews.RecyclerView.NYTResultSearchAdapter;
 import com.oconte.david.mynews.Utils.ConfigureDate;
 import com.oconte.david.mynews.WebView.ItemClickSupport;
 import com.oconte.david.mynews.WebView.WebViewActivity;
+import com.oconte.david.mynews.di.Injection;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -155,7 +156,8 @@ public class ResultSearchActivity extends AppCompatActivity implements NYTCallsS
 
     private void executeHttpRequestWithRetrofit() {
         getSearchQuery();
-        NYTCallsSearch.getSearchSection(NYTFactory.getRetrofit().create(NYTService.class),this, correctBeginDate, correctendDate, sectionTerm, query, 10);
+        NYTCallsSearch search = Injection.getSearch(Injection.getServiceSearch(), Injection.getCountingSearch());
+        search.getSearchSection(NYTFactory.getRetrofit().create(NYTService.class),this, correctBeginDate, correctendDate, sectionTerm, query, 10);
     }
 
     @Override

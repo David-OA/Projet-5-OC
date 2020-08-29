@@ -15,6 +15,7 @@ import com.oconte.david.mynews.Models.SearchResult;
 import com.oconte.david.mynews.NYTFactory;
 import com.oconte.david.mynews.NYTService;
 import com.oconte.david.mynews.R;
+import com.oconte.david.mynews.di.Injection;
 
 import androidx.work.Worker;
 import androidx.work.WorkerParameters;
@@ -99,7 +100,8 @@ public class AlarmWorker extends Worker implements NYTCallsSearch.Callbacks {
      */
     private void executeHttpRequestWithRetrofit() {
         getDataFromPreferences();
-        NYTCallsSearch.getSearchSection(NYTFactory.getRetrofit().create(NYTService.class),this, null, null, queryTerm, querySection, 0);
+        NYTCallsSearch search = Injection.getSearch(Injection.getServiceSearch(), Injection.getCountingSearch());
+        search.getSearchSection(NYTFactory.getRetrofit().create(NYTService.class),this, null, null, queryTerm, querySection, 0);
     }
 
     /**

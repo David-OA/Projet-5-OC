@@ -1,6 +1,7 @@
 package com.oconte.david.mynews.Calls;
 
 import androidx.annotation.Nullable;
+import androidx.test.espresso.idling.CountingIdlingResource;
 
 import com.oconte.david.mynews.Models.SearchResult;
 import com.oconte.david.mynews.NYTService;
@@ -10,6 +11,9 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class NYTCallsSearch {
+
+    private final NYTService service;
+    private final CountingIdlingResource resource;
 
     /**
      * It's the Call to API New York Time for see the Search categories.
@@ -21,11 +25,15 @@ public class NYTCallsSearch {
         void onFailure();
     }
 
-    public NYTCallsSearch() {
+    public NYTCallsSearch(NYTService service, CountingIdlingResource resource) {
+        this.service = service;
+        this.resource = resource;
     }
 
     // Public method to start fetching
-    public static void getSearchSection(NYTService service, NYTCallsSearch.Callbacks callbacks, String beginDate, String endDate, String querySection, String queryTerm, int pageNumber) {
+    public void getSearchSection(NYTService service, NYTCallsSearch.Callbacks callbacks, String beginDate, String endDate, String querySection, String queryTerm, int pageNumber) {
+
+        resource.increment();
 
         // The call on NYT API
         Call<SearchResult> call = service.getSearchSection(beginDate, endDate, querySection, queryTerm, pageNumber);
@@ -37,6 +45,7 @@ public class NYTCallsSearch {
 
                 // Call the proper callback used in controller mainfragment
                 callbacks.onResponse(response.body());
+                resource.decrement();
 
             }
 
@@ -45,6 +54,7 @@ public class NYTCallsSearch {
 
                 // Call the proper callback used in controller mainfragment
                 callbacks.onFailure();
+                resource.decrement();
             }
         });
 
