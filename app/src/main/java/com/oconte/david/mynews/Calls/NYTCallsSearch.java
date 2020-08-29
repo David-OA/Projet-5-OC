@@ -21,6 +21,9 @@ public class NYTCallsSearch {
         void onFailure();
     }
 
+    public NYTCallsSearch() {
+    }
+
     // Public method to start fetching
     public static void getSearchSection(NYTService service, NYTCallsSearch.Callbacks callbacks, String beginDate, String endDate, String querySection, String queryTerm, int pageNumber) {
 

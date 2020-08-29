@@ -16,6 +16,7 @@ import com.oconte.david.mynews.Models.Result;
 import com.oconte.david.mynews.RecyclerView.NYTArticleAdapter;
 import com.oconte.david.mynews.WebView.ItemClickSupport;
 import com.oconte.david.mynews.WebView.WebViewActivity;
+import com.oconte.david.mynews.di.Injection;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -95,7 +96,8 @@ public class FragmentTopStories extends Fragment implements NYTCallsTopStories.C
     // HTTP REQUEST Retrofit
     // -----------------
     private void executeHttpRequestWithRetrofitTopStories() {
-        NYTCallsTopStories.getTopStories(this, "home");
+        NYTCallsTopStories topStories = Injection.getTopStories(Injection.getService(), Injection.getCounting());
+        topStories.getTopStories(this, "home");
     }
 
 

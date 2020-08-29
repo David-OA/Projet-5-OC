@@ -3,7 +3,7 @@ package com.oconte.david.mynews;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import androidx.annotation.NonNull;
+
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -17,6 +17,7 @@ import com.oconte.david.mynews.Models.Result;
 import com.oconte.david.mynews.RecyclerView.NYTArticleAdapter;
 import com.oconte.david.mynews.WebView.ItemClickSupport;
 import com.oconte.david.mynews.WebView.WebViewActivity;
+import com.oconte.david.mynews.di.Injection;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -103,7 +104,8 @@ public class FragmentSports extends Fragment implements NYTCallsSports.Callbacks
     // -----------------
 
     private void executeHttpRequestWithRetrofitSports() {
-        NYTCallsSports.getSports(this, "sports");
+        NYTCallsSports sports = Injection.getSports(Injection.getServiceSports(), Injection.getCountingSports());
+        sports.getSports(this, "sports");
     }
 
     @Override

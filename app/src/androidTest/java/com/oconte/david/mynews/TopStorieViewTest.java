@@ -1,24 +1,20 @@
 package com.oconte.david.mynews;
 
-import androidx.test.espresso.IdlingRegistry;
+import androidx.test.espresso.Espresso;
 import androidx.test.espresso.contrib.RecyclerViewActions;
+import androidx.test.espresso.idling.CountingIdlingResource;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.rule.ActivityTestRule;
-
-import com.jakewharton.espresso.OkHttp3IdlingResource;
 
 import org.jetbrains.annotations.NotNull;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import java.io.FileReader;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 
-import okhttp3.OkHttp;
-import okhttp3.OkHttpClient;
 import okhttp3.mockwebserver.Dispatcher;
 import okhttp3.mockwebserver.MockResponse;
 import okhttp3.mockwebserver.MockWebServer;
@@ -48,15 +44,21 @@ public class TopStorieViewTest {
             @NotNull
             @Override
             public MockResponse dispatch(@NotNull RecordedRequest recordedRequest) throws InterruptedException {
-                //return new MockResponse().setResponseCode(code).setBody(response);
-                return new MockResponse().setResponseCode(code).setBody(FileReader.readStrinFromFile("topstories_response.json"));
+                return new MockResponse().setResponseCode(code).setBody(response);
             }
 
         });
         return server;
 
-        mActivityRule.launchActivity(null);
     }
+
+    /*public void setUp() throws Exception {
+        super.setUp();
+        DecoratedFooServer.FooServer realServer = FooApplication.getFooServer();
+        CountingIdlingResource countingResource = new CountingIdlingResource("FooServerCalls");
+        FooApplication.setFooServer(new DecoratedFooServer(realServer, countingResource));
+        Espresso.registerIdlingResource(countingResource);
+    }*/
 
     @Test
     public void testCallsTopStorie() throws IOException, InterruptedException {
@@ -66,10 +68,8 @@ public class TopStorieViewTest {
         // Start the server.
         server.start(9900);
 
-        IdlingRegistry.getInstance().register(OkHttp3IdlingResource.create("http://127.0.0.1:9900", OkHttpProvider.getOkHttpClient()));
-
         //Start the MainActivity
-        //mActivityRule.launchActivity(null);
+        mActivityRule.launchActivity(null);
 
         //Test recyclerview is good.
         onView(withId(R.id.fragment_main_recycler_view)).check(matches(isDisplayed()));
@@ -78,6 +78,7 @@ public class TopStorieViewTest {
         onView(withId(R.id.web_view_all_new)).check(matches(isDisplayed()));
 
     }
+
 
     /*@Test
     public void testItemsTopStorie() throws IOException, InterruptedException {

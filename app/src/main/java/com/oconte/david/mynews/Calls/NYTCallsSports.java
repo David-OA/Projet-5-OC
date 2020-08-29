@@ -1,6 +1,7 @@
 package com.oconte.david.mynews.Calls;
 
 import androidx.annotation.Nullable;
+import androidx.test.espresso.idling.CountingIdlingResource;
 
 import com.oconte.david.mynews.Models.Result;
 import com.oconte.david.mynews.NYTFactory;
@@ -14,6 +15,10 @@ import retrofit2.Response;
 
 public class NYTCallsSports {
 
+
+    private final NYTService service;
+    private final CountingIdlingResource resource;
+
     /**
      * It's the Call to API New York Time for see the Sports categories.
      */
@@ -24,17 +29,24 @@ public class NYTCallsSports {
         void onFailure();
     }
 
+    public NYTCallsSports(NYTService service, CountingIdlingResource resource) {
+        this.service = service;
+        this.resource = resource;
+    }
+
     // Public methode to start fetching
-    public static void getSports(NYTCallsSports.Callbacks callbacks, String section) {
+    public void getSports(NYTCallsSports.Callbacks callbacks, String section) {
+
+        resource.increment();
 
         // weak reference to callback (avoid memory leaks)
         final WeakReference<NYTCallsSports.Callbacks> callbacksWeakReference = new WeakReference<NYTCallsSports.Callbacks>(callbacks);
 
         // Get Retrofit instance and the related endpoints
-        NYTService nytService = NYTFactory.getRetrofit().create(NYTService.class);
+        //NYTService nytService = NYTFactory.getRetrofit().create(NYTService.class);
 
         // The call on NYT API
-        Call<Result> call = nytService.getSports(section);
+        Call<Result> call = service.getSports(section);
 
         // Start the Call
         call.enqueue(new Callback<Result>() {
@@ -43,6 +55,7 @@ public class NYTCallsSports {
 
                 // Call the proper callback used in controller mainfragment
                 if (callbacksWeakReference.get() != null) callbacksWeakReference.get().onResponse(response.body());
+                resource.decrement();
             }
 
             @Override
@@ -50,6 +63,7 @@ public class NYTCallsSports {
 
                 // Call the proper callback used in controller mainfragment
                 if (callbacksWeakReference.get() != null) callbacksWeakReference.get().onFailure();
+                resource.decrement();
             }
         });
 
