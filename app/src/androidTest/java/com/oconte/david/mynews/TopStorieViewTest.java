@@ -1,8 +1,6 @@
 package com.oconte.david.mynews;
 
-import androidx.test.espresso.Espresso;
 import androidx.test.espresso.contrib.RecyclerViewActions;
-import androidx.test.espresso.idling.CountingIdlingResource;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.rule.ActivityTestRule;
@@ -51,14 +49,6 @@ public class TopStorieViewTest {
         return server;
 
     }
-
-    /*public void setUp() throws Exception {
-        super.setUp();
-        DecoratedFooServer.FooServer realServer = FooApplication.getFooServer();
-        CountingIdlingResource countingResource = new CountingIdlingResource("FooServerCalls");
-        FooApplication.setFooServer(new DecoratedFooServer(realServer, countingResource));
-        Espresso.registerIdlingResource(countingResource);
-    }*/
 
     @Test
     public void testCallsTopStorie() throws IOException, InterruptedException {

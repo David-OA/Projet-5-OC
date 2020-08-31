@@ -11,6 +11,7 @@ import com.oconte.david.mynews.NYTService;
 
 public class Injection {
 
+    // For Calls TopStories
     public static NYTCallsTopStories getTopStories(NYTService service, CountingIdlingResource resource) {
         return new NYTCallsTopStories(service, resource);
     }
@@ -23,7 +24,7 @@ public class Injection {
         return new CountingIdlingResource("TopStoriesIdling");
     }
 
-    // Pour le Calls Sports
+    // For Calls Sports
     public static NYTCallsSports getSports(NYTService service, CountingIdlingResource resource) {
         return new NYTCallsSports(service, resource);
     }
@@ -36,7 +37,7 @@ public class Injection {
         return new CountingIdlingResource("SportsIdling");
     }
 
-    // Pour le Calls MostPopular
+    // For Calls MostPopular
     public static NYTCallsMostPopular getMostPopular(NYTService service, CountingIdlingResource resource) {
         return new NYTCallsMostPopular(service, resource);
     }
@@ -49,7 +50,7 @@ public class Injection {
         return new CountingIdlingResource("MostPopularIdling");
     }
 
-    // Pour le Calls Search
+    // For Calls Search
     public static NYTCallsSearch getSearch(NYTService service, CountingIdlingResource resource) {
         return new NYTCallsSearch(service, resource);
     }
