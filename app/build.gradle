@@ -26,13 +26,13 @@ android {
             buildConfigField("String", "API_SERVER", "\"https://api.nytimes.com\"") // for test utiliser http://127.0.0.1:9900
         }
 
-        /*espresso{
+        espresso{
             debuggable true
             minifyEnabled false
             shrinkResources false
 
             buildConfigField("String", "API_SERVER", "\"http://127.0.0.1:9900\"")
-        }*/
+        }
     }
 
     compileOptions {
@@ -45,7 +45,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     //noinspection GradleCompatible
     implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
 
     implementation 'com.jakewharton:butterknife:10.1.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
@@ -65,7 +65,7 @@ dependencies {
     implementation 'com.squareup.picasso:picasso:2.71828'
 
     //TABLAYOUT
-    implementation 'com.google.android.material:material:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
 
     //MARKDOWN
     implementation 'com.github.GrenderG:MarkdownView:0.1.2'
@@ -89,15 +89,15 @@ dependencies {
     androidTestImplementation ("com.squareup.okhttp3:mockwebserver:4.7.2")
 
     //ESPRESSO
-    implementation 'androidx.test.espresso:espresso-idling-resource:3.2.0'
-    implementation 'androidx.test.espresso:espresso-intents:3.2.0'
+    implementation 'androidx.test.espresso:espresso-idling-resource:3.3.0'
+    implementation 'androidx.test.espresso:espresso-intents:3.3.0'
     testImplementation 'junit:junit:4.13'
     androidTestImplementation 'junit:junit:4.13'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-    androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.2.0'
-    androidTestImplementation 'androidx.test:runner:1.2.0'
-    androidTestImplementation 'androidx.test:rules:1.2.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.3.0'
+    androidTestImplementation 'androidx.test:runner:1.3.0'
+    androidTestImplementation 'androidx.test:rules:1.3.0'
     androidTestImplementation 'com.jakewharton.espresso:okhttp3-idling-resource:1.0.0'
 
 

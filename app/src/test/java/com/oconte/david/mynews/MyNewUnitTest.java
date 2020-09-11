@@ -1,8 +1,10 @@
 package com.oconte.david.mynews;
 
 import androidx.annotation.Nullable;
+import androidx.test.espresso.idling.CountingIdlingResource;
 
 import com.oconte.david.mynews.calls.NYTCallsSearch;
+import com.oconte.david.mynews.di.Injection;
 import com.oconte.david.mynews.models.SearchResult;
 import com.oconte.david.mynews.utils.ConfigureDate;
 import com.oconte.david.mynews.utils.ConfigureText;
@@ -29,12 +31,10 @@ import static retrofit2.converter.gson.GsonConverterFactory.create;
 
 /**
  * Example local unit test, which will execute on the development machine (host).
- *
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
 public class MyNewUnitTest  {
-
-
+    
     private SearchResult result;
     private String baseUrl = "http://127.0.0.1:9900";
 
@@ -70,8 +70,7 @@ public class MyNewUnitTest  {
                 .client(client)
                 .addConverterFactory(create())
                 .build();
-
-
+        
         // Start the server.
         server.start(9900);
 
@@ -91,7 +90,10 @@ public class MyNewUnitTest  {
                 latch.countDown();
             }
         };
-        NYTCallsSearch.getSearchSection(service, callbacks, "01/02/2020", "16/05/2020", "sports", "kobe", 10);
+
+        //NYTCallsSearch.getSearchSection(service, callbacks, "01/02/2020", "16/05/2020", "sports", "kobe", 10);
+        NYTCallsSearch search = new NYTCallsSearch(service, resource);
+        search.getSearchSection(service, callbacks, "01/02/2020", "16/05/2020", "sports", "kobe", 10);
 
         latch.await();
 

@@ -13,7 +13,10 @@ public class Injection {
 
     // For Calls TopStories
     public static NYTCallsTopStories getTopStories(NYTService service, CountingIdlingResource resource) {
-        return new NYTCallsTopStories(service, resource);
+        //NYTCallsTopStories service = new NYTCallsTopStories(service, resource) ;
+        NYTCallsTopStories topStories = new NYTCallsTopStories(service, resource);
+        return topStories;
+        //return service;
     }
 
     public static  NYTService getService(){
@@ -60,6 +63,6 @@ public class Injection {
     }
 
     public  static  CountingIdlingResource getCountingSearch() {
-        return new CountingIdlingResource("MostPopularIdling");
+        return new CountingIdlingResource("SearchIdling");
     }
 }
