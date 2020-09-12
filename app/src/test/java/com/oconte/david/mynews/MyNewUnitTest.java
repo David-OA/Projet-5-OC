@@ -16,6 +16,8 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.util.concurrent.CountDownLatch;
 
+import javax.crypto.spec.PSource;
+
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import okhttp3.mockwebserver.Dispatcher;
@@ -90,6 +92,8 @@ public class MyNewUnitTest  {
                 latch.countDown();
             }
         };
+
+        CountingIdlingResource resource = Injection.getCountingSearch();
 
         //NYTCallsSearch.getSearchSection(service, callbacks, "01/02/2020", "16/05/2020", "sports", "kobe", 10);
         NYTCallsSearch search = new NYTCallsSearch(service, resource);

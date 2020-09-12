@@ -1,5 +1,6 @@
 package com.oconte.david.mynews.di;
 
+import androidx.test.espresso.IdlingRegistry;
 import androidx.test.espresso.idling.CountingIdlingResource;
 
 import com.oconte.david.mynews.calls.NYTCallsMostPopular;
@@ -13,10 +14,10 @@ public class Injection {
 
     // For Calls TopStories
     public static NYTCallsTopStories getTopStories(NYTService service, CountingIdlingResource resource) {
-        //NYTCallsTopStories service = new NYTCallsTopStories(service, resource) ;
+        IdlingRegistry.getInstance().register(resource);
         NYTCallsTopStories topStories = new NYTCallsTopStories(service, resource);
+
         return topStories;
-        //return service;
     }
 
     public static  NYTService getService(){
