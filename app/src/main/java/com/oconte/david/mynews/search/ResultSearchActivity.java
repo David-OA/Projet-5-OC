@@ -156,7 +156,7 @@ public class ResultSearchActivity extends AppCompatActivity implements NYTCallsS
 
     private void executeHttpRequestWithRetrofit() {
         getSearchQuery();
-        NYTCallsSearch search = Injection.getSearch(Injection.getServiceSearch(), Injection.getCountingSearch());
+        NYTCallsSearch search = Injection.getSearch(Injection.getServiceSearch(), Injection.getCounting());
         search.getSearchSection(NYTFactory.getRetrofit().create(NYTService.class),this, correctBeginDate, correctendDate, sectionTerm, query, 10);
     }
 

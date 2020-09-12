@@ -59,7 +59,6 @@ public class MyNewUnitTest  {
         MockWebServer server = setupServer(HttpURLConnection.HTTP_OK, Const.SEARCH_RESPONSE);
 
         final CountDownLatch latch = new CountDownLatch(1);
-        //server.enqueue(new MockResponse().setResponseCode(HttpURLConnection.HTTP_OK).setBody(Const.SEARCH_RESPONSE));
 
         HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
         logging.setLevel(HttpLoggingInterceptor.Level.BODY);
@@ -76,7 +75,7 @@ public class MyNewUnitTest  {
         // Start the server.
         server.start(9900);
 
-        //simuler serveur avec mockwebserver
+        //Simulation with Mockwebserver
         NYTService service = retrofit.create(NYTService.class);
 
         NYTCallsSearch.Callbacks callbacks = new NYTCallsSearch.Callbacks() {
@@ -93,9 +92,8 @@ public class MyNewUnitTest  {
             }
         };
 
-        CountingIdlingResource resource = Injection.getCountingSearch();
+        CountingIdlingResource resource = Injection.getCounting();
 
-        //NYTCallsSearch.getSearchSection(service, callbacks, "01/02/2020", "16/05/2020", "sports", "kobe", 10);
         NYTCallsSearch search = new NYTCallsSearch(service, resource);
         search.getSearchSection(service, callbacks, "01/02/2020", "16/05/2020", "sports", "kobe", 10);
 

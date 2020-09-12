@@ -100,7 +100,7 @@ public class AlarmWorker extends Worker implements NYTCallsSearch.Callbacks {
      */
     private void executeHttpRequestWithRetrofit() {
         getDataFromPreferences();
-        NYTCallsSearch search = Injection.getSearch(Injection.getServiceSearch(), Injection.getCountingSearch());
+        NYTCallsSearch search = Injection.getSearch(Injection.getServiceSearch(), Injection.getCounting());
         search.getSearchSection(NYTFactory.getRetrofit().create(NYTService.class),this, null, null, queryTerm, querySection, 0);
     }
 
