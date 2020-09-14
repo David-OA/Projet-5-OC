@@ -1,0 +1,3109 @@
+{
+  "status": "OK",
+  "copyright": "Copyright (c) 2020 The New York Times Company. All Rights Reserved.",
+  "section": "Sports",
+  "last_updated": "2020-09-14T06:58:27-04:00",
+  "num_results": 38,
+  "results": [
+    {
+      "section": "sports",
+      "subsection": "football",
+      "title": "When You Love — and Loathe — Watching the N.F.L.",
+      "abstract": "The return of professional football to a nation living on a raw and perilous edge, struggling to confront a lethal virus and trying to heal its deep racial wounds, offered fans a tense and unlikely paradox.",
+      "url": "https://www.nytimes.com/2020/09/14/sports/football/nfl-season-restart.html",
+      "uri": "nyt://article/e8c9afbe-ec34-5a5f-b27b-933d48bdd90f",
+      "byline": "By Kurt Streeter",
+      "item_type": "Article",
+      "updated_date": "2020-09-14T03:00:07-04:00",
+      "created_date": "2020-09-14T03:00:07-04:00",
+      "published_date": "2020-09-14T03:00:07-04:00",
+      "material_type_facet": "",
+      "kicker": "Sports of The Times",
+      "des_facet": [
+        "Coronavirus Reopenings",
+        "Coronavirus (2019-nCoV)"
+      ],
+      "org_facet": [
+        "National Football League",
+        "Kansas City Chiefs",
+        "Houston Texans"
+      ],
+      "per_facet": [
+        "Carroll, Pete"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2020/09/14/sports/14streeter-sot1/merlin_176989107_451584ad-a5b2-4e9b-89c2-67649d12b5b0-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Several players on the Los Angeles Rams kneel — and stand— during the playing of the national anthem, as the N.F.L. season got into full swing Sunday.",
+          "copyright": "Katelyn Mulcahy/Getty Images"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/14/sports/14streeter-sot1/merlin_176989107_451584ad-a5b2-4e9b-89c2-67649d12b5b0-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Several players on the Los Angeles Rams kneel — and stand— during the playing of the national anthem, as the N.F.L. season got into full swing Sunday.",
+          "copyright": "Katelyn Mulcahy/Getty Images"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/14/sports/14streeter-sot1/merlin_176989107_451584ad-a5b2-4e9b-89c2-67649d12b5b0-thumbLarge.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Several players on the Los Angeles Rams kneel — and stand— during the playing of the national anthem, as the N.F.L. season got into full swing Sunday.",
+          "copyright": "Katelyn Mulcahy/Getty Images"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/14/sports/14streeter-sot1/merlin_176989107_451584ad-a5b2-4e9b-89c2-67649d12b5b0-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Several players on the Los Angeles Rams kneel — and stand— during the playing of the national anthem, as the N.F.L. season got into full swing Sunday.",
+          "copyright": "Katelyn Mulcahy/Getty Images"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/14/sports/14streeter-sot1/merlin_176989107_451584ad-a5b2-4e9b-89c2-67649d12b5b0-articleInline.jpg",
+          "format": "Normal",
+          "height": 127,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Several players on the Los Angeles Rams kneel — and stand— during the playing of the national anthem, as the N.F.L. season got into full swing Sunday.",
+          "copyright": "Katelyn Mulcahy/Getty Images"
+        }
+      ],
+      "short_url": "https://nyti.ms/33rIdZq"
+    },
+    {
+      "section": "sports",
+      "subsection": "tennis",
+      "title": "Dominic Thiem Comes Back From Down 2 Sets to Win U.S. Open Final",
+      "abstract": "Thiem stormed back to beat Alexander Zverev for the title in a fifth-set tiebreaker.",
+      "url": "https://www.nytimes.com/2020/09/13/sports/tennis/us-open-mens-final-zverev-thiem.html",
+      "uri": "nyt://article/85a7831f-aeab-5e00-9835-9a1b59831efb",
+      "byline": "By Matthew Futterman",
+      "item_type": "Article",
+      "updated_date": "2020-09-14T03:21:19-04:00",
+      "created_date": "2020-09-13T20:20:14-04:00",
+      "published_date": "2020-09-13T20:20:14-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Tennis",
+        "United States Open (Tennis)"
+      ],
+      "org_facet": [],
+      "per_facet": [
+        "Thiem, Dominic",
+        "Zverev, Alexander"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13usopen-spts-pix-slide-E5CW/13usopen-spts-pix-slide-E5CW-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1366,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Dominic Thiem of Austria collapsed on the court after winning the United States Open, outlasting Alexander Zverev in a fifth-set tiebreaker.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13usopen-spts-pix-slide-E5CW/13usopen-spts-pix-slide-E5CW-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Dominic Thiem of Austria collapsed on the court after winning the United States Open, outlasting Alexander Zverev in a fifth-set tiebreaker.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13usopen-spts-pix-slide-E5CW/13usopen-spts-pix-slide-E5CW-thumbLarge.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Dominic Thiem of Austria collapsed on the court after winning the United States Open, outlasting Alexander Zverev in a fifth-set tiebreaker.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13usopen-spts-pix-slide-E5CW/13usopen-spts-pix-slide-E5CW-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Dominic Thiem of Austria collapsed on the court after winning the United States Open, outlasting Alexander Zverev in a fifth-set tiebreaker.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13usopen-spts-pix-slide-E5CW/13usopen-spts-pix-slide-E5CW-articleInline.jpg",
+          "format": "Normal",
+          "height": 127,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Dominic Thiem of Austria collapsed on the court after winning the United States Open, outlasting Alexander Zverev in a fifth-set tiebreaker.",
+          "copyright": "Chang W. Lee/The New York Times"
+        }
+      ],
+      "short_url": "https://nyti.ms/35Cc1Fh"
+    },
+    {
+      "section": "sports",
+      "subsection": "football",
+      "title": "The Eerie Silence of an N.F.L. Stadium Makes the Game Even More for TV",
+      "abstract": "The Superdome in New Orleans had a dystopian feel as football returned without one of its most loyal congregations. Oh, and Tom Brady flopped as the Saints beat the Buccaneers, 34-23.",
+      "url": "https://www.nytimes.com/2020/09/14/sports/football/tom-brady-drew-brees.html",
+      "uri": "nyt://article/116ac98e-1c07-5bdb-8b90-383c27f05d76",
+      "byline": "By Elena Bergeron",
+      "item_type": "Article",
+      "updated_date": "2020-09-14T05:00:11-04:00",
+      "created_date": "2020-09-14T05:00:11-04:00",
+      "published_date": "2020-09-14T05:00:11-04:00",
+      "material_type_facet": "",
+      "kicker": "on football",
+      "des_facet": [
+        "Football",
+        "United States National Anthem Protests (2016- )",
+        "Coronavirus Reopenings"
+      ],
+      "org_facet": [
+        "Mercedes Benz Superdome (New Orleans)",
+        "National Football League",
+        "New Orleans Saints",
+        "Tampa Bay Buccaneers"
+      ],
+      "per_facet": [
+        "Brady, Tom",
+        "Brees, Drew"
+      ],
+      "geo_facet": [
+        "New Orleans (La)"
+      ],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2020/09/14/sports/14brady-onfootball/merlin_176994216_9564d202-52e1-44d8-8312-2e6587ff5ae8-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "“A whisper compared to what it normally is,” Saints quarterback Drew Brees said, describing the vibe on Sunday at the Superdome. ",
+          "copyright": "Brett Duke/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/14/sports/14brady-onfootball/merlin_176994216_9564d202-52e1-44d8-8312-2e6587ff5ae8-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "“A whisper compared to what it normally is,” Saints quarterback Drew Brees said, describing the vibe on Sunday at the Superdome. ",
+          "copyright": "Brett Duke/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/14/sports/14brady-onfootball/merlin_176994216_9564d202-52e1-44d8-8312-2e6587ff5ae8-thumbLarge.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "“A whisper compared to what it normally is,” Saints quarterback Drew Brees said, describing the vibe on Sunday at the Superdome. ",
+          "copyright": "Brett Duke/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/14/sports/14brady-onfootball/merlin_176994216_9564d202-52e1-44d8-8312-2e6587ff5ae8-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "“A whisper compared to what it normally is,” Saints quarterback Drew Brees said, describing the vibe on Sunday at the Superdome. ",
+          "copyright": "Brett Duke/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/14/sports/14brady-onfootball/merlin_176994216_9564d202-52e1-44d8-8312-2e6587ff5ae8-articleInline.jpg",
+          "format": "Normal",
+          "height": 127,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "“A whisper compared to what it normally is,” Saints quarterback Drew Brees said, describing the vibe on Sunday at the Superdome. ",
+          "copyright": "Brett Duke/Associated Press"
+        }
+      ],
+      "short_url": "https://nyti.ms/32pTCcN"
+    },
+    {
+      "section": "sports",
+      "subsection": "football",
+      "title": "What We Learned From Week 1 of the N.F.L. Season",
+      "abstract": "Cam Newton looked terrific, Tom Brady looked fairly terrible, and there were upsets all over the place in a wild slate of games.",
+      "url": "https://www.nytimes.com/2020/09/13/sports/football/week-1-nfl-results.html",
+      "uri": "nyt://article/a40d9483-acdf-5f9b-8a7e-d3b69fe3c756",
+      "byline": "By Benjamin Hoffman",
+      "item_type": "Article",
+      "updated_date": "2020-09-14T07:20:12-04:00",
+      "created_date": "2020-09-13T20:00:08-04:00",
+      "published_date": "2020-09-13T20:00:08-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Football"
+      ],
+      "org_facet": [
+        "New England Patriots",
+        "Jacksonville Jaguars",
+        "Chicago Bears",
+        "Buffalo Bills",
+        "New Orleans Saints",
+        "Tampa Bay Buccaneers",
+        "Green Bay Packers",
+        "Carolina Panthers",
+        "Baltimore Ravens"
+      ],
+      "per_facet": [
+        "Newton, Cameron J",
+        "Brady, Tom",
+        "McCaffrey, Christian (1996- )",
+        "Jackson, Lamar (1997- )",
+        "Rodgers, Aaron",
+        "Allen, Josh (1996- )",
+        "Smith, Aldon",
+        "Adams, Jamal (1995- )",
+        "Adams, Davante (1992- )"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13nfl-wwl-pats/merlin_176965515_ce7999b4-398c-4498-be37-c853c211eafc-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "In his first game for the Patriots, Cam Newton rushed for 75 yards and two touchdowns. New England beat Miami, 21-11.",
+          "copyright": "Steven Senne/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13nfl-wwl-pats/13nfl-wwl-pats-thumbStandard-v2.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "In his first game for the Patriots, Cam Newton rushed for 75 yards and two touchdowns. New England beat Miami, 21-11.",
+          "copyright": "Steven Senne/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13nfl-wwl-pats/13nfl-wwl-pats-thumbLarge-v2.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "In his first game for the Patriots, Cam Newton rushed for 75 yards and two touchdowns. New England beat Miami, 21-11.",
+          "copyright": "Steven Senne/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13nfl-wwl-pats/merlin_176965515_ce7999b4-398c-4498-be37-c853c211eafc-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "In his first game for the Patriots, Cam Newton rushed for 75 yards and two touchdowns. New England beat Miami, 21-11.",
+          "copyright": "Steven Senne/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13nfl-wwl-pats/merlin_176965515_ce7999b4-398c-4498-be37-c853c211eafc-articleInline.jpg",
+          "format": "Normal",
+          "height": 127,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "In his first game for the Patriots, Cam Newton rushed for 75 yards and two touchdowns. New England beat Miami, 21-11.",
+          "copyright": "Steven Senne/Associated Press"
+        }
+      ],
+      "short_url": "https://nyti.ms/3italBE"
+    },
+    {
+      "section": "sports",
+      "subsection": "tennis",
+      "title": "This U.S. Open Will Be Judged by the Future of Osaka and Thiem",
+      "abstract": "Does this Grand Slam title deserve an asterisk given the absence of so many stars? Not if Dominic Thiem and Naomi Osaka endure at the top of the sport. They appear on track for just that.",
+      "url": "https://www.nytimes.com/2020/09/13/sports/tennis/us-open-thiem-osaka.html",
+      "uri": "nyt://article/665b0e8f-863c-5514-9d77-83fe2859ac5c",
+      "byline": "By Christopher Clarey",
+      "item_type": "Article",
+      "updated_date": "2020-09-14T06:01:56-04:00",
+      "created_date": "2020-09-13T21:45:15-04:00",
+      "published_date": "2020-09-13T21:45:15-04:00",
+      "material_type_facet": "",
+      "kicker": "On Tennis",
+      "des_facet": [
+        "United States Open (Tennis)",
+        "Tennis"
+      ],
+      "org_facet": [
+        "United States Tennis Assn"
+      ],
+      "per_facet": [
+        "Azarenka, Victoria",
+        "Osaka, Naomi (1997- )",
+        "Thiem, Dominic"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13usopen-spts-pix-slide-29VR/13usopen-spts-pix-slide-29VR-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Dominic Thiem of Austria won the U.S. Open on Sunday in five sets. It was his first singles title in a Grand Slam event.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13usopen-spts-pix-slide-29VR/13usopen-spts-pix-slide-29VR-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Dominic Thiem of Austria won the U.S. Open on Sunday in five sets. It was his first singles title in a Grand Slam event.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13usopen-spts-pix-slide-29VR/13usopen-spts-pix-slide-29VR-thumbLarge.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Dominic Thiem of Austria won the U.S. Open on Sunday in five sets. It was his first singles title in a Grand Slam event.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13usopen-spts-pix-slide-29VR/13usopen-spts-pix-slide-29VR-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Dominic Thiem of Austria won the U.S. Open on Sunday in five sets. It was his first singles title in a Grand Slam event.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13usopen-spts-pix-slide-29VR/13usopen-spts-pix-slide-29VR-articleInline.jpg",
+          "format": "Normal",
+          "height": 127,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Dominic Thiem of Austria won the U.S. Open on Sunday in five sets. It was his first singles title in a Grand Slam event.",
+          "copyright": "Chang W. Lee/The New York Times"
+        }
+      ],
+      "short_url": "https://nyti.ms/2ZAqldx"
+    },
+    {
+      "section": "sports",
+      "subsection": "basketball",
+      "title": "A’ja Wilson for M.V.P., and More W.N.B.A. Awards Picks",
+      "abstract": "Wilson, the Aces’ All-Star forward, isn’t the only one from Las Vegas deserving of honors this year.",
+      "url": "https://www.nytimes.com/2020/09/14/sports/basketball/wnba-awards-mvp.html",
+      "uri": "nyt://article/1a61417e-54ba-54da-951e-83c63dd78d2a",
+      "byline": "By Tamryn Spruill",
+      "item_type": "Article",
+      "updated_date": "2020-09-14T03:00:07-04:00",
+      "created_date": "2020-09-14T03:00:07-04:00",
+      "published_date": "2020-09-14T03:00:07-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Basketball",
+        "Awards, Decorations and Honors"
+      ],
+      "org_facet": [
+        "Las Vegas Aces",
+        "Women's National Basketball Assn"
+      ],
+      "per_facet": [
+        "Clarendon, Layshia (1991- )",
+        "Dangerfield, Crystal (1998- )",
+        "Laimbeer, Bill",
+        "McCoughtry, Angel",
+        "Parker, Candace",
+        "Wilson, A'ja (1996- )",
+        "Hamby, Dearica"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2020/09/14/sports/14wnba-awards-print/merlin_175969452_e749ae45-01fc-4262-8dda-b265fa658725-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "A\u0026rsquo;ja Wilson, left, has been a standout performer for the Las Vegas Aces, who came into the season missing big-name stars but are still among the league\u0026rsquo;s best.",
+          "copyright": "Mike Carlson/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/14/sports/14wnba-awards-print/merlin_175969452_e749ae45-01fc-4262-8dda-b265fa658725-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "A\u0026rsquo;ja Wilson, left, has been a standout performer for the Las Vegas Aces, who came into the season missing big-name stars but are still among the league\u0026rsquo;s best.",
+          "copyright": "Mike Carlson/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/14/sports/14wnba-awards-print/merlin_175969452_e749ae45-01fc-4262-8dda-b265fa658725-thumbLarge.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "A\u0026rsquo;ja Wilson, left, has been a standout performer for the Las Vegas Aces, who came into the season missing big-name stars but are still among the league\u0026rsquo;s best.",
+          "copyright": "Mike Carlson/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/14/sports/14wnba-awards-print/merlin_175969452_e749ae45-01fc-4262-8dda-b265fa658725-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "A\u0026rsquo;ja Wilson, left, has been a standout performer for the Las Vegas Aces, who came into the season missing big-name stars but are still among the league\u0026rsquo;s best.",
+          "copyright": "Mike Carlson/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/14/sports/14wnba-awards-print/merlin_175969452_e749ae45-01fc-4262-8dda-b265fa658725-articleInline.jpg",
+          "format": "Normal",
+          "height": 127,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "A\u0026rsquo;ja Wilson, left, has been a standout performer for the Las Vegas Aces, who came into the season missing big-name stars but are still among the league\u0026rsquo;s best.",
+          "copyright": "Mike Carlson/Associated Press"
+        }
+      ],
+      "short_url": "https://nyti.ms/33nXVog"
+    },
+    {
+      "section": "sports",
+      "subsection": "football",
+      "title": "N.F.L. Kicks Off Season With Nods to Unrest and Focus on Anthem",
+      "abstract": "Several teams stayed in the locker room for the pregame playing of the national anthem, while some players knelt during it or wore decals and shirts against hate and racism.",
+      "url": "https://www.nytimes.com/2020/09/13/sports/football/nfl-protests.html",
+      "uri": "nyt://article/3c397ca7-9279-54df-a219-4878dadf7eee",
+      "byline": "By Ken Belson",
+      "item_type": "Article",
+      "updated_date": "2020-09-14T02:17:48-04:00",
+      "created_date": "2020-09-13T14:13:14-04:00",
+      "published_date": "2020-09-13T14:13:14-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "United States National Anthem Protests (2016- )",
+        "Black People",
+        "Black Lives Matter Movement",
+        "Football"
+      ],
+      "org_facet": [
+        "National Football League"
+      ],
+      "per_facet": [
+        "Kaepernick, Colin"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13nfl-live-pix-slide-6OZA/13nfl-live-pix-slide-6OZA-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "San Francisco 49ers players and coaches locked arms during the national anthem before their game against the Arizona Cardinals, who stayed in the locker room. ",
+          "copyright": "Josie Lepe/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13nfl-live-pix-slide-6OZA/13nfl-live-pix-slide-6OZA-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "San Francisco 49ers players and coaches locked arms during the national anthem before their game against the Arizona Cardinals, who stayed in the locker room. ",
+          "copyright": "Josie Lepe/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13nfl-live-pix-slide-6OZA/13nfl-live-pix-slide-6OZA-thumbLarge.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "San Francisco 49ers players and coaches locked arms during the national anthem before their game against the Arizona Cardinals, who stayed in the locker room. ",
+          "copyright": "Josie Lepe/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13nfl-live-pix-slide-6OZA/13nfl-live-pix-slide-6OZA-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "San Francisco 49ers players and coaches locked arms during the national anthem before their game against the Arizona Cardinals, who stayed in the locker room. ",
+          "copyright": "Josie Lepe/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13nfl-live-pix-slide-6OZA/13nfl-live-pix-slide-6OZA-articleInline.jpg",
+          "format": "Normal",
+          "height": 127,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "San Francisco 49ers players and coaches locked arms during the national anthem before their game against the Arizona Cardinals, who stayed in the locker room. ",
+          "copyright": "Josie Lepe/Associated Press"
+        }
+      ],
+      "short_url": "https://nyti.ms/2ZA96cu"
+    },
+    {
+      "section": "sports",
+      "subsection": "tennis",
+      "title": "Empty Seats, Slowly Filled With Energy",
+      "abstract": "A photographer’s account of covering a U.S. Open unlike any that had come before it.",
+      "url": "https://www.nytimes.com/2020/09/13/sports/tennis/us-open-photography.html",
+      "uri": "nyt://article/b2b07d1a-f121-5d1f-9930-5181c880e326",
+      "byline": "By Chang W. Lee",
+      "item_type": "Article",
+      "updated_date": "2020-09-13T23:13:51-04:00",
+      "created_date": "2020-09-13T12:00:22-04:00",
+      "published_date": "2020-09-13T12:00:22-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Tennis",
+        "United States Open (Tennis)"
+      ],
+      "org_facet": [],
+      "per_facet": [
+        "Azarenka, Victoria",
+        "Williams, Serena"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13usopen-spts-pix-slide-E5CW/13usopen-spts-pix-slide-E5CW-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1366,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Dominic Thiem of Austria collapsed on the court after winning the United States Open, outlasting Alexander Zverev in a fifth-set tiebreaker.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13usopen-spts-pix-slide-E5CW/13usopen-spts-pix-slide-E5CW-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Dominic Thiem of Austria collapsed on the court after winning the United States Open, outlasting Alexander Zverev in a fifth-set tiebreaker.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13usopen-spts-pix-slide-E5CW/13usopen-spts-pix-slide-E5CW-thumbLarge.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Dominic Thiem of Austria collapsed on the court after winning the United States Open, outlasting Alexander Zverev in a fifth-set tiebreaker.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13usopen-spts-pix-slide-E5CW/13usopen-spts-pix-slide-E5CW-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Dominic Thiem of Austria collapsed on the court after winning the United States Open, outlasting Alexander Zverev in a fifth-set tiebreaker.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13usopen-spts-pix-slide-E5CW/13usopen-spts-pix-slide-E5CW-articleInline.jpg",
+          "format": "Normal",
+          "height": 127,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Dominic Thiem of Austria collapsed on the court after winning the United States Open, outlasting Alexander Zverev in a fifth-set tiebreaker.",
+          "copyright": "Chang W. Lee/The New York Times"
+        }
+      ],
+      "short_url": "https://nyti.ms/2FgnTSP"
+    },
+    {
+      "section": "sports",
+      "subsection": "football",
+      "title": "Josh Allen Tops 300 Yards Passing as Bills Beat Jets in Opener",
+      "abstract": "Fans often argue about which quarterback is better — the Jets’ Sam Darnold or the Bills’ Josh Allen. The season opener provided some answers.",
+      "url": "https://www.nytimes.com/2020/09/13/sports/football/josh-allen-bills-jets.html",
+      "uri": "nyt://article/8399be07-de85-535f-8a8e-c0c01b5b85fe",
+      "byline": "By Gillian R. Brassil",
+      "item_type": "Article",
+      "updated_date": "2020-09-14T00:46:40-04:00",
+      "created_date": "2020-09-13T19:24:29-04:00",
+      "published_date": "2020-09-13T19:24:29-04:00",
+      "material_type_facet": "",
+      "kicker": "Bills 27, Jets 17",
+      "des_facet": [
+        "Football",
+        "Lift Every Voice and Sing (Song)"
+      ],
+      "org_facet": [
+        "Buffalo Bills",
+        "New York Jets"
+      ],
+      "per_facet": [
+        "Allen, Josh (1996- )",
+        "Bell, Le'Veon",
+        "Crowder, Jamison",
+        "Darnold, Sam (1997- )",
+        "Gase, Adam (1978- )"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13jets-1/merlin_176983683_5c26490a-25e8-4ed6-9700-1546ceaa8ee5-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1366,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Bills quarterback Josh Allen stiff-armed Jets linebacker Jordan Jenkins in the first half on Sunday in Orchard Park, N.Y.",
+          "copyright": "Jeffrey T. Barnes/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13jets-1/13jets-1-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Bills quarterback Josh Allen stiff-armed Jets linebacker Jordan Jenkins in the first half on Sunday in Orchard Park, N.Y.",
+          "copyright": "Jeffrey T. Barnes/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13jets-1/13jets-1-thumbLarge.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Bills quarterback Josh Allen stiff-armed Jets linebacker Jordan Jenkins in the first half on Sunday in Orchard Park, N.Y.",
+          "copyright": "Jeffrey T. Barnes/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13jets-1/merlin_176983683_5c26490a-25e8-4ed6-9700-1546ceaa8ee5-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Bills quarterback Josh Allen stiff-armed Jets linebacker Jordan Jenkins in the first half on Sunday in Orchard Park, N.Y.",
+          "copyright": "Jeffrey T. Barnes/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13jets-1/merlin_176983683_5c26490a-25e8-4ed6-9700-1546ceaa8ee5-articleInline.jpg",
+          "format": "Normal",
+          "height": 127,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Bills quarterback Josh Allen stiff-armed Jets linebacker Jordan Jenkins in the first half on Sunday in Orchard Park, N.Y.",
+          "copyright": "Jeffrey T. Barnes/Associated Press"
+        }
+      ],
+      "short_url": "https://nyti.ms/3mku34M"
+    },
+    {
+      "section": "sports",
+      "subsection": "football",
+      "title": "N.F.L. Week 1: Live Updates From Opening Sunday",
+      "abstract": "The Saints won the Brees-Brady showdown; the Patriots won their first game with Cam Newton at quarterback; and the 49ers lost a tight battle with the Cardinals.",
+      "url": "https://www.nytimes.com/2020/09/13/sports/football/nfl-scores.html",
+      "uri": "nyt://article/098d4243-b6ee-58b4-827a-9ecf16b7b6f2",
+      "byline": "By Benjamin Hoffman, Ben Shpigel, Ken Belson, Elena Bergeron and Gillian R. Brassil",
+      "item_type": "Article",
+      "updated_date": "2020-09-14T00:03:57-04:00",
+      "created_date": "2020-09-13T10:30:04-04:00",
+      "published_date": "2020-09-13T10:30:04-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Football",
+        "United States National Anthem Protests (2016- )"
+      ],
+      "org_facet": [
+        "Arizona Cardinals",
+        "Cleveland Browns",
+        "Dallas Cowboys",
+        "Los Angeles Rams",
+        "Miami Dolphins",
+        "National Football League",
+        "New Orleans Saints",
+        "New York Giants",
+        "San Francisco 49ers",
+        "Tampa Bay Buccaneers"
+      ],
+      "per_facet": [
+        "Brady, Tom",
+        "Newton, Cameron J"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13nfl-preview-1/merlin_176163264_f78363cc-3675-4700-8995-94949a73838f-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Cam Newton, left, is now quarterback of the New England Patriots.",
+          "copyright": "Pool photo by Steven Senne"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13nfl-preview-1/13nfl-preview-1-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Cam Newton, left, is now quarterback of the New England Patriots.",
+          "copyright": "Pool photo by Steven Senne"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13nfl-preview-1/13nfl-preview-1-thumbLarge.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Cam Newton, left, is now quarterback of the New England Patriots.",
+          "copyright": "Pool photo by Steven Senne"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13nfl-preview-1/merlin_176163264_f78363cc-3675-4700-8995-94949a73838f-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Cam Newton, left, is now quarterback of the New England Patriots.",
+          "copyright": "Pool photo by Steven Senne"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13nfl-preview-1/merlin_176163264_f78363cc-3675-4700-8995-94949a73838f-articleInline.jpg",
+          "format": "Normal",
+          "height": 127,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Cam Newton, left, is now quarterback of the New England Patriots.",
+          "copyright": "Pool photo by Steven Senne"
+        }
+      ],
+      "short_url": "https://nyti.ms/33moVEN"
+    },
+    {
+      "section": "sports",
+      "subsection": "ncaafootball",
+      "title": "Trump and Biden Seek an Electoral Edge From an Unlikely Source: College Football",
+      "abstract": "College sports leaders aren’t thrilled to see football assume a role in the presidential campaign, but they’re not surprised.",
+      "url": "https://www.nytimes.com/2020/09/12/sports/ncaafootball/trump-football-big-ten.html",
+      "uri": "nyt://article/aba166b3-e59a-5897-b9fc-3cdc8a454b86",
+      "byline": "By Alan Blinder and Jonathan Martin",
+      "item_type": "Article",
+      "updated_date": "2020-09-13T19:13:25-04:00",
+      "created_date": "2020-09-12T05:00:15-04:00",
+      "published_date": "2020-09-12T05:00:15-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Football (College)",
+        "Coronavirus Reopenings",
+        "Presidential Election of 2020"
+      ],
+      "org_facet": [
+        "Big Ten Conference",
+        "Pacific-12 Conference",
+        "National Collegiate Athletic Assn",
+        "Ohio State University"
+      ],
+      "per_facet": [
+        "Biden, Joseph R Jr",
+        "Trump, Donald J",
+        "Emmert, Mark",
+        "Warren, Kevin (1963- )"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2020/09/10/sports/00CollegeFootball-Politics-Illo/00CollegeFootball-Politics-Illo-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1419,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Michelle Kondrich"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/10/sports/00CollegeFootball-Politics-Illo/00CollegeFootball-Politics-Illo-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Michelle Kondrich"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/10/sports/00CollegeFootball-Politics-Illo/00CollegeFootball-Politics-Illo-thumbLarge.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Michelle Kondrich"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/10/sports/00CollegeFootball-Politics-Illo/00CollegeFootball-Politics-Illo-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Michelle Kondrich"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/10/sports/00CollegeFootball-Politics-Illo/00CollegeFootball-Politics-Illo-articleInline.jpg",
+          "format": "Normal",
+          "height": 132,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Michelle Kondrich"
+        }
+      ],
+      "short_url": "https://nyti.ms/33nvnuZ"
+    },
+    {
+      "section": "sports",
+      "subsection": "basketball",
+      "title": "A Young Core Carries the Celtics Past the Raptors. But There’s More Work to Do.",
+      "abstract": "Jayson Tatum, Jaylen Brown and Marcus Smart played like veterans in dethroning the Toronto Raptors.",
+      "url": "https://www.nytimes.com/2020/09/12/sports/basketball/boston-celtics.html",
+      "uri": "nyt://article/e46be9bb-9a45-58c1-b8ce-352884e4d952",
+      "byline": "By Sopan Deb",
+      "item_type": "Article",
+      "updated_date": "2020-09-12T14:00:16-04:00",
+      "created_date": "2020-09-12T13:13:13-04:00",
+      "published_date": "2020-09-12T13:13:13-04:00",
+      "material_type_facet": "",
+      "kicker": "On Pro Basketball",
+      "des_facet": [
+        "Basketball",
+        "Playoff Games"
+      ],
+      "org_facet": [
+        "Boston Celtics",
+        "Toronto Raptors"
+      ],
+      "per_facet": [
+        "Tatum, Jayson (1998- )",
+        "Brown, Jaylen (1996- )",
+        "Smart, Marcus"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/12nba-celtics01/merlin_176892870_3ba6e372-f55a-426b-a475-ca2314ace68c-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Jayson Tatum is one of several young players on the Celtics who have collectively tallied a lot of playoff experience.",
+          "copyright": "Kim Klement/USA Today Sports, via Reuters"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/12nba-celtics01/12nba-celtics01-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Jayson Tatum is one of several young players on the Celtics who have collectively tallied a lot of playoff experience.",
+          "copyright": "Kim Klement/USA Today Sports, via Reuters"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/12nba-celtics01/12nba-celtics01-thumbLarge.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Jayson Tatum is one of several young players on the Celtics who have collectively tallied a lot of playoff experience.",
+          "copyright": "Kim Klement/USA Today Sports, via Reuters"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/12nba-celtics01/merlin_176892870_3ba6e372-f55a-426b-a475-ca2314ace68c-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Jayson Tatum is one of several young players on the Celtics who have collectively tallied a lot of playoff experience.",
+          "copyright": "Kim Klement/USA Today Sports, via Reuters"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/12nba-celtics01/merlin_176892870_3ba6e372-f55a-426b-a475-ca2314ace68c-articleInline.jpg",
+          "format": "Normal",
+          "height": 127,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Jayson Tatum is one of several young players on the Celtics who have collectively tallied a lot of playoff experience.",
+          "copyright": "Kim Klement/USA Today Sports, via Reuters"
+        }
+      ],
+      "short_url": "https://nyti.ms/32nHatY"
+    },
+    {
+      "section": "sports",
+      "subsection": "tennis",
+      "title": "A U.S. Open Missing Fans and Stars: Was It Worth It?",
+      "abstract": "No Federer or Nadal, and so many top women taking a pass, plus a fracas with the French, but the United States Tennis Association needed to hold this tournament and has no regrets.",
+      "url": "https://www.nytimes.com/2020/09/12/sports/tennis/us-open-fans-sa.html",
+      "uri": "nyt://article/c6428977-fed1-5192-b178-7eac86be3614",
+      "byline": "By Matthew Futterman",
+      "item_type": "Article",
+      "updated_date": "2020-09-13T12:28:08-04:00",
+      "created_date": "2020-09-12T13:00:07-04:00",
+      "published_date": "2020-09-12T13:00:07-04:00",
+      "material_type_facet": "",
+      "kicker": "On Tennis",
+      "des_facet": [
+        "Tennis",
+        "United States Open (Tennis)",
+        "Quarantines"
+      ],
+      "org_facet": [
+        "Ashe, Arthur, Stadium",
+        "United States Tennis Assn",
+        "ESPN"
+      ],
+      "per_facet": [
+        "Dowse, Michael (Sports Executive)",
+        "Kalinina, Anhelina (1997- )",
+        "Osaka, Naomi (1997- )",
+        "Thiem, Dominic"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13usopen-worth-it-web-1/merlin_176874150_52e5124d-5a4b-42be-9a47-8e1d9607fce3-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Pandemic precautions meant that a Serena Williams night match, usually a main attraction, could take place only in front of the players’ family members and coaches.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13usopen-worth-it-web-1/13usopen-worth-it-web-1-thumbStandard-v2.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Pandemic precautions meant that a Serena Williams night match, usually a main attraction, could take place only in front of the players’ family members and coaches.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13usopen-worth-it-web-1/13usopen-worth-it-web-1-thumbLarge-v2.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Pandemic precautions meant that a Serena Williams night match, usually a main attraction, could take place only in front of the players’ family members and coaches.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13usopen-worth-it-web-1/merlin_176874150_52e5124d-5a4b-42be-9a47-8e1d9607fce3-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Pandemic precautions meant that a Serena Williams night match, usually a main attraction, could take place only in front of the players’ family members and coaches.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13usopen-worth-it-web-1/merlin_176874150_52e5124d-5a4b-42be-9a47-8e1d9607fce3-articleInline.jpg",
+          "format": "Normal",
+          "height": 127,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Pandemic precautions meant that a Serena Williams night match, usually a main attraction, could take place only in front of the players’ family members and coaches.",
+          "copyright": "Chang W. Lee/The New York Times"
+        }
+      ],
+      "short_url": "https://nyti.ms/32oefGk"
+    },
+    {
+      "section": "sports",
+      "subsection": "baseball",
+      "title": "He Calls Baseball Games by Ear. Without Fans, His Job Is a Lot Harder.",
+      "abstract": "Enrique Oliu, a blind radio broadcaster for the Tampa Bay Rays, relies on crowd noise and on-field sounds to do his job. This season, he’s had to adjust more than anyone.",
+      "url": "https://www.nytimes.com/2020/09/11/sports/baseball/enrique-oliu-rays-broadcaster.html",
+      "uri": "nyt://article/b3bba9df-55da-5675-bb0d-0c6e43fe9c88",
+      "byline": "By James Wagner",
+      "item_type": "Article",
+      "updated_date": "2020-09-14T00:50:04-04:00",
+      "created_date": "2020-09-11T17:00:09-04:00",
+      "published_date": "2020-09-11T17:00:09-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Baseball",
+        "Ears and Hearing",
+        "Blindness",
+        "Radio",
+        "Coronavirus (2019-nCoV)",
+        "Coronavirus Reopenings"
+      ],
+      "org_facet": [
+        "Tampa Bay Rays"
+      ],
+      "per_facet": [
+        "Oliu, Enrique"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2020/09/14/sports/10rays-oliu1-print/merlin_176154777_732df323-ba35-45b9-af97-e459aef17d2b-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Enrique Oliu, second from left, has been on the Tampa Bay Rays\u0026rsquo; Spanish-language radio broadcast for 20 years.",
+          "copyright": "Eve Edelheit for The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/14/sports/10rays-oliu1-print/10rays-oliu-2-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Enrique Oliu, second from left, has been on the Tampa Bay Rays\u0026rsquo; Spanish-language radio broadcast for 20 years.",
+          "copyright": "Eve Edelheit for The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/14/sports/10rays-oliu1-print/10rays-oliu-2-thumbLarge.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Enrique Oliu, second from left, has been on the Tampa Bay Rays\u0026rsquo; Spanish-language radio broadcast for 20 years.",
+          "copyright": "Eve Edelheit for The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/14/sports/10rays-oliu1-print/merlin_176154777_732df323-ba35-45b9-af97-e459aef17d2b-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Enrique Oliu, second from left, has been on the Tampa Bay Rays\u0026rsquo; Spanish-language radio broadcast for 20 years.",
+          "copyright": "Eve Edelheit for The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/14/sports/10rays-oliu1-print/merlin_176154777_732df323-ba35-45b9-af97-e459aef17d2b-articleInline.jpg",
+          "format": "Normal",
+          "height": 127,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Enrique Oliu, second from left, has been on the Tampa Bay Rays\u0026rsquo; Spanish-language radio broadcast for 20 years.",
+          "copyright": "Eve Edelheit for The New York Times"
+        }
+      ],
+      "short_url": "https://nyti.ms/3inOWd7"
+    },
+    {
+      "section": "sports",
+      "subsection": "baseball",
+      "title": "Cubs’ Alec Mills Throws a No-Hitter Against the Brewers",
+      "abstract": "It was the 16th no-hitter in Chicago franchise history and the second in Major League Baseball this season.",
+      "url": "https://www.nytimes.com/2020/09/13/sports/baseball/cubs-alec-mills-no-hitter.html",
+      "uri": "nyt://article/28a5d4d6-3162-5b64-8c34-4391ef23c808",
+      "byline": "By The Associated Press",
+      "item_type": "Article",
+      "updated_date": "2020-09-14T00:51:32-04:00",
+      "created_date": "2020-09-13T18:21:38-04:00",
+      "published_date": "2020-09-13T18:21:38-04:00",
+      "material_type_facet": "",
+      "kicker": "Cubs 12, Brewers 0",
+      "des_facet": [
+        "Baseball"
+      ],
+      "org_facet": [
+        "Chicago Cubs"
+      ],
+      "per_facet": [
+        "Giolito, Lucas (1994- )",
+        "Mills, Alec"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2020/09/14/sports/13ALTnohitter-print/merlin_176981805_251989e7-3d86-4655-b678-2215b9f1a595-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1459,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Cubs pitcher Alec Mills, center, lost his glasses as he was mobbed by teammates after throwing a no-hitter against the Brewers on Sunday in Milwaukee.",
+          "copyright": "Tannen Maury/EPA, via Shutterstock"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/14/sports/13ALTnohitter-print/13nohitter-1-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Cubs pitcher Alec Mills, center, lost his glasses as he was mobbed by teammates after throwing a no-hitter against the Brewers on Sunday in Milwaukee.",
+          "copyright": "Tannen Maury/EPA, via Shutterstock"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/14/sports/13ALTnohitter-print/13nohitter-1-thumbLarge.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Cubs pitcher Alec Mills, center, lost his glasses as he was mobbed by teammates after throwing a no-hitter against the Brewers on Sunday in Milwaukee.",
+          "copyright": "Tannen Maury/EPA, via Shutterstock"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/14/sports/13ALTnohitter-print/13nohitter-1-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Cubs pitcher Alec Mills, center, lost his glasses as he was mobbed by teammates after throwing a no-hitter against the Brewers on Sunday in Milwaukee.",
+          "copyright": "Tannen Maury/EPA, via Shutterstock"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/14/sports/13ALTnohitter-print/merlin_176981805_251989e7-3d86-4655-b678-2215b9f1a595-articleInline.jpg",
+          "format": "Normal",
+          "height": 135,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Cubs pitcher Alec Mills, center, lost his glasses as he was mobbed by teammates after throwing a no-hitter against the Brewers on Sunday in Milwaukee.",
+          "copyright": "Tannen Maury/EPA, via Shutterstock"
+        }
+      ],
+      "short_url": "https://nyti.ms/2ZyNxsB"
+    },
+    {
+      "section": "sports",
+      "subsection": "",
+      "title": "It Was 50 Years Ago Today, the Marathon Came to New York to Stay",
+      "abstract": "There won’t be a New York City Marathon this year, but we can celebrate the anniversary of the first one, held on Sept. 13, 1970.",
+      "url": "https://www.nytimes.com/2020/09/13/sports/new-york-city-marathon.html",
+      "uri": "nyt://article/c3c938ad-d812-5cf4-adce-9afb448e2259",
+      "byline": "By George A. Hirsch",
+      "item_type": "Article",
+      "updated_date": "2020-09-13T05:52:53-04:00",
+      "created_date": "2020-09-13T00:30:08-04:00",
+      "published_date": "2020-09-13T00:30:08-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "New York City Marathon",
+        "Running",
+        "Coronavirus (2019-nCoV)"
+      ],
+      "org_facet": [
+        "New York Road Runners Club"
+      ],
+      "per_facet": [
+        "Muhrcke, Gary",
+        "Fleming, Thomas J (1951-2017)",
+        "Muhrcke, Jane"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13nycmarathon-1/merlin_98584732_3e4d72d7-44a3-415a-b3bf-5005f15e9c3f-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1379,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "The 1970 New York City Marathon was held entirely in Central Park.",
+          "copyright": "Don Hogan Charles/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13nycmarathon-1/13nycmarathon-1-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "The 1970 New York City Marathon was held entirely in Central Park.",
+          "copyright": "Don Hogan Charles/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13nycmarathon-1/13nycmarathon-1-thumbLarge.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "The 1970 New York City Marathon was held entirely in Central Park.",
+          "copyright": "Don Hogan Charles/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13nycmarathon-1/13nycmarathon-1-mediumThreeByTwo210-v2.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "The 1970 New York City Marathon was held entirely in Central Park.",
+          "copyright": "Don Hogan Charles/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13nycmarathon-1/merlin_98584732_3e4d72d7-44a3-415a-b3bf-5005f15e9c3f-articleInline.jpg",
+          "format": "Normal",
+          "height": 128,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "The 1970 New York City Marathon was held entirely in Central Park.",
+          "copyright": "Don Hogan Charles/The New York Times"
+        }
+      ],
+      "short_url": "https://nyti.ms/32oXbjj"
+    },
+    {
+      "section": "sports",
+      "subsection": "hockey",
+      "title": "Stars Are One Win Away From Winning the West",
+      "abstract": "Anton Khudobin made 32 saves, including stops during a 5-on-3 penalty kill in the third period, in Dallas’s 2-1 win over the Vegas Golden Knights.",
+      "url": "https://www.nytimes.com/2020/09/12/sports/hockey/dallas-stars-vegas-golden-knights-playoffs.html",
+      "uri": "nyt://article/13206769-5e76-516f-be33-1c95e805c10c",
+      "byline": "By Carol Schram",
+      "item_type": "Article",
+      "updated_date": "2020-09-13T02:05:45-04:00",
+      "created_date": "2020-09-12T23:55:57-04:00",
+      "published_date": "2020-09-12T23:55:57-04:00",
+      "material_type_facet": "",
+      "kicker": "stars 2, Golden knights 1",
+      "des_facet": [
+        "Hockey, Ice",
+        "Playoff Games"
+      ],
+      "org_facet": [
+        "Dallas Stars",
+        "Vegas Golden Knights",
+        "National Hockey League"
+      ],
+      "per_facet": [
+        "Benn, Jamie",
+        "Pavelski, Joe (1984- )",
+        "Lehner, Robin (1991- )"
+      ],
+      "geo_facet": [
+        "Edmonton (Alberta)"
+      ],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13nhl-starsknights/merlin_176937222_727e8082-c1da-49c1-b925-4311eff24ee0-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1458,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Dallas goaltender Anton Khudobin made 32 saves in Game 4.",
+          "copyright": "Jason Franson/The Canadian Press, via Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13nhl-starsknights/13nhl-starsknights-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Dallas goaltender Anton Khudobin made 32 saves in Game 4.",
+          "copyright": "Jason Franson/The Canadian Press, via Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13nhl-starsknights/13nhl-starsknights-thumbLarge.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Dallas goaltender Anton Khudobin made 32 saves in Game 4.",
+          "copyright": "Jason Franson/The Canadian Press, via Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13nhl-starsknights/13nhl-starsknights-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Dallas goaltender Anton Khudobin made 32 saves in Game 4.",
+          "copyright": "Jason Franson/The Canadian Press, via Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/13nhl-starsknights/merlin_176937222_727e8082-c1da-49c1-b925-4311eff24ee0-articleInline.jpg",
+          "format": "Normal",
+          "height": 135,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Dallas goaltender Anton Khudobin made 32 saves in Game 4.",
+          "copyright": "Jason Franson/The Canadian Press, via Associated Press"
+        }
+      ],
+      "short_url": "https://nyti.ms/2RnP9RK"
+    },
+    {
+      "section": "sports",
+      "subsection": "baseball",
+      "title": "Gene Budig, Last President of the American League, Dies at 81",
+      "abstract": "After a distinguished academic career, he brought his love of baseball to a position that he considered a dream job — but that was eliminated five years later.",
+      "url": "https://www.nytimes.com/2020/09/12/sports/baseball/gene-budig-dead.html",
+      "uri": "nyt://article/df7df3c8-c8e8-5472-9b78-7307255c0817",
+      "byline": "By Richard Sandomir",
+      "item_type": "Article",
+      "updated_date": "2020-09-12T17:41:20-04:00",
+      "created_date": "2020-09-12T13:47:30-04:00",
+      "published_date": "2020-09-12T13:47:30-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Deaths (Obituaries)",
+        "Baseball",
+        "Colleges and Universities"
+      ],
+      "org_facet": [
+        "American League",
+        "University of Kansas"
+      ],
+      "per_facet": [
+        "Budig, Gene"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2020/09/10/obituaries/10Budig1/10Budig1-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1098,
+          "width": 1646,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Gene Budig, right, the president of the American League, at the 1999 All-Star Game at Fenway Park in Boston with the former Red Sox center fielder Dominic DiMaggio.",
+          "copyright": "Wendy Maeda/The Boston Globe, via Getty Images"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/10/obituaries/10Budig1/10Budig1-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Gene Budig, right, the president of the American League, at the 1999 All-Star Game at Fenway Park in Boston with the former Red Sox center fielder Dominic DiMaggio.",
+          "copyright": "Wendy Maeda/The Boston Globe, via Getty Images"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/10/obituaries/10Budig1/10Budig1-thumbLarge.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Gene Budig, right, the president of the American League, at the 1999 All-Star Game at Fenway Park in Boston with the former Red Sox center fielder Dominic DiMaggio.",
+          "copyright": "Wendy Maeda/The Boston Globe, via Getty Images"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/10/obituaries/10Budig1/10Budig1-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Gene Budig, right, the president of the American League, at the 1999 All-Star Game at Fenway Park in Boston with the former Red Sox center fielder Dominic DiMaggio.",
+          "copyright": "Wendy Maeda/The Boston Globe, via Getty Images"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/10/obituaries/10Budig1/10Budig1-articleInline.jpg",
+          "format": "Normal",
+          "height": 127,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Gene Budig, right, the president of the American League, at the 1999 All-Star Game at Fenway Park in Boston with the former Red Sox center fielder Dominic DiMaggio.",
+          "copyright": "Wendy Maeda/The Boston Globe, via Getty Images"
+        }
+      ],
+      "short_url": "https://nyti.ms/2FApdiQ"
+    },
+    {
+      "section": "sports",
+      "subsection": "",
+      "title": "Naomi Osaka and Victoria Azarenka Get Test of Mettle in U.S. Open Final",
+      "abstract": "Osaka has had to manage an injury and the spotlight as one of the game’s biggest stars. Azarenka’s win over Serena Williams in a semifinal showed her renewed confidence.",
+      "url": "https://www.nytimes.com/2020/09/12/sports/naomi-osaka-and-victoria-azarenka-get-test-of-mettle-in-us-open-final.html",
+      "uri": "nyt://article/683090cf-e23c-5641-b503-2550f6bf7dbb",
+      "byline": "By Ben Rothenberg",
+      "item_type": "Article",
+      "updated_date": "2020-09-12T00:05:06-04:00",
+      "created_date": "2020-09-12T00:05:06-04:00",
+      "published_date": "2020-09-12T00:05:06-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "United States Open (Tennis)",
+        "Tennis"
+      ],
+      "org_facet": [],
+      "per_facet": [
+        "Fissette, Wim",
+        "Azarenka, Victoria",
+        "Osaka, Naomi (1997- )"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/11usopen-fissette01/merlin_176835198_c42f0a9d-2bde-44ca-8393-7b5219594fbb-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Naomi Osaka beat Jennifer Brady to reach the United States Open final.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/11usopen-fissette01/11usopen-fissette01-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Naomi Osaka beat Jennifer Brady to reach the United States Open final.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/11usopen-fissette01/11usopen-fissette01-thumbLarge.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Naomi Osaka beat Jennifer Brady to reach the United States Open final.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/11usopen-fissette01/merlin_176835198_c42f0a9d-2bde-44ca-8393-7b5219594fbb-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Naomi Osaka beat Jennifer Brady to reach the United States Open final.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/11usopen-fissette01/merlin_176835198_c42f0a9d-2bde-44ca-8393-7b5219594fbb-articleInline.jpg",
+          "format": "Normal",
+          "height": 127,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Naomi Osaka beat Jennifer Brady to reach the United States Open final.",
+          "copyright": "Chang W. Lee/The New York Times"
+        }
+      ],
+      "short_url": "https://nyti.ms/3k8Lm76"
+    },
+    {
+      "section": "sports",
+      "subsection": "",
+      "title": "2020 U.S. Open: Women’s Final Preview",
+      "abstract": "Naomi Osaka and Victoria Azarenka will play in the women’s singles final of the United States Open on Saturday.",
+      "url": "https://www.nytimes.com/2020/09/12/sports/2020-us-open-womens-final-preview.html",
+      "uri": "nyt://article/207e3afe-941d-5408-983a-a906953c30e8",
+      "byline": "By Max Gendler",
+      "item_type": "Article",
+      "updated_date": "2020-09-12T02:03:33-04:00",
+      "created_date": "2020-09-12T00:01:15-04:00",
+      "published_date": "2020-09-12T00:01:15-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "United States Open (Tennis)",
+        "Tennis"
+      ],
+      "org_facet": [],
+      "per_facet": [
+        "Azarenka, Victoria",
+        "Osaka, Naomi (1997- )"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/12usopen-watch-web-1/merlin_176833815_30ae5d9e-dca5-482b-973a-5c50f78156fc-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "After withdrawing from the Western \u0026 Southern Open final against Victoria Azarenka, Naomi Osaka will face her for the U.S. Open title.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/12usopen-watch-web-1/12usopen-watch-web-1-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "After withdrawing from the Western \u0026 Southern Open final against Victoria Azarenka, Naomi Osaka will face her for the U.S. Open title.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/12usopen-watch-web-1/12usopen-watch-web-1-thumbLarge.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "After withdrawing from the Western \u0026 Southern Open final against Victoria Azarenka, Naomi Osaka will face her for the U.S. Open title.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/12usopen-watch-web-1/merlin_176833815_30ae5d9e-dca5-482b-973a-5c50f78156fc-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "After withdrawing from the Western \u0026 Southern Open final against Victoria Azarenka, Naomi Osaka will face her for the U.S. Open title.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/12usopen-watch-web-1/merlin_176833815_30ae5d9e-dca5-482b-973a-5c50f78156fc-articleInline.jpg",
+          "format": "Normal",
+          "height": 127,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "After withdrawing from the Western \u0026 Southern Open final against Victoria Azarenka, Naomi Osaka will face her for the U.S. Open title.",
+          "copyright": "Chang W. Lee/The New York Times"
+        }
+      ],
+      "short_url": "https://nyti.ms/35v6yjq"
+    },
+    {
+      "section": "sports",
+      "subsection": "basketball",
+      "title": "Rockets’ Danuel House Leaves N.B.A. Bubble After Violation",
+      "abstract": "House was said to have had an unauthorized guest in his hotel room at Walt Disney World “over multiple hours” on Tuesday in violation of the league’s health protocols.",
+      "url": "https://www.nytimes.com/2020/09/11/sports/basketball/nba-houston-rockets-danuel-house.html",
+      "uri": "nyt://article/9c38dd62-5dda-5b5a-b7ed-3f5bf8fe39a2",
+      "byline": "By Scott Cacciola",
+      "item_type": "Article",
+      "updated_date": "2020-09-12T09:57:15-04:00",
+      "created_date": "2020-09-11T20:01:58-04:00",
+      "published_date": "2020-09-11T20:01:58-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Basketball",
+        "Coronavirus (2019-nCoV)",
+        "Quarantines"
+      ],
+      "org_facet": [
+        "National Basketball Assn",
+        "Houston Rockets"
+      ],
+      "per_facet": [
+        "House, Danuel Jr (1993- )"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/11nba-house-1/merlin_176677932_1f03248b-99e4-4484-bd2d-b2199b90b9ed-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1435,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Danuel House Jr. of the Houston Rockets, left, had missed two games while the N.B.A. investigated whether he had breached protocol.",
+          "copyright": "Douglas P. Defelice/Getty Images"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/11nba-house-1/11nba-house-1-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Danuel House Jr. of the Houston Rockets, left, had missed two games while the N.B.A. investigated whether he had breached protocol.",
+          "copyright": "Douglas P. Defelice/Getty Images"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/11nba-house-1/11nba-house-1-thumbLarge.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Danuel House Jr. of the Houston Rockets, left, had missed two games while the N.B.A. investigated whether he had breached protocol.",
+          "copyright": "Douglas P. Defelice/Getty Images"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/11nba-house-1/11nba-house-1-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Danuel House Jr. of the Houston Rockets, left, had missed two games while the N.B.A. investigated whether he had breached protocol.",
+          "copyright": "Douglas P. Defelice/Getty Images"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/11nba-house-1/merlin_176677932_1f03248b-99e4-4484-bd2d-b2199b90b9ed-articleInline.jpg",
+          "format": "Normal",
+          "height": 133,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Danuel House Jr. of the Houston Rockets, left, had missed two games while the N.B.A. investigated whether he had breached protocol.",
+          "copyright": "Douglas P. Defelice/Getty Images"
+        }
+      ],
+      "short_url": "https://nyti.ms/2FyoLBJ"
+    },
+    {
+      "section": "sports",
+      "subsection": "tennis",
+      "title": "Dominic Thiem and Alexander Zverev Give U.S. Open a New Look for Final",
+      "abstract": "For the first time in four years, a Grand Slam men’s singles tournament will end without Roger Federer, Rafael Nadal or Novak Djokovic as the champion.",
+      "url": "https://www.nytimes.com/2020/09/11/sports/tennis/us-open-mens-semifinals-alexander-zverev-daniil-medvedev-dominic-thiem.html",
+      "uri": "nyt://article/66a0a02b-6d47-54b7-bc2e-bad51f63c37f",
+      "byline": "By Christopher Clarey",
+      "item_type": "Article",
+      "updated_date": "2020-09-12T12:14:42-04:00",
+      "created_date": "2020-09-11T19:45:43-04:00",
+      "published_date": "2020-09-11T19:45:43-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Tennis",
+        "United States Open (Tennis)"
+      ],
+      "org_facet": [],
+      "per_facet": [
+        "Thiem, Dominic",
+        "Zverev, Alexander",
+        "Carreno Busta, Pablo (1991- )",
+        "Medvedev, Daniil (1996- )"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/11usopen-mens-semis03/merlin_176886876_fcfc1beb-1aa0-43d9-aa2e-16cb7710fdf5-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1368,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Dominic Thiem beat Daniil Medvedev in straight sets to reach the final of the United States Open.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/11usopen-mens-semis03/11usopen-mens-semis03-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Dominic Thiem beat Daniil Medvedev in straight sets to reach the final of the United States Open.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/11usopen-mens-semis03/11usopen-mens-semis03-thumbLarge.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Dominic Thiem beat Daniil Medvedev in straight sets to reach the final of the United States Open.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/11usopen-mens-semis03/merlin_176886876_fcfc1beb-1aa0-43d9-aa2e-16cb7710fdf5-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Dominic Thiem beat Daniil Medvedev in straight sets to reach the final of the United States Open.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/11usopen-mens-semis03/merlin_176886876_fcfc1beb-1aa0-43d9-aa2e-16cb7710fdf5-articleInline.jpg",
+          "format": "Normal",
+          "height": 127,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Dominic Thiem beat Daniil Medvedev in straight sets to reach the final of the United States Open.",
+          "copyright": "Chang W. Lee/The New York Times"
+        }
+      ],
+      "short_url": "https://nyti.ms/2DXO0xa"
+    },
+    {
+      "section": "sports",
+      "subsection": "football",
+      "title": "Catch the N.F.L.’s Big Return",
+      "abstract": "For many fans, sports weren’t really back until football kicked off. Well, that moment has arrived.",
+      "url": "https://www.nytimes.com/interactive/2020/09/11/sports/football/nfl-week-1-preview.html",
+      "uri": "nyt://interactive/2c36642e-0b53-5838-a965-0331192e7c4a",
+      "byline": "By Victor Mather",
+      "item_type": "Interactive",
+      "updated_date": "2020-09-13T00:00:05-04:00",
+      "created_date": "2020-09-11T18:41:43-04:00",
+      "published_date": "2020-09-11T18:41:43-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Football"
+      ],
+      "org_facet": [
+        "Baltimore Ravens",
+        "Cincinnati Bengals",
+        "Cleveland Browns",
+        "Kansas City Chiefs",
+        "Los Angeles Chargers",
+        "National Football League",
+        "New Orleans Saints",
+        "Tampa Bay Buccaneers"
+      ],
+      "per_facet": [
+        "Brady, Tom"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/reader-center/burst-chiefs/merlin_176837565_edd0b3d7-c4c5-4ea2-a4a6-c8cd3913cc83-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Charlie Riedel/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/reader-center/burst-chiefs/merlin_176837565_edd0b3d7-c4c5-4ea2-a4a6-c8cd3913cc83-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Charlie Riedel/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/reader-center/burst-chiefs/merlin_176837565_edd0b3d7-c4c5-4ea2-a4a6-c8cd3913cc83-thumbLarge.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Charlie Riedel/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/reader-center/burst-chiefs/merlin_176837565_edd0b3d7-c4c5-4ea2-a4a6-c8cd3913cc83-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Charlie Riedel/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/reader-center/burst-chiefs/merlin_176837565_edd0b3d7-c4c5-4ea2-a4a6-c8cd3913cc83-articleInline.jpg",
+          "format": "Normal",
+          "height": 127,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Charlie Riedel/Associated Press"
+        }
+      ],
+      "short_url": "https://nyti.ms/2ZwIxEX"
+    },
+    {
+      "section": "sports",
+      "subsection": "baseball",
+      "title": "The Orioles Looked Done. Now They’re Threatening the Yankees’ Playoff Plans.",
+      "abstract": "“We’re young and I think a lot of people underestimated us, and that’s kind of fun,” said Baltimore’s Pat Valaika. Even more fun for the Orioles would be taking the Yankees’ playoff spot.",
+      "url": "https://www.nytimes.com/2020/09/11/sports/baseball/orioles-yankees-playoffs.html",
+      "uri": "nyt://article/06885368-68fa-5f23-9cb5-a86bd76a4bee",
+      "byline": "By Tyler Kepner",
+      "item_type": "Article",
+      "updated_date": "2020-09-11T23:42:56-04:00",
+      "created_date": "2020-09-11T13:05:17-04:00",
+      "published_date": "2020-09-11T13:05:17-04:00",
+      "material_type_facet": "",
+      "kicker": "on baseball",
+      "des_facet": [
+        "Baseball",
+        "Trades (Sports)"
+      ],
+      "org_facet": [
+        "Baltimore Orioles",
+        "New York Yankees"
+      ],
+      "per_facet": [
+        "Elias, Mike (1982- )"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/11kepner-al1/merlin_176670876_9aa0bc89-e88f-4a5b-8a57-60ca93639e39-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "The Orioles’ outfielders — from left, Ryan Mountcastle, Mason Williams and D.J. Stewart — after their win over the Yankees on Sunday.",
+          "copyright": "Gail Burton/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/11kepner-al1/merlin_176670876_9aa0bc89-e88f-4a5b-8a57-60ca93639e39-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "The Orioles’ outfielders — from left, Ryan Mountcastle, Mason Williams and D.J. Stewart — after their win over the Yankees on Sunday.",
+          "copyright": "Gail Burton/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/11kepner-al1/merlin_176670876_9aa0bc89-e88f-4a5b-8a57-60ca93639e39-thumbLarge.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "The Orioles’ outfielders — from left, Ryan Mountcastle, Mason Williams and D.J. Stewart — after their win over the Yankees on Sunday.",
+          "copyright": "Gail Burton/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/11kepner-al1/merlin_176670876_9aa0bc89-e88f-4a5b-8a57-60ca93639e39-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "The Orioles’ outfielders — from left, Ryan Mountcastle, Mason Williams and D.J. Stewart — after their win over the Yankees on Sunday.",
+          "copyright": "Gail Burton/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/11kepner-al1/merlin_176670876_9aa0bc89-e88f-4a5b-8a57-60ca93639e39-articleInline.jpg",
+          "format": "Normal",
+          "height": 127,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "The Orioles’ outfielders — from left, Ryan Mountcastle, Mason Williams and D.J. Stewart — after their win over the Yankees on Sunday.",
+          "copyright": "Gail Burton/Associated Press"
+        }
+      ],
+      "short_url": "https://nyti.ms/32lKvtN"
+    },
+    {
+      "section": "sports",
+      "subsection": "ncaafootball",
+      "title": "College Football’s Biggest Rebuilding Project? The Schedule",
+      "abstract": "The coronavirus pandemic forced universities to create new football schedules on the fly. And even though the season has started, the tinkering may not be over.",
+      "url": "https://www.nytimes.com/2020/09/11/sports/ncaafootball/college-football-schedule.html",
+      "uri": "nyt://article/41acefda-ffa9-5132-84de-1d3fb3010ab7",
+      "byline": "By Alan Blinder",
+      "item_type": "Article",
+      "updated_date": "2020-09-11T23:42:31-04:00",
+      "created_date": "2020-09-11T11:48:40-04:00",
+      "published_date": "2020-09-11T11:48:40-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Football (College)",
+        "Coronavirus Reopenings",
+        "Coronavirus (2019-nCoV)"
+      ],
+      "org_facet": [
+        "United States Military Academy",
+        "Brigham Young University",
+        "Appalachian State University"
+      ],
+      "per_facet": [],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/11cfb-schedules-web-2/merlin_176624799_ee32a217-b41b-4b53-a826-90fb0a4f37f2-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Army, which once had just three scheduled games, started its season against Middle Tennessee State last weekend.",
+          "copyright": "Vincent Carchietta/USA Today Sports, via Reuters"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/11cfb-schedules-web-2/11cfb-schedules-web-2-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Army, which once had just three scheduled games, started its season against Middle Tennessee State last weekend.",
+          "copyright": "Vincent Carchietta/USA Today Sports, via Reuters"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/11cfb-schedules-web-2/11cfb-schedules-web-2-thumbLarge.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Army, which once had just three scheduled games, started its season against Middle Tennessee State last weekend.",
+          "copyright": "Vincent Carchietta/USA Today Sports, via Reuters"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/11cfb-schedules-web-2/merlin_176624799_ee32a217-b41b-4b53-a826-90fb0a4f37f2-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Army, which once had just three scheduled games, started its season against Middle Tennessee State last weekend.",
+          "copyright": "Vincent Carchietta/USA Today Sports, via Reuters"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/11cfb-schedules-web-2/merlin_176624799_ee32a217-b41b-4b53-a826-90fb0a4f37f2-articleInline.jpg",
+          "format": "Normal",
+          "height": 127,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Army, which once had just three scheduled games, started its season against Middle Tennessee State last weekend.",
+          "copyright": "Vincent Carchietta/USA Today Sports, via Reuters"
+        }
+      ],
+      "short_url": "https://nyti.ms/35FnAf9"
+    },
+    {
+      "section": "sports",
+      "subsection": "soccer",
+      "title": "Six Questions Looming Over Soccer’s New Season",
+      "abstract": "The sport’s new calculus must account for infection rates, empty stadiums and a compressed schedule certain to exhaust everyone involved.",
+      "url": "https://www.nytimes.com/2020/09/11/sports/soccer/premier-league-preview.html",
+      "uri": "nyt://article/01b62464-c725-5e88-80c9-8b8625ba6609",
+      "byline": "By Rory Smith",
+      "item_type": "Article",
+      "updated_date": "2020-09-12T11:41:51-04:00",
+      "created_date": "2020-09-11T11:15:10-04:00",
+      "published_date": "2020-09-11T11:15:10-04:00",
+      "material_type_facet": "",
+      "kicker": "On Soccer",
+      "des_facet": [
+        "Soccer",
+        "UEFA Champions League (Soccer)"
+      ],
+      "org_facet": [
+        "English Premier League",
+        "Barcelona (Soccer Team)",
+        "Manchester United (Soccer Team)",
+        "Liverpool (Soccer Team)",
+        "Leeds United"
+      ],
+      "per_facet": [],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/11onsoccer-print/merlin_176083806_d5947872-f542-46c8-8398-ce7c057e27f7-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1327,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Didn\u0026rsquo;t we just finish a season? For Europe\u0026rsquo;s biggest stars, the grind of a new season starts only weeks after the last one ended.",
+          "copyright": "Pool photo by Manu Fernandez"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/11onsoccer-print/11onsoccer-bayern-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Didn\u0026rsquo;t we just finish a season? For Europe\u0026rsquo;s biggest stars, the grind of a new season starts only weeks after the last one ended.",
+          "copyright": "Pool photo by Manu Fernandez"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/11onsoccer-print/11onsoccer-bayern-thumbLarge.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Didn\u0026rsquo;t we just finish a season? For Europe\u0026rsquo;s biggest stars, the grind of a new season starts only weeks after the last one ended.",
+          "copyright": "Pool photo by Manu Fernandez"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/11onsoccer-print/11onsoccer-bayern-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Didn\u0026rsquo;t we just finish a season? For Europe\u0026rsquo;s biggest stars, the grind of a new season starts only weeks after the last one ended.",
+          "copyright": "Pool photo by Manu Fernandez"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/11onsoccer-print/merlin_176083806_d5947872-f542-46c8-8398-ce7c057e27f7-articleInline.jpg",
+          "format": "Normal",
+          "height": 123,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Didn\u0026rsquo;t we just finish a season? For Europe\u0026rsquo;s biggest stars, the grind of a new season starts only weeks after the last one ended.",
+          "copyright": "Pool photo by Manu Fernandez"
+        }
+      ],
+      "short_url": "https://nyti.ms/33eIO0o"
+    },
+    {
+      "section": "sports",
+      "subsection": "soccer",
+      "title": "The Fluid Morality of Soccer’s Transfer Market",
+      "abstract": "Only a few months ago, as Europe’s biggest clubs faced suspended seasons and financial ruin, owners pressed their players to take pay cuts. So why are they now spending as if nothing has changed?",
+      "url": "https://www.nytimes.com/2020/09/11/sports/soccer/premier-league-transfer-window.html",
+      "uri": "nyt://article/1a9a5b33-e5a6-583b-b33f-8ac7782c5082",
+      "byline": "By Rory Smith",
+      "item_type": "Article",
+      "updated_date": "2020-09-12T23:27:59-04:00",
+      "created_date": "2020-09-11T09:00:05-04:00",
+      "published_date": "2020-09-11T09:00:05-04:00",
+      "material_type_facet": "",
+      "kicker": "Rory Smith On Soccer",
+      "des_facet": [
+        "Soccer"
+      ],
+      "org_facet": [
+        "English Premier League",
+        "Chelsea (Soccer Team)",
+        "Barcelona (Soccer Team)",
+        "Manchester United (Soccer Team)"
+      ],
+      "per_facet": [
+        "Messi, Lionel"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/11rorynewsletter-sanchoSUB/merlin_173511534_6edbddf4-8980-4ad9-a910-d4376be1215d-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1254,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Shopping in a pandemic: Manchester United\u0026rsquo;s pursuit of Jadon Sancho could make him the most expensive player in British history.",
+          "copyright": "Pool photo by Lars Baron"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/11rorynewsletter-sanchoSUB/11rorynewsletter-sanchoSUB-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Shopping in a pandemic: Manchester United\u0026rsquo;s pursuit of Jadon Sancho could make him the most expensive player in British history.",
+          "copyright": "Pool photo by Lars Baron"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/11rorynewsletter-sanchoSUB/11rorynewsletter-sanchoSUB-thumbLarge.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Shopping in a pandemic: Manchester United\u0026rsquo;s pursuit of Jadon Sancho could make him the most expensive player in British history.",
+          "copyright": "Pool photo by Lars Baron"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/11rorynewsletter-sanchoSUB/11rorynewsletter-sanchoSUB-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Shopping in a pandemic: Manchester United\u0026rsquo;s pursuit of Jadon Sancho could make him the most expensive player in British history.",
+          "copyright": "Pool photo by Lars Baron"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/sports/11rorynewsletter-sanchoSUB/merlin_173511534_6edbddf4-8980-4ad9-a910-d4376be1215d-articleInline.jpg",
+          "format": "Normal",
+          "height": 116,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Shopping in a pandemic: Manchester United\u0026rsquo;s pursuit of Jadon Sancho could make him the most expensive player in British history.",
+          "copyright": "Pool photo by Lars Baron"
+        }
+      ],
+      "short_url": "https://nyti.ms/3ioRZl6"
+    },
+    {
+      "section": "sports",
+      "subsection": "",
+      "title": "The Never Boring Rockets May Have Met Their Match",
+      "abstract": "The Lakers took a 3-1 lead in the series by shutting down James Harden.",
+      "url": "https://www.nytimes.com/2020/09/11/sports/rockets-lakers-nba.html",
+      "uri": "nyt://article/bb72229f-0196-57a2-b0a5-04b1f69378d5",
+      "byline": "By Scott Cacciola",
+      "item_type": "Article",
+      "updated_date": "2020-09-11T23:41:19-04:00",
+      "created_date": "2020-09-11T08:02:37-04:00",
+      "published_date": "2020-09-11T08:02:37-04:00",
+      "material_type_facet": "",
+      "kicker": "on pro basketball",
+      "des_facet": [
+        "Basketball"
+      ],
+      "org_facet": [
+        "Houston Rockets"
+      ],
+      "per_facet": [],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/11nba-rockets-print/merlin_176835654_91b15c4f-4fb4-4c64-82da-016f941e2f71-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1366,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "James Harden of the Rockets was double-teamed by Laker defenders whenever he had the ball.",
+          "copyright": "Mark J. Terrill/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/11nba-rockets-print/merlin_176835654_91b15c4f-4fb4-4c64-82da-016f941e2f71-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "James Harden of the Rockets was double-teamed by Laker defenders whenever he had the ball.",
+          "copyright": "Mark J. Terrill/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/11nba-rockets-print/merlin_176835654_91b15c4f-4fb4-4c64-82da-016f941e2f71-thumbLarge.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "James Harden of the Rockets was double-teamed by Laker defenders whenever he had the ball.",
+          "copyright": "Mark J. Terrill/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/11nba-rockets-print/merlin_176835654_91b15c4f-4fb4-4c64-82da-016f941e2f71-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "James Harden of the Rockets was double-teamed by Laker defenders whenever he had the ball.",
+          "copyright": "Mark J. Terrill/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/11nba-rockets-print/merlin_176835654_91b15c4f-4fb4-4c64-82da-016f941e2f71-articleInline.jpg",
+          "format": "Normal",
+          "height": 127,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "James Harden of the Rockets was double-teamed by Laker defenders whenever he had the ball.",
+          "copyright": "Mark J. Terrill/Associated Press"
+        }
+      ],
+      "short_url": "https://nyti.ms/3mmucVA"
+    },
+    {
+      "section": "sports",
+      "subsection": "tennis",
+      "title": "Serena’s Rivals Are Emboldened. But She Still Has the Fire and the Game.",
+      "abstract": "On Thursday, Serena Williams’s quest for a 24th Grand Slam singles title was thwarted once more. Maybe it doesn’t really matter.",
+      "url": "https://www.nytimes.com/2020/09/11/sports/tennis/us-open-serena-williams.html",
+      "uri": "nyt://article/bd606d54-bb5f-55e6-af27-ba3b278f8c9b",
+      "byline": "By Christopher Clarey",
+      "item_type": "Article",
+      "updated_date": "2020-09-12T12:13:35-04:00",
+      "created_date": "2020-09-11T05:16:51-04:00",
+      "published_date": "2020-09-11T05:16:51-04:00",
+      "material_type_facet": "",
+      "kicker": "On Tennis",
+      "des_facet": [
+        "Tennis",
+        "United States Open (Tennis)"
+      ],
+      "org_facet": [],
+      "per_facet": [
+        "Williams, Serena",
+        "Azarenka, Victoria",
+        "Osaka, Naomi (1997- )"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/11JPusopen-serena-print/merlin_176839821_7f564025-92c2-46ff-ad14-6ff1bac6df92-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Serena Williams lost to Victoria Azarenka in the women’s singles semifinals of the United States Open on Thursday.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/11JPusopen-serena-print/merlin_176839821_7f564025-92c2-46ff-ad14-6ff1bac6df92-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Serena Williams lost to Victoria Azarenka in the women’s singles semifinals of the United States Open on Thursday.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/11JPusopen-serena-print/merlin_176839821_7f564025-92c2-46ff-ad14-6ff1bac6df92-thumbLarge.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Serena Williams lost to Victoria Azarenka in the women’s singles semifinals of the United States Open on Thursday.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/11JPusopen-serena-print/merlin_176839821_7f564025-92c2-46ff-ad14-6ff1bac6df92-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Serena Williams lost to Victoria Azarenka in the women’s singles semifinals of the United States Open on Thursday.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/11JPusopen-serena-print/merlin_176839821_7f564025-92c2-46ff-ad14-6ff1bac6df92-articleInline.jpg",
+          "format": "Normal",
+          "height": 127,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Serena Williams lost to Victoria Azarenka in the women’s singles semifinals of the United States Open on Thursday.",
+          "copyright": "Chang W. Lee/The New York Times"
+        }
+      ],
+      "short_url": "https://nyti.ms/33e0md0"
+    },
+    {
+      "section": "sports",
+      "subsection": "hockey",
+      "title": "The Last Islanders Team to Advance This Far Sees a Little of Itself",
+      "abstract": "As happened in 1993, the timely help of role players lifted the franchise to the conference finals. But behind in the series, 2-0, to Tampa Bay, these Islanders risk suffering the same fate.",
+      "url": "https://www.nytimes.com/2020/09/11/sports/hockey/islanders-NHL-playoffs-1993.html",
+      "uri": "nyt://article/5b869e0b-1c0c-5a4f-a79c-6cc82ea4d6f7",
+      "byline": "By Allan Kreda and Curtis Rush",
+      "item_type": "Article",
+      "updated_date": "2020-09-11T23:29:46-04:00",
+      "created_date": "2020-09-11T05:00:48-04:00",
+      "published_date": "2020-09-11T05:00:48-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Playoff Games",
+        "Hockey, Ice"
+      ],
+      "org_facet": [
+        "New York Islanders",
+        "Tampa Bay Lightning",
+        "National Hockey League"
+      ],
+      "per_facet": [],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/11nhl-islanders1993-print/11nhl-islanders1993-superJumbo-v2.jpg",
+          "format": "superJumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "The Islanders\u0026rsquo; Matt Martin, left, has scored five goals in the postseason, matching his regular-season total.",
+          "copyright": "Bruce Bennett/Getty Images"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/11nhl-islanders1993-print/11nhl-islanders1993-thumbStandard-v2.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "The Islanders\u0026rsquo; Matt Martin, left, has scored five goals in the postseason, matching his regular-season total.",
+          "copyright": "Bruce Bennett/Getty Images"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/11nhl-islanders1993-print/11nhl-islanders1993-thumbLarge-v2.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "The Islanders\u0026rsquo; Matt Martin, left, has scored five goals in the postseason, matching his regular-season total.",
+          "copyright": "Bruce Bennett/Getty Images"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/11nhl-islanders1993-print/11nhl-islanders1993-mediumThreeByTwo210-v2.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "The Islanders\u0026rsquo; Matt Martin, left, has scored five goals in the postseason, matching his regular-season total.",
+          "copyright": "Bruce Bennett/Getty Images"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/11nhl-islanders1993-print/11nhl-islanders1993-articleInline-v2.jpg",
+          "format": "Normal",
+          "height": 127,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "The Islanders\u0026rsquo; Matt Martin, left, has scored five goals in the postseason, matching his regular-season total.",
+          "copyright": "Bruce Bennett/Getty Images"
+        }
+      ],
+      "short_url": "https://nyti.ms/2FbOmkt"
+    },
+    {
+      "section": "sports",
+      "subsection": "football",
+      "title": "Chiefs Fans, Used to Chops and Cheers, React to N.F.L.’s New Climate",
+      "abstract": "Kansas City’s fans are among the loudest in pro football. But the celebratory start to their season silenced game rituals and drew mixed opinions on players’ protests of racial injustice.",
+      "url": "https://www.nytimes.com/2020/09/11/sports/football/nfl-chiefs-texans.html",
+      "uri": "nyt://article/7a87edf0-a471-5c6b-9757-5a744937f32e",
+      "byline": "By John Eligon",
+      "item_type": "Article",
+      "updated_date": "2020-09-11T23:32:20-04:00",
+      "created_date": "2020-09-11T05:00:44-04:00",
+      "published_date": "2020-09-11T05:00:44-04:00",
+      "material_type_facet": "",
+      "kicker": "Chiefs 34, texans 20",
+      "des_facet": [
+        "Football",
+        "Coronavirus (2019-nCoV)",
+        "Quarantines",
+        "Stadiums and Arenas"
+      ],
+      "org_facet": [
+        "Kansas City Chiefs",
+        "Houston Texans",
+        "National Football League"
+      ],
+      "per_facet": [],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/11JPnfl-chiefs1-print/11JPnfl-chiefs1-print-superJumbo-v2.jpg",
+          "format": "superJumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "“It’s kind of surreal,” said Kent Gaines, a Chiefs fan, surveying a parking lot at Arrowhead Stadium. “Really this place should be smoke billowing everywhere.”",
+          "copyright": "Charlie Riedel/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/11JPnfl-chiefs1-print/11JPnfl-chiefs1-print-thumbStandard-v2.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "“It’s kind of surreal,” said Kent Gaines, a Chiefs fan, surveying a parking lot at Arrowhead Stadium. “Really this place should be smoke billowing everywhere.”",
+          "copyright": "Charlie Riedel/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/11JPnfl-chiefs1-print/11JPnfl-chiefs1-print-thumbLarge-v2.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "“It’s kind of surreal,” said Kent Gaines, a Chiefs fan, surveying a parking lot at Arrowhead Stadium. “Really this place should be smoke billowing everywhere.”",
+          "copyright": "Charlie Riedel/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/11JPnfl-chiefs1-print/11JPnfl-chiefs1-print-mediumThreeByTwo210-v3.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "“It’s kind of surreal,” said Kent Gaines, a Chiefs fan, surveying a parking lot at Arrowhead Stadium. “Really this place should be smoke billowing everywhere.”",
+          "copyright": "Charlie Riedel/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/11JPnfl-chiefs1-print/11JPnfl-chiefs1-print-articleInline-v2.jpg",
+          "format": "Normal",
+          "height": 127,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "“It’s kind of surreal,” said Kent Gaines, a Chiefs fan, surveying a parking lot at Arrowhead Stadium. “Really this place should be smoke billowing everywhere.”",
+          "copyright": "Charlie Riedel/Associated Press"
+        }
+      ],
+      "short_url": "https://nyti.ms/2Zuhyd4"
+    },
+    {
+      "section": "business",
+      "subsection": "",
+      "title": "She Helped Put ‘Black Lives Matter’ on N.B.A. Courts",
+      "abstract": "Michele Roberts grew up in the South Bronx and made her way to the pinnacle of the legal world before becoming the head of the players’ union.",
+      "url": "https://www.nytimes.com/2020/09/11/business/michele-roberts-nba-corner-office.html",
+      "uri": "nyt://article/2aab89f3-e3e5-560c-a315-c67f9b62eb83",
+      "byline": "By David Gelles",
+      "item_type": "Article",
+      "updated_date": "2020-09-11T21:45:44-04:00",
+      "created_date": "2020-09-11T05:00:24-04:00",
+      "published_date": "2020-09-11T05:00:24-04:00",
+      "material_type_facet": "",
+      "kicker": "corner office",
+      "des_facet": [
+        "Black Lives Matter Movement",
+        "Basketball",
+        "Race and Ethnicity",
+        "Black People"
+      ],
+      "org_facet": [
+        "National Basketball Assn",
+        "National Basketball Players Assn"
+      ],
+      "per_facet": [
+        "Roberts, Michele A",
+        "Blake, Jacob (August 23, 2020 Shooting)"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/business/10CORNEROFFICE-01/merlin_176742639_0ea25306-f7aa-4851-8984-c45a8a77077e-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 2048,
+          "width": 1639,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Michele Roberts",
+          "copyright": "Mike Patton/National Basketball Players Association"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/business/10CORNEROFFICE-01/10CORNEROFFICE-01-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Michele Roberts",
+          "copyright": "Mike Patton/National Basketball Players Association"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/business/10CORNEROFFICE-01/10CORNEROFFICE-01-thumbLarge.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Michele Roberts",
+          "copyright": "Mike Patton/National Basketball Players Association"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/business/10CORNEROFFICE-01/10CORNEROFFICE-01-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Michele Roberts",
+          "copyright": "Mike Patton/National Basketball Players Association"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/13/business/10CORNEROFFICE-01/merlin_176742639_0ea25306-f7aa-4851-8984-c45a8a77077e-articleInline.jpg",
+          "format": "Normal",
+          "height": 238,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Michele Roberts",
+          "copyright": "Mike Patton/National Basketball Players Association"
+        }
+      ],
+      "short_url": "https://nyti.ms/2Fjcstr"
+    },
+    {
+      "section": "briefing",
+      "subsection": "",
+      "title": "News Quiz: Wildfires, Coronavirus, U.S. Open",
+      "abstract": "Did you follow the headlines this week?",
+      "url": "https://www.nytimes.com/interactive/2020/09/11/briefing/news-quiz-wildfires-coronavirus-tennis.html",
+      "uri": "nyt://interactive/141a38f8-6036-5be0-931e-5841f7b65870",
+      "byline": "Compiled by Will Dudding, Anna Schaverien and Jessica Anderson",
+      "item_type": "Interactive",
+      "updated_date": "2020-09-13T17:50:46-04:00",
+      "created_date": "2020-09-11T03:30:01-04:00",
+      "published_date": "2020-09-11T03:30:01-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [],
+      "org_facet": [],
+      "per_facet": [],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2020/09/06/sports/11newsquiz-usopen-rule-explainer-1/merlin_176672109_6635bab0-8daa-4d2c-b8e8-fbe6961778cd-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1407,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Jason Szenes/EPA, via Shutterstock"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/06/sports/11newsquiz-usopen-rule-explainer-1/06usopen-rule-explainer-1-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Jason Szenes/EPA, via Shutterstock"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/06/sports/11newsquiz-usopen-rule-explainer-1/06usopen-rule-explainer-1-thumbLarge.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Jason Szenes/EPA, via Shutterstock"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/06/sports/11newsquiz-usopen-rule-explainer-1/06usopen-rule-explainer-1-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Jason Szenes/EPA, via Shutterstock"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/06/sports/11newsquiz-usopen-rule-explainer-1/merlin_176672109_6635bab0-8daa-4d2c-b8e8-fbe6961778cd-articleInline.jpg",
+          "format": "Normal",
+          "height": 131,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Jason Szenes/EPA, via Shutterstock"
+        }
+      ],
+      "short_url": "https://nyti.ms/2FvgpuA"
+    },
+    {
+      "section": "sports",
+      "subsection": "",
+      "title": "2020 U.S. Open: What to Watch on Friday",
+      "abstract": "Daniil Medvedev and Dominic Thiem will meet in a men’s semifinal on Friday night, and the women’s doubles title will be decided.",
+      "url": "https://www.nytimes.com/2020/09/11/sports/2020-us-open-what-to-watch.html",
+      "uri": "nyt://article/17cbb308-b9eb-5f4d-8328-797ca383666e",
+      "byline": "By Max Gendler",
+      "item_type": "Article",
+      "updated_date": "2020-09-11T02:30:05-04:00",
+      "created_date": "2020-09-11T02:30:05-04:00",
+      "published_date": "2020-09-11T02:30:05-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Tennis",
+        "United States Open (Tennis)"
+      ],
+      "org_facet": [],
+      "per_facet": [
+        "Carreno Busta, Pablo (1991- )",
+        "Medvedev, Daniil (1996- )",
+        "Thiem, Dominic",
+        "Zverev, Alexander"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/11usopen-watch1/merlin_176792739_947f6246-8cd7-4ce9-a088-fba7ed2ce8d9-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1391,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Dominic Thiem in his quarterfinal victory.",
+          "copyright": "Jason Szenes/EPA, via Shutterstock"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/11usopen-watch1/11usopen-watch1-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Dominic Thiem in his quarterfinal victory.",
+          "copyright": "Jason Szenes/EPA, via Shutterstock"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/11usopen-watch1/11usopen-watch1-thumbLarge.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Dominic Thiem in his quarterfinal victory.",
+          "copyright": "Jason Szenes/EPA, via Shutterstock"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/11usopen-watch1/11usopen-watch1-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Dominic Thiem in his quarterfinal victory.",
+          "copyright": "Jason Szenes/EPA, via Shutterstock"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/11usopen-watch1/merlin_176792739_947f6246-8cd7-4ce9-a088-fba7ed2ce8d9-articleInline.jpg",
+          "format": "Normal",
+          "height": 129,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Dominic Thiem in his quarterfinal victory.",
+          "copyright": "Jason Szenes/EPA, via Shutterstock"
+        }
+      ],
+      "short_url": "https://nyti.ms/2RgDsw4"
+    },
+    {
+      "section": "sports",
+      "subsection": "football",
+      "title": "Chiefs’ New Normal Looks Familiar in Win Over Texans",
+      "abstract": "Kansas City’s Super Bowl title defense began with boos from a reduced capacity home crowd and ended with a resounding victory.",
+      "url": "https://www.nytimes.com/2020/09/11/sports/football/kansas-city-chiefs-texans-score.html",
+      "uri": "nyt://article/4e5cacad-787f-5476-8039-aa5edb335063",
+      "byline": "By Associated Press",
+      "item_type": "Article",
+      "updated_date": "2020-09-11T16:58:37-04:00",
+      "created_date": "2020-09-11T00:09:47-04:00",
+      "published_date": "2020-09-11T00:09:47-04:00",
+      "material_type_facet": "",
+      "kicker": "Chiefs 34, Texans 20",
+      "des_facet": [
+        "Football",
+        "United States National Anthem Protests (2016- )"
+      ],
+      "org_facet": [
+        "Houston Texans",
+        "Kansas City Chiefs"
+      ],
+      "per_facet": [
+        "Kelce, Travis",
+        "Mahomes, Patrick (1995- )",
+        "Watkins, Sammy",
+        "Hill, Tyreek (1994- )",
+        "Edwards-Helaire, Clyde (1999- )"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/11nfl-wire/merlin_176835657_d55f6a14-b772-4790-b1b8-c9a489729b23-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Kansas City Chiefs quarterback Patrick Mahomes and Travis Kelce celebrated a touchdown in the second quarter Thursday night.",
+          "copyright": "Denny Medley/USA Today Sports, via Reuters"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/11nfl-wire/11nfl-wire-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Kansas City Chiefs quarterback Patrick Mahomes and Travis Kelce celebrated a touchdown in the second quarter Thursday night.",
+          "copyright": "Denny Medley/USA Today Sports, via Reuters"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/11nfl-wire/11nfl-wire-thumbLarge.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Kansas City Chiefs quarterback Patrick Mahomes and Travis Kelce celebrated a touchdown in the second quarter Thursday night.",
+          "copyright": "Denny Medley/USA Today Sports, via Reuters"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/11nfl-wire/merlin_176835657_d55f6a14-b772-4790-b1b8-c9a489729b23-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Kansas City Chiefs quarterback Patrick Mahomes and Travis Kelce celebrated a touchdown in the second quarter Thursday night.",
+          "copyright": "Denny Medley/USA Today Sports, via Reuters"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/11nfl-wire/merlin_176835657_d55f6a14-b772-4790-b1b8-c9a489729b23-articleInline.jpg",
+          "format": "Normal",
+          "height": 127,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Kansas City Chiefs quarterback Patrick Mahomes and Travis Kelce celebrated a touchdown in the second quarter Thursday night.",
+          "copyright": "Denny Medley/USA Today Sports, via Reuters"
+        }
+      ],
+      "short_url": "https://nyti.ms/33gR542"
+    },
+    {
+      "section": "sports",
+      "subsection": "tennis",
+      "title": "For U.S. Open Contenders Medvedev and Zverev, a Journey From Russia Was a Big Step",
+      "abstract": "Daniil Medvedev and Alexander Zverev are part of a talented final four, all seeking their first Grand Slam title.",
+      "url": "https://www.nytimes.com/2020/09/11/sports/tennis/us-open-daniil-medvedev-alexander-zverev.html",
+      "uri": "nyt://article/c84405d1-a6c1-5401-a5be-8810172ea46c",
+      "byline": "By Christopher Clarey",
+      "item_type": "Article",
+      "updated_date": "2020-09-11T14:06:19-04:00",
+      "created_date": "2020-09-11T00:01:21-04:00",
+      "published_date": "2020-09-11T00:01:21-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Tennis",
+        "United States Open (Tennis)"
+      ],
+      "org_facet": [],
+      "per_facet": [
+        "Zverev, Alexander",
+        "Medvedev, Daniil (1996- )"
+      ],
+      "geo_facet": [
+        "Russia"
+      ],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/10usopen-russia2-print/10usopen-russia2-print-superJumbo-v2.jpg",
+          "format": "superJumbo",
+          "height": 1153,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Alexander Zverev is the German-born son of Russian tennis professionals.",
+          "copyright": "Seth Wenig/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/10usopen-russia2-print/10usopen-russia2-print-thumbStandard-v2.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Alexander Zverev is the German-born son of Russian tennis professionals.",
+          "copyright": "Seth Wenig/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/10usopen-russia2-print/10usopen-russia2-print-thumbLarge-v2.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Alexander Zverev is the German-born son of Russian tennis professionals.",
+          "copyright": "Seth Wenig/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/10usopen-russia2-print/10usopen-russia2-print-mediumThreeByTwo210-v2.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Alexander Zverev is the German-born son of Russian tennis professionals.",
+          "copyright": "Seth Wenig/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/11/sports/10usopen-russia2-print/10usopen-russia2-print-articleInline-v2.jpg",
+          "format": "Normal",
+          "height": 107,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Alexander Zverev is the German-born son of Russian tennis professionals.",
+          "copyright": "Seth Wenig/Associated Press"
+        }
+      ],
+      "short_url": "https://nyti.ms/3bOA58R"
+    },
+    {
+      "section": "sports",
+      "subsection": "",
+      "title": "For the Men’s Doubles Champs, One Constant Holds: ‘A Grand Slam Is a Grand Slam’",
+      "abstract": "In a United States Open with a reduced field and protocols that discouraged players from high-fiving, Mate Pavic and Bruno Soares won their first major title together in straight sets.",
+      "url": "https://www.nytimes.com/2020/09/10/sports/us-open-mens-doubles-final.html",
+      "uri": "nyt://article/cfb04661-98a3-58d1-aa7d-0b2b9c5a83e9",
+      "byline": "By Ben Rothenberg",
+      "item_type": "Article",
+      "updated_date": "2020-09-11T23:37:55-04:00",
+      "created_date": "2020-09-10T21:55:22-04:00",
+      "published_date": "2020-09-10T21:55:22-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "United States Open (Tennis)",
+        "Tennis",
+        "Coronavirus (2019-nCoV)",
+        "Quarantines"
+      ],
+      "org_facet": [],
+      "per_facet": [
+        "Soares, Bruno",
+        "Pavic, Mate (1993- )"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/10usopen-mens-doubles-print/merlin_176826867_6814abc8-54b7-4444-9a9a-48058528b205-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Mate Pavic, left, and Bruno Soares won their first Grand Slam doubles title together.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/10usopen-mens-doubles-print/10usopen-mens-doubles01-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Mate Pavic, left, and Bruno Soares won their first Grand Slam doubles title together.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/10usopen-mens-doubles-print/10usopen-mens-doubles01-thumbLarge.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Mate Pavic, left, and Bruno Soares won their first Grand Slam doubles title together.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/10usopen-mens-doubles-print/merlin_176826867_6814abc8-54b7-4444-9a9a-48058528b205-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Mate Pavic, left, and Bruno Soares won their first Grand Slam doubles title together.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/12/sports/10usopen-mens-doubles-print/merlin_176826867_6814abc8-54b7-4444-9a9a-48058528b205-articleInline.jpg",
+          "format": "Normal",
+          "height": 127,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Mate Pavic, left, and Bruno Soares won their first Grand Slam doubles title together.",
+          "copyright": "Chang W. Lee/The New York Times"
+        }
+      ],
+      "short_url": "https://nyti.ms/3il39Hw"
+    },
+    {
+      "section": "sports",
+      "subsection": "tennis",
+      "title": "Victoria Azarenka Beats Serena Williams in Comeback to Reach U.S. Open Final",
+      "abstract": "Williams was hurt in the third set of a tight match. Azarenka will face Naomi Osaka in the final.",
+      "url": "https://www.nytimes.com/2020/09/10/sports/tennis/us-open-naomi-osaka-jennifer-brady-serena-williams-victoria-azarenka-semifinal.html",
+      "uri": "nyt://article/0714565b-20d6-573a-9cd7-aac9e8650d07",
+      "byline": "By Matthew Futterman",
+      "item_type": "Article",
+      "updated_date": "2020-09-11T14:00:07-04:00",
+      "created_date": "2020-09-10T21:27:15-04:00",
+      "published_date": "2020-09-10T21:27:15-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Tennis",
+        "United States Open (Tennis)"
+      ],
+      "org_facet": [],
+      "per_facet": [
+        "Azarenka, Victoria",
+        "Williams, Serena",
+        "Brady, Jennifer (1995- )",
+        "Osaka, Naomi (1997- )"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2020/09/10/sports/10usopen-semis-14/merlin_176838264_529aee40-0a37-4590-b5e4-2edee2a79520-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Serena Williams lost after hurting her left ankle or foot during the third set.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/10/sports/10usopen-semis-14/merlin_176838264_529aee40-0a37-4590-b5e4-2edee2a79520-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Serena Williams lost after hurting her left ankle or foot during the third set.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/10/sports/10usopen-semis-14/merlin_176838264_529aee40-0a37-4590-b5e4-2edee2a79520-thumbLarge.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Serena Williams lost after hurting her left ankle or foot during the third set.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/10/sports/10usopen-semis-14/merlin_176838264_529aee40-0a37-4590-b5e4-2edee2a79520-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Serena Williams lost after hurting her left ankle or foot during the third set.",
+          "copyright": "Chang W. Lee/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2020/09/10/sports/10usopen-semis-14/merlin_176838264_529aee40-0a37-4590-b5e4-2edee2a79520-articleInline.jpg",
+          "format": "Normal",
+          "height": 127,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Serena Williams lost after hurting her left ankle or foot during the third set.",
+          "copyright": "Chang W. Lee/The New York Times"
+        }
+      ],
+      "short_url": "https://nyti.ms/2ZpENVV"
+    }
+  ]
+}

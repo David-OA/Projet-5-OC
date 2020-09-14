@@ -16,6 +16,7 @@ public class Injection {
 
     // For Calls TopStories
     public static NYTCallsTopStories getTopStories(NYTService service, CountingIdlingResource resource) {
+        IdlingRegistry.getInstance().register(resource);
         NYTCallsTopStories topStories = new NYTCallsTopStories(service, resource);
         return topStories;
     }
@@ -30,7 +31,9 @@ public class Injection {
 
     // For Calls Sports
     public static NYTCallsSports getSports(NYTService service, CountingIdlingResource resource) {
-        return new NYTCallsSports(service, resource);
+        IdlingRegistry.getInstance().register(resource);
+        NYTCallsSports sports = new NYTCallsSports(service, resource);
+        return sports;
     }
 
     public static  NYTService getServiceSports(){

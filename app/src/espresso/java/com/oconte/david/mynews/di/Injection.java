@@ -25,12 +25,14 @@ public class Injection {
     }
 
     public  static  CountingIdlingResource getCounting() {
-        return new CountingIdlingResource("TopStoriesIdling");
+        return new CountingIdlingResource("NewYorkTimeIdling");
     }
 
     // For Calls Sports
     public static NYTCallsSports getSports(NYTService service, CountingIdlingResource resource) {
-        return new NYTCallsSports(service, resource);
+        IdlingRegistry.getInstance().register(resource);
+        NYTCallsSports sports = new NYTCallsSports(service, resource);
+        return sports;
     }
 
     public static  NYTService getServiceSports(){
