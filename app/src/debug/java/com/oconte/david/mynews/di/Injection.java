@@ -26,7 +26,7 @@ public class Injection {
     }
 
     public  static  CountingIdlingResource getCounting() {
-        return new CountingIdlingResource("TopStoriesIdling");
+        return new CountingIdlingResource("NewYorkTimeIdling");
     }
 
     // For Calls Sports
@@ -42,7 +42,9 @@ public class Injection {
 
     // For Calls MostPopular
     public static NYTCallsMostPopular getMostPopular(NYTService service, CountingIdlingResource resource) {
-        return new NYTCallsMostPopular(service, resource);
+        //IdlingRegistry.getInstance().register(resource);
+        NYTCallsMostPopular mostPopular = new NYTCallsMostPopular(service, resource);
+        return mostPopular;
     }
 
     public static  NYTService getServiceMostPopular(){

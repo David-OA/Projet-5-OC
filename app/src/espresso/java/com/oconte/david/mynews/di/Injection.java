@@ -41,7 +41,9 @@ public class Injection {
 
     // For Calls MostPopular
     public static NYTCallsMostPopular getMostPopular(NYTService service, CountingIdlingResource resource) {
-        return new NYTCallsMostPopular(service, resource);
+        //IdlingRegistry.getInstance().register(resource);
+        //NYTCallsSports sports = new NYTCallsSports(service, resource);
+        //return sports;
     }
 
     public static  NYTService getServiceMostPopular(){
