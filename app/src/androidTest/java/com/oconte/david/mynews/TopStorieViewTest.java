@@ -69,29 +69,6 @@ public class TopStorieViewTest {
 
     }
 
-
-    /*@Test
-    public void testItemsTopStorie() throws IOException, InterruptedException {
-
-        MockWebServer server = setupServer(HttpURLConnection.HTTP_OK, AssetReader.getAsset(InstrumentationRegistry.getInstrumentation().getContext(), "topstories_response.json"));
-
-        // Start the server.
-        server.start(9900);
-
-        //Start the MainActivity
-        mActivityRule.launchActivity(null);
-
-        //Test recyclerview is good.
-        onView(withId(R.id.fragment_main_recycler_view)).check(matches(isDisplayed()));
-
-        Thread.sleep(2000);
-
-        onView(withId(R.id.fragment_main_recycler_view)).perform(RecyclerViewActions.actionOnItemAtPosition(2, click()));
-        onView(withId(R.id.web_view_all_new)).check(matches(isDisplayed()));
-
-        server.shutdown();
-    }*/
-
     //A test car peut marcher maintenant
     //Le recyclerviewmatcher
 

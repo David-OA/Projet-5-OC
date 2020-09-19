@@ -16,7 +16,6 @@ public class Injection {
 
     // For Calls TopStories
     public static NYTCallsTopStories getTopStories(NYTService service, CountingIdlingResource resource) {
-        IdlingRegistry.getInstance().register(resource);
         NYTCallsTopStories topStories = new NYTCallsTopStories(service, resource);
         return topStories;
     }
@@ -31,33 +30,20 @@ public class Injection {
 
     // For Calls Sports
     public static NYTCallsSports getSports(NYTService service, CountingIdlingResource resource) {
-        IdlingRegistry.getInstance().register(resource);
         NYTCallsSports sports = new NYTCallsSports(service, resource);
         return sports;
     }
 
-    public static  NYTService getServiceSports(){
-        return NYTFactory.getRetrofit().create(NYTService.class);
-    }
-
     // For Calls MostPopular
     public static NYTCallsMostPopular getMostPopular(NYTService service, CountingIdlingResource resource) {
-        //IdlingRegistry.getInstance().register(resource);
         NYTCallsMostPopular mostPopular = new NYTCallsMostPopular(service, resource);
         return mostPopular;
     }
 
-    public static  NYTService getServiceMostPopular(){
-        return NYTFactory.getRetrofit().create(NYTService.class);
-    }
 
     // For Calls Search
     public static NYTCallsSearch getSearch(NYTService service, CountingIdlingResource resource) {
         return new NYTCallsSearch(service, resource);
-    }
-
-    public static  NYTService getServiceSearch(){
-        return NYTFactory.getRetrofit().create(NYTService.class);
     }
 
 }

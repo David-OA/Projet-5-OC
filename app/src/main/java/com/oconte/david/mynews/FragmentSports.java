@@ -29,9 +29,7 @@ public class FragmentSports extends Fragment implements NYTCallsSports.Callbacks
 
     // FOR DATA
     private NYTArticleAdapter adapter;
-
     Context context;
-
     Result result;
 
     public FragmentSports() { }
@@ -41,8 +39,6 @@ public class FragmentSports extends Fragment implements NYTCallsSports.Callbacks
         View view = inflater.inflate(R.layout.fragment_main_sports, container, false);
         ButterKnife.bind(this, view);
         this.configureRecyclerView();
-
-
 
         return view;
     }
@@ -104,7 +100,7 @@ public class FragmentSports extends Fragment implements NYTCallsSports.Callbacks
     // -----------------
 
     private void executeHttpRequestWithRetrofitSports() {
-        NYTCallsSports sports = Injection.getSports(Injection.getServiceSports(), Injection.getCounting());
+        NYTCallsSports sports = Injection.getSports(Injection.getService(), Injection.getCounting());
         sports.getSports(this, "sports");
     }
 

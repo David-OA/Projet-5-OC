@@ -28,9 +28,7 @@ public class FragmentTopStories extends Fragment implements NYTCallsTopStories.C
 
     // FOR DATA
     private NYTArticleAdapter adapter;
-
     Context context;
-
     Result result;
 
     public FragmentTopStories() { }
@@ -91,7 +89,6 @@ public class FragmentTopStories extends Fragment implements NYTCallsTopStories.C
                 });
     }
 
-
     // -----------------
     // HTTP REQUEST Retrofit
     // -----------------
@@ -99,7 +96,6 @@ public class FragmentTopStories extends Fragment implements NYTCallsTopStories.C
         NYTCallsTopStories topStories = Injection.getTopStories(Injection.getService(), Injection.getCounting());
         topStories.getTopStories(this, "home");
     }
-
 
     @Override
     public void onResponse(@Nullable Result results) {

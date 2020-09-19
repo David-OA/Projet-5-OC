@@ -1,10 +1,11 @@
 package com.oconte.david.mynews;
 
-import android.content.Intent;
-import android.os.Bundle;
+import android.view.View;
 
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.test.espresso.contrib.RecyclerViewActions;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
+import androidx.test.rule.ActivityTestRule;
 
 import org.junit.Before;
 import org.junit.Rule;
@@ -22,64 +23,63 @@ import static androidx.test.espresso.matcher.ViewMatchers.withText;
 public class TopStorieRecyclerviewTest {
 
     /** the Activity of the Target application */
-    //private IngredientsActivity mActivity;
+    private MainActivity mActivity;
 
     /** the {@link RecyclerView}'s resource id */
-    //private int resId = R.id.recyclerview_ingredients;
+    private int resId = R.id.fragment_main_recycler_view;
 
     /** the {@link RecyclerView} */
-    //private IngredientsLinearView mRecyclerView;
+    private View mRecyclerView;
 
     /** and it's item count */
     private int itemCount = 0;
 
+    //public ActivityTestRule<IngredientsActivity> mActivityRule = new ActivityTestRule<IngredientsActivity>(IngredientsActivity.class)
+    @Rule
+    public ActivityTestRule<MainActivity> mActivityRule = new ActivityTestRule<MainActivity>(MainActivity.class, false, false);{
 
-    /*@Rule
-    public ActivityTestRule<IngredientsActivity> mActivityRule = new ActivityTestRule<IngredientsActivity>(IngredientsActivity.class) {
-
-        @Override
+       /* @Override
         protected Intent getActivityIntent() {
             Intent intent = new Intent();
             Bundle extras = new Bundle();
             intent.putExtras(extras);
             return intent;
-        }
+        }*/
     };
 
     @Before
     public void setUpTest() {
 
         /* obtaining the Activity from the ActivityTestRule */
-        //this.mActivity = this.mActivityRule.getActivity();
+        this.mActivity = this.mActivityRule.getActivity();
 
-        /* obtaining handles to the Ui of the Activity
-        //this.mRecyclerView = this.mActivity.findViewById(this.resId);
+        /* obtaining handles to the Ui of the Activity*/
+        this.mRecyclerView = this.mActivity.<View>findViewById(this.resId);
         //this.itemCount = this.mRecyclerView.getAdapter().getItemCount();
-    }*/
+    }
 
-    /*@Test
+    @Test
     public void RecyclerViewTest() {
         if(this.itemCount > 0) {
             for(int i=0; i < this.itemCount; i++) {
 
-                /* clicking the item
+                /* clicking the item*/
                 onView(withId(this.resId))
                         .perform(RecyclerViewActions.actionOnItemAtPosition(i, click()));
 
-                /* check if the ViewHolder is being displayed
+                /* check if the ViewHolder is being displayed*/
                 onView(new RecyclerViewMatcher(this.resId)
-                        .atPositionOnView(i, R.id.cardview))
+                        .atPositionOnView(i, R.id.fragment_main_recycler_view))
                         .check(matches(isDisplayed()));
 
                 /* checking for the text of the first one item
                 if(i == 0) {
                     onView(new RecyclerViewMatcher(this.resId)
-                            .atPositionOnView(i, R.id.ingredientName))
-                            .check(matches(withText("Farbstoffe")));
+                            .atPositionOnView(i, R.id.))
+                            .check(matches(withText("")));*/
                 }
 
             }
         }
-    }*/
+    }
 
-}

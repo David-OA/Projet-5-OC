@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * All for the TabLayout
      */
-    @SuppressLint("ResourceType")
+    @SuppressLint({"ResourceType", "UseCompatLoadingForColorStateLists"})
     protected void configureTabLayout() {
         // Define its gravity and its mode
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);

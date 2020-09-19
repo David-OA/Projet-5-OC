@@ -28,9 +28,7 @@ public class FragmentMostPopular extends Fragment implements NYTCallsMostPopular
 
     // FOR DATA
     private NYTArticleAdapter adapter;
-
     Context context;
-
     Result result;
 
     public FragmentMostPopular() { }
@@ -94,10 +92,9 @@ public class FragmentMostPopular extends Fragment implements NYTCallsMostPopular
     // -----------------
 
     private void executeHttpRequestWithRetrofitMostPopular() {
-        NYTCallsMostPopular mostPopular = Injection.getMostPopular(Injection.getServiceMostPopular(), Injection.getCounting());
+        NYTCallsMostPopular mostPopular = Injection.getMostPopular(Injection.getService(), Injection.getCounting());
         mostPopular.getMostPopular(this, "viewed");
     }
-
 
     @Override
     public void onResponse(@Nullable Result results) {
