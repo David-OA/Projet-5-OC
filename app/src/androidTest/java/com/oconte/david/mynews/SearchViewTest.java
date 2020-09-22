@@ -21,8 +21,10 @@ import okhttp3.mockwebserver.RecordedRequest;
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
+import static androidx.test.espresso.matcher.ViewMatchers.isChecked;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
+import static androidx.test.espresso.matcher.ViewMatchers.withText;
 
 @RunWith(AndroidJUnit4.class)
 public class SearchViewTest {
@@ -51,7 +53,7 @@ public class SearchViewTest {
     }
 
     @Test
-    public void testCallsTopStorie() throws IOException, InterruptedException {
+    public void testCallsSearch() throws IOException, InterruptedException {
 
         MockWebServer server = setupServer(HttpURLConnection.HTTP_OK, AssetReader.getAsset(InstrumentationRegistry.getInstrumentation().getContext(), "search_response.json"));
 
@@ -64,12 +66,29 @@ public class SearchViewTest {
         //Test recyclerview is good.
         onView(withId(R.id.fragment_main_recycler_view)).check(matches(isDisplayed()));
 
+        // Check the click on a item of the recyclerview
         onView(withId(R.id.fragment_main_recycler_view)).perform(RecyclerViewActions.actionOnItemAtPosition(2, click()));
+
+        //onView(withId(R.id.fragment_main_recycler_view)).perform(RecyclerViewActions.actionOnItemAtPosition(2, isChecked(matches(withText("Sports of The Times; Living Up to Image Can Be a Burden")))));
+
         onView(withId(R.id.web_view_all_new)).check(matches(isDisplayed()));
+
+
 
     }
 
-    //A test car peut marcher maintenant
-    //Le recyclerviewmatcher
+    /*@Test
+    public void testSearchView() throws IOException, InterruptedException {
+        MockWebServer server1 = setupServer(HttpURLConnection.HTTP_OK, AssetReader.getAsset(InstrumentationRegistry.getInstrumentation().getContext(), "search_response.json"));
+
+        // Start the server.
+        server1.start(9900);
+
+        //Start the MainActivity
+        mActivityRule.launchActivity(null);
+
+        onView(withId(R.id.query_term)).check(matches(isDisplayed()));
+
+    }*/
 
 }
