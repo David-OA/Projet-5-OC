@@ -41,7 +41,6 @@ public class Injection {
         return mostPopular;
     }
 
-
     // For Calls Search
     public static NYTCallsSearch getSearch(NYTService service, CountingIdlingResource resource) {
         IdlingRegistry.getInstance().register(resource);

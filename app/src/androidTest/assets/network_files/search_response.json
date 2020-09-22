@@ -1,0 +1,887 @@
+{
+  "status": "OK",
+  "copyright": "Copyright (c) 2020 The New York Times Company. All Rights Reserved.",
+  "response": {
+    "docs": [
+      {
+        "abstract": "Lawyer Jeff Benedict Op-Ed article says Kobe Bryant is latest of long lineup of sports stars charged with crimes against women; notes that professional or collegiate athletes are more likely to be acquitted than general population when charged with crime of violence against women; cites Justice Dept statistics; says many prosecutors are reluctant to bring cases against athletes to trial, and when they do, accused athletes have money, powerful lawyers, public relations specialists, high-profile coaches and other popular personalities to come to their defense; says Bryant should be considered innocent until proven guilty, but American culture, with its idolization of rich and famous, will afford him more protection than rest of us (M)",
+        "web_url": "https://www.nytimes.com/2003/08/05/opinion/athletes-and-accusations.html",
+        "snippet": "Lawyer Jeff Benedict Op-Ed article says Kobe Bryant is latest of long lineup of sports stars charged with crimes against women; notes that professional or collegiate athletes are more likely to be acquitted than general population when charged wit...",
+        "lead_paragraph": "Kobe Bryant, who is scheduled to appear in court tomorrow on charges of sexual assault, is the latest of a long lineup of sports stars who have been charged with crimes against women. The list includes many athletes prominent in their communities as well as nationally famous figures like the baseball Hall of Famer Kirby Puckett and the former heavyweight boxing champion Mike Tyson.",
+        "print_section": "A",
+        "print_page": "15",
+        "source": "The New York Times",
+        "multimedia": [],
+        "headline": {
+          "main": "Athletes and Accusations",
+          "kicker": null,
+          "content_kicker": null,
+          "print_headline": "Athletes and Accusations",
+          "name": null,
+          "seo": null,
+          "sub": null
+        },
+        "keywords": [
+          {
+            "name": "glocations",
+            "value": "Colorado",
+            "rank": 1,
+            "major": "N"
+          },
+          {
+            "name": "organizations",
+            "value": "Justice Department",
+            "rank": 2,
+            "major": "N"
+          },
+          {
+            "name": "organizations",
+            "value": "Los Angeles Lakers",
+            "rank": 3,
+            "major": "N"
+          },
+          {
+            "name": "persons",
+            "value": "Bryant, Kobe",
+            "rank": 4,
+            "major": "N"
+          },
+          {
+            "name": "subject",
+            "value": "Coaches and Managers",
+            "rank": 5,
+            "major": "N"
+          },
+          {
+            "name": "subject",
+            "value": "Sex Crimes",
+            "rank": 6,
+            "major": "N"
+          },
+          {
+            "name": "subject",
+            "value": "Basketball",
+            "rank": 7,
+            "major": "N"
+          }
+        ],
+        "pub_date": "2003-08-05T05:00:00+0000",
+        "document_type": "article",
+        "news_desk": "Editorial Desk",
+        "section_name": "Opinion",
+        "byline": {
+          "original": "By Jeff Benedict",
+          "person": [
+            {
+              "firstname": "Jeff",
+              "middlename": null,
+              "lastname": "Benedict",
+              "qualifier": null,
+              "title": null,
+              "role": "reported",
+              "organization": "",
+              "rank": 1
+            }
+          ],
+          "organization": null
+        },
+        "type_of_material": "Op-Ed",
+        "_id": "nyt://article/c17060b7-4cc8-5f0e-be93-536a9b9599af",
+        "word_count": 688,
+        "uri": "nyt://article/c17060b7-4cc8-5f0e-be93-536a9b9599af"
+      },
+      {
+        "abstract": "Selena Roberts Sports of The Times column contends that too many athletes are not held accountable as spokespeople, and points to Los Angeles Lakers guard Kobe Bryant as example of athlete who sold wholesome image, but later revealed reality that he is an adulterer, and possibly a rapist; photo (M)",
+        "web_url": "https://www.nytimes.com/2003/08/03/sports/sports-of-the-times-living-up-to-image-can-be-a-burden.html",
+        "snippet": "Selena Roberts Sports of The Times column contends that too many athletes are not held accountable as spokespeople, and points to Los Angeles Lakers guard Kobe Bryant as example of athlete who sold wholesome image, but later revealed reality that ...",
+        "lead_paragraph": "PLAYING their favorite characters on screen as in themselves -- star athletes can find script selection burdensome when they are expected to live up to their lines.",
+        "print_section": "8",
+        "print_page": "3",
+        "source": "The New York Times",
+        "multimedia": [],
+        "headline": {
+          "main": "Sports of The Times; Living Up to Image Can Be a Burden",
+          "kicker": null,
+          "content_kicker": null,
+          "print_headline": "Sports of The Times; Living Up to Image Can Be a Burden",
+          "name": null,
+          "seo": null,
+          "sub": null
+        },
+        "keywords": [
+          {
+            "name": "glocations",
+            "value": "EAGLE (COLO)",
+            "rank": 1,
+            "major": "N"
+          },
+          {
+            "name": "organizations",
+            "value": "Los Angeles Lakers",
+            "rank": 2,
+            "major": "N"
+          },
+          {
+            "name": "persons",
+            "value": "Bryant, Kobe",
+            "rank": 3,
+            "major": "N"
+          },
+          {
+            "name": "subject",
+            "value": "SPORTS OF THE TIMES (TIMES COLUMN)",
+            "rank": 4,
+            "major": "N"
+          },
+          {
+            "name": "subject",
+            "value": "Sex Crimes",
+            "rank": 5,
+            "major": "N"
+          },
+          {
+            "name": "subject",
+            "value": "Basketball",
+            "rank": 6,
+            "major": "N"
+          }
+        ],
+        "pub_date": "2003-08-03T05:00:00+0000",
+        "document_type": "article",
+        "news_desk": "Sports Desk",
+        "section_name": "Sports",
+        "byline": {
+          "original": "By Selena Roberts",
+          "person": [
+            {
+              "firstname": "Selena",
+              "middlename": null,
+              "lastname": "Roberts",
+              "qualifier": null,
+              "title": null,
+              "role": "reported",
+              "organization": "",
+              "rank": 1
+            }
+          ],
+          "organization": null
+        },
+        "type_of_material": "News",
+        "_id": "nyt://article/4dabb978-ef4e-5ad2-81f7-1fb80584de80",
+        "word_count": 917,
+        "uri": "nyt://article/4dabb978-ef4e-5ad2-81f7-1fb80584de80"
+      },
+      {
+        "abstract": "The Olympics’ star athletes are hoping to cash in on Chinas’s boom in sports marketing and sponsorship deals.",
+        "web_url": "https://www.nytimes.com/2008/08/27/sports/olympics/27star.html",
+        "snippet": "The Olympics’ star athletes are hoping to cash in on Chinas’s boom in sports marketing and sponsorship deals.",
+        "lead_paragraph": "BEIJING  At times during the Olympics, athletes like Dwyane Wade and Serena Williams seemed to be working as hard off the court as on they were on the court. ",
+        "print_section": "C",
+        "print_page": "1",
+        "source": "The New York Times",
+        "multimedia": [
+          {
+            "rank": 0,
+            "subtype": "popup",
+            "caption": null,
+            "credit": null,
+            "type": "image",
+            "url": "images/2008/08/27/business/27star01_650.jpg",
+            "height": 338,
+            "width": 650,
+            "legacy": {},
+            "subType": "popup",
+            "crop_name": "popup"
+          },
+          {
+            "rank": 0,
+            "subtype": "articleInline",
+            "caption": null,
+            "credit": null,
+            "type": "image",
+            "url": "images/2008/08/27/business/27star01_190.jpg",
+            "height": 248,
+            "width": 190,
+            "legacy": {},
+            "subType": "articleInline",
+            "crop_name": "articleInline"
+          },
+          {
+            "rank": 0,
+            "subtype": "thumbnail",
+            "caption": null,
+            "credit": null,
+            "type": "image",
+            "url": "images/2008/08/27/business/27star01_75.jpg",
+            "height": 75,
+            "width": 75,
+            "legacy": {
+              "thumbnail": "images/2008/08/27/business/27star01_75.jpg",
+              "thumbnailwidth": 75,
+              "thumbnailheight": 75
+            },
+            "subType": "thumbnail",
+            "crop_name": "thumbStandard"
+          }
+        ],
+        "headline": {
+          "main": "China’s Promise Excites the Sports Stars",
+          "kicker": null,
+          "content_kicker": null,
+          "print_headline": "China’s Promise Excites the Sports Stars",
+          "name": null,
+          "seo": null,
+          "sub": null
+        },
+        "keywords": [
+          {
+            "name": "glocations",
+            "value": "China",
+            "rank": 1,
+            "major": "N"
+          },
+          {
+            "name": "persons",
+            "value": "Wade, Dwyane",
+            "rank": 2,
+            "major": "N"
+          },
+          {
+            "name": "subject",
+            "value": "ADVERTISING AND MARKETING",
+            "rank": 3,
+            "major": "N"
+          },
+          {
+            "name": "subject",
+            "value": "Athletics and Sports",
+            "rank": 4,
+            "major": "N"
+          },
+          {
+            "name": "subject",
+            "value": "Olympic Games (2008)",
+            "rank": 5,
+            "major": "N"
+          }
+        ],
+        "pub_date": "2008-08-26T19:32:11+0000",
+        "document_type": "article",
+        "news_desk": "Business",
+        "section_name": "Sports",
+        "subsection_name": "Olympics",
+        "byline": {
+          "original": "By David Barboza",
+          "person": [
+            {
+              "firstname": "David",
+              "middlename": null,
+              "lastname": "Barboza",
+              "qualifier": null,
+              "title": null,
+              "role": "reported",
+              "organization": "",
+              "rank": 1
+            }
+          ],
+          "organization": null
+        },
+        "type_of_material": "News",
+        "_id": "nyt://article/248e7168-edca-5dd0-a1ce-f465bb0bebb9",
+        "word_count": 1269,
+        "uri": "nyt://article/248e7168-edca-5dd0-a1ce-f465bb0bebb9"
+      },
+      {
+        "abstract": "Survey by Burns Sports and Celebrities shows golfer Tiger Wood is top product endorser for fourth consecutive year; Woods in on pace to earn $1 billion from endorsements before he turns 40 in 2016; basketball star Michael Jordan finishes behind Woods, as he did last year; basketball player Kobe Bryant moves to third from ninth, followed by tennis player Anna Kournikova, in fourth place, unchanged from last year, and cyclist Lance Armstrong falls to fifth from third (S)",
+        "web_url": "https://www.nytimes.com/2002/09/27/business/the-media-business-advertising-addenda-tiger-woods-on-top-of-list-of-endorsers.html",
+        "snippet": "Survey by Burns Sports and Celebrities shows golfer Tiger Wood is top product endorser for fourth consecutive year; Woods in on pace to earn $1 billion from endorsements before he turns 40 in 2016; basketball star Michael Jordan finishes behind Wo...",
+        "lead_paragraph": "For the fourth consecutive year, the golfer Tiger Woods was named the top product endorser in sports in a survey by Burns Sports and Celebrities in Evanston, Ill., a company that helps match athletes with advertisers.",
+        "print_section": "C",
+        "print_page": "6",
+        "source": "The New York Times",
+        "multimedia": [],
+        "headline": {
+          "main": "Tiger Woods on Top Of List of Endorsers",
+          "kicker": "THE MEDIA BUSINESS: ADVERTISING -- ADDENDA",
+          "content_kicker": null,
+          "print_headline": "THE MEDIA BUSINESS: ADVERTISING -- ADDENDA; Tiger Woods on Top Of List of Endorsers",
+          "name": null,
+          "seo": null,
+          "sub": null
+        },
+        "keywords": [
+          {
+            "name": "organizations",
+            "value": "BURNS SPORTS AND CELEBRITIES",
+            "rank": 1,
+            "major": "N"
+          },
+          {
+            "name": "persons",
+            "value": "ARMSTRONG, LANCE",
+            "rank": 2,
+            "major": "N"
+          },
+          {
+            "name": "persons",
+            "value": "Woods, Tiger",
+            "rank": 3,
+            "major": "N"
+          },
+          {
+            "name": "persons",
+            "value": "Kournikova, Anna",
+            "rank": 4,
+            "major": "N"
+          },
+          {
+            "name": "persons",
+            "value": "Bryant, Kobe",
+            "rank": 5,
+            "major": "N"
+          },
+          {
+            "name": "persons",
+            "value": "Jordan, Michael",
+            "rank": 6,
+            "major": "N"
+          },
+          {
+            "name": "subject",
+            "value": "ADVERTISING",
+            "rank": 7,
+            "major": "N"
+          },
+          {
+            "name": "subject",
+            "value": "Biographical Information",
+            "rank": 8,
+            "major": "N"
+          },
+          {
+            "name": "subject",
+            "value": "Athletics and Sports",
+            "rank": 9,
+            "major": "N"
+          },
+          {
+            "name": "creative_works",
+            "value": "ADVERTISING (TIMES COLUMN)",
+            "rank": 10,
+            "major": "N"
+          }
+        ],
+        "pub_date": "2002-09-27T05:00:00+0000",
+        "document_type": "article",
+        "news_desk": "Business/Financial Desk",
+        "section_name": "Business Day",
+        "byline": {
+          "original": "By Nat Ives",
+          "person": [
+            {
+              "firstname": "Nat",
+              "middlename": null,
+              "lastname": "Ives",
+              "qualifier": null,
+              "title": null,
+              "role": "reported",
+              "organization": "",
+              "rank": 1
+            }
+          ],
+          "organization": null
+        },
+        "type_of_material": "News",
+        "_id": "nyt://article/1552356e-badc-5209-b352-67598790eb55",
+        "word_count": 164,
+        "uri": "nyt://article/1552356e-badc-5209-b352-67598790eb55"
+      },
+      {
+        "abstract": "Article on Los Angeles Lakers preparing for NBA championship series against Philadelphia 76ers; photo (M)",
+        "web_url": "https://www.nytimes.com/2001/06/05/sports/pro-basketball-a-bond-forged-in-the-crucible.html",
+        "snippet": "Article on Los Angeles Lakers preparing for NBA championship series against Philadelphia 76ers; photo (M)",
+        "lead_paragraph": "Hours before he signed Shaquille O'Neal to a contract in 1996, Jerry West was shaking. West, then the team president of the Los Angeles Lakers, was so worried that O'Neal would change his mind that his nerves simply took over his body, more so than at any time during his Hall of Fame playing career.",
+        "print_section": "D",
+        "print_page": "1",
+        "source": "The New York Times",
+        "multimedia": [],
+        "headline": {
+          "main": "A Bond Forged in the Crucible",
+          "kicker": "PRO BASKETBALL",
+          "content_kicker": null,
+          "print_headline": "PRO BASKETBALL; A Bond Forged in the Crucible",
+          "name": null,
+          "seo": null,
+          "sub": null
+        },
+        "keywords": [
+          {
+            "name": "organizations",
+            "value": "Los Angeles Lakers",
+            "rank": 1,
+            "major": "N"
+          },
+          {
+            "name": "organizations",
+            "value": "Philadelphia 76ers",
+            "rank": 2,
+            "major": "N"
+          },
+          {
+            "name": "subject",
+            "value": "Playoff Games",
+            "rank": 3,
+            "major": "N"
+          },
+          {
+            "name": "subject",
+            "value": "Basketball",
+            "rank": 4,
+            "major": "N"
+          }
+        ],
+        "pub_date": "2001-06-05T05:00:00+0000",
+        "document_type": "article",
+        "news_desk": "Sports Desk",
+        "section_name": "Sports",
+        "byline": {
+          "original": "By Mike Wise",
+          "person": [
+            {
+              "firstname": "Mike",
+              "middlename": null,
+              "lastname": "Wise",
+              "qualifier": null,
+              "title": null,
+              "role": "reported",
+              "organization": "",
+              "rank": 1
+            }
+          ],
+          "organization": null
+        },
+        "type_of_material": "News",
+        "_id": "nyt://article/466529e4-eaff-5100-b1e0-6d48068cb405",
+        "word_count": 1801,
+        "uri": "nyt://article/466529e4-eaff-5100-b1e0-6d48068cb405"
+      },
+      {
+        "abstract": "Harvey Araton Sports of The Times column contends that not all shooters have to dominate game and monopolize game, as guards like Cleveland Cavaliers player LeBron James has proven; photo (M)",
+        "web_url": "https://www.nytimes.com/2006/05/19/sports/basketball/shooting-star-is-no-longer-the-brightest-in-the-sky.html",
+        "snippet": "Harvey Araton Sports of The Times column contends that not all shooters have to dominate game and monopolize game, as guards like Cleveland Cavaliers player LeBron James has proven; photo (M)",
+        "lead_paragraph": "CHARLES BARKLEY called Kobe Bryant selfish on television for not shooting enough, for letting his teammates take the playoff fall. Kobe text-messaged his displeasure to Sir Charles. If their shorthand correspondence was anything like the material produced by the typical cellphone-toting adolescent, it probably went something like this:",
+        "print_section": "D",
+        "print_page": "1",
+        "source": "The New York Times",
+        "multimedia": [],
+        "headline": {
+          "main": "Shooting Star Is No Longer the Brightest in the Sky",
+          "kicker": "Sports of The Times",
+          "content_kicker": null,
+          "print_headline": "Sports of The Times; Shooting Star Is No Longer The Brightest in the Sky",
+          "name": null,
+          "seo": null,
+          "sub": null
+        },
+        "keywords": [
+          {
+            "name": "organizations",
+            "value": "Cleveland Cavaliers",
+            "rank": 1,
+            "major": "N"
+          },
+          {
+            "name": "persons",
+            "value": "James, LeBron",
+            "rank": 2,
+            "major": "N"
+          },
+          {
+            "name": "persons",
+            "value": "Wade, Dwyane",
+            "rank": 3,
+            "major": "N"
+          },
+          {
+            "name": "persons",
+            "value": "Bryant, Kobe",
+            "rank": 4,
+            "major": "N"
+          },
+          {
+            "name": "persons",
+            "value": "Barkley, Charles",
+            "rank": 5,
+            "major": "N"
+          },
+          {
+            "name": "subject",
+            "value": "SPORTS OF THE TIMES (TIMES COLUMN)",
+            "rank": 6,
+            "major": "N"
+          },
+          {
+            "name": "subject",
+            "value": "Playoff Games",
+            "rank": 7,
+            "major": "N"
+          },
+          {
+            "name": "subject",
+            "value": "Basketball",
+            "rank": 8,
+            "major": "N"
+          }
+        ],
+        "pub_date": "2006-05-19T05:00:00+0000",
+        "document_type": "article",
+        "news_desk": "Sports Desk",
+        "section_name": "Sports",
+        "byline": {
+          "original": "By Harvey Araton",
+          "person": [
+            {
+              "firstname": "Harvey",
+              "middlename": null,
+              "lastname": "Araton",
+              "qualifier": null,
+              "title": null,
+              "role": "reported",
+              "organization": "",
+              "rank": 1
+            }
+          ],
+          "organization": null
+        },
+        "type_of_material": "News",
+        "_id": "nyt://article/271dfbe5-575b-5cba-98d2-b4312dc96bf1",
+        "word_count": 934,
+        "uri": "nyt://article/271dfbe5-575b-5cba-98d2-b4312dc96bf1"
+      },
+      {
+        "abstract": "SHAQUILLE O'NEAL could watch with detachment, rather than irritation, when Alonzo Mourning celebrated his brute move for a second-quarter layup by curling his impressive biceps and yelling at his ample muscle.    What does one say to a biceps? More important, is the biceps listening to the self-consumed Zo?  ",
+        "web_url": "https://www.nytimes.com/2005/04/25/sports/basketball/in-miami-plenty-of-sky-for-the-stars.html",
+        "snippet": "SHAQUILLE O'NEAL could watch with detachment, rather than irritation, when Alonzo Mourning celebrated his brute move for a second-quarter layup by curling his impressive biceps and yelling at his ample muscle.    What does one say to a biceps? Mor...",
+        "lead_paragraph": "MIAMI - SHAQUILLE O'NEAL could watch with detachment, rather than irritation, when Alonzo Mourning celebrated his brute move for a second-quarter layup by curling his impressive biceps and yelling at his ample muscle.",
+        "print_section": "D",
+        "print_page": "1",
+        "source": "The New York Times",
+        "multimedia": [],
+        "headline": {
+          "main": "In Miami, Plenty of Sky for the Stars",
+          "kicker": "Sports of The Times",
+          "content_kicker": null,
+          "print_headline": "Sports of The Times; In Miami, Plenty of Sky For the Stars",
+          "name": null,
+          "seo": null,
+          "sub": null
+        },
+        "keywords": [
+          {
+            "name": "organizations",
+            "value": "Miami Heat",
+            "rank": 1,
+            "major": "N"
+          },
+          {
+            "name": "persons",
+            "value": "Jones, Damon",
+            "rank": 2,
+            "major": "N"
+          },
+          {
+            "name": "persons",
+            "value": "Mourning, Alonzo",
+            "rank": 3,
+            "major": "N"
+          },
+          {
+            "name": "persons",
+            "value": "Wade, Dwyane",
+            "rank": 4,
+            "major": "N"
+          },
+          {
+            "name": "persons",
+            "value": "O'Neal, Shaquille",
+            "rank": 5,
+            "major": "N"
+          },
+          {
+            "name": "subject",
+            "value": "Basketball",
+            "rank": 6,
+            "major": "N"
+          }
+        ],
+        "pub_date": "2005-04-25T05:00:00+0000",
+        "document_type": "article",
+        "news_desk": "Sports Desk",
+        "section_name": "Sports",
+        "byline": {
+          "original": "By Selena Roberts",
+          "person": [
+            {
+              "firstname": "Selena",
+              "middlename": null,
+              "lastname": "Roberts",
+              "qualifier": null,
+              "title": null,
+              "role": "reported",
+              "organization": "",
+              "rank": 1
+            }
+          ],
+          "organization": null
+        },
+        "type_of_material": "News",
+        "_id": "nyt://article/3561c38e-4157-50f0-a5f3-61f6f59f4622",
+        "word_count": 968,
+        "uri": "nyt://article/3561c38e-4157-50f0-a5f3-61f6f59f4622"
+      },
+      {
+        "abstract": "Interview with Kobe Bryant, who has helped carry Los Angeles Lakers to brink of NBA title; photos (M)",
+        "web_url": "https://www.nytimes.com/2000/06/16/sports/on-pro-basketball-in-a-realm-above-the-rim.html",
+        "snippet": "Interview with Kobe Bryant, who has helped carry Los Angeles Lakers to brink of NBA title; photos (M)",
+        "lead_paragraph": "Kobe Bryant was tracked down in a dark corridor at the Conseco Fieldhouse today by an admirer who shared an opinion with the wunderkind guard of the Los Angeles Lakers.",
+        "print_section": "D",
+        "print_page": "1",
+        "source": "The New York Times",
+        "multimedia": [],
+        "headline": {
+          "main": "On Pro Basketball; In a Realm Above the Rim",
+          "kicker": null,
+          "content_kicker": null,
+          "print_headline": "On Pro Basketball; In a Realm Above the Rim",
+          "name": null,
+          "seo": null,
+          "sub": null
+        },
+        "keywords": [
+          {
+            "name": "organizations",
+            "value": "Los Angeles Lakers",
+            "rank": 1,
+            "major": "N"
+          },
+          {
+            "name": "organizations",
+            "value": "Indiana Pacers",
+            "rank": 2,
+            "major": "N"
+          },
+          {
+            "name": "persons",
+            "value": "Bryant, Kobe",
+            "rank": 3,
+            "major": "N"
+          },
+          {
+            "name": "subject",
+            "value": "Basketball",
+            "rank": 4,
+            "major": "N"
+          }
+        ],
+        "pub_date": "2000-06-16T05:00:00+0000",
+        "document_type": "article",
+        "news_desk": "Sports Desk",
+        "section_name": "Sports",
+        "byline": {
+          "original": "By Mike Wise",
+          "person": [
+            {
+              "firstname": "Mike",
+              "middlename": null,
+              "lastname": "Wise",
+              "qualifier": null,
+              "title": null,
+              "role": "reported",
+              "organization": "",
+              "rank": 1
+            }
+          ],
+          "organization": null
+        },
+        "type_of_material": "News",
+        "_id": "nyt://article/b3629fbd-cc05-52f6-a9e3-8ae9fa9b1aad",
+        "word_count": 1341,
+        "uri": "nyt://article/b3629fbd-cc05-52f6-a9e3-8ae9fa9b1aad"
+      },
+      {
+        "abstract": "The playoffs are where “amazing happens,” or so the N.B.A. insists in the artsy ads that seemingly run during every commercial break. The truth is a little less than amazing.",
+        "web_url": "https://www.nytimes.com/2009/05/20/sports/basketball/20dribble.html",
+        "snippet": "The playoffs are where “amazing happens,” or so the N.B.A. insists in the artsy ads that seemingly run during every commercial break. The truth is a little less than amazing.",
+        "lead_paragraph": "The rivalry between Kobe Bryant and LeBron James is largely fictional. It exists in advertising campaigns for shoes and sports drinks but rarely on the court. Bryant and James play each other only twice a season and even then do not always guard one another.",
+        "print_section": "B",
+        "print_page": "18",
+        "source": "The New York Times",
+        "multimedia": [],
+        "headline": {
+          "main": "Jerry West Picks James Over Bryant",
+          "kicker": "Off the Dribble",
+          "content_kicker": null,
+          "print_headline": "Jerry West Picks James Over Bryant",
+          "name": null,
+          "seo": null,
+          "sub": null
+        },
+        "keywords": [
+          {
+            "name": "organizations",
+            "value": "Denver Nuggets",
+            "rank": 1,
+            "major": "N"
+          },
+          {
+            "name": "subject",
+            "value": "Basketball",
+            "rank": 2,
+            "major": "N"
+          },
+          {
+            "name": "organizations",
+            "value": "Cleveland Cavaliers",
+            "rank": 3,
+            "major": "N"
+          },
+          {
+            "name": "organizations",
+            "value": "Los Angeles Lakers",
+            "rank": 4,
+            "major": "N"
+          },
+          {
+            "name": "organizations",
+            "value": "National Basketball Assn",
+            "rank": 5,
+            "major": "N"
+          },
+          {
+            "name": "organizations",
+            "value": "Orlando Magic",
+            "rank": 6,
+            "major": "N"
+          }
+        ],
+        "pub_date": "2009-05-19T20:58:01+0000",
+        "document_type": "article",
+        "news_desk": "Sports",
+        "section_name": "Sports",
+        "subsection_name": "Pro Basketball",
+        "byline": {
+          "original": "By Howard Beck",
+          "person": [
+            {
+              "firstname": "Howard",
+              "middlename": null,
+              "lastname": "Beck",
+              "qualifier": null,
+              "title": null,
+              "role": "reported",
+              "organization": "",
+              "rank": 1
+            }
+          ],
+          "organization": null
+        },
+        "type_of_material": "News",
+        "_id": "nyt://article/e08e8d17-799a-544c-8301-39c89770fd4c",
+        "word_count": 707,
+        "uri": "nyt://article/e08e8d17-799a-544c-8301-39c89770fd4c"
+      },
+      {
+        "abstract": "Harvey Araton Sports of The Times column discusses Detroit Pistons, which could win NBA championship without star players like Los Angeles Lakers center Shaquille O'Neal and guard Kobe Bryant; photos (M)",
+        "web_url": "https://www.nytimes.com/2004/06/11/sports/sports-of-the-times-detroit-tries-to-defy-history-with-no-names.html",
+        "snippet": "Harvey Araton Sports of The Times column discusses Detroit Pistons, which could win NBA championship without star players like Los Angeles Lakers center Shaquille O'Neal and guard Kobe Bryant; photos (M)",
+        "lead_paragraph": "Correction Appended",
+        "print_section": "D",
+        "print_page": "1",
+        "source": "The New York Times",
+        "multimedia": [],
+        "headline": {
+          "main": "Sports of The Times; Detroit Tries To Defy History With No-Names",
+          "kicker": null,
+          "content_kicker": null,
+          "print_headline": "Sports of The Times; Detroit Tries To Defy History With No-Names",
+          "name": null,
+          "seo": null,
+          "sub": null
+        },
+        "keywords": [
+          {
+            "name": "organizations",
+            "value": "Los Angeles Lakers",
+            "rank": 1,
+            "major": "N"
+          },
+          {
+            "name": "organizations",
+            "value": "Detroit Pistons",
+            "rank": 2,
+            "major": "N"
+          },
+          {
+            "name": "persons",
+            "value": "Bryant, Kobe",
+            "rank": 3,
+            "major": "N"
+          },
+          {
+            "name": "persons",
+            "value": "O'Neal, Shaquille",
+            "rank": 4,
+            "major": "N"
+          },
+          {
+            "name": "subject",
+            "value": "SPORTS OF THE TIMES (TIMES COLUMN)",
+            "rank": 5,
+            "major": "N"
+          },
+          {
+            "name": "subject",
+            "value": "Playoff Games",
+            "rank": 6,
+            "major": "N"
+          },
+          {
+            "name": "subject",
+            "value": "Basketball",
+            "rank": 7,
+            "major": "N"
+          }
+        ],
+        "pub_date": "2004-06-11T05:00:00+0000",
+        "document_type": "article",
+        "news_desk": "Sports Desk",
+        "section_name": "Sports",
+        "byline": {
+          "original": "By Harvey Araton",
+          "person": [
+            {
+              "firstname": "Harvey",
+              "middlename": null,
+              "lastname": "Araton",
+              "qualifier": null,
+              "title": null,
+              "role": "reported",
+              "organization": "",
+              "rank": 1
+            }
+          ],
+          "organization": null
+        },
+        "type_of_material": "News",
+        "_id": "nyt://article/b6c8a12b-bba2-50b7-a7af-839e16ac42f8",
+        "word_count": 931,
+        "uri": "nyt://article/b6c8a12b-bba2-50b7-a7af-839e16ac42f8"
+      }
+    ],
+    "meta": {
+      "hits": 1606,
+      "offset": 100,
+      "time": 41
+    }
+  }
+}
