@@ -73,8 +73,6 @@ public class SearchViewTest {
 
         onView(withId(R.id.web_view_all_new)).check(matches(isDisplayed()));
 
-
-
     }
 
     /*@Test

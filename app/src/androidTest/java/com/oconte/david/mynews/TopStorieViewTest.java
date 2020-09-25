@@ -1,6 +1,7 @@
 package com.oconte.david.mynews;
 
 import androidx.test.espresso.contrib.RecyclerViewActions;
+import androidx.test.espresso.web.webdriver.Locator;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.rule.ActivityTestRule;
@@ -23,6 +24,11 @@ import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
+import static androidx.test.espresso.web.assertion.WebViewAssertions.webMatches;
+import static androidx.test.espresso.web.sugar.Web.onWebView;
+import static androidx.test.espresso.web.webdriver.DriverAtoms.findElement;
+import static androidx.test.espresso.web.webdriver.DriverAtoms.getText;
+import static androidx.test.espresso.web.webdriver.DriverAtoms.webClick;
 
 @RunWith(AndroidJUnit4.class)
 public class TopStorieViewTest {
@@ -32,7 +38,16 @@ public class TopStorieViewTest {
      * alike one would pass command-line arguments to regular run configurations.
      */
     @Rule
-    public ActivityTestRule<MainActivity> mActivityRule = new ActivityTestRule<MainActivity>(MainActivity.class, false, false);
+    public ActivityTestRule<MainActivity> mActivityRule = new ActivityTestRule<MainActivity>(MainActivity.class, false, false) {
+
+        @Override
+        protected void afterActivityLaunched() {
+            //onWebView(withId(R.id.web_view_all_new)).forceJavascriptEnabled();
+        }
+    };
+
+
+
 
     // Method allowing to outsource the creation of the mockwebserver object by passing the correct http code (200, 400 or other) and the correct json response.
     private MockWebServer setupServer(int code, String response) {
@@ -67,9 +82,8 @@ public class TopStorieViewTest {
         onView(withId(R.id.fragment_main_recycler_view)).perform(RecyclerViewActions.actionOnItemAtPosition(2, click()));
         onView(withId(R.id.web_view_all_new)).check(matches(isDisplayed()));
 
-    }
+        //onWebView().withElement(findElement(Locator.ID, "")).perform(webClick()); //.check(webMatches())
 
-    //A test car peut marcher maintenant
-    //Le recyclerviewmatcher
+    }
 
 }

@@ -33,6 +33,7 @@ public class MenuTestView {
     @Test
     public void testClickActionBarItemSearch() throws IOException, InterruptedException {
 
+        //Start the MainActivity
         mActivityRule.launchActivity(null);
 
         onView(withId(R.id.toolbar)).perform(click());
@@ -50,6 +51,7 @@ public class MenuTestView {
     @Test
     public  void testClickActionBarMenuNotification() throws IOException, InterruptedException {
 
+        //Start the MainActivity
         mActivityRule.launchActivity(null);
 
         onView(withId(R.id.toolbar)).perform(click());
@@ -64,6 +66,7 @@ public class MenuTestView {
     @Test
     public  void testClickActionBarMenuHelp() throws IOException, InterruptedException {
 
+        //Start the MainActivity
         mActivityRule.launchActivity(null);
 
         onView(withId(R.id.toolbar)).perform(click());
@@ -78,6 +81,7 @@ public class MenuTestView {
     @Test
     public  void testClickActionBarMenuAbout() throws IOException, InterruptedException {
 
+        //Start the MainActivity
         mActivityRule.launchActivity(null);
 
         onView(withId(R.id.toolbar)).perform(click());
