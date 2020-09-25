@@ -36,8 +36,10 @@ public class MenuTestView {
         //Start the MainActivity
         mActivityRule.launchActivity(null);
 
+        //Select the toolbar
         onView(withId(R.id.toolbar)).perform(click());
 
+        //Choice the search menu
         onView(withId(R.id.menu_main_activity_search)).perform(click());
 
         onView(withId(R.id.query_term)).check(matches(isDisplayed()));
@@ -54,10 +56,12 @@ public class MenuTestView {
         //Start the MainActivity
         mActivityRule.launchActivity(null);
 
+        //Select the toolbar
         onView(withId(R.id.toolbar)).perform(click());
 
         openActionBarOverflowOrOptionsMenu(ApplicationProvider.getApplicationContext());
 
+        //Choice the Notification menu
         onView(withText("Notifications")).perform(click());
 
         onView(withId(R.id.notification_item_travel)).check(matches(withText("Travel")));
@@ -69,10 +73,12 @@ public class MenuTestView {
         //Start the MainActivity
         mActivityRule.launchActivity(null);
 
+        //Select the toolbar
         onView(withId(R.id.toolbar)).perform(click());
 
         openActionBarOverflowOrOptionsMenu(ApplicationProvider.getApplicationContext());
 
+        //Choice the help menu
         onView(withText("Help")).perform(click());
 
         //onView(withId(R.id.text_help)).check(matches(withText("\"My News\" uses the news published by the New York Times so you can be updated everyday at every time about what is happening in the world.")));
@@ -84,10 +90,12 @@ public class MenuTestView {
         //Start the MainActivity
         mActivityRule.launchActivity(null);
 
+        //Select the toolbar
         onView(withId(R.id.toolbar)).perform(click());
 
         openActionBarOverflowOrOptionsMenu(ApplicationProvider.getApplicationContext());
 
+        //Choice the About menu
         onView(withText("About")).perform(click());
 
         //onView(withId(R.id.markdown_view)).check(matches(isDisplayed()));
