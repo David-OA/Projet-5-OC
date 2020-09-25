@@ -67,6 +67,7 @@ public class MenuTestView {
         //Choice the Notification menu
         onView(withText("Notifications")).perform(click());
 
+        //Check the Travel filtered.
         onView(withId(R.id.notification_item_travel)).check(matches(withText("Travel")));
     }
 
