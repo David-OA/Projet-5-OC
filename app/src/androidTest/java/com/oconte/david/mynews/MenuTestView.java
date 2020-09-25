@@ -42,10 +42,13 @@ public class MenuTestView {
         //Choice the search menu
         onView(withId(R.id.menu_main_activity_search)).perform(click());
 
+        //Check the EditText
         onView(withId(R.id.query_term)).check(matches(isDisplayed()));
 
+        //Check if the sports checkbox is check
         onView(withId(R.id.search_item_sport)).check(matches(isNotChecked()));
 
+        //Check the search button.
         onView(withId(R.id.search_button)).check(matches(withText("SEARCH")));
 
     }
