@@ -102,7 +102,7 @@ public class MenuTestView {
         //Choice the About menu
         onView(withText("About")).perform(click());
 
-        //onView(withId(R.id.markdown_view)).check(matches(isDisplayed()));
+        onView(withId(R.id.markdown_view)).check(matches(isDisplayed()));
     }
 
 }
