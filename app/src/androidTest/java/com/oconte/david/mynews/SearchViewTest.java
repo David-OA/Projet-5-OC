@@ -18,6 +18,7 @@ import okhttp3.mockwebserver.MockResponse;
 import okhttp3.mockwebserver.MockWebServer;
 import okhttp3.mockwebserver.RecordedRequest;
 
+import static androidx.test.espresso.Espresso.onData;
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
@@ -69,24 +70,13 @@ public class SearchViewTest {
         // Check the click on a item of the recyclerview
         onView(withId(R.id.fragment_main_recycler_view)).perform(RecyclerViewActions.actionOnItemAtPosition(2, click()));
 
-        //onView(withId(R.id.fragment_main_recycler_view)).perform(RecyclerViewActions.actionOnItemAtPosition(2, isChecked(matches(withText("Sports of The Times; Living Up to Image Can Be a Burden")))));
+        // Check the one element and is the good title
+        //onData(withId(R.id.fragment_main_recycler_view)).perform(RecyclerViewActions.actionOnItemAtPosition(2, matches(withText("Sports of The Times; Living Up to Image Can Be a Burden"))));
 
-        onView(withId(R.id.web_view_all_new)).check(matches(isDisplayed()));
+        onView(withId(R.id.web_view_all_new)).check(matches(isDisplayed())); //https://www.nytimes.com/2008/08/27/sports/olympics/27star.html // China’s Promise Excites the Sports Stars
+
+
 
     }
-
-    /*@Test
-    public void testSearchView() throws IOException, InterruptedException {
-        MockWebServer server1 = setupServer(HttpURLConnection.HTTP_OK, AssetReader.getAsset(InstrumentationRegistry.getInstrumentation().getContext(), "search_response.json"));
-
-        // Start the server.
-        server1.start(9900);
-
-        //Start the MainActivity
-        mActivityRule.launchActivity(null);
-
-        onView(withId(R.id.query_term)).check(matches(isDisplayed()));
-
-    }*/
 
 }

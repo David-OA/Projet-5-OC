@@ -16,6 +16,7 @@
     </androidx.appcompat.widget.Toolbar>
 
     <LinearLayout
+        android:id="@+id/markdown_view_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="10dp">
@@ -23,7 +24,8 @@
         <es.dmoral.markdownview.MarkdownView
             android:id="@+id/markdown_view"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:visibility="visible">
 
         </es.dmoral.markdownview.MarkdownView>
     </LinearLayout>

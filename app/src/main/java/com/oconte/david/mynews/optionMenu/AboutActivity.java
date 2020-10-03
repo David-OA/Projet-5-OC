@@ -1,10 +1,15 @@
 package com.oconte.david.mynews.optionMenu;
 
 import android.os.Bundle;
+import android.view.View;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.test.espresso.IdlingRegistry;
+import androidx.test.espresso.idling.CountingIdlingResource;
 
 import com.oconte.david.mynews.R;
+import com.oconte.david.mynews.di.Injection;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -45,6 +50,7 @@ public class AboutActivity extends AppCompatActivity {
      * it's the markdown view.
      */
     public void markDownView(){
+
         markdownView.loadFromText("### Library\n" +
                 "\n" +
                 "* [Android Support Library](https://developer.android.com/topic/libraries/support-library) \n" +

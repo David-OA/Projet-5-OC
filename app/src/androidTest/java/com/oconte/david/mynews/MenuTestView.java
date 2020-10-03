@@ -69,6 +69,8 @@ public class MenuTestView {
 
         //Check the Travel filtered.
         onView(withId(R.id.notification_item_travel)).check(matches(withText("Travel")));
+
+        //controle le bouton avec id
     }
 
     @Test
@@ -85,7 +87,7 @@ public class MenuTestView {
         //Choice the help menu
         onView(withText("Help")).perform(click());
 
-        //onView(withId(R.id.text_help)).check(matches(withText("\"My News\" uses the news published by the New York Times so you can be updated everyday at every time about what is happening in the world.")));
+        onView(withId(R.id.text_help)).check(matches(isDisplayed()));
     }
 
     @Test
@@ -102,7 +104,8 @@ public class MenuTestView {
         //Choice the About menu
         onView(withText("About")).perform(click());
 
-        onView(withId(R.id.markdown_view)).check(matches(isDisplayed()));
+        onView(withId(R.id.markdown_view_view)).check(matches(isDisplayed()));
+
     }
 
 }

@@ -25,10 +25,14 @@ import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.web.assertion.WebViewAssertions.webMatches;
+import static androidx.test.espresso.web.model.Atoms.getCurrentUrl;
+import static androidx.test.espresso.web.model.Atoms.getTitle;
 import static androidx.test.espresso.web.sugar.Web.onWebView;
 import static androidx.test.espresso.web.webdriver.DriverAtoms.findElement;
 import static androidx.test.espresso.web.webdriver.DriverAtoms.getText;
 import static androidx.test.espresso.web.webdriver.DriverAtoms.webClick;
+import static org.hamcrest.Matchers.containsString;
+import static org.hamcrest.core.Is.is;
 
 @RunWith(AndroidJUnit4.class)
 public class TopStorieViewTest {
@@ -40,13 +44,11 @@ public class TopStorieViewTest {
     @Rule
     public ActivityTestRule<MainActivity> mActivityRule = new ActivityTestRule<MainActivity>(MainActivity.class, false, false) {
 
-        @Override
+        /*@Override
         protected void afterActivityLaunched() {
-            //onWebView(withId(R.id.web_view_all_new)).forceJavascriptEnabled();
-        }
+            onWebView(withId(R.id.web_view_all_new)).forceJavascriptEnabled();
+        }*/
     };
-
-
 
 
     // Method allowing to outsource the creation of the mockwebserver object by passing the correct http code (200, 400 or other) and the correct json response.
@@ -82,7 +84,9 @@ public class TopStorieViewTest {
         onView(withId(R.id.fragment_main_recycler_view)).perform(RecyclerViewActions.actionOnItemAtPosition(2, click()));
         onView(withId(R.id.web_view_all_new)).check(matches(isDisplayed()));
 
-        //onWebView().withElement(findElement(Locator.ID, "")).perform(webClick()); //.check(webMatches())
+        onWebView(withId(R.id.web_view_all_new)).withElement(findElement(Locator.NAME, "73,400 New Coronavirus Cases in U.S., Nearing Single-Day Record"))
+                .perform(webClick()).check(webMatches(getCurrentUrl(), containsString("https://www.nytimes.com/2020/07/24/world/coronavirus-covid-19.html")))
+                .check(webMatches(getTitle(), is(("73,400 New Coronavirus Cases in U.S., Nearing Single-Day Record"))));
 
     }
 
