@@ -49,7 +49,6 @@ public class MenuTestView {
 
         //Check the search button.
         onView(withId(R.id.search_button)).check(matches(withText("SEARCH")));
-
     }
 
     @Test
@@ -69,7 +68,7 @@ public class MenuTestView {
         //Check the Travel filtered.
         onView(withId(R.id.notification_item_travel)).check(matches(withText("Travel")));
 
-        //controle le bouton avec id
+        //Check the switch button is here.
         onView(withId(R.id.notification_switch)).check(matches(isDisplayed()));
     }
 
@@ -87,6 +86,7 @@ public class MenuTestView {
         //Choice the help menu
         onView(withText("Help")).perform(click());
 
+        //Check the TextView is here.
         onView(withId(R.id.text_help)).check(matches(isDisplayed()));
     }
 
@@ -104,8 +104,8 @@ public class MenuTestView {
         //Choice the About menu
         onView(withText("About")).perform(click());
 
+        //Check the Markdown is here.
         onView(withId(R.id.markdown_view_view)).check(matches(isDisplayed()));
-
     }
 
 }
