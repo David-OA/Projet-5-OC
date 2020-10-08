@@ -26,6 +26,7 @@ import static androidx.test.espresso.matcher.ViewMatchers.isChecked;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
+import static org.hamcrest.Matchers.anything;
 
 @RunWith(AndroidJUnit4.class)
 public class SearchViewTest {
@@ -70,12 +71,8 @@ public class SearchViewTest {
         // Check the click on a item of the recyclerview
         onView(withId(R.id.fragment_main_recycler_view)).perform(RecyclerViewActions.actionOnItemAtPosition(2, click()));
 
-        // Check the one element and is the good title
-        //onData(withId(R.id.fragment_main_recycler_view)).perform(RecyclerViewActions.actionOnItemAtPosition(2, matches(withText("Sports of The Times; Living Up to Image Can Be a Burden"))));
-
-        onView(withId(R.id.web_view_all_new)).check(matches(isDisplayed())); //https://www.nytimes.com/2008/08/27/sports/olympics/27star.html // China’s Promise Excites the Sports Stars
-
-
+        // Check the webView is good.
+        onView(withId(R.id.web_view_all_new)).check(matches(isDisplayed()));
 
     }
 
