@@ -67,7 +67,7 @@ public class SportsViewTEst {
 
         // Check one item of the recyclerview for see it here.
         onView(withId(R.id.fragment_main_recycler_view)).perform(RecyclerViewActions.actionOnItemAtPosition(2, click()));
-        
+
         // Check the webview
         onView(withId(R.id.web_view_all_new)).check(matches(isDisplayed()));
     }
