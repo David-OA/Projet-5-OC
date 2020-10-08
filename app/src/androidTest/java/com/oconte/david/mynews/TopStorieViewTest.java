@@ -82,6 +82,7 @@ public class TopStorieViewTest {
         onView(withId(R.id.fragment_main_recycler_view)).check(matches(isDisplayed()));
 
         onView(withId(R.id.fragment_main_recycler_view)).perform(RecyclerViewActions.actionOnItemAtPosition(2, click()));
+
         onView(withId(R.id.web_view_all_new)).check(matches(isDisplayed()));
 
         onWebView(withId(R.id.web_view_all_new)).withElement(findElement(Locator.NAME, "73,400 New Coronavirus Cases in U.S., Nearing Single-Day Record"))

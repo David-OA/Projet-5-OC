@@ -66,6 +66,7 @@ public class SportsViewTEst {
         onView(withId(R.id.fragment_main_recycler_view)).check(matches(isDisplayed()));
 
         onView(withId(R.id.fragment_main_recycler_view)).perform(RecyclerViewActions.actionOnItemAtPosition(2, click()));
+
         onView(withId(R.id.web_view_all_new)).check(matches(isDisplayed()));
     }
 }

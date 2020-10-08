@@ -70,6 +70,7 @@ public class MenuTestView {
         onView(withId(R.id.notification_item_travel)).check(matches(withText("Travel")));
 
         //controle le bouton avec id
+        onView(withId(R.id.notification_switch)).check(matches(isDisplayed()));
     }
 
     @Test
