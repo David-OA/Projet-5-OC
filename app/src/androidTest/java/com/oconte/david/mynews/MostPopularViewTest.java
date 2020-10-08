@@ -49,7 +49,7 @@ public class MostPopularViewTest {
 
 
     @Test
-    public void testCallsSports() throws IOException, InterruptedException {
+    public void testCallsMostPopular() throws IOException, InterruptedException {
 
         MockWebServer server = setupServer(HttpURLConnection.HTTP_OK, AssetReader.getAsset(InstrumentationRegistry.getInstrumentation().getContext(), "mostpopular_response.json"));
 
@@ -62,8 +62,10 @@ public class MostPopularViewTest {
         //Test recyclerview is good.
         onView(withId(R.id.fragment_main_recycler_view)).check(matches(isDisplayed()));
 
-        //onView(withId(R.id.fragment_main_recycler_view)).perform(RecyclerViewActions.actionOnItemAtPosition(2, click()));
+        // Check one item of the recyclerview for see it here.
+        onView(withId(R.id.fragment_main_recycler_view)).perform(RecyclerViewActions.actionOnItemAtPosition(2, click()));
 
+        // Check the webview
         onView(withId(R.id.web_view_all_new)).check(matches(isDisplayed()));
     }
 }
