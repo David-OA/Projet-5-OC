@@ -66,7 +66,7 @@ public class TopStorieViewTest {
 
     @Test
     public void testCallsTopStorie() throws IOException, InterruptedException {
-        
+
         MockWebServer server = setupServer(HttpURLConnection.HTTP_OK, AssetReader.getAsset(InstrumentationRegistry.getInstrumentation().getContext(), "topstories_response.json"));
 
         // Start the server.
@@ -83,6 +83,5 @@ public class TopStorieViewTest {
 
         // Check the webview
         onView(withId(R.id.web_view_all_new)).check(matches(isDisplayed()));
-
     }
 }

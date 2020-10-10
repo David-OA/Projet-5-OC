@@ -71,7 +71,6 @@ public class ConfigureDate {
             if (!"".equals(beginDate)) {
                 return false;
             }
-
         }
 
         try {
