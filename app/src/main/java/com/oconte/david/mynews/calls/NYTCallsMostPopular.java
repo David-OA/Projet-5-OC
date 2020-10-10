@@ -40,9 +40,6 @@ public class NYTCallsMostPopular {
         // weak reference to callback (avoid memory leaks)
         final WeakReference<NYTCallsMostPopular.Callbacks> callbacksWeakReference = new WeakReference<NYTCallsMostPopular.Callbacks>(callbacks);
 
-        // Get Retrofit instance and the related endpoints
-        //NYTService nytService = NYTFactory.getRetrofit().create(NYTService.class);
-
         // The call on NYT API
         Call<Result> call = service.getMostPopular(section);
 

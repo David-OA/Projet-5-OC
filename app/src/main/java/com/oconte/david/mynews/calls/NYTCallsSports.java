@@ -41,9 +41,6 @@ public class NYTCallsSports {
         // weak reference to callback (avoid memory leaks)
         final WeakReference<NYTCallsSports.Callbacks> callbacksWeakReference = new WeakReference<NYTCallsSports.Callbacks>(callbacks);
 
-        // Get Retrofit instance and the related endpoints
-        //NYTService nytService = NYTFactory.getRetrofit().create(NYTService.class);
-
         // The call on NYT API
         Call<Result> call = service.getSports(section);
 
