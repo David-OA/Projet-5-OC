@@ -24,11 +24,13 @@ import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
+import static androidx.test.espresso.matcher.ViewMatchers.withResourceName;
 import static androidx.test.espresso.web.assertion.WebViewAssertions.webMatches;
 import static androidx.test.espresso.web.model.Atoms.getCurrentUrl;
 import static androidx.test.espresso.web.model.Atoms.getTitle;
 import static androidx.test.espresso.web.sugar.Web.onWebView;
 import static androidx.test.espresso.web.webdriver.DriverAtoms.findElement;
+import static androidx.test.espresso.web.webdriver.DriverAtoms.getText;
 import static androidx.test.espresso.web.webdriver.DriverAtoms.webClick;
 import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.is;
@@ -64,7 +66,7 @@ public class TopStorieViewTest {
 
     @Test
     public void testCallsTopStorie() throws IOException, InterruptedException {
-
+        
         MockWebServer server = setupServer(HttpURLConnection.HTTP_OK, AssetReader.getAsset(InstrumentationRegistry.getInstrumentation().getContext(), "topstories_response.json"));
 
         // Start the server.
@@ -82,9 +84,5 @@ public class TopStorieViewTest {
         // Check the webview
         onView(withId(R.id.web_view_all_new)).check(matches(isDisplayed()));
 
-        // C'est là que ca ne marche pas Le Locator.NAME
-        /*onWebView(withId(R.id.web_view_all_new)).withElement(findElement(Locator.ID, "title"))
-                .perform(webClick()).check(webMatches(getCurrentUrl(), containsString("https://www.nytimes.com/2020/07/24/world/coronavirus-covid-19.html")))
-                .check(webMatches(getTitle(), is(("73,400 New Coronavirus Cases in U.S., Nearing Single-Day Record"))));*/
     }
 }
