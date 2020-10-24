@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.oconte.david.mynews">
 
-    <!-- utiliser car c'est pour le test et uniquement pour ca android:usesCleartextTraffic="true" https://stackoverflow.com/questions/45940861/android-8-cleartext-http-traffic-not-permitted a implementer pour apres-->
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/nyt_icon"
