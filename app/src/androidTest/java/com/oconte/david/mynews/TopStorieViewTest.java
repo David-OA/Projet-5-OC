@@ -70,7 +70,7 @@ public class TopStorieViewTest {
         MockWebServer server = setupServer(HttpURLConnection.HTTP_OK, AssetReader.getAsset(InstrumentationRegistry.getInstrumentation().getContext(), "topstories_response.json"));
 
         // Start the server.
-        server.start(9900);
+        server.start(9901);
 
         //Start the MainActivity
         mActivityRule.launchActivity(null);

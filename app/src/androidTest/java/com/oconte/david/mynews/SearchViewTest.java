@@ -60,7 +60,7 @@ public class SearchViewTest {
         MockWebServer server = setupServer(HttpURLConnection.HTTP_OK, AssetReader.getAsset(InstrumentationRegistry.getInstrumentation().getContext(), "search_response.json"));
 
         // Start the server.
-        server.start(9900);
+        server.start(9903);
 
         //Start the MainActivity
         mActivityRule.launchActivity(null);

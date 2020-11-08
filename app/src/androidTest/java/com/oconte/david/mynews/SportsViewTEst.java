@@ -57,7 +57,7 @@ public class SportsViewTEst {
         MockWebServer server = setupServer(HttpURLConnection.HTTP_OK, AssetReader.getAsset(InstrumentationRegistry.getInstrumentation().getContext(), "sports_response.json"));
 
         // Start the server.
-        server.start(9900);
+        server.start(9902);
 
         //Start the MainActivity
         mActivityRule.launchActivity(null);
