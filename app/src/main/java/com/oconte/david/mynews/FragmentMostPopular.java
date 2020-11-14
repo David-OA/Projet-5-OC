@@ -92,7 +92,7 @@ public class FragmentMostPopular extends Fragment implements NYTCallsMostPopular
     // -----------------
 
     private void executeHttpRequestWithRetrofitMostPopular() {
-        NYTCallsMostPopular mostPopular = Injection.getMostPopular(Injection.getService(), Injection.getCounting());
+        NYTCallsMostPopular mostPopular = Injection.getMostPopular(Injection.getService(), Injection.resource);
         mostPopular.getMostPopular(this, "viewed");
     }
 

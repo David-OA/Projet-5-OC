@@ -1,11 +1,16 @@
 package com.oconte.david.mynews;
 
+import androidx.test.espresso.IdlingRegistry;
 import androidx.test.espresso.contrib.RecyclerViewActions;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.rule.ActivityTestRule;
 
+import com.oconte.david.mynews.di.Injection;
+
 import org.jetbrains.annotations.NotNull;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -50,6 +55,15 @@ public class SportsViewTEst {
 
     }
 
+    @Before
+    public void setUp() {
+        IdlingRegistry.getInstance().register(Injection.resource);
+    }
+
+    @After
+    public void tearDown() {
+        IdlingRegistry.getInstance().unregister(Injection.resource);
+    }
 
     @Test
     public void testCallsSports() throws IOException, InterruptedException {

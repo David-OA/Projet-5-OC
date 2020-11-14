@@ -1,10 +1,15 @@
 package com.oconte.david.mynews;
 
+import androidx.test.espresso.IdlingRegistry;
 import androidx.test.espresso.contrib.RecyclerViewActions;
 import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.rule.ActivityTestRule;
 
+import com.oconte.david.mynews.di.Injection;
+
 import org.jetbrains.annotations.NotNull;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 
@@ -47,6 +52,15 @@ public class MostPopularViewTest {
 
     }
 
+    @Before
+    public void setUp() {
+        IdlingRegistry.getInstance().register(Injection.resource);
+    }
+
+    @After
+    public void tearDown() {
+        IdlingRegistry.getInstance().unregister(Injection.resource);
+    }
 
     @Test
     public void testCallsMostPopular() throws IOException, InterruptedException {
@@ -67,5 +81,6 @@ public class MostPopularViewTest {
 
         // Check the webview
         onView(withId(R.id.web_view_all_new)).check(matches(isDisplayed()));
+
     }
 }

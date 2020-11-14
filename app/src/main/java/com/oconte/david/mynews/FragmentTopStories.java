@@ -93,7 +93,7 @@ public class FragmentTopStories extends Fragment implements NYTCallsTopStories.C
     // HTTP REQUEST Retrofit
     // -----------------
     private void executeHttpRequestWithRetrofitTopStories() {
-        NYTCallsTopStories topStories = Injection.getTopStories(Injection.getService(), Injection.getCounting());
+        NYTCallsTopStories topStories = Injection.getTopStories(Injection.getService(), Injection.resource);
         topStories.getTopStories(this, "home");
     }
 

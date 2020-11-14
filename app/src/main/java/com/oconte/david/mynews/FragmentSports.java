@@ -100,7 +100,7 @@ public class FragmentSports extends Fragment implements NYTCallsSports.Callbacks
     // -----------------
 
     private void executeHttpRequestWithRetrofitSports() {
-        NYTCallsSports sports = Injection.getSports(Injection.getService(), Injection.getCounting());
+        NYTCallsSports sports = Injection.getSports(Injection.getService(), Injection.resource);
         sports.getSports(this, "sports");
     }
 
