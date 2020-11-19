@@ -15,14 +15,15 @@ android:
   - extra-google-google_play_services
   - extra-google-m2repository
   - extra-android-m2repository
-  - sys-img-x86-android-28
-  - sys-img-armeabi-v7a-android-28
+  - sys-img-x86-android-25
+  - sys-img-armeabi-v7a-android-25
   licenses:
   - android-sdk-preview-license-.+
   - android-sdk-license-.+
   - google-gdk-license-.+
 
 before_install:
+- yes | sdkmanager "platforms;android-25"
 - yes | sdkmanager "platforms;android-27"
 - yes | sdkmanager "platforms;android-28"
 
@@ -30,7 +31,7 @@ install: true
 
 before_script:
 - chmod +x gradlew
-- echo no | android create avd --force -n test -t android-28 --abi armeabi-v7a
+- echo no | android create avd --force -n test -t android-285--abi armeabi-v7a
 - emulator -avd test -no-skin -no-audio -no-window &
 - android-wait-for-emulator
 - adb shell input keyevent 82 &
