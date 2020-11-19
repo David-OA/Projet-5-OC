@@ -16,7 +16,8 @@ android:
   - extra-google-m2repository
   - extra-android-m2repository
   - sys-img-x86-android-28
-  - sys-img-armeabi-v7a-android-28
+  #- sys-img-armeabi-v7a-android-28
+  - sys-img-armeabi-v7a-addon-google_apis-google-28
   licenses:
   - android-sdk-preview-license-.+
   - android-sdk-license-.+
@@ -30,7 +31,7 @@ install: true
 
 before_script:
 - chmod +x gradlew
-- echo no | android create avd --force -n test -t android-28 --abi armeabi-v7a
+- echo no | android create avd --force -n test -t android-28 --abi ANDROID_ABI
 - emulator -avd test -no-skin -no-audio -no-window &
 - android-wait-for-emulator
 - adb shell input keyevent 82 &
@@ -42,4 +43,5 @@ script:
 
 env:
   global:
+    - ANDROID_ABI=google_apis/armeabi-v7a
     secure: ZIqxlXG7LJtAXYFARrk3LVE8tva32vd4T1jJCdSqcoz1lKSDEXufE50tXwPtCpDE/f1ZTkIkVqTskxvZ84B0TpAQyjUzGc7O1/A+Ez2IImKfTxPw3GKHfwOcUQw1tpduw7o/2SoS3eAR6cGIumCye5417nryvsiSp3U2FAXx842ooxjJU1tMtnNfNkKTV4eds/kC0CEPy9TeuVYe5yaQn6KtZX3Tle0NQrMoyMU1g34xoAd3jmIa0vEuyZMK7UI2gRiadrvsOpKjru7Cn/wc1Xyb4ylPgRtNxkhLsneRt1Gem4Hzoujq2tKuvJrupm9tSTYiWWwxcy1ER+SzvEJdhtBPvNq7hh8VpEgRknh1ZzksuooX8EgiGABlmdsW+H5Nuio2q4NfLF0x3yzVxGOZU2OrVDONEHP7oA3Nu1Ju+q5zLDceHIoicAmicBJJcpoNGQ9JQtTojlHcCOM3iWyL+E7o059QzX8o53opdc4EW6H+4PHJetH+hS8Q9AeqnxNYsxiWP67LOsgmP3jTPS7xV0p0FYIK+dnJxVYNwbJMRjWViFO30fFcbOurgvRfJeI7nN/EdH5IHMkZ3K0sUaCdhuSq+vkoY/HEnY+LhPGcCwmKfZlmSHyMXIgsgCsVDruPrhB3Rd4u8ed5sKXmWxrzbSfBS+PdjDnrIUwL9q85f4Q=
