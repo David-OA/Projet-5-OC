@@ -33,7 +33,7 @@ before_script:
 - chmod +x gradlew
 - ./gradlew assembleDebug
 - ./gradlew assembleDebugAndroidTest
-- ./google-cloud-sdk/bin/gcloud beta firebase test android run –use -orchestrator --type instrumentation --app app/build/outputs/apk/debug/app-debug.apk –test app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk –device model=Pixel2,version=29
+- ./google-cloud-sdk/bin/gcloud beta firebase test android run --use-orchestrator --type instrumentation --app app/build/outputs/apk/debug/app-debug.apk –test app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk –device model=Pixel2,version=29
 
 script:
 - ./gradlew connectedCheck --stacktrace
