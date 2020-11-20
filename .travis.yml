@@ -31,20 +31,20 @@ install: true
 
 before_script:
 # Download and install gcloud cli to run firebase test commands
-- wget https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-218.0.0-linux-x86.tar.gz
-- tar zxf google-cloud-sdk-218.0.0-linux-x86.tar.gz google-cloud-sdk
-- echo n | ./google-cloud-sdk/install.sh
-- ./google-cloud-sdk/bin/gcloud auth activate-service-account --key-file dir-to-your-service-account-key.json
-- ./google-cloud-sdk/bin/gcloud config set project your-project
-- echo y | ./google-cloud-sdk/bin/gcloud components update
-- echo y | ./google-cloud-sdk/bin/gcloud components install beta
+#- wget https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-218.0.0-linux-x86.tar.gz
+#- tar zxf google-cloud-sdk-218.0.0-linux-x86.tar.gz google-cloud-sdk
+#- echo n | ./google-cloud-sdk/install.sh
+#- ./google-cloud-sdk/bin/gcloud auth activate-service-account --key-file dir-to-your-service-account-key.json
+#- ./google-cloud-sdk/bin/gcloud config set project your-project
+#- echo y | ./google-cloud-sdk/bin/gcloud components update
+#- echo y | ./google-cloud-sdk/bin/gcloud components install beta
 
 
 script:
 - chmod +x gradlew
 - ./gradlew assembleDebug
 - ./gradlew assembleDebugAndroidTest
-- ./google-cloud-sdk/bin/gcloud beta firebase test android run --use-orchestrator --type instrumentation --app app/build/outputs/apk/debug/app-debug.apk –test app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk –device model=Pixel2,version=29
+- ./google-cloud-sdk/bin/gcloud beta firebase test android run --type instrumentation --app app/build/outputs/apk/debug/app-debug.apk –test app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk –device model=Pixel2,version=29
 - ./gradlew connectedCheck --stacktrace
 
 env:
