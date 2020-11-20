@@ -92,7 +92,7 @@ public class MyNewUnitTest  {
             }
         };
 
-        CountingIdlingResource resource = Injection.getCounting();
+        CountingIdlingResource resource = Injection.resource;
 
         NYTCallsSearch search = new NYTCallsSearch(service, resource);
         search.getSearchSection(service, callbacks, "01/02/2020", "16/05/2020", "sports", "kobe", 10);
