@@ -35,7 +35,7 @@ before_script:
 - wget https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-218.0.0-linux-x86.tar.gz
 - tar zxf google-cloud-sdk-218.0.0-linux-x86.tar.gz google-cloud-sdk
 - echo n | ./google-cloud-sdk/install.sh
-- ./google-cloud-sdk/bin/gcloud auth activate-service-account --key-file https://firebasestorage.googleapis.com/v0/b/my-news-8af6b.appspot.com/o/my-news-8af6b-c2c2b4cbe7c7.json?alt=media&token=2b78f359-6d86-467b-828f-c68adb759aff
+- ./google-cloud-sdk/bin/gcloud auth activate-service-account daoconteid@gmail.com --key-file https://firebasestorage.googleapis.com/v0/b/my-news-8af6b.appspot.com/o/my-news-8af6b-c2c2b4cbe7c7.json?alt=media&token=2b78f359-6d86-467b-828f-c68adb759aff
 - ./google-cloud-sdk/bin/gcloud config set project my-news-8af6b
 - echo y | ./google-cloud-sdk/bin/gcloud components update
 - echo y | ./google-cloud-sdk/bin/gcloud components install beta
