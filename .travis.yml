@@ -35,7 +35,7 @@ before_script:
 - wget https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-218.0.0-linux-x86.tar.gz
 - tar zxf google-cloud-sdk-218.0.0-linux-x86.tar.gz google-cloud-sdk
 - echo n | ./google-cloud-sdk/install.sh
-- ./google-cloud-sdk/bin/gcloud auth activate-service-account --account daoconteid@gmail.com --key-file https://firebasestorage.googleapis.com/v0/b/my-news-8af6b.appspot.com/o/my-news-8af6b-c2c2b4cbe7c7.json?alt=media&token=2b78f359-6d86-467b-828f-c68adb759aff
+- ./google-cloud-sdk/bin/gcloud auth activate-service-account --key-file https://firebasestorage.googleapis.com/v0/b/my-news-8af6b.appspot.com/o/my-news-8af6b-c2c2b4cbe7c7.json?alt=media&token=2b78f359-6d86-467b-828f-c68adb759aff
 - ./google-cloud-sdk/bin/gcloud config set project my-news-8af6b
 - echo y | ./google-cloud-sdk/bin/gcloud components update
 - echo y | ./google-cloud-sdk/bin/gcloud components install beta
@@ -46,7 +46,7 @@ script:
 - chmod +x gradlew
 - ./gradlew assembleDebug
 - ./gradlew assembleDebugAndroidTest
-- ./google-cloud-sdk/bin/gcloud firebase test android run --type instrumentation --app app/build/outputs/apk/debug/app-debug.apk --test app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk --device model=Nexus6,version=25
+- ./google-cloud-sdk/bin/gcloud firebase test android run --type instrumentation --app app/build/outputs/apk/debug/app-debug.apk --test app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk --key-file https://firebasestorage.googleapis.com/v0/b/my-news-8af6b.appspot.com/o/my-news-8af6b-c2c2b4cbe7c7.json?alt=media&token=2b78f359-6d86-467b-828f-c68adb759aff --device model=Nexus6,version=25
 - ./gradlew connectedCheck --stacktrace
 
 env:
