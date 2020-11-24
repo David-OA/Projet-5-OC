@@ -30,6 +30,10 @@ before_install:
 
 install: true
 
+addons:
+  apt:
+    packages:
+      - python3
 
 before_script:
 # Download and install gcloud cli to run firebase test commands
