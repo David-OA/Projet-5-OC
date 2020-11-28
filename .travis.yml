@@ -44,7 +44,7 @@ before_script:
 - echo y | ./google-cloud-sdk/bin/gcloud components update
 - echo y | ./google-cloud-sdk/bin/gcloud components install beta
 - wget -P $HOME/travis https://firebasestorage.googleapis.com/v0/b/my-news-8af6b.appspot.com/o/my-news-8af6b-3753277e4930.json?alt=media&token=fc255526-6dbf-4429-ba92-cdbbda391414
-- ./google-cloud-sdk/bin/gcloud auth activate-service-account ACCOUNT --key-file /HOME/travis/my-news-8af6b-3753277e4930.json?alt=media&token=fc255526-6dbf-4429-ba92-cdbbda391414
+- ./google-cloud-sdk/bin/gcloud auth activate-service-account --key-file /HOME/travis/my-news-8af6b-3753277e4930.json?alt=media&token=fc255526-6dbf-4429-ba92-cdbbda391414
 - ./google-cloud-sdk/bin/gcloud config set project my-news-8af6b
 
 
