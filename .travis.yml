@@ -26,9 +26,6 @@ android:
 before_install:
 - yes | sdkmanager "platforms;android-25"
 - yes | sdkmanager "platforms;android-26"
-- yes | sdkmanager "platforms;android-27"
-- yes | sdkmanager "platforms;android-28"
-- yes | sdkmanager "platforms;android-29"
 
 install: true
 
@@ -52,7 +49,6 @@ script:
 - wget https://firebasestorage.googleapis.com/v0/b/my-news-8af6b.appspot.com/o/my-news-8af6b-b670739b4592.json?alt=media&token=05b3f526-bbfc-4d93-aa65-77039513da5a
 - ./google-cloud-sdk/bin/gcloud auth activate-service-account --key-file my-news-8af6b-b670739b4592.json\?alt\=media&token=05b3f526-bbfc-4d93-aa65-77039513da5a
 - ./google-cloud-sdk/bin/gcloud config set project my-news-8af6b
-#- ./google-cloud-sdk/bin/gcloud firebase test android run --key-file my-news-8af6b-b670739b4592.json\?alt\=media&token=05b3f526-bbfc-4d93-aa65-77039513da5a --type instrumentation --app app/build/outputs/apk/debug/app-debug.apk --test app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk --device model=Nexus6,version=25
 - ./google-cloud-sdk/bin/gcloud firebase test android run --type instrumentation --app app/build/outputs/apk/debug/app-debug.apk --test app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk --device model=Nexus6,version=25
 
 env:
