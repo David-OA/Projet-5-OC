@@ -1,16 +1,13 @@
 package com.oconte.david.mynews.di;
 
-import androidx.test.espresso.Espresso;
-import androidx.test.espresso.IdlingRegistry;
-import androidx.test.espresso.base.IdlingResourceRegistry_Factory;
 import androidx.test.espresso.idling.CountingIdlingResource;
 
+import com.oconte.david.mynews.NYTFactory;
+import com.oconte.david.mynews.NYTService;
 import com.oconte.david.mynews.calls.NYTCallsMostPopular;
 import com.oconte.david.mynews.calls.NYTCallsSearch;
 import com.oconte.david.mynews.calls.NYTCallsSports;
 import com.oconte.david.mynews.calls.NYTCallsTopStories;
-import com.oconte.david.mynews.NYTFactory;
-import com.oconte.david.mynews.NYTService;
 
 public class Injection {
 
