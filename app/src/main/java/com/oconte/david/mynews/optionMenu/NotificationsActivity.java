@@ -19,12 +19,9 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.oconte.david.mynews.MainActivity;
 import com.oconte.david.mynews.R;
-
 import java.util.Calendar;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 

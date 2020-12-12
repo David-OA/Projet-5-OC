@@ -72,7 +72,6 @@ public class NYTArticleSearchViewHolder extends RecyclerView.ViewHolder {
     /**
      * It's for get url Images
      * @param article
-     * @return
      */
     public String getFirstUrl(Article article) {
         if (article.getMultimedia() != null && article.getMultimedia().size() > 0) {
