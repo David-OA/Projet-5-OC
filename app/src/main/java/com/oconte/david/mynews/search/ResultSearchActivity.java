@@ -31,7 +31,9 @@ import butterknife.ButterKnife;
 public class ResultSearchActivity extends AppCompatActivity implements NYTCallsSearch.Callbacks {
 
     // FOR DESIGN
+    @SuppressLint("NonConstantResourceId")
     @BindView(R.id.result_search_view) RecyclerView recyclerView;
+    @SuppressLint("NonConstantResourceId")
     @BindView(R.id.toolbar) Toolbar toolbar;
 
     // FOR DATA
