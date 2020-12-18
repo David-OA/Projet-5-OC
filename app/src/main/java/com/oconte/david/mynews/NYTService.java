@@ -9,6 +9,9 @@ import retrofit2.http.Path;
 import retrofit2.http.Query;
 
 public interface NYTService {
+    /**
+     * It's all calls to NYT API for section I need.
+     */
 
     @GET("/svc/topstories/v2/{section}.json?api-key=l0bvAgiwuO57HwCfWGjBaEMWqjUdAMoG")
     Call<Result> getTopStories(@Path("section") String section);
