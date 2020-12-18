@@ -17,7 +17,9 @@ import butterknife.ButterKnife;
 public class WebViewActivity extends AppCompatActivity {
 
     // FOR DESIGN
+    @SuppressLint("NonConstantResourceId")
     @BindView(R.id.toolbar) Toolbar toolbar;
+    @SuppressLint("NonConstantResourceId")
     @BindView(R.id.web_view_all_new) WebView webView;
 
     @SuppressLint("SetJavaScriptEnabled")

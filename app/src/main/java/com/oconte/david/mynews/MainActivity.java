@@ -24,10 +24,13 @@ import butterknife.ButterKnife;
 public class MainActivity extends AppCompatActivity {
 
     // For Design
+    @SuppressLint("NonConstantResourceId")
     @BindView(R.id.toolbar) Toolbar toolbar;
+    @SuppressLint("NonConstantResourceId")
     @BindView(R.id.tabLayout) TabLayout tabLayout;
 
     // For Data
+    @SuppressLint("NonConstantResourceId")
     @BindView(R.id.pager) ViewPager viewPager;
 
     @Override

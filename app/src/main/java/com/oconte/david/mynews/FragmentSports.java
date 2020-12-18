@@ -1,5 +1,6 @@
 package com.oconte.david.mynews;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -25,6 +26,7 @@ import butterknife.ButterKnife;
 public class FragmentSports extends Fragment implements NYTCallsSports.Callbacks {
 
     // FOR DESIGN
+    @SuppressLint("NonConstantResourceId")
     @BindView(R.id.fragment_main_sports_recycler_view) RecyclerView recyclerView;
 
     // FOR DATA
