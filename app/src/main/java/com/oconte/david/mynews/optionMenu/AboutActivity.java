@@ -1,5 +1,6 @@
 package com.oconte.david.mynews.optionMenu;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,7 +15,9 @@ import es.dmoral.markdownview.MarkdownView;
 public class AboutActivity extends AppCompatActivity {
 
     // FOR DESIGN
+    @SuppressLint("NonConstantResourceId")
     @BindView(R.id.toolbar) Toolbar toolbar;
+    @SuppressLint("NonConstantResourceId")
     @BindView(R.id.markdown_view) MarkdownView markdownView;
 
     @Override

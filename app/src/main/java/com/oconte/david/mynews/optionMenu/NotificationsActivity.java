@@ -28,19 +28,28 @@ import butterknife.ButterKnife;
 public class NotificationsActivity extends AppCompatActivity {
 
     // FOR DESIGN
+    @SuppressLint("NonConstantResourceId")
     @BindView(R.id.toolbar) Toolbar toolbar;
+    @SuppressLint("NonConstantResourceId")
     @BindView(R.id.notification_query_term) EditText notificationQueryTerm;
+    @SuppressLint("NonConstantResourceId")
     @BindView(R.id.notification_switch) SwitchCompat switchNotification;
 
     // CheckBox
+    @SuppressLint("NonConstantResourceId")
     @BindView(R.id.notification_item_art) CheckBox mNotiArt;
+    @SuppressLint("NonConstantResourceId")
     @BindView(R.id.notification_item_business) CheckBox mNotiBusiness;
+    @SuppressLint("NonConstantResourceId")
     @BindView(R.id.notification_item_entrepreneurs) CheckBox mNotiEntrepreneurs;
+    @SuppressLint("NonConstantResourceId")
     @BindView(R.id.notification_item_politics) CheckBox mNotiPolitics;
+    @SuppressLint("NonConstantResourceId")
     @BindView(R.id.notification_item_sport) CheckBox mNotiSport;
+    @SuppressLint("NonConstantResourceId")
     @BindView(R.id.notification_item_travel) CheckBox mNotiTravel;
 
-    private SharedPreferences preferences;
+
     private static final String EXTRA_NOTI_QUERY = "extra_noti_query";
     private static final String EXTRA_NOTI_ART = "extra_noti_art";
     private static final String EXTRA_NOTI_BUSINESS = "extra_noti_business";
@@ -49,7 +58,6 @@ public class NotificationsActivity extends AppCompatActivity {
     private static final String EXTRA_NOTI_SPORTS = "extra_noti_sports";
     private static final String EXTRA_NOTI_TRAVEL = "extra_noti_travel";
 
-    public Calendar calendar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

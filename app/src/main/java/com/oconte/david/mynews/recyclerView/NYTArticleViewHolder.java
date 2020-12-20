@@ -19,11 +19,15 @@ import static com.oconte.david.mynews.utils.ConfigureText.convertSectionNameForD
 public class NYTArticleViewHolder extends RecyclerView.ViewHolder {
 
     // TextView
+    @SuppressLint("NonConstantResourceId")
     @BindView(R.id.fragment_main_title) TextView textView;
+    @SuppressLint("NonConstantResourceId")
     @BindView(R.id.fragment_main_section) TextView textView1;
+    @SuppressLint("NonConstantResourceId")
     @BindView(R.id.fragment_main_date) TextView date;
 
     // ImageView
+    @SuppressLint("NonConstantResourceId")
     @BindView(R.id.fragment_main_image) ImageView imageView;
 
     public NYTArticleViewHolder(View itemView) {

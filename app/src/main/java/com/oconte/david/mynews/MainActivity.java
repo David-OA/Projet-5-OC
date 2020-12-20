@@ -91,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * To manage menu clicks.
      */
+    @SuppressLint("NonConstantResourceId")
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();

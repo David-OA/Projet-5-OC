@@ -1,5 +1,6 @@
 package com.oconte.david.mynews.optionMenu;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.content.DialogInterface;
@@ -28,20 +29,31 @@ import butterknife.ButterKnife;
 public class SearchViewActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
 
     //FOR DESIGN
+    @SuppressLint("NonConstantResourceId")
     @BindView(R.id.toolbar) Toolbar toolbar;
+    @SuppressLint("NonConstantResourceId")
     @BindView(R.id.search_button) Button button;
 
     // EditText
+    @SuppressLint("NonConstantResourceId")
     @BindView(R.id.query_term) EditText mQueryTerm;
+    @SuppressLint("NonConstantResourceId")
     @BindView(R.id.search_fragment_start_begin_date) EditText mBeginDate;
+    @SuppressLint("NonConstantResourceId")
     @BindView(R.id.search_fragment_search_end_date) EditText mEndDate;
 
     // CheckBox
+    @SuppressLint("NonConstantResourceId")
     @BindView(R.id.search_item_art) CheckBox mArt;
+    @SuppressLint("NonConstantResourceId")
     @BindView(R.id.search_item_business) CheckBox mBusiness;
+    @SuppressLint("NonConstantResourceId")
     @BindView(R.id.search_item_entrepreneurs) CheckBox mEntrepreneurs;
+    @SuppressLint("NonConstantResourceId")
     @BindView(R.id.search_item_politics) CheckBox mPolitics;
+    @SuppressLint("NonConstantResourceId")
     @BindView(R.id.search_item_sport) CheckBox mSport;
+    @SuppressLint("NonConstantResourceId")
     @BindView(R.id.search_item_travel) CheckBox mTravel;
 
     // For DatePicker

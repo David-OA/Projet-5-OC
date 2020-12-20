@@ -112,7 +112,7 @@ public class AlarmWorker extends Worker implements NYTCallsSearch.Callbacks {
         if (response == null || response.getResponse().getDocs().size() == 0){
             noMoreNew();
         } else if (response.getResponse().getDocs().size() != 0){
-            this.result = response; // i change the field type.
+            this.result = response;
             int size = response.getResponse().getDocs().size();
             displayNotification("My News", size + " Articles were found");
         }

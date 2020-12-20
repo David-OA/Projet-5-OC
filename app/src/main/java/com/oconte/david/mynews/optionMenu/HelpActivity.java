@@ -1,5 +1,6 @@
 package com.oconte.david.mynews.optionMenu;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -10,6 +11,7 @@ import butterknife.ButterKnife;
 public class HelpActivity extends AppCompatActivity {
 
     // FOR DESIGN
+    @SuppressLint("NonConstantResourceId")
     @BindView(R.id.toolbar) Toolbar toolbar;
 
     @Override
